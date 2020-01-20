@@ -2,7 +2,6 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>WTF-2</title>
 <style title="Twine CSS">@-webkit-keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes appear{0%{opacity:0}to{opacity:1}}@-webkit-keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@-webkit-keyframes rumble{50%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}}@keyframes rumble{50%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}}@-webkit-keyframes shudder{50%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@keyframes shudder{50%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@-webkit-keyframes box-flash{0%{background-color:white;color:white}}@keyframes box-flash{0%{background-color:white;color:white}}@-webkit-keyframes pulse{0%{-webkit-transform:scale(0, 0);transform:scale(0, 0)}20%{-webkit-transform:scale(1.2, 1.2);transform:scale(1.2, 1.2)}40%{-webkit-transform:scale(0.9, 0.9);transform:scale(0.9, 0.9)}60%{-webkit-transform:scale(1.05, 1.05);transform:scale(1.05, 1.05)}80%{-webkit-transform:scale(0.925, 0.925);transform:scale(0.925, 0.925)}to{-webkit-transform:scale(1, 1);transform:scale(1, 1)}}@keyframes pulse{0%{-webkit-transform:scale(0, 0);transform:scale(0, 0)}20%{-webkit-transform:scale(1.2, 1.2);transform:scale(1.2, 1.2)}40%{-webkit-transform:scale(0.9, 0.9);transform:scale(0.9, 0.9)}60%{-webkit-transform:scale(1.05, 1.05);transform:scale(1.05, 1.05)}80%{-webkit-transform:scale(0.925, 0.925);transform:scale(0.925, 0.925)}to{-webkit-transform:scale(1, 1);transform:scale(1, 1)}}@-webkit-keyframes shudder-in{0%, to{-webkit-transform:translateX(0em);transform:translateX(0em)}5%, 25%, 45%{-webkit-transform:translateX(-1em);transform:translateX(-1em)}15%, 35%, 55%{-webkit-transform:translateX(1em);transform:translateX(1em)}65%{-webkit-transform:translateX(-0.6em);transform:translateX(-0.6em)}75%{-webkit-transform:translateX(0.6em);transform:translateX(0.6em)}85%{-webkit-transform:translateX(-0.2em);transform:translateX(-0.2em)}95%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@keyframes shudder-in{0%, to{-webkit-transform:translateX(0em);transform:translateX(0em)}5%, 25%, 45%{-webkit-transform:translateX(-1em);transform:translateX(-1em)}15%, 35%, 55%{-webkit-transform:translateX(1em);transform:translateX(1em)}65%{-webkit-transform:translateX(-0.6em);transform:translateX(-0.6em)}75%{-webkit-transform:translateX(0.6em);transform:translateX(0.6em)}85%{-webkit-transform:translateX(-0.2em);transform:translateX(-0.2em)}95%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@-webkit-keyframes rumble-in{0%, to{-webkit-transform:translateY(0em);transform:translateY(0em)}5%, 25%, 45%{-webkit-transform:translateY(-1em);transform:translateY(-1em)}15%, 35%, 55%{-webkit-transform:translateY(1em);transform:translateY(1em)}65%{-webkit-transform:translateY(-0.6em);transform:translateY(-0.6em)}75%{-webkit-transform:translateY(0.6em);transform:translateY(0.6em)}85%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}95%{-webkit-transform:translateY(0.2em);transform:translateY(0.2em)}}@keyframes rumble-in{0%, to{-webkit-transform:translateY(0em);transform:translateY(0em)}5%, 25%, 45%{-webkit-transform:translateY(-1em);transform:translateY(-1em)}15%, 35%, 55%{-webkit-transform:translateY(1em);transform:translateY(1em)}65%{-webkit-transform:translateY(-0.6em);transform:translateY(-0.6em)}75%{-webkit-transform:translateY(0.6em);transform:translateY(0.6em)}85%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}95%{-webkit-transform:translateY(0.2em);transform:translateY(0.2em)}}@-webkit-keyframes slide-right{0%{-webkit-transform:translateX(-100vw);transform:translateX(-100vw)}}@keyframes slide-right{0%{-webkit-transform:translateX(-100vw);transform:translateX(-100vw)}}@-webkit-keyframes slide-left{0%{-webkit-transform:translateX(100vw);transform:translateX(100vw)}}@keyframes slide-left{0%{-webkit-transform:translateX(100vw);transform:translateX(100vw)}}@-webkit-keyframes slide-up{0%{-webkit-transform:translateY(100vh);transform:translateY(100vh)}}@keyframes slide-up{0%{-webkit-transform:translateY(100vh);transform:translateY(100vh)}}@-webkit-keyframes slide-down{0%{-webkit-transform:translateY(-100vh);transform:translateY(-100vh)}}@keyframes slide-down{0%{-webkit-transform:translateY(-100vh);transform:translateY(-100vh)}}@-webkit-keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:0.2}64%{opacity:0.4}78%{opacity:0.6}87%{opacity:0.8}92%, to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:0.2}64%{opacity:0.4}78%{opacity:0.6}87%{opacity:0.8}92%, to{opacity:1}}.debug-mode tw-expression[type=hookref]{background-color:rgba(115,123,140,0.15)}.debug-mode tw-expression[type=hookref]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"?" attr(name)}.debug-mode tw-expression[type=variable]{background-color:rgba(140,128,115,0.15)}.debug-mode tw-expression[type=variable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]{background-color:rgba(140,128,115,0.15)}.debug-mode tw-expression[type=tempVariable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[type=macro]:nth-of-type(4n+0){background-color:rgba(136,153,102,0.15)}.debug-mode tw-expression[type=macro]:nth-of-type(2n+1){background-color:rgba(102,153,102,0.15)}.debug-mode tw-expression[type=macro]:nth-of-type(4n+2){background-color:rgba(102,153,136,0.15)}.debug-mode tw-expression[type=macro][name="for"],.debug-mode tw-expression[type=macro][name="loop"],.debug-mode tw-expression[type=macro][name="print"],.debug-mode tw-expression[type=macro][name="enchant"],.debug-mode tw-expression[type=macro][name="display"]{background-color:rgba(0,170,255,0.1) !important}.debug-mode tw-expression[type=macro][name="if"],.debug-mode tw-expression[type=macro][name="if"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="unless"],.debug-mode tw-expression[type=macro][name="unless"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="elseif"],.debug-mode tw-expression[type=macro][name="elseif"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="else"],.debug-mode tw-expression[type=macro][name="else"]+tw-hook:not([name]){background-color:rgba(0,255,0,0.1) !important}.debug-mode tw-expression[type=macro][name="hidden"],.debug-mode tw-expression[type=macro].false{background-color:rgba(255,0,0,0.2) !important}.debug-mode tw-expression[type=macro][name="hidden"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro].false+tw-hook:not([name]){display:none}.debug-mode tw-expression[type=macro][name="either"],.debug-mode tw-expression[type=macro][name="a"],.debug-mode tw-expression[type=macro][name="dm"],.debug-mode tw-expression[type=macro][name="ds"],.debug-mode tw-expression[type=macro][name="array"],.debug-mode tw-expression[type=macro][name^="sub"],.debug-mode tw-expression[type=macro][name="altered"],.debug-mode tw-expression[type=macro][name="count"],.debug-mode tw-expression[type=macro][name^="data"],.debug-mode tw-expression[type=macro][name="find"],.debug-mode tw-expression[type=macro][name$="ed"],.debug-mode tw-expression[type=macro][name$="-pass"],.debug-mode tw-expression[type=macro][name="range"],.debug-mode tw-expression[type=macro][name^="num"],.debug-mode tw-expression[type=macro][name^="str"],.debug-mode tw-expression[type=macro][name="text"],.debug-mode tw-expression[type=macro][name^="lower"],.debug-mode tw-expression[type=macro][name^="upper"],.debug-mode tw-expression[type=macro][name="words"],.debug-mode tw-expression[type=macro][name="ceil"],.debug-mode tw-expression[type=macro][name="floor"],.debug-mode tw-expression[type=macro][name="random"],.debug-mode tw-expression[type=macro][name="abs"],.debug-mode tw-expression[type=macro][name="cos"],.debug-mode tw-expression[type=macro][name="exp"],.debug-mode tw-expression[type=macro][name^="log"],.debug-mode tw-expression[type=macro][name="max"],.debug-mode tw-expression[type=macro][name="min"],.debug-mode tw-expression[type=macro][name="pow"],.debug-mode tw-expression[type=macro][name="sign"],.debug-mode tw-expression[type=macro][name="sin"],.debug-mode tw-expression[type=macro][name="sqrt"],.debug-mode tw-expression[type=macro][name="tan"],.debug-mode tw-expression[type=macro][name="round"],.debug-mode tw-expression[type=macro][name^="hsl"],.debug-mode tw-expression[type=macro][name^="rgb"]{background-color:rgba(255,255,0,0.2) !important}.debug-mode tw-expression[type=macro][name$="-game"],.debug-mode tw-expression[type=macro][name="move"],.debug-mode tw-expression[type=macro][name="put"],.debug-mode tw-expression[type=macro][name="set"]{background-color:rgba(255,128,0,0.2) !important}.debug-mode tw-expression[type=macro][name^="link"],.debug-mode tw-expression[type=macro][name$="-link"],.debug-mode tw-expression[type=macro][name="dropdown"],.debug-mode tw-expression[type=macro][name^="click"],.debug-mode tw-expression[type=macro][name="goto"],.debug-mode tw-expression[type=macro][name="undo"],.debug-mode tw-expression[type=macro][name^="mouseo"]{background-color:rgba(32,191,223,0.2) !important}.debug-mode tw-expression[type=macro][name^="replace"],.debug-mode tw-expression[type=macro][name^="prepend"],.debug-mode tw-expression[type=macro][name^="append"],.debug-mode tw-expression[type=macro][name="show"],.debug-mode tw-expression[type=macro][name^="remove"]{background-color:rgba(223,96,32,0.2) !important}.debug-mode tw-expression[type=macro][name="event"],.debug-mode tw-expression[type=macro][name="live"]{background-color:rgba(32,32,223,0.2) !important}.debug-mode tw-expression[type=macro][name="align"],.debug-mode tw-expression[type=macro][name^="colo"],.debug-mode tw-expression[type=macro][name="background"],.debug-mode tw-expression[type=macro][name="css"],.debug-mode tw-expression[type=macro][name="font"],.debug-mode tw-expression[type=macro][name="hook"],.debug-mode tw-expression[type=macro][name$="-style"],.debug-mode tw-expression[type=macro][name^="text-"],.debug-mode tw-expression[type=macro][name^="transition"],.debug-mode tw-expression[type=macro][name^="t8n"],.debug-mode tw-expression[type=macro][name="live"]{background-color:rgba(255,191,0,0.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 0.5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,0.5)}.debug-mode tw-hook{background-color:rgba(0,85,255,0.1) !important}.debug-mode tw-hook::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,0.1) !important}.debug-mode tw-collapsed::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 50%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, rgba(255,204,189,0.25) 0%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,0.2)}.debug-mode tw-enchantment{animation:enchantment 0.5s infinite;-webkit-animation:enchantment 0.5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,0.1)}.debug-mode tw-include::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(type) ' "' attr(title) '"'}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}@-webkit-keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:10em;min-height:1em;padding:0em 1em 1em 1em;font-size:1.25em;font-family:sans-serif;color:#000;border-left:solid #000 2px;border-top:solid #000 2px;border-top-left-radius:.5em;background:#fff;opacity:1}tw-debugger select{margin-right:1em;width:12em}tw-debugger button{border-radius:3px;border:solid #999 1px;margin:auto 4px;background-color:#fff;font-size:inherit;color:#000}tw-debugger button.enabled{background-color:#eee;box-shadow:inset #ddd 3px 5px 0.5em}tw-debugger .panel{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;max-height:40vh;overflow-y:scroll;overflow-x:hidden;z-index:999998;background:#fff;border:inherit;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:0.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger .panel table{border-spacing:0px}tw-debugger .variable-row{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-moz-flex-direction:row;-ms-flex-direction:row;flex-direction:row;flex-shrink:0}tw-debugger .variable-row:nth-child(2n){background:#EEE}tw-debugger .variable-name{display:inline-block;width:50%}tw-debugger .temporary-variable-scope{opacity:0.8;font-size:0.75em}tw-debugger .temporary-variable-scope::before{content:" in "}tw-debugger .global::before{content:"$"}tw-debugger .temporary::before{content:"_"}tw-debugger .variable-path{opacity:0.4}tw-debugger .variable-value{display:inline-block;width:50%}tw-debugger .error-row{background-color:rgba(230,101,204,0.3)}tw-debugger .error-row:nth-child(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .error-row *{padding:0.25em 0.5em}tw-debugger .error-row .error-message{cursor:help}tw-debugger .panel-source{font-family:monospace;overflow-x:scroll;white-space:pre}tw-debugger .tabs{padding-bottom:0.5em}tw-debugger .tab{border-radius:0px 0px 0.5em 0.5em;border-top:none}tw-dialog{z-index:999997;position:fixed;left:auto;right:auto;bottom:auto;top:auto;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block;max-width:50vw;max-height:75vh;overflow:hidden}tw-dialog input[type=text]{font-size:inherit;width:100%}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center}tw-link,.link,tw-icon,.enchantment-clickblock{cursor:pointer}tw-link,.enchantment-link{color:#4169E1;font-weight:bold;text-decoration:none;transition:color 0.2s ease-in-out}tw-passage tw-enchantment[style^="color"] tw-link:not(:hover),tw-passage tw-enchantment[style*=" color"] tw-link:not(:hover),tw-passage tw-enchantment[style^="color"] .enchantment-link:not(:hover),tw-passage tw-enchantment[style*=" color"] .enchantment-link:not(:hover){color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#DD4B39}.visited{color:#6941e1}tw-passage tw-enchantment[style^="color"] .visited:not(:hover),tw-passage tw-enchantment[style*=" color"] .visited:not(:hover){color:inherit}.visited:hover{color:#E3E}tw-broken-link{color:#993333;border-bottom:2px solid #993333;cursor:not-allowed}tw-passage tw-enchantment[style^="color"] tw-broken-link:not(:hover),tw-passage tw-enchantment[style*=" color"] tw-broken-link:not(:hover){color:inherit}.enchantment-mouseover{border-bottom:1px dashed #666}.enchantment-mouseout{border:rgba(64,149,191,0.25) 1px solid}.enchantment-mouseout:hover{background-color:rgba(64,149,191,0.25);border:transparent 1px solid;border-radius:0.2em}.enchantment-clickblock{box-shadow:inset 0 0 0 0.5vmax;display:block;color:rgba(65,105,225,0.5);transition:color 0.2s ease-in-out}.enchantment-clickblock:hover{color:rgba(0,191,255,0.5)}.enchantment-clickblock:active{color:rgba(222,78,59,0.5)}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font:100% Georgia, serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 20%;margin:0;overflow:hidden;background-color:#000;color:#fff}tw-story br[data-cons]{display:block;height:0;margin:0.8ex 0}tw-story select{background-color:transparent;font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-passage{display:block}tw-sidebar{left:-5em;width:3em;position:absolute;text-align:center;display:block}tw-icon{display:block;margin:0.5em 0;opacity:0.2;font-size:2.75em}tw-icon:hover{opacity:0.4}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:0.2em;padding:0.2em;font-size:1rem;cursor:help}tw-error.error{background-color:rgba(223,58,190,0.4);color:#fff}tw-error.warning{background-color:rgba(223,140,58,0.4);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:0.8rem;line-height:1rem}tw-error-explanation-button{cursor:pointer;line-height:0em;border-radius:1px;border:1px solid black;font-size:0.8rem;margin:0 0.4rem;opacity:0.5}tw-error-explanation-button .folddown-arrowhead{display:inline-block}tw-notifier{border-radius:0.2em;padding:0.2em;font-size:1rem;background-color:rgba(223,182,58,0.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid black;display:inline-block;width:1em;height:1em}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:0.3em 0 0.6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,0.6);background-color:#ff9}ins{color:rgba(0,0,0,0.6);background-color:rgba(255,242,204,0.5);border-radius:0.5em;box-shadow:0em 0em 0.2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate;-webkit-animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-moz-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;-webkit-justify-content:space-between;-moz-justify-content:space-between;justify-content:space-between}tw-outline{color:white;text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000}tw-shadow{text-shadow:0.08em 0.08em 0.08em #000}tw-emboss{text-shadow:0.08em 0.08em 0em #000;color:white}tw-condense{letter-spacing:-0.08em}tw-expand{letter-spacing:0.1em}tw-blur{color:transparent;text-shadow:0em 0em 0.08em #000}tw-blurrier{color:transparent;text-shadow:0em 0em 0.2em #000}tw-blurrier::selection{background-color:transparent;color:transparent}tw-blurrier::-moz-selection{background-color:transparent;color:transparent}tw-smear{color:transparent;text-shadow:0em 0em 0.02em rgba(0,0,0,0.75),-0.2em 0em 0.5em rgba(0,0,0,0.5),0.2em 0em 0.5em rgba(0,0,0,0.5)}tw-mirror{display:inline-block;transform:scaleX(-1);-webkit-transform:scaleX(-1)}tw-upside-down{display:inline-block;transform:scaleY(-1);-webkit-transform:scaleY(-1)}tw-fade-in-out{text-decoration:none;animation:fade-in-out 2s ease-in-out infinite alternate;-webkit-animation:fade-in-out 2s ease-in-out infinite alternate}tw-rumble{-webkit-animation:rumble linear 0.1s 0s infinite;animation:rumble linear 0.1s 0s infinite;display:inline-block}tw-shudder{-webkit-animation:shudder linear 0.1s 0s infinite;animation:shudder linear 0.1s 0s infinite;display:inline-block}tw-shudder-in{animation:shudder-in 1s ease-out;-webkit-animation:shudder-in 1s ease-out}.transition-in{-webkit-animation:appear 0ms step-start;animation:appear 0ms step-start}.transition-out{-webkit-animation:appear 0ms step-end;animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in{-webkit-animation:appear .8s;animation:appear .8s}[data-t8n^=dissolve].transition-out{-webkit-animation:appear .8s reverse;animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block;-webkit-animation:shudder-in .8s;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block;-webkit-animation:shudder-in .8s reverse;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block;-webkit-animation:rumble-in .8s;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block;-webkit-animation:rumble-in .8s reverse;animation:rumble-in .8s reverse}[data-t8n^=boxflash].transition-in{-webkit-animation:box-flash .8s;animation:box-flash .8s}[data-t8n^=pulse].transition-in{-webkit-animation:pulse .8s;animation:pulse .8s;display:inline-block}[data-t8n^=pulse].transition-out{-webkit-animation:pulse .8s reverse;animation:pulse .8s reverse;display:inline-block}[data-t8n^=slideleft].transition-in{-webkit-animation:slide-left .8s;animation:slide-left .8s;display:inline-block}[data-t8n^=slideleft].transition-out{-webkit-animation:slide-right .8s reverse;animation:slide-right .8s reverse;display:inline-block}[data-t8n^=slideright].transition-in{-webkit-animation:slide-right .8s;animation:slide-right .8s;display:inline-block}[data-t8n^=slideright].transition-out{-webkit-animation:slide-left .8s reverse;animation:slide-left .8s reverse;display:inline-block}[data-t8n^=slideup].transition-in{-webkit-animation:slide-up .8s;animation:slide-up .8s;display:inline-block}[data-t8n^=slideup].transition-out{-webkit-animation:slide-down .8s reverse;animation:slide-down .8s reverse;display:inline-block}[data-t8n^=slidedown].transition-in{-webkit-animation:slide-down .8s;animation:slide-down .8s;display:inline-block}[data-t8n^=slidedown].transition-out{-webkit-animation:slide-up .8s reverse;animation:slide-up .8s reverse;display:inline-block}[data-t8n^=flicker].transition-in{-webkit-animation:flicker .8s;animation:flicker .8s}[data-t8n^=flicker].transition-out{-webkit-animation:flicker .8s reverse;animation:flicker .8s reverse}[data-t8n$=fast]{animation-duration:.4s;-webkit-animation-duration:.4s}[data-t8n$=slow]{animation-duration:1.6s;-webkit-animation-duration:1.6s}
 </style>
@@ -156,7 +155,16 @@ tw-icon {
 (set: $totalPoints to 5)
 
 
-</tw-passagedata><tw-passagedata pid="3" name="Class" tags="" position="761,321.5" size="100,100">&#39;&#39;ВЫБОР КЛАССА&#39;&#39;
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/vcb0hpyG0Lj6lhqC48R4Qyi2V8syheOvWiT4iBanvS3E6rVtaPvMgxRxAjJjIX_y-U37OFpvP87KR4iMxR7ClvrZgrPFIj9yqrcnhye7PwFWOhdAAcFiUHrb8cdX_BhxKX8HakFV--a8svH0K86S_Duys1M5L8pKgvUF9KXfEn8k9AaPhvTTsS4oyR4AozYTQxCnFiw90CpSwMt0mplKyH63eYP4_wyyEq0W3FKJW6Za5ISjjKMxdGHDIZvCPBsAcIPAiIJ0NQk9L4eWiBexLFZcoIEkrln8yg3gHuJlq_R6UBcJTJTdYNV1G6ZCmgrBDytoJek5d0XIcX0xGlfRwXwenfXzlULdL1grnSeANsH0xHJIg1XBcxqJooS07-I46IBDeDu2q42na0EX3__CAH0sgtjqyntqjCSG4q09VsfBP-tKoEge3r95Dhn97rGsIB3O2GOrPtHOs-M-xjE9LwJCI3o5F8lTeUBiAT5rQ5vSgrp0Mr_f2_NkkdQqPcXXg0ibXqGHUGiy3Q1SSxcKC7nuSQrOc3JkRX_J1_SwJVG4QhONQEhcpfEzyo0S6IxV2HQPsEbYqBb5J8vrG2x5jamNa0K1akCse9-6orNXrw-FEzNT7vJieLVftvPC9imkx_XOV7lyd1uIR9Y0AjvXrNasgpU3XiVh_omv9VYHuSB83M0CjBxb3daQzfS_8Ow=w1385-h669&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="3" name="Class" tags="" position="761,321.5" size="100,100">&#39;&#39;ВЫБОР КЛАССА&#39;&#39;
 
 &#39;&#39;Раcтягивающий задний&#39;&#39;
 Угроза себе и окружающим. Лучше не оставлять одного на периметре. В защите будет рычать и кусаться, заставляя судей отворачиваться от смущения.  
@@ -170,7 +178,18 @@ tw-icon {
 Кем себя видишь на баскетбольной площадке?
 (dropdown: bind $class, &quot;Растягивающий&quot;, &quot;Болтхендер&quot;, &quot;Тяжкий&quot;)
 
-[[Подтвердить выбор -&gt;Enter]]</tw-passagedata><tw-passagedata pid="4" name="Enter" tags="" position="573,459.5" size="100,100">Ежегодная встреча знати Артемии в Радужном замке - и твоя первая в качестве барона Восточной границы. Отец, по которому справлялась тризна все лето, ушел в мир иной, став одним из волосков Великой Бороды.  
+[[Подтвердить выбор -&gt;Enter]]
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/vcb0hpyG0Lj6lhqC48R4Qyi2V8syheOvWiT4iBanvS3E6rVtaPvMgxRxAjJjIX_y-U37OFpvP87KR4iMxR7ClvrZgrPFIj9yqrcnhye7PwFWOhdAAcFiUHrb8cdX_BhxKX8HakFV--a8svH0K86S_Duys1M5L8pKgvUF9KXfEn8k9AaPhvTTsS4oyR4AozYTQxCnFiw90CpSwMt0mplKyH63eYP4_wyyEq0W3FKJW6Za5ISjjKMxdGHDIZvCPBsAcIPAiIJ0NQk9L4eWiBexLFZcoIEkrln8yg3gHuJlq_R6UBcJTJTdYNV1G6ZCmgrBDytoJek5d0XIcX0xGlfRwXwenfXzlULdL1grnSeANsH0xHJIg1XBcxqJooS07-I46IBDeDu2q42na0EX3__CAH0sgtjqyntqjCSG4q09VsfBP-tKoEge3r95Dhn97rGsIB3O2GOrPtHOs-M-xjE9LwJCI3o5F8lTeUBiAT5rQ5vSgrp0Mr_f2_NkkdQqPcXXg0ibXqGHUGiy3Q1SSxcKC7nuSQrOc3JkRX_J1_SwJVG4QhONQEhcpfEzyo0S6IxV2HQPsEbYqBb5J8vrG2x5jamNa0K1akCse9-6orNXrw-FEzNT7vJieLVftvPC9imkx_XOV7lyd1uIR9Y0AjvXrNasgpU3XiVh_omv9VYHuSB83M0CjBxb3daQzfS_8Ow=w1385-h669&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="4" name="Enter" tags="" position="573,459.5" size="100,100">Ежегодная встреча знати Артемии в Радужном замке - и твоя первая в качестве барона Восточной границы. Отец, по которому справлялась тризна все лето, ушел в мир иной, став одним из волосков Великой Бороды.  
 
 Теперь никто не подскажет советом в сложный момент. Впрочем, ты давненько его не слушал.
 
@@ -199,11 +218,21 @@ tw-icon {
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="5" name="Party" tags="" position="746,674.5" size="100,100">Вы успешно опоздали на скучную часть церемонии, и теперь можете сразу предаться греху обжорства, винопития и общения с другими знатными людьми, которых не видели целый год. Главное не попадаться на глаза королю, знаменитого своим скверным чувством юмора.
+ ]
+ 
+  &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/9YZj0ogGMV-uOoBT_sCMGMp751LB2Yfd8KVTiDCY2k6OtNKit_YTNZwJIpm3scw8jNUZNqgg-cyIbB-ZhEyn0N9USLCQOJVT9AnG2xY7rNukpfBgcBIH0-IUboqQJCdBaSzwsU7sSZRrDW7p7Bk0ikTaomrG28PqgUjfNeu0xCzvZqpZl92TdshSgV8w8iobRBJlYovdeVClq64yMJI6wepOnBDafX5_1qzw1wgGDQo3V6blKOtO9NLd-duN6k36_FBJ7FFGY4N0hzxYGxNeVMZ9ZgOo2305KbMRWJv0LgikN37de48OaiKmOWF_gYz4z_yq0MUwvPZ3mKuO5fCiN-e4E7CqMz9PNFxjr3Uq4qIYCz2boMNii-b2bm5eamn4Q0pVBU8gf5Q3jjH2RErtBu_gLa1EAnj_o--0PO5Z7EUBa0lLzzTlQ3vKfa2a1BkWRTsDQza5rqI0GUwVCsh6Vj3gYOHiD4RjeQS-H-3Tbz4JQYr6qe4oEd-3nFI4-m5X5ucChwR5nbCdu3AbaB7BoPWXBDjP8hnzjkOOYmJa6AtDg0kVAXmrLoe9moyQ56lpQixd6acEagoxworaE4wVJAQgQ6c2__00s5HGtzLcrocApm2XdLe_vHuq9WBYnC2hM46yVFg3QzY7P9w8pjECPgXLftGf6GyV1tnqja2_B2q9uZDbmHvmj5Ht6ZvKmNc=w1440-h718-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="5" name="Party" tags="" position="768,456.5" size="100,100">Вы успешно опоздали на скучную часть церемонии, и теперь можете сразу предаться греху обжорства, винопития и общения с другими знатными людьми, которых не видели целый год. Главное не попадаться на глаза королю, знаменитого своим скверным чувством юмора.
 
 [[Отведать еды|Food]]
 [[Поговорить с гостями|Guests]]
-(if: visits &gt;=3)[
+(if: visits &gt;=4)[
 В зале начался какой-то переполох. Внешне все еще оставалось спокойно, но ты почуствовал сгущающуюся токсичность. Опытный нос быстро определил откуда дует зловонием - группа людей в хорошо знакомых тебе цветах собиралась возле трона.
 [[Приблизиться к эпицентру -&gt;Doubt]]]
 
@@ -218,7 +247,17 @@ tw-icon {
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="6" name="Food" tags="" position="574,579.5" size="100,100">(if: $food is true)[
+ ]
+ 
+  &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/9YZj0ogGMV-uOoBT_sCMGMp751LB2Yfd8KVTiDCY2k6OtNKit_YTNZwJIpm3scw8jNUZNqgg-cyIbB-ZhEyn0N9USLCQOJVT9AnG2xY7rNukpfBgcBIH0-IUboqQJCdBaSzwsU7sSZRrDW7p7Bk0ikTaomrG28PqgUjfNeu0xCzvZqpZl92TdshSgV8w8iobRBJlYovdeVClq64yMJI6wepOnBDafX5_1qzw1wgGDQo3V6blKOtO9NLd-duN6k36_FBJ7FFGY4N0hzxYGxNeVMZ9ZgOo2305KbMRWJv0LgikN37de48OaiKmOWF_gYz4z_yq0MUwvPZ3mKuO5fCiN-e4E7CqMz9PNFxjr3Uq4qIYCz2boMNii-b2bm5eamn4Q0pVBU8gf5Q3jjH2RErtBu_gLa1EAnj_o--0PO5Z7EUBa0lLzzTlQ3vKfa2a1BkWRTsDQza5rqI0GUwVCsh6Vj3gYOHiD4RjeQS-H-3Tbz4JQYr6qe4oEd-3nFI4-m5X5ucChwR5nbCdu3AbaB7BoPWXBDjP8hnzjkOOYmJa6AtDg0kVAXmrLoe9moyQ56lpQixd6acEagoxworaE4wVJAQgQ6c2__00s5HGtzLcrocApm2XdLe_vHuq9WBYnC2hM46yVFg3QzY7P9w8pjECPgXLftGf6GyV1tnqja2_B2q9uZDbmHvmj5Ht6ZvKmNc=w1440-h718-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="6" name="Food" tags="" position="574,579.5" size="100,100">(if: $food is true)[
 Вы вспоминаете, что уже поели. Секундная слабость сменяется урчащим звуком обожравшегося желудка.
 [[Вернуться в зал -&gt;Party]] ]
 (else:)[
@@ -246,7 +285,16 @@ tw-icon {
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="7" name="Guests" tags="" position="401,601.5" size="100,100">Гостей очень много. Вечер короля подразумевает, что все конфликтующие стороны, которые за пределами стен перегрызли бы друг другу глотки, вынуждены терпеть присутствие друг друга и криво улыбаться. Ведь прежде чем расправиться с противником на званном ужине, нужно заслужить санкции Панча.
+ ]
+  &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/9YZj0ogGMV-uOoBT_sCMGMp751LB2Yfd8KVTiDCY2k6OtNKit_YTNZwJIpm3scw8jNUZNqgg-cyIbB-ZhEyn0N9USLCQOJVT9AnG2xY7rNukpfBgcBIH0-IUboqQJCdBaSzwsU7sSZRrDW7p7Bk0ikTaomrG28PqgUjfNeu0xCzvZqpZl92TdshSgV8w8iobRBJlYovdeVClq64yMJI6wepOnBDafX5_1qzw1wgGDQo3V6blKOtO9NLd-duN6k36_FBJ7FFGY4N0hzxYGxNeVMZ9ZgOo2305KbMRWJv0LgikN37de48OaiKmOWF_gYz4z_yq0MUwvPZ3mKuO5fCiN-e4E7CqMz9PNFxjr3Uq4qIYCz2boMNii-b2bm5eamn4Q0pVBU8gf5Q3jjH2RErtBu_gLa1EAnj_o--0PO5Z7EUBa0lLzzTlQ3vKfa2a1BkWRTsDQza5rqI0GUwVCsh6Vj3gYOHiD4RjeQS-H-3Tbz4JQYr6qe4oEd-3nFI4-m5X5ucChwR5nbCdu3AbaB7BoPWXBDjP8hnzjkOOYmJa6AtDg0kVAXmrLoe9moyQ56lpQixd6acEagoxworaE4wVJAQgQ6c2__00s5HGtzLcrocApm2XdLe_vHuq9WBYnC2hM46yVFg3QzY7P9w8pjECPgXLftGf6GyV1tnqja2_B2q9uZDbmHvmj5Ht6ZvKmNc=w1440-h718-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="7" name="Guests" tags="" position="401,601.5" size="100,100">Гостей очень много. Вечер короля подразумевает, что все конфликтующие стороны, которые за пределами стен перегрызли бы друг другу глотки, вынуждены терпеть присутствие друг друга и криво улыбаться. Ведь прежде чем расправиться с противником на званном ужине, нужно заслужить санкции Панча.
 
 К счастью, ваши враги совсем в другом королевстве. Ни лич Булат, ни личинка Сошников не приглашены на вечеринку Артема.
 
@@ -270,7 +318,17 @@ tw-icon {
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="8" name="LilP" tags="" position="441,481.5" size="100,100">Этот парень в латаной мантии, обитой кружевами, немного напрягает, хоть Лил не выглядит опасным. Ваш отец всегда говорил вам защищать слабых. Возможно, именно Пипа он и имел в виду все эти годы.
+ ]
+ 
+  &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/9YZj0ogGMV-uOoBT_sCMGMp751LB2Yfd8KVTiDCY2k6OtNKit_YTNZwJIpm3scw8jNUZNqgg-cyIbB-ZhEyn0N9USLCQOJVT9AnG2xY7rNukpfBgcBIH0-IUboqQJCdBaSzwsU7sSZRrDW7p7Bk0ikTaomrG28PqgUjfNeu0xCzvZqpZl92TdshSgV8w8iobRBJlYovdeVClq64yMJI6wepOnBDafX5_1qzw1wgGDQo3V6blKOtO9NLd-duN6k36_FBJ7FFGY4N0hzxYGxNeVMZ9ZgOo2305KbMRWJv0LgikN37de48OaiKmOWF_gYz4z_yq0MUwvPZ3mKuO5fCiN-e4E7CqMz9PNFxjr3Uq4qIYCz2boMNii-b2bm5eamn4Q0pVBU8gf5Q3jjH2RErtBu_gLa1EAnj_o--0PO5Z7EUBa0lLzzTlQ3vKfa2a1BkWRTsDQza5rqI0GUwVCsh6Vj3gYOHiD4RjeQS-H-3Tbz4JQYr6qe4oEd-3nFI4-m5X5ucChwR5nbCdu3AbaB7BoPWXBDjP8hnzjkOOYmJa6AtDg0kVAXmrLoe9moyQ56lpQixd6acEagoxworaE4wVJAQgQ6c2__00s5HGtzLcrocApm2XdLe_vHuq9WBYnC2hM46yVFg3QzY7P9w8pjECPgXLftGf6GyV1tnqja2_B2q9uZDbmHvmj5Ht6ZvKmNc=w1440-h718-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="8" name="LilP" tags="" position="441,481.5" size="100,100">Этот парень в латаной мантии, обитой кружевами, немного напрягает, хоть Лил не выглядит опасным. Ваш отец всегда говорил вам защищать слабых. Возможно, именно Пипа он и имел в виду все эти годы.
 - Господин, Вы простите дерзость простого парня, который хочет обратиться к вам с вопросом?
 Вы киваете и мажордом смущенно спрашивает:
 - Вы ни у кого не видели джерси великого героя Деррика Роуза? Король обещал мне ее давным давно, вместо с даром освобождения, а теперь говорит, что отдал ее другому. Но я встречаю множества людей под сводами сего дворца и никто не показал намека на владение этой реликвии. Я сбился с ног, господин!
@@ -281,6 +339,8 @@ tw-icon {
 - Снаружи приятнее, чем внутри.
 
 [[Вернуться к столу -&gt;Food]] 
+
+(set: $pip to &quot;rose&quot;)
 
 (append: ?SideBar)[
 
@@ -293,7 +353,17 @@ tw-icon {
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="9" name="Timer" tags="" position="408,721.5" size="100,100">(if: visits &lt;= 1)[
+ ]
+ 
+  &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/9YZj0ogGMV-uOoBT_sCMGMp751LB2Yfd8KVTiDCY2k6OtNKit_YTNZwJIpm3scw8jNUZNqgg-cyIbB-ZhEyn0N9USLCQOJVT9AnG2xY7rNukpfBgcBIH0-IUboqQJCdBaSzwsU7sSZRrDW7p7Bk0ikTaomrG28PqgUjfNeu0xCzvZqpZl92TdshSgV8w8iobRBJlYovdeVClq64yMJI6wepOnBDafX5_1qzw1wgGDQo3V6blKOtO9NLd-duN6k36_FBJ7FFGY4N0hzxYGxNeVMZ9ZgOo2305KbMRWJv0LgikN37de48OaiKmOWF_gYz4z_yq0MUwvPZ3mKuO5fCiN-e4E7CqMz9PNFxjr3Uq4qIYCz2boMNii-b2bm5eamn4Q0pVBU8gf5Q3jjH2RErtBu_gLa1EAnj_o--0PO5Z7EUBa0lLzzTlQ3vKfa2a1BkWRTsDQza5rqI0GUwVCsh6Vj3gYOHiD4RjeQS-H-3Tbz4JQYr6qe4oEd-3nFI4-m5X5ucChwR5nbCdu3AbaB7BoPWXBDjP8hnzjkOOYmJa6AtDg0kVAXmrLoe9moyQ56lpQixd6acEagoxworaE4wVJAQgQ6c2__00s5HGtzLcrocApm2XdLe_vHuq9WBYnC2hM46yVFg3QzY7P9w8pjECPgXLftGf6GyV1tnqja2_B2q9uZDbmHvmj5Ht6ZvKmNc=w1440-h718-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="9" name="Timer" tags="" position="408,721.5" size="100,100">(if: visits &lt;= 1)[
 Руслан  разводит руки в стороны и несколько усатых офицеров начинают громко хрюкать. Он замечает тебя, подмигивает и просит подождать:
 - Надо досказать историю.
 
@@ -326,7 +396,17 @@ tw-icon {
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="10" name="Gossip" tags="" position="409,832.5" size="100,100">(if: visits &lt;= 1)[
+ ]
+ 
+  &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/9YZj0ogGMV-uOoBT_sCMGMp751LB2Yfd8KVTiDCY2k6OtNKit_YTNZwJIpm3scw8jNUZNqgg-cyIbB-ZhEyn0N9USLCQOJVT9AnG2xY7rNukpfBgcBIH0-IUboqQJCdBaSzwsU7sSZRrDW7p7Bk0ikTaomrG28PqgUjfNeu0xCzvZqpZl92TdshSgV8w8iobRBJlYovdeVClq64yMJI6wepOnBDafX5_1qzw1wgGDQo3V6blKOtO9NLd-duN6k36_FBJ7FFGY4N0hzxYGxNeVMZ9ZgOo2305KbMRWJv0LgikN37de48OaiKmOWF_gYz4z_yq0MUwvPZ3mKuO5fCiN-e4E7CqMz9PNFxjr3Uq4qIYCz2boMNii-b2bm5eamn4Q0pVBU8gf5Q3jjH2RErtBu_gLa1EAnj_o--0PO5Z7EUBa0lLzzTlQ3vKfa2a1BkWRTsDQza5rqI0GUwVCsh6Vj3gYOHiD4RjeQS-H-3Tbz4JQYr6qe4oEd-3nFI4-m5X5ucChwR5nbCdu3AbaB7BoPWXBDjP8hnzjkOOYmJa6AtDg0kVAXmrLoe9moyQ56lpQixd6acEagoxworaE4wVJAQgQ6c2__00s5HGtzLcrocApm2XdLe_vHuq9WBYnC2hM46yVFg3QzY7P9w8pjECPgXLftGf6GyV1tnqja2_B2q9uZDbmHvmj5Ht6ZvKmNc=w1440-h718-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="10" name="Gossip" tags="" position="409,832.5" size="100,100">(if: visits &lt;= 1)[
 
 Кулерина - главная придворная фрейлина, которая очень любит болтать языком на острые темы. Если ее как следует разговорить, то можно узнать многие тайны королевства.
 Сейчас она как раз рассказывает очередную байку гостям.
@@ -356,7 +436,17 @@ tw-icon {
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="11" name="Versus" tags="" position="539,834.5" size="100,100">(if: visits &gt; 1)[
+ ]
+ 
+  &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/9YZj0ogGMV-uOoBT_sCMGMp751LB2Yfd8KVTiDCY2k6OtNKit_YTNZwJIpm3scw8jNUZNqgg-cyIbB-ZhEyn0N9USLCQOJVT9AnG2xY7rNukpfBgcBIH0-IUboqQJCdBaSzwsU7sSZRrDW7p7Bk0ikTaomrG28PqgUjfNeu0xCzvZqpZl92TdshSgV8w8iobRBJlYovdeVClq64yMJI6wepOnBDafX5_1qzw1wgGDQo3V6blKOtO9NLd-duN6k36_FBJ7FFGY4N0hzxYGxNeVMZ9ZgOo2305KbMRWJv0LgikN37de48OaiKmOWF_gYz4z_yq0MUwvPZ3mKuO5fCiN-e4E7CqMz9PNFxjr3Uq4qIYCz2boMNii-b2bm5eamn4Q0pVBU8gf5Q3jjH2RErtBu_gLa1EAnj_o--0PO5Z7EUBa0lLzzTlQ3vKfa2a1BkWRTsDQza5rqI0GUwVCsh6Vj3gYOHiD4RjeQS-H-3Tbz4JQYr6qe4oEd-3nFI4-m5X5ucChwR5nbCdu3AbaB7BoPWXBDjP8hnzjkOOYmJa6AtDg0kVAXmrLoe9moyQ56lpQixd6acEagoxworaE4wVJAQgQ6c2__00s5HGtzLcrocApm2XdLe_vHuq9WBYnC2hM46yVFg3QzY7P9w8pjECPgXLftGf6GyV1tnqja2_B2q9uZDbmHvmj5Ht6ZvKmNc=w1440-h718-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="11" name="Versus" tags="" position="539,834.5" size="100,100">(if: visits &gt; 1)[
 Гости бранятся и никого не слушают. Разумному человеку тут больше нечего ловить.
 [[Вернуться в зал -&gt;Party]]
 ]
@@ -368,7 +458,7 @@ tw-icon {
 
 Зашипела извлекаемая сталь. Обстановочка накалилась.
 
-[[Поддержать казахов-&gt;versus kaz]] 
+[[Поддержать ордынцев-&gt;versus kaz]] 
 [[Поддержать ебуржцев-&gt;versus eb]] 
 [[Вернуться в зал -&gt;Party]]
 ]
@@ -385,7 +475,17 @@ tw-icon {
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="12" name="Ruslan" tags="" position="281,673.5" size="100,100">&lt;style&gt;
+ ]
+ 
+  &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/9YZj0ogGMV-uOoBT_sCMGMp751LB2Yfd8KVTiDCY2k6OtNKit_YTNZwJIpm3scw8jNUZNqgg-cyIbB-ZhEyn0N9USLCQOJVT9AnG2xY7rNukpfBgcBIH0-IUboqQJCdBaSzwsU7sSZRrDW7p7Bk0ikTaomrG28PqgUjfNeu0xCzvZqpZl92TdshSgV8w8iobRBJlYovdeVClq64yMJI6wepOnBDafX5_1qzw1wgGDQo3V6blKOtO9NLd-duN6k36_FBJ7FFGY4N0hzxYGxNeVMZ9ZgOo2305KbMRWJv0LgikN37de48OaiKmOWF_gYz4z_yq0MUwvPZ3mKuO5fCiN-e4E7CqMz9PNFxjr3Uq4qIYCz2boMNii-b2bm5eamn4Q0pVBU8gf5Q3jjH2RErtBu_gLa1EAnj_o--0PO5Z7EUBa0lLzzTlQ3vKfa2a1BkWRTsDQza5rqI0GUwVCsh6Vj3gYOHiD4RjeQS-H-3Tbz4JQYr6qe4oEd-3nFI4-m5X5ucChwR5nbCdu3AbaB7BoPWXBDjP8hnzjkOOYmJa6AtDg0kVAXmrLoe9moyQ56lpQixd6acEagoxworaE4wVJAQgQ6c2__00s5HGtzLcrocApm2XdLe_vHuq9WBYnC2hM46yVFg3QzY7P9w8pjECPgXLftGf6GyV1tnqja2_B2q9uZDbmHvmj5Ht6ZvKmNc=w1440-h718-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="12" name="Ruslan" tags="" position="281,673.5" size="100,100">&lt;style&gt;
 tw-passage{text-align: center;
 }
 &lt;/style&gt;
@@ -437,7 +537,17 @@ tw-passage{text-align: center;
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="14" name=" Cool check" tags="" position="255,912.5" size="100,100">Ты уходишь, окруженный недовольным шумом роя лизоблюдов Кулерины.
+ ]
+ 
+  &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/Hs0uMHof7sqwRhWMuhYzkZFrz66kf4zi9zWsFgHAItU9p_SAKsgF9j0Uc0gN70WiHm20lQrx7y9HYhVWGanlC4A9xeHlHjTm75rW8y2gsmmd7BxCbJQXktEjCW_gvQUVNm5CNAMB-CzlpOMXXkOaRVG2_HqUkOiePMkktJ06hJBX7YyoULi4LD-jsZACjpSkkfIn1eiDROwtTkDgO1Sr-xOCkeUfUNTpjSPA98ZXiVsh5UJ2o7GGAlkhlBDXLMlq7Q9OTNYsrkRRje4VR0ofIliE8lcy46G3hbqHTz1UqgHZDw0x9hwvyxGSPxtYgxW8N-BfofbJRJHKrTE32fnNx5RQlm2URYaSX1J7pVEXZJYuScUIup0iESjC63X9RfZ5QiAqs2pl8Pm9CMXsSNstuzzDEJx6M2jV7Uf05Lp3ViVQNt2R_EFgWpH-BIkz8KBfkHNe4RvXkjxb-PRPqABaQhrGUlt1v6n1gLX1Euhy_5TCSYwzv_OgzEWpRrNKzKhjGWGOiocpRz3pIRJxqkdnVM2Ztg7HZF6BGYHkqUprM6v9y_sAqNTudiQSMbsD5GN8gNSl0HdihF0PgA0pBA_kRWtCOY0pHaRdsu4GzDnifNl9k9zFfEd2B-Oc-lHllvZdT3l0srb0mUqyh19C1NFZtcZKfLV8m__MjvQWZ4wdZG07ln6LO-ZXk6ap2dRQigU=w1440-h669-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="14" name=" Cool check" tags="" position="255,912.5" size="100,100">Ты уходишь, окруженный недовольным шумом роя лизоблюдов Кулерины.
 
 (if: $cool is &quot;interes&quot;)[
 [[Вернуться в зал -&gt;CoolGossip]]] 
@@ -456,7 +566,17 @@ tw-passage{text-align: center;
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="15" name="Doubt" tags="" position="1081,658.5" size="100,100">
+ ]
+ 
+  &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/Hs0uMHof7sqwRhWMuhYzkZFrz66kf4zi9zWsFgHAItU9p_SAKsgF9j0Uc0gN70WiHm20lQrx7y9HYhVWGanlC4A9xeHlHjTm75rW8y2gsmmd7BxCbJQXktEjCW_gvQUVNm5CNAMB-CzlpOMXXkOaRVG2_HqUkOiePMkktJ06hJBX7YyoULi4LD-jsZACjpSkkfIn1eiDROwtTkDgO1Sr-xOCkeUfUNTpjSPA98ZXiVsh5UJ2o7GGAlkhlBDXLMlq7Q9OTNYsrkRRje4VR0ofIliE8lcy46G3hbqHTz1UqgHZDw0x9hwvyxGSPxtYgxW8N-BfofbJRJHKrTE32fnNx5RQlm2URYaSX1J7pVEXZJYuScUIup0iESjC63X9RfZ5QiAqs2pl8Pm9CMXsSNstuzzDEJx6M2jV7Uf05Lp3ViVQNt2R_EFgWpH-BIkz8KBfkHNe4RvXkjxb-PRPqABaQhrGUlt1v6n1gLX1Euhy_5TCSYwzv_OgzEWpRrNKzKhjGWGOiocpRz3pIRJxqkdnVM2Ztg7HZF6BGYHkqUprM6v9y_sAqNTudiQSMbsD5GN8gNSl0HdihF0PgA0pBA_kRWtCOY0pHaRdsu4GzDnifNl9k9zFfEd2B-Oc-lHllvZdT3l0srb0mUqyh19C1NFZtcZKfLV8m__MjvQWZ4wdZG07ln6LO-ZXk6ap2dRQigU=w1440-h669-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="15" name="Doubt" tags="" position="1081,658.5" size="100,100">
 Увидев гербы вблизи, ты тут же пожалел о своем решении. Стокнулись люди, которых ты старался последнее время избегать - два твоих кузена. 
 
 Эти двое вот уже который год сживали друг друга со света. Каждый из них пытался привлечь тебя на свою сторону, а все попытки уладить конфликт лишь раздували огонь ревности и недовольства. 
@@ -464,8 +584,8 @@ tw-passage{text-align: center;
 И сейчас владыка Артемии впервые обратил на тебя внимание.
 - Эй ты! Не помню чертового имени, но отец твой был той еще занозой в королевской заднице. Подойди к нашему величию. 
 [[Покорно выполнить волю короля -&gt;Audience]]
-(if: $toxity &gt;=10)[
-	(link: &quot;(Токсичность 10)Надоели короли. Сча устрою коммунизм.&quot;)[
+(if: $toxity &gt;=8)[
+	(link: &quot;(Токсичность 8)Надоели короли. Сча устрою коммунизм.&quot;)[
 (goto: &quot;Vic&quot;)]]
 
 
@@ -501,7 +621,7 @@ tw-passage{text-align: center;
 
 [[Сказать королю решение -&gt;Choice]]
 [[Попросить разрешения переговорить со старшим кузеном -&gt; Swag]]
-[[Попросить разрешения переговорить с младшим кузеном -&gt;Oleg]]
+[[Попросить разрешения переговорить с младшим кузеном -&gt;Helg]]
 
 &lt;style&gt;
   tw-story {
@@ -538,21 +658,24 @@ tw-passage{text-align: center;
 
 Ты отказался играть по правилам старого мира, скинул с парохода современности сраную дээндеху и съебал в светлое будущее в чужом красном плаще, потому что при коммунизме все общее. И пусть тебя преследуют пособники режима, им никогда не победить идею, даже если тебя поймают, будут пытать и четвертуют. Пусть эта мысль и мечта о неотвратимой победе идей камрадства утешат тебя в твоих не таких уж долгих скитаниях вдалеке от дыбы.
 
-[[Конец игры -&gt;Results]]</tw-passagedata><tw-passagedata pid="18" name="versus kaz" tags="" position="582,976.5" size="100,100">Эти ебуржцы вам никогда не нравились своей тупой агрессией и жаждой войны. Они все никак не могли простить Орде гибель династии маркгерцога Прести.
-{(link: &quot;(Токсичность)Граф, давайте вы это, не будете хвост распускать. Не петушиный бой, курочки не смотрят. А то яйца, не ровён час, снесёте.&quot;)[(set: $versus to &quot;kt_1&quot;)(goto: &quot;Strong word&quot;)]}
+[[Конец игры -&gt;Results]]
+
+(set: $vic to true)</tw-passagedata><tw-passagedata pid="18" name="versus kaz" tags="" position="582,976.5" size="100,100">Эти ебуржцы вам никогда не нравились своей тупой агрессией и жаждой войны. Они все никак не могли простить Орде гибель династии маркгерцога Прести.
+
 
 {(if: $toxity is &gt;= 4 and &lt;=7 ) [
 (link: &quot;(Токсичность 4)Вы не на своей земле. Думаете, король обрадуется самоуправству феодалов? Не знаю, кто первый прольет кровь, но точно знаю, кто за это спросит. И я не могу пообещать, что он обойдется без фирменных шуточек.&quot;)[(set: $versus to &quot;kt_2&quot;)(goto: &quot;Strong word&quot;)]
-]}
-
-{(if: $toxity is &gt;= 8) [
+]
+(else-if: $toxity is &gt;= 8) [
 (link: &quot;(Токсичность 8) Я знал, что Прести славился умением отобрать людей, но не знал, что он коллекционировал самых тупиц. Худой мир лучше доброй ссоры, слышали? Переведу на ваш - лучше иметь бедное маркграфство, чем вернуться в сгоревший замок пограничных Орде земель.&quot;)[(set: $versus to &quot;kt_3&quot;)(goto: &quot;Strong word&quot;)]
-]}
-
-{(link: &quot;(Интеллект) Так, а кто хочет в шахматы? Я тут любому мат в три хода поставлю. Ну, есть отчаянные мудрецы?&quot;)[(set: $versus to &quot;ki_1&quot;)(goto: &quot;Strong word&quot;)]}
+]
+(else:)[
+(link: &quot;(Токсичность)Граф, давайте вы это, не будете хвост распускать. Не петушиный бой, курочки не смотрят. А то яйца, не ровён час, снесёте.&quot;)[(set: $versus to &quot;kt_1&quot;)(goto: &quot;Strong word&quot;)]]}
 
 {(if: $intel is &gt;= 5) [
-(link: &quot;(Интеллект 5) Граф, у нас с вами один сеньор. И хоть я в полной мере разделяю вашу озабоченность, будучи сам владельцем приграничных территорий, но честь нашего правителя важнее нашей с вами. По крайней мере, пока мы находимся в его замке и в окружении его стражников.&quot;)[(set: $versus to &quot;ki_2&quot;)(goto: &quot;Strong word&quot;)]]}
+(link: &quot;(Интеллект 5) Граф, у нас с вами один сеньор. И хоть я в полной мере разделяю вашу озабоченность, будучи сам владельцем приграничных территорий, но честь нашего правителя важнее нашей с вами. По крайней мере, пока мы находимся в его замке и в окружении его стражников.&quot;)[(set: $versus to &quot;ki_2&quot;)(goto: &quot;Strong word&quot;)]]
+(else:)[
+(link: &quot;(Интеллект) Так, а кто хочет в шахматы? Я тут любому мат в три хода поставлю. Ну, есть отчаянные мудрецы?&quot;)[(set: $versus to &quot;ki_1&quot;)(goto: &quot;Strong word&quot;)]]}
 
 {[[Это не моя война -&gt;Party]] }
 
@@ -567,22 +690,30 @@ tw-passage{text-align: center;
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="19" name="versus eb" tags="" position="723,976.5" size="100,100">Эти ордынцы вам никогда не нравились. На самом деле вы знаете, что текущее перемирие не долговечно, а за спиной каждого Дидара притаился Жумажан. Потом на крепостных стенах вам все равно стоять с угрюмыми ебуржцами.
-
-{(link: &quot;(Токсичность)Хан, давайте вы это, не будете хвост распускать. Не петушиный бой, курочки не смотрят. А то яйца, не ровён час, снесёте.&quot;)[(set: $versus to &quot;et_1&quot;)(goto: &quot;Strong word&quot;)]}
+ ]
+ 
+  &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/9YZj0ogGMV-uOoBT_sCMGMp751LB2Yfd8KVTiDCY2k6OtNKit_YTNZwJIpm3scw8jNUZNqgg-cyIbB-ZhEyn0N9USLCQOJVT9AnG2xY7rNukpfBgcBIH0-IUboqQJCdBaSzwsU7sSZRrDW7p7Bk0ikTaomrG28PqgUjfNeu0xCzvZqpZl92TdshSgV8w8iobRBJlYovdeVClq64yMJI6wepOnBDafX5_1qzw1wgGDQo3V6blKOtO9NLd-duN6k36_FBJ7FFGY4N0hzxYGxNeVMZ9ZgOo2305KbMRWJv0LgikN37de48OaiKmOWF_gYz4z_yq0MUwvPZ3mKuO5fCiN-e4E7CqMz9PNFxjr3Uq4qIYCz2boMNii-b2bm5eamn4Q0pVBU8gf5Q3jjH2RErtBu_gLa1EAnj_o--0PO5Z7EUBa0lLzzTlQ3vKfa2a1BkWRTsDQza5rqI0GUwVCsh6Vj3gYOHiD4RjeQS-H-3Tbz4JQYr6qe4oEd-3nFI4-m5X5ucChwR5nbCdu3AbaB7BoPWXBDjP8hnzjkOOYmJa6AtDg0kVAXmrLoe9moyQ56lpQixd6acEagoxworaE4wVJAQgQ6c2__00s5HGtzLcrocApm2XdLe_vHuq9WBYnC2hM46yVFg3QzY7P9w8pjECPgXLftGf6GyV1tnqja2_B2q9uZDbmHvmj5Ht6ZvKmNc=w1440-h718-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="19" name="versus eb" tags="" position="723,976.5" size="100,100">Эти ордынцы вам никогда не нравились. На самом деле вы знаете, что текущее перемирие не долговечно, а за спиной каждого Дидара притаился Жумажан. Потом на крепостных стенах вам все равно стоять с угрюмыми ебуржцами.
 
 {(if: $toxity is &gt;= 4 and &lt;=7 ) [
 (link: &quot;(Токсичность 4)Вы не на своей земле. Думаете, король обрадуется таким поступкам из-за наличия чертовой бумажки? Не знаю, кто первый прольет кровь, но точно знаю, кто за это спросит. И я не могу гарантировать, что он вообще умеет читать.&quot;)[(set: $versus to &quot;et_2&quot;)(goto: &quot;Strong word&quot;)]
-]}
+]
 
-{(if: $toxity is &gt;= 8) [
+(else-if: $toxity is &gt;= 8) [
 (link: &quot;(Токсичность 8) Кстати, давно слышал такую фразу, все ни у кого перевод не мог узнать. Не подскажите? //На чистейшем ордынском узнать кто заботится о маме посла, пока он увел ее любимого скакуна в поход.//&quot;)[(set: $versus to &quot;et_3&quot;)(goto: &quot;Strong word&quot;)]
-]}
-
-{(link: &quot;(Интеллект) Так, а кто хочет в шахматы? Я тут любому мат в три хода поставлю. Ну, есть отчаянные мудрецы?&quot;)[(set: $versus to &quot;ei_1&quot;)(goto: &quot;Strong word&quot;)]}
+]
+(else:)[(link: &quot;(Токсичность)Хан, давайте вы это, не будете хвост распускать. Не петушиный бой, курочки не смотрят. А то яйца, не ровён час, снесёте.&quot;)[(set: $versus to &quot;et_1&quot;)(goto: &quot;Strong word&quot;)]]}
 
 {(if: $intel is &gt;= 5)[
-(link: &quot;(Интеллект 5) Благородный хан. Мне довелось внимательно читать договор. Вам дозволен путь на землях короля, но в Артемии надел феодала - его собственная земля. Уверен, что учитывая обстоятельства, маркграф вполне может согласиться на разовую выплату. Перед ответом задумайтесь - ведь возвращаться к себе вам придется опять через его земли.&quot;) [(set: $versus to &quot;ei_2&quot;)(goto: &quot;Strong word&quot;)]]}
+(link: &quot;(Интеллект 5) Благородный хан. Мне довелось внимательно читать договор. Вам дозволен путь на землях короля, но в Артемии надел феодала - его собственная земля. Уверен, что учитывая обстоятельства, маркграф вполне может согласиться на разовую выплату. Перед ответом задумайтесь - ведь возвращаться к себе вам придется опять через его земли.&quot;) [(set: $versus to &quot;ei_2&quot;)(goto: &quot;Strong word&quot;)]]
+(else:)[(link: &quot;(Интеллект) Так, а кто хочет в шахматы? Я тут любому мат в три хода поставлю. Ну, есть отчаянные мудрецы?&quot;)[(set: $versus to &quot;ei_1&quot;)(goto: &quot;Strong word&quot;)]]}
 
 {[[Это не моя война -&gt;Party]] }
 
@@ -598,7 +729,17 @@ tw-passage{text-align: center;
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="20" name="Choice" tags="" position="974,970.5" size="100,100">Вы делаете последнюю попытку разрешить ситуацию:
+ ]
+ 
+  &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/9YZj0ogGMV-uOoBT_sCMGMp751LB2Yfd8KVTiDCY2k6OtNKit_YTNZwJIpm3scw8jNUZNqgg-cyIbB-ZhEyn0N9USLCQOJVT9AnG2xY7rNukpfBgcBIH0-IUboqQJCdBaSzwsU7sSZRrDW7p7Bk0ikTaomrG28PqgUjfNeu0xCzvZqpZl92TdshSgV8w8iobRBJlYovdeVClq64yMJI6wepOnBDafX5_1qzw1wgGDQo3V6blKOtO9NLd-duN6k36_FBJ7FFGY4N0hzxYGxNeVMZ9ZgOo2305KbMRWJv0LgikN37de48OaiKmOWF_gYz4z_yq0MUwvPZ3mKuO5fCiN-e4E7CqMz9PNFxjr3Uq4qIYCz2boMNii-b2bm5eamn4Q0pVBU8gf5Q3jjH2RErtBu_gLa1EAnj_o--0PO5Z7EUBa0lLzzTlQ3vKfa2a1BkWRTsDQza5rqI0GUwVCsh6Vj3gYOHiD4RjeQS-H-3Tbz4JQYr6qe4oEd-3nFI4-m5X5ucChwR5nbCdu3AbaB7BoPWXBDjP8hnzjkOOYmJa6AtDg0kVAXmrLoe9moyQ56lpQixd6acEagoxworaE4wVJAQgQ6c2__00s5HGtzLcrocApm2XdLe_vHuq9WBYnC2hM46yVFg3QzY7P9w8pjECPgXLftGf6GyV1tnqja2_B2q9uZDbmHvmj5Ht6ZvKmNc=w1440-h718-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="20" name="Choice" tags="" position="974,970.5" size="100,100">Вы делаете последнюю попытку разрешить ситуацию:
 - Ваше Высочайшнее Величество! Честь и преданность семейным узам не позволяют мне предпочесть одного родственника другому. Обоим я готов оказать помощь, а больше всего бы хотел просить вас примирить их... 
 
 Король перестает сдерживать свой смех. Вам приходится потерпеть несколько минут, прежде чем Панч успокоится и прокашляется. Наконец он в состоянии говорить:
@@ -607,6 +748,8 @@ tw-passage{text-align: center;
 Мотивационная речевка короля сподвигает ваши извилины на некоторую работу.
 
 [[- Ваше Величество! Если вы так ставите вопрос, то конечно, пусть поединок будет. По древним законам нашей страны, на поле, с мячом в руках.-&gt;Decision]]
+
+[[- Хаха, да я пошутил, Ваша Самость! Понятное дело, что надо наказать по полной...-&gt;Penetration]]
 
 {(if: $toxity &gt;=10)[
 	(link: &quot;(Токсичность 10)Да я ни с одним из них в поле срать не сяду &quot;)[(goto: &quot;Lucky&quot;)]]}
@@ -638,9 +781,9 @@ tw-passage{text-align: center;
 Интеллект: $intel
 Токсичность: $toxity
  ]</tw-passagedata><tw-passagedata pid="21" name=" Swag" tags="" position="1151,901.5" size="100,100">Ваш кузен Свег мрачно кивает головой. Ты распрашиваешь, что послужило причиной перебранки в этот раз.
-- Ничего особенного. Олег не нравится мне, и это взаимно. Единственный аргумент на моей чаше весов - только один из нас пытается не попадаться на глаза другому. Если бы Олег демонстративно не начал оскорблять моих вассалов на общем собрании, может быть я бы удержал себя в руках.
+- Ничего особенного. Хельг не нравится мне, и это взаимно. Единственный аргумент на моей чаше весов - только один из нас пытается не попадаться на глаза другому. Если бы Хельг демонстративно не начал оскорблять моих вассалов на общем собрании, может быть я бы удержал себя в руках.
 - Возможно ли примерение?
-- Да сколько можно. Эти ежегодные клятвы наши перед свидетелями о успокоении унижают Великую Бороду больше, чем пятый брак Олега. Я намерен покончить с ним окончательно. Может хотя бы одну женщину от случайной летальной болезни успею спасти.
+- Да сколько можно. Эти ежегодные клятвы наши перед свидетелями о успокоении унижают Великую Бороду больше, чем пятый брак Хельга. Я намерен покончить с ним окончательно. Может хотя бы одну женщину от случайной летальной болезни успею спасти.
 
 Свег с рождения был непреклонен к вещам, которые считал несправедливым. Проблема в том, что в этом списке было примерно все, что его окружало.
 
@@ -648,7 +791,7 @@ tw-passage{text-align: center;
 
 &lt;style&gt;
   tw-story {
-    background-image: url(&quot;https://lh3.googleusercontent.com/DKVGiOTK_21ba61kFQyp3jm26sMu08Myg77ioMegTJBXlfimjkntTqHffJjKFiWfP7t638YU7gjmHVvsTrJrqkYVi1oncDq8Jhqel6D4RKnO1XhEpo2NdTr1GcU4ckS6Ieg7ps1xnXvdThUptzEwnq17QfYMVdnFcLM0tjtsBVgnmGpv374A5jnGKKKxo1yDKiDHeMNpbNsM4LOSyq0zT3ADRI7gFU94m1faQAvURYVQxS37vT9zv8oCR96hqF2n2ItOl56fr_gU48lVjUE0l4yIq0RjxU6kTiSsq1Wgb9b25cG0mCWbdZFInDaq2sdwgsHJwaRg7ydxKj9wCe5pZlRwP-TyvUh4915v58JowORssA38nOjIsW7YJqtY2b0_tX-4YJrmU6DdNpf-VzDc7Mx7KMHSxfg4QJhpPJUZTQX6YOFGguSfbYTids4lN7jmyfCFbA1ZrH-fkJp5gldR-YXpuGN-fUn_643eENPuNXyZU6uU6jNoQD2YV4NcFJEGHVMmryIiKhuG9TKF0rxNtJoBMI0WqLR3_gRDFEiuP32IOU95klY7ETamiRxfxQF3H9cSTCmrBLxrIbLSAcZC8cPa07hXTTcTJJh2h91EkMcbDTUfp8ExK2HJCsTdt_gibLroarKookTuD1YzUyoKiX2vuWY17WdH50GKunNKFsWjAN4V--oWtlcEjYQ24tc=w1385-h620&quot;);
+    background-image: url(&quot;https://lh3.googleusercontent.com/ce3Ou6gXXoT9MlPUbpOdHKjUQcl-rbHmjckI9n2YbmPdnFkpP8g2S8F-TXwff9FztUijtkiiNLMwgMeaLsKoixWrHhc469bujcvLpwLYugZMbzy0atdrEstuQ5KSG0s6roZXdz6toYrsH5QytQ9aW62EE2NqYAXFytAKbSMsvZfCpX1_hwnBr5Wk2t8JdAVK9ThHsHcuqeQDrEl0TdhtZ2xIy7kySmqMwCY3eqVcy1AzkFgwG_4qmUvzmnhA1NxnrCGMGHJlCJnjLTsWNJgOaVYsuOmNjq6R9Erllv6lZY0NM4oy2clrHJN4SyATO5S3Ueqcb2sUk9Ya0hPJKrRewQcTUIAScaxdOyxQr6vQX-FULI9nK7_IphQiBezIbdbcU3fEtG5KhNI-B6oFdPD-gL_Vww4dMP-Jb5lHYgzhFWkea-Rlxf77KFyUyWRhX6x9J8nwVgELcDIsHzVeEinRZ9QxFzEc_zQAZj9A987s9e06kblH6_3UGp1Fwre6Gb7TQbtIY_l3cIzNQ22rvV9csZWdpadSa7dgi0szFmmWPvOALfUWJFrrylNFpSmNYyV8reQToI7U2I9oaNfdL_iktrytIhpF8fR8YXDzsxrtOtuxVb1dx7_SJNsa8sQ7Y1ZmgyYVjJ76Fwf2H1X3MaMywEIuU6KE4CvLomZ_GzllkSF2j8KkvcMnDJY-V8W30nc=w1440-h718-ft&quot;);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -672,18 +815,18 @@ tw-passage{text-align: center;
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="22" name="Oleg" tags="" position="1151,783.5" size="100,100">Ваш кузен Олег сердечно обнимает тебя. Ты узнаешь его версию событий.
+ ]</tw-passagedata><tw-passagedata pid="22" name="Helg" tags="" position="1151,783.5" size="100,100">Ваш кузен Хельг сердечно обнимает тебя. Ты узнаешь его версию событий.
 - Свег пересек последнюю линию. Как всегда у него кишка тонка сделать все самостоятельно. Виконт Арчаков, его известный прихлебатель, посмел выпороть моих охотников, заблудившихся в нашем же лесу. Если б я дал спуск щенку, то чтобы говорили обо мне другие дворяне? Да даже к черту их всех, но мои собственные люди больше не могли бы полагаться на такого сюзерена. Токсичному хуиле в кружевах только этого и надо.
 - Примерение возможно?
 - Когда в протяную руку в ответ суют первичные половые признаки, в первый раз я извинюсь, что неправильно понял собеседника. А во второй - вырву к чертовой бабушке все причиндалы. Свег активно домогается меня в пятидесятый раз. Мы закончим это здесь и немедленно.
 
-Олег был прирожденным лидером, но приняв какое-то решение, становился непреклонен, без оглядки на последствия. Эта его черта не раз обостряла любой пустяк до масштабов бойни.
+Хельг был прирожденным лидером, но приняв какое-то решение, становился непреклонен, без оглядки на последствия. Эта его черта не раз обостряла любой пустяк до масштабов бойни.
 
 [[Вернуться к королю-&gt;Audience]] 
 
 &lt;style&gt;
   tw-story {
-    background-image: url(&quot;https://lh3.googleusercontent.com/z0D2WbO79np28aSiBjP60PpL9gjzKzadKPuS9lmBaIl5lXhYENT7_yorLtsNtlcZCvFGPvkO0zwL5IMcbXMHWtnoQ4qxuMZnYALtonYnq9RSsEDBCGgrrXRVtCyvFUMg4PHdt7GygPiqQ7gHTs_Dq99EcWq_GOm2h37BDQ8Cy61YKf8_qkCQbkgyzcsKhEKhHEe-DecZTxEZ3L4cpt5gyn78xpxh76zGNOnHqa_AtdMsQsjV8MQ8SqWZUCouoPxLtoczkor6MLn1OMb3HVyhRVjaYyMhD5WdGpJi65cJZEnyWwgQzbBK_qePWbfFR2Hrz-dgHyvVKWW-Lk65ozLzOOH4pLyRORKfv6G5eEfbnypjj12t_y9f-wSwB9oQL85cnMRV9rt5levMFVr0OdZeiVia4PYE_zJ_lbVH9y3DWNYuHvU3_1IqDwtMnLDG-QN7a8-PEC8B-CyoQkGfp4uoWSDXhEAFjP--3VZ781hqhwqUtBgh9_SGpgVl6T7NliWfmnkSHhmet-wIUqLrmm-nw1HWiv7Vl0MhAVKY9ip1y-FNgayLJb_P1X5kZONDvildex0356OMXxioqP4tDMjXU05yfaq5FAHJyy2etDXle9D8ZTYgYun6sKqhrIu7BsK1NsKD4geqJIhdyK-qeJyzlJxtwNoqkXy0VJitUx2pcNJ5rDuZjhA-Lx9kWlLpfhU=w1385-h620&quot;);
+    background-image: url(&quot;https://lh3.googleusercontent.com/Zw62EUz1blcMXXiTP7hJhvCvBgiFFRFJe7H5LTY3tpjCS97JVJ_HOhf95Q6spWni2gr5znfII3FB42zGDzCeeCjoYFlEu22AMuF4_HSIXxh-UMmuOpfuJwvOyvLwFkhhbwxQPX7BpQmTaiwF2acoNut8vQZn4cQGVWohI5xDDl7dKqNJpdmQ3tR5YPQpk82xdzRzKOueLQA8TogmAVibV969mkZ0aP5Z4wGRT-mWt9iEhBNR1xYdwgXzTnmQ2vRqbVIKEO5sucrSN7-0-jcBccOopDzDEy5pWw-TmeYk0s3rWnm1_Oq6X_VFhorZHjLWotDJz6yCzIYwLMCm-Byowjr5uU3sD_rxxTYz_nfXqUIy6yGHxVciwfGl6WhEr06R6KR_JhCZJUQJ6uSJ9gQSmdU8TzkN57MBOsl4-A4iRvmyiM3G0ah1-Domm1isyprP1VGwenyv1AQb0vNFlyyjJHpXVqGYUaRCzIq5B5lh6HFTx8vtA0FblT_zqDQHyef9YhtXOwysaybWMsI90ShrcuLO9v6Ekqj9Ggup0Q2timeDD7kWzv-rpcIGYUf4UB5mLvaDwcGlwaSMuc4mSPhtGRksNA9sa6k4z3qVAqlqjYqUpqRRNRU29EUg_umHmH5j3KwKNXjYdVWKv6a6Sn64KmZ2c8xaX7W5wXfP3BIygO1O-kk6XEJX2ECgSHjjzGc=w1440-h718-ft&quot;);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -729,7 +872,9 @@ tw-passage{text-align: center;
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="24" name=" Preparation" tags="" position="1013,1196.5" size="100,100">- Итак, ты выбрал эту токсичную скотину $sideа! Да будет так. Вы все наскучили королю. Проваливайте с глах моих долой.
+ ]
+ 
+ (set: $ded to true)</tw-passagedata><tw-passagedata pid="24" name=" Preparation" tags="" position="1013,1196.5" size="100,100">- Итак, ты выбрал эту токсичную скотину $sideа! Да будет так. Вы все наскучили королю. Проваливайте с глах моих долой.
 
 Вы спешите выполнить это приказание, как в спину следует новая порция королевской милости:
 - Погранец! Найди время заглянуть ко мне перед сном.
@@ -739,10 +884,10 @@ $side ждет тебя на выходе и горячо благодарит �
 
 [[Набрать команду |Set roster]] 
 
-(if: $side is &quot;Олег&quot;)[
+(if: $side is &quot;Хельг&quot;)[
 (set: $enemy to &quot;Свег&quot;)]
 (else:)[
-(set: $enemy to &quot;Олег&quot;)]
+(set: $enemy to &quot;Хельг&quot;)]
 
 
 (append: ?SideBar)[
@@ -756,10 +901,25 @@ $side ждет тебя на выходе и горячо благодарит �
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="25" name="Set roster" tags="" position="1142,1198.5" size="100,100">Гости вокруг оживленно обсуждают детали поединка. Это славный и любимый в стране обычай, который приносит победителям почет и имущество проигравших (после уплаты налогов в казну). Успешные в обращении с мячом наемники подходят со всем сторон. 
+ ]
+ 
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/E6ILZoT_qeHcYlUc5SlcNsgsb2m4ypj84GPUiH3iPaB0J1o-xk4p2SowCVzPkx9Ln-4VBkAToWY2U1GK_rBw92uOY15EbX7cgHPgEJYcAgluXhS8liPkff8GBOYP4F-NayUwKo9SguKI1aGKjFoMtGNmQWXs1v7YUcz3nn_t60fvLlxyFdJP5ERFT5LoaiXuBDXGtM7stukq5BwxJdVJXE-kFL9sleYuh4wFrKaFGnGVQ9NYjMk7fHYORzRB-_pKay_TaufdQYHmRArZkl_WTYE691JDjTUkvu5QLxIdoM3mH-YzeYgH25iNT8hwh7ws5meWhXNyU9mTOl9ni5XlHna4aXC2em1EBVwk1nF9kLY1_7Lqmg-5B4JPnFkw9PYyHj9iRN6-5r6LntjXOLGT79MwGR9Czvz1ABT-_09rBEE7c5AorlKmADLl7GoLJVcUDyUTKyQHp9he9z3amyqXBBHs6BlZyfjuT_v32u4VEp9bMQGRTaU9IE0xQPXJRJkZBVEWfYCjlz8DG5YVoqYG-gmsl19j9z9zhkkVwPFAgLzlQ0WMgINU4DpV5Te7gev61JxYVJy0jONS_duTWauvCLrJVAQhMzvvl17-MaZ4orhfZpO4Moi7j0f2805K397aHibr4PdfW6ggKRz2lrpM3M09hlxlV5JnkqU1g5qDachkx6-nXw447VxuHjcRAtk=w1385-h620&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="25" name="Set roster" tags="" position="1142,1198.5" size="100,100">Гости вокруг оживленно обсуждают детали поединка. Это славный и любимый в стране обычай, который приносит победителям почет и имущество проигравших (после уплаты налогов в казну). Успешные в обращении с мячом наемники подходят со всем сторон. 
 Итак, в вашей команде уже двое, ты и $side.
-(if: $side is &quot;Олег&quot;)[
-Олег известен как звездный тяжкий форвард. Он привык изматывать противника затяжными атаками, пока его свита потявкивает и отвлекает силы врага на себя.
+(if: $side is &quot;Хельг&quot;)[
+Хельг известен как звездный тяжкий форвард. Он привык изматывать противника затяжными атаками, пока его свита потявкивает и отвлекает силы врага на себя.
  +параметры повышены
  +добавлен перк
 ]
@@ -798,7 +958,22 @@ $side ждет тебя на выходе и горячо благодарит �
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="26" name="Roster1" tags="" position="1266,1202.5" size="100,100">Игроки
+ ]
+ 
+  &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/vfkyazCEdz0QncpinLiQpDh-GSIhzdXN3r-XFMgwNhaGljGvfW0ZhCD9xJuUGwtWI5R-EGyw_jaekfaiz8Q_awM3x8wjF2BawHNdbp33bAeqqDI6qdw7dzzf6e5MRNRSK4uDJB0f-T0LhLiPMMRLAUQZ21dzsW-2faxrxgOZhFoHcRzOwde33KU_V7q9wbUxdPchqh-Dc3VuGwgsi7N_ZRqTDPYC5cJAHV5OeOGIdMXvbRXhtxFqVw278eJy8Xr-iqu4aNQM4u35TD4nM8-ykW-72TQQIzv0a3a9oSFUS57gFi0F_mAm6P8hVrxumWlmnHJX0liYEC737Z-uDMjkdYXddIQ9UspaIM9Kq-th7hNgQ-LX5E4Iz2zL7N9glo7nv2VyoOzb7GxpEKvrHelRfGOYqTPOSET-bf1k907Li71wS_yQF3-OZBTeMNRFeUul9Tpg_yY9g50jPfOe3XrcSC2WINgcSqNIsJ0UM22e-vzZcwpTEg36h2WFAhhsChR7PEstS5CwkFt16dH0hRHyYAEpoEdg7F-CtzdoNtE1m3vcm5q8w5sk1H2VWsrSFDd44oozHLhUtuifzsOSTiGxiGqeGLQQ5oMxH7uUBMeq5mwOXXpfi5-U5D9fM2de1qPfHzf4aZvJhSvckt6l_4wAwXJ-l2vE2f_9aVyA45D4cNeWIvCHbsmpp5LcrL5g3-8=w1440-h669-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="26" name="Roster1" tags="" position="1266,1202.5" size="100,100">Игроки
 * Пхпхпх - элитный разыгрывающий старого образца. Пассы, разъебы и флопы.  
 * Леха Лиходей - шутер настроения. Когда ловит стрик, закидывает противника с любой дистанции. В пассивном режиме - незаметен.
 * Д Ан - гард оборонительного плана. В атаке склонен к авантюрам, словно играет в компьюетерную игру.
@@ -820,7 +995,22 @@ $side ждет тебя на выходе и горячо благодарит �
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="27" name="Set roster1" tags="" position="1386,1204.5" size="100,100">Интересный выбор.
+ ]
+ 
+   &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/vfkyazCEdz0QncpinLiQpDh-GSIhzdXN3r-XFMgwNhaGljGvfW0ZhCD9xJuUGwtWI5R-EGyw_jaekfaiz8Q_awM3x8wjF2BawHNdbp33bAeqqDI6qdw7dzzf6e5MRNRSK4uDJB0f-T0LhLiPMMRLAUQZ21dzsW-2faxrxgOZhFoHcRzOwde33KU_V7q9wbUxdPchqh-Dc3VuGwgsi7N_ZRqTDPYC5cJAHV5OeOGIdMXvbRXhtxFqVw278eJy8Xr-iqu4aNQM4u35TD4nM8-ykW-72TQQIzv0a3a9oSFUS57gFi0F_mAm6P8hVrxumWlmnHJX0liYEC737Z-uDMjkdYXddIQ9UspaIM9Kq-th7hNgQ-LX5E4Iz2zL7N9glo7nv2VyoOzb7GxpEKvrHelRfGOYqTPOSET-bf1k907Li71wS_yQF3-OZBTeMNRFeUul9Tpg_yY9g50jPfOe3XrcSC2WINgcSqNIsJ0UM22e-vzZcwpTEg36h2WFAhhsChR7PEstS5CwkFt16dH0hRHyYAEpoEdg7F-CtzdoNtE1m3vcm5q8w5sk1H2VWsrSFDd44oozHLhUtuifzsOSTiGxiGqeGLQQ5oMxH7uUBMeq5mwOXXpfi5-U5D9fM2de1qPfHzf4aZvJhSvckt6l_4wAwXJ-l2vE2f_9aVyA45D4cNeWIvCHbsmpp5LcrL5g3-8=w1440-h669-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="27" name="Set roster1" tags="" position="1386,1204.5" size="100,100">Интересный выбор.
 [[Осталось еще двое|Roster2]] 
 
 
@@ -869,7 +1059,22 @@ $side ждет тебя на выходе и горячо благодарит �
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="28" name="Roster2" tags="" position="1392,1329.5" size="100,100">Игроки
+ ]
+ 
+   &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/vfkyazCEdz0QncpinLiQpDh-GSIhzdXN3r-XFMgwNhaGljGvfW0ZhCD9xJuUGwtWI5R-EGyw_jaekfaiz8Q_awM3x8wjF2BawHNdbp33bAeqqDI6qdw7dzzf6e5MRNRSK4uDJB0f-T0LhLiPMMRLAUQZ21dzsW-2faxrxgOZhFoHcRzOwde33KU_V7q9wbUxdPchqh-Dc3VuGwgsi7N_ZRqTDPYC5cJAHV5OeOGIdMXvbRXhtxFqVw278eJy8Xr-iqu4aNQM4u35TD4nM8-ykW-72TQQIzv0a3a9oSFUS57gFi0F_mAm6P8hVrxumWlmnHJX0liYEC737Z-uDMjkdYXddIQ9UspaIM9Kq-th7hNgQ-LX5E4Iz2zL7N9glo7nv2VyoOzb7GxpEKvrHelRfGOYqTPOSET-bf1k907Li71wS_yQF3-OZBTeMNRFeUul9Tpg_yY9g50jPfOe3XrcSC2WINgcSqNIsJ0UM22e-vzZcwpTEg36h2WFAhhsChR7PEstS5CwkFt16dH0hRHyYAEpoEdg7F-CtzdoNtE1m3vcm5q8w5sk1H2VWsrSFDd44oozHLhUtuifzsOSTiGxiGqeGLQQ5oMxH7uUBMeq5mwOXXpfi5-U5D9fM2de1qPfHzf4aZvJhSvckt6l_4wAwXJ-l2vE2f_9aVyA45D4cNeWIvCHbsmpp5LcrL5g3-8=w1440-h669-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="28" name="Roster2" tags="" position="1392,1329.5" size="100,100">Игроки
 *  Стир - умный винг. Может вести игру самостоятельно и быть третьей опцией в атаке. 
 * Точка - крайне выносливый поинт-форвард. Низкую скорость компенсирует хваткой, выдержкой и пониманием игры.
 * Fennel - стретч-форвард. Тусит вдалеке, чем нервирует тяжелых соперника.
@@ -891,7 +1096,22 @@ $side ждет тебя на выходе и горячо благодарит �
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="29" name="Set roster2" tags="" position="1272,1333.5" size="100,100">Интересный выбор.
+ ]
+ 
+   &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/vfkyazCEdz0QncpinLiQpDh-GSIhzdXN3r-XFMgwNhaGljGvfW0ZhCD9xJuUGwtWI5R-EGyw_jaekfaiz8Q_awM3x8wjF2BawHNdbp33bAeqqDI6qdw7dzzf6e5MRNRSK4uDJB0f-T0LhLiPMMRLAUQZ21dzsW-2faxrxgOZhFoHcRzOwde33KU_V7q9wbUxdPchqh-Dc3VuGwgsi7N_ZRqTDPYC5cJAHV5OeOGIdMXvbRXhtxFqVw278eJy8Xr-iqu4aNQM4u35TD4nM8-ykW-72TQQIzv0a3a9oSFUS57gFi0F_mAm6P8hVrxumWlmnHJX0liYEC737Z-uDMjkdYXddIQ9UspaIM9Kq-th7hNgQ-LX5E4Iz2zL7N9glo7nv2VyoOzb7GxpEKvrHelRfGOYqTPOSET-bf1k907Li71wS_yQF3-OZBTeMNRFeUul9Tpg_yY9g50jPfOe3XrcSC2WINgcSqNIsJ0UM22e-vzZcwpTEg36h2WFAhhsChR7PEstS5CwkFt16dH0hRHyYAEpoEdg7F-CtzdoNtE1m3vcm5q8w5sk1H2VWsrSFDd44oozHLhUtuifzsOSTiGxiGqeGLQQ5oMxH7uUBMeq5mwOXXpfi5-U5D9fM2de1qPfHzf4aZvJhSvckt6l_4wAwXJ-l2vE2f_9aVyA45D4cNeWIvCHbsmpp5LcrL5g3-8=w1440-h669-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="29" name="Set roster2" tags="" position="1272,1333.5" size="100,100">Интересный выбор.
 [[Остался еще один|Roster3]] 
 
 (if: $pl4 is &quot;Стир&quot;)[
@@ -939,7 +1159,22 @@ $side ждет тебя на выходе и горячо благодарит �
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="30" name="Roster3" tags="" position="1149,1336.5" size="100,100">Выберите одного из ваших героев
+ ]
+ 
+   &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/vfkyazCEdz0QncpinLiQpDh-GSIhzdXN3r-XFMgwNhaGljGvfW0ZhCD9xJuUGwtWI5R-EGyw_jaekfaiz8Q_awM3x8wjF2BawHNdbp33bAeqqDI6qdw7dzzf6e5MRNRSK4uDJB0f-T0LhLiPMMRLAUQZ21dzsW-2faxrxgOZhFoHcRzOwde33KU_V7q9wbUxdPchqh-Dc3VuGwgsi7N_ZRqTDPYC5cJAHV5OeOGIdMXvbRXhtxFqVw278eJy8Xr-iqu4aNQM4u35TD4nM8-ykW-72TQQIzv0a3a9oSFUS57gFi0F_mAm6P8hVrxumWlmnHJX0liYEC737Z-uDMjkdYXddIQ9UspaIM9Kq-th7hNgQ-LX5E4Iz2zL7N9glo7nv2VyoOzb7GxpEKvrHelRfGOYqTPOSET-bf1k907Li71wS_yQF3-OZBTeMNRFeUul9Tpg_yY9g50jPfOe3XrcSC2WINgcSqNIsJ0UM22e-vzZcwpTEg36h2WFAhhsChR7PEstS5CwkFt16dH0hRHyYAEpoEdg7F-CtzdoNtE1m3vcm5q8w5sk1H2VWsrSFDd44oozHLhUtuifzsOSTiGxiGqeGLQQ5oMxH7uUBMeq5mwOXXpfi5-U5D9fM2de1qPfHzf4aZvJhSvckt6l_4wAwXJ-l2vE2f_9aVyA45D4cNeWIvCHbsmpp5LcrL5g3-8=w1440-h669-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="30" name="Roster3" tags="" position="1149,1336.5" size="100,100">Выберите одного из ваших героев
 
 * Лаки Капкейк - суровый тяжкий форвард. Ментальный опыт - как у столетнего старца, и примерно такая же реакция.
 * Майк Ю - центровой в смолболе, тяжкий по жизни. Может пасовать, может нахер слать.
@@ -962,7 +1197,22 @@ $side ждет тебя на выходе и горячо благодарит �
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="31" name="Set roster3" tags="" position="1022,1337.5" size="100,100">Интересный выбор.
+ ]
+ 
+   &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/vfkyazCEdz0QncpinLiQpDh-GSIhzdXN3r-XFMgwNhaGljGvfW0ZhCD9xJuUGwtWI5R-EGyw_jaekfaiz8Q_awM3x8wjF2BawHNdbp33bAeqqDI6qdw7dzzf6e5MRNRSK4uDJB0f-T0LhLiPMMRLAUQZ21dzsW-2faxrxgOZhFoHcRzOwde33KU_V7q9wbUxdPchqh-Dc3VuGwgsi7N_ZRqTDPYC5cJAHV5OeOGIdMXvbRXhtxFqVw278eJy8Xr-iqu4aNQM4u35TD4nM8-ykW-72TQQIzv0a3a9oSFUS57gFi0F_mAm6P8hVrxumWlmnHJX0liYEC737Z-uDMjkdYXddIQ9UspaIM9Kq-th7hNgQ-LX5E4Iz2zL7N9glo7nv2VyoOzb7GxpEKvrHelRfGOYqTPOSET-bf1k907Li71wS_yQF3-OZBTeMNRFeUul9Tpg_yY9g50jPfOe3XrcSC2WINgcSqNIsJ0UM22e-vzZcwpTEg36h2WFAhhsChR7PEstS5CwkFt16dH0hRHyYAEpoEdg7F-CtzdoNtE1m3vcm5q8w5sk1H2VWsrSFDd44oozHLhUtuifzsOSTiGxiGqeGLQQ5oMxH7uUBMeq5mwOXXpfi5-U5D9fM2de1qPfHzf4aZvJhSvckt6l_4wAwXJ-l2vE2f_9aVyA45D4cNeWIvCHbsmpp5LcrL5g3-8=w1440-h669-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="31" name="Set roster3" tags="" position="1022,1337.5" size="100,100">Интересный выбор.
 [[Ростер собран]] 
 
 (if: $pl5 is &quot;Капкейк&quot;)[
@@ -1010,7 +1260,22 @@ $side ждет тебя на выходе и горячо благодарит �
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="32" name="Ростер собран" tags="" position="716,1276.5" size="100,100">Итак, вот твоя команда для смертельного поединка:
+ ]
+ 
+   &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/vfkyazCEdz0QncpinLiQpDh-GSIhzdXN3r-XFMgwNhaGljGvfW0ZhCD9xJuUGwtWI5R-EGyw_jaekfaiz8Q_awM3x8wjF2BawHNdbp33bAeqqDI6qdw7dzzf6e5MRNRSK4uDJB0f-T0LhLiPMMRLAUQZ21dzsW-2faxrxgOZhFoHcRzOwde33KU_V7q9wbUxdPchqh-Dc3VuGwgsi7N_ZRqTDPYC5cJAHV5OeOGIdMXvbRXhtxFqVw278eJy8Xr-iqu4aNQM4u35TD4nM8-ykW-72TQQIzv0a3a9oSFUS57gFi0F_mAm6P8hVrxumWlmnHJX0liYEC737Z-uDMjkdYXddIQ9UspaIM9Kq-th7hNgQ-LX5E4Iz2zL7N9glo7nv2VyoOzb7GxpEKvrHelRfGOYqTPOSET-bf1k907Li71wS_yQF3-OZBTeMNRFeUul9Tpg_yY9g50jPfOe3XrcSC2WINgcSqNIsJ0UM22e-vzZcwpTEg36h2WFAhhsChR7PEstS5CwkFt16dH0hRHyYAEpoEdg7F-CtzdoNtE1m3vcm5q8w5sk1H2VWsrSFDd44oozHLhUtuifzsOSTiGxiGqeGLQQ5oMxH7uUBMeq5mwOXXpfi5-U5D9fM2de1qPfHzf4aZvJhSvckt6l_4wAwXJ-l2vE2f_9aVyA45D4cNeWIvCHbsmpp5LcrL5g3-8=w1440-h669-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="32" name="Ростер собран" tags="" position="716,1276.5" size="100,100">Итак, вот твоя команда для смертельного поединка:
 (print: $team&#39;s 1st), (print: $team&#39;s 2nd), (print: $team&#39;s 3rd), (print: $team&#39;s 4th), (print: $team&#39;s 5th)
 
 $side предлагает для нее название &quot;Команда Здоровье&quot;. Когда-то так называлась банда свирепых психопатов, терроризировавших округу. Это должно внушить ужас врагам.
@@ -1025,13 +1290,27 @@ $side предлагает для нее название &quot;Команда �
 Класс: $class 
 перк 1: $perk1
 перк 2: $perk2
-
 Характеристики
 Атлетизм: $power
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="33" name="Резиденция" tags="" position="716,1426.5" size="100,100">{(if: $cool is &quot;v_ben&quot;)[ [[Нанести визит Кулерине |Кул bad]]]}
+ ]
+ 
+  &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/4PQLHNUboxWEjmOXSq0tdo48bS57zRH8sMETE2GrPU53iQVxkz5yhjBbGD8ONTgfQgZEGHKfJxWgjs3fmds1skO-rO6SrWgCZxh1bt47vr886uffEy9IsFC1DV7wHCh1xx6n0KQ1HvK58OUmgcfJblmywOEv1jUxKPIuA7nF4enI4zuiihp_2qVk1aPS9buWiVsoIofl1VQhkGCCIfdawNMO1qDbqUP_easbj6zHt55n45LuBXfibqx-YHMQBI1PiXA0NxKsqE75o85_iJdq68b9x0w0UecaRQgXLbrMUPVJMBMWUmYFjJSyzOm8e3ddrx3cQOYGOt0uVOU6ftDMEOcvjXzZloPgFAp6y0wicL4L-U6VL97ZENY7GPVdnhBAf1ixWcqiH9nOwrtWkMlxRunz508f8u5cN7y-gpE8SGGCUkphCxquh_pratmmbugbu4axub5id_3evwIHvcJW2LLyoFShaYMP2VPqKry2Lhcy63EE5XZFFuJfheUeNijShTfZi9TnjVMMia38f3jL7RFqJ735GKY03AT7NT4EgJm1n-c7ikjuS_VHRYzU-WjNJbaUtKYCRwghOGEK6JtUVazT1FCV1gNkN0UmMHUhuJHhOOPDNvfatGX9u-5pfXfs5mFJfeGtWFMs6KomjP4w8qag6F6hCsXUhWwWpY3EA3gXegBRpO_DLgbm3RJpRo4=w1440-h669-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="33" name="Резиденция" tags="" position="716,1426.5" size="100,100">{(if: $cool is &quot;v_ben&quot;)[ [[Нанести визит Кулерине |Кул bad]]]}
 {(if: $cool is &quot;interes&quot;)[[[Нанести визит Кулерине |Кул]]]}
 {[[Навестить короля|Покои Артема]]}
 {[[Дождаться утра|Утро]]}
@@ -1047,7 +1326,29 @@ $side предлагает для нее название &quot;Команда �
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="34" name="Кул" tags="" position="530,1559.5" size="100,100">Вы нанесли визит Кулерине. Как она и обещала, очень рада вас видеть. Но поговорить вам особо не удалось. Может быть в следующий раз?
+
+КОМАНДА ЗДОРОВЬЕ
+(print: $team&#39;s 1st)
+(print: $team&#39;s 2nd)
+(print: $team&#39;s 3rd)
+(print: $team&#39;s 4th)
+(print: $team&#39;s 5th)
+ ]
+ 
+   &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/4PQLHNUboxWEjmOXSq0tdo48bS57zRH8sMETE2GrPU53iQVxkz5yhjBbGD8ONTgfQgZEGHKfJxWgjs3fmds1skO-rO6SrWgCZxh1bt47vr886uffEy9IsFC1DV7wHCh1xx6n0KQ1HvK58OUmgcfJblmywOEv1jUxKPIuA7nF4enI4zuiihp_2qVk1aPS9buWiVsoIofl1VQhkGCCIfdawNMO1qDbqUP_easbj6zHt55n45LuBXfibqx-YHMQBI1PiXA0NxKsqE75o85_iJdq68b9x0w0UecaRQgXLbrMUPVJMBMWUmYFjJSyzOm8e3ddrx3cQOYGOt0uVOU6ftDMEOcvjXzZloPgFAp6y0wicL4L-U6VL97ZENY7GPVdnhBAf1ixWcqiH9nOwrtWkMlxRunz508f8u5cN7y-gpE8SGGCUkphCxquh_pratmmbugbu4axub5id_3evwIHvcJW2LLyoFShaYMP2VPqKry2Lhcy63EE5XZFFuJfheUeNijShTfZi9TnjVMMia38f3jL7RFqJ735GKY03AT7NT4EgJm1n-c7ikjuS_VHRYzU-WjNJbaUtKYCRwghOGEK6JtUVazT1FCV1gNkN0UmMHUhuJHhOOPDNvfatGX9u-5pfXfs5mFJfeGtWFMs6KomjP4w8qag6F6hCsXUhWwWpY3EA3gXegBRpO_DLgbm3RJpRo4=w1440-h669-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="34" name="Кул" tags="" position="530,1559.5" size="100,100">Вы нанесли визит Кулерине. Как она и обещала, очень рада вас видеть. Но поговорить вам особо не удалось. Может быть в следующий раз?
 (if: visits is 2)[
 Вы побывали в Куле уже два раза. Кажется, вы не очередной глор.]
 (if: visits &gt;2) [   
@@ -1062,7 +1363,7 @@ $side предлагает для нее название &quot;Команда �
 
 &lt;style&gt;
   tw-story {
-    background-image: url(&quot;https://lh3.googleusercontent.com/KySeEAWRcrxp6q6aApjFWMW91WLT4F6UI1gHAuGBqOhmXX3k_lDe7v9TiWoW2-3Cqu9nxTiiFF00gn4QDDj1q0gnkdPiuIma8l3cHVzdW-AESiG53Ho2hahLY_KL6TdAE4hMMobY5SZSVTJGldTFpj5SqCuHjfgbSWAncSeM3LO1-zMbeyJBYRsDaNN1Pww_8ur3xjW85NN6jr4piXgfT-uHBcaH1XtP3X9R14qFHy0uPOOsy_9WLPLTsUGvoSrR26R948brt_WyUDu8XudhUP2h0JYPpZfme0dlM8EZSQNAFcb2rdaTdBn0UNXsO__GEhvhr9ufW8FZ46yMV-opzk_dALg56IOrRsos-FLys6ZXnYPwlYYpblgVoVEn92H1mumUAu5uZpetHJsns8Nt_M7_W37SJ3JujIajz8ZlsaSO4YvKUsQJ4zUG0RmwfpeUuTYAJHmIW0_yNHOzOCthHAuCE8_3cesrVXVrr7l-UZDXjGktn6IzXz503hfxDnUKVUeOD1olRf5_bQzbZkddnaJTNoOud2a-LTdRyxwZHVfpWPGkhN1cItNu8MCEgg1-NM1HNowEhHmJL6nib_MX2fWtMsXPzC7tdN3fejcGqI-IjCc0iqL1GTGN9_1f2s7SG_Wi9S9yYBG-_LueJjGikbTbN2PtvtD2Hdnu4sxyCHmXxVRTxigm4mdST7HVtZE=w1385-h620&quot;);
+    background-image: url(&quot;https://lh3.googleusercontent.com/NB-cVU1YIB1ooTZeCQrE8AoubVAZkFXGxO98gsXI8cxve17yKMj8_Fdoy96N33rWYAJQxjeT3v_28hdj6WEsJwtMe3mZTzeQDJaSA8ieuWKtwIxWZ57K9PrDYg7Ai_4SZri7nnmJ8g6Wh1agQwNLHIge2CcDbMFKoGhm_hzJJFDpdPKNUTxwFYUHO7h1CTyGoEnUngmVAj28cPMuBCS5VhERp7RqsMZmTH1V8jueU4k7lgFnUJrAljovJIz3qkJeASibGBVL3j_DjPEQG0nnUQdkUzs0yzLzsp-luikqseFNljF27mtW4hhMssxdMyMIMeuBeksRw4RfF9bMa_ykUjf5h3HizQtOCeK1A-aH3XJo-Vx7TB0TH_Lm1eNkHsEqqPZWYaB8np5CATJbTAUGMGu_Pwl0E3bx2Ee7-djRFIfuQO2TR14VDtsRzoYD7nXaslueSZ2BxjA6E5YO02bTPVP2U7oqWT3644rjj9vWelfsf33fQ4RxwJm1FwV7ODrKy53YZMhdsUyWtNag-UqqEebTCph97KXHmdlLdL6VG4dEm9Cyz2sQpatLexFJDJ8RAexhZRvjX9bl4UhClCRz65OD1kQbCPGHw85Q3DRQJPAObKoTdJOfR6IVjZ4qdTfElleYfnHq9pU5PmdeFzmGMHI2Jzo0RKnZ9EHcaA6SMmId65ZTOwyySvPKGEW__DU=w1440-h669-ft&quot;);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1086,6 +1387,13 @@ $side предлагает для нее название &quot;Команда �
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
+
+КОМАНДА ЗДОРОВЬЕ
+(print: $team&#39;s 1st)
+(print: $team&#39;s 2nd)
+(print: $team&#39;s 3rd)
+(print: $team&#39;s 4th)
+(print: $team&#39;s 5th)
  ]</tw-passagedata><tw-passagedata pid="35" name="Покои Артема" tags="" position="716,1576.5" size="100,100">(if: visits is &gt;=2)
 [Второго шанса король не даст. Надо было решаться сразу.
 [[Вернуться к себе|Резиденция]]]
@@ -1106,7 +1414,7 @@ $side предлагает для нее название &quot;Команда �
 
 &lt;style&gt;
   tw-story {
-    background-image: url(&quot;https://lh3.googleusercontent.com/KySeEAWRcrxp6q6aApjFWMW91WLT4F6UI1gHAuGBqOhmXX3k_lDe7v9TiWoW2-3Cqu9nxTiiFF00gn4QDDj1q0gnkdPiuIma8l3cHVzdW-AESiG53Ho2hahLY_KL6TdAE4hMMobY5SZSVTJGldTFpj5SqCuHjfgbSWAncSeM3LO1-zMbeyJBYRsDaNN1Pww_8ur3xjW85NN6jr4piXgfT-uHBcaH1XtP3X9R14qFHy0uPOOsy_9WLPLTsUGvoSrR26R948brt_WyUDu8XudhUP2h0JYPpZfme0dlM8EZSQNAFcb2rdaTdBn0UNXsO__GEhvhr9ufW8FZ46yMV-opzk_dALg56IOrRsos-FLys6ZXnYPwlYYpblgVoVEn92H1mumUAu5uZpetHJsns8Nt_M7_W37SJ3JujIajz8ZlsaSO4YvKUsQJ4zUG0RmwfpeUuTYAJHmIW0_yNHOzOCthHAuCE8_3cesrVXVrr7l-UZDXjGktn6IzXz503hfxDnUKVUeOD1olRf5_bQzbZkddnaJTNoOud2a-LTdRyxwZHVfpWPGkhN1cItNu8MCEgg1-NM1HNowEhHmJL6nib_MX2fWtMsXPzC7tdN3fejcGqI-IjCc0iqL1GTGN9_1f2s7SG_Wi9S9yYBG-_LueJjGikbTbN2PtvtD2Hdnu4sxyCHmXxVRTxigm4mdST7HVtZE=w1385-h620&quot;);
+    background-image: url(&quot;https://lh3.googleusercontent.com/NB-cVU1YIB1ooTZeCQrE8AoubVAZkFXGxO98gsXI8cxve17yKMj8_Fdoy96N33rWYAJQxjeT3v_28hdj6WEsJwtMe3mZTzeQDJaSA8ieuWKtwIxWZ57K9PrDYg7Ai_4SZri7nnmJ8g6Wh1agQwNLHIge2CcDbMFKoGhm_hzJJFDpdPKNUTxwFYUHO7h1CTyGoEnUngmVAj28cPMuBCS5VhERp7RqsMZmTH1V8jueU4k7lgFnUJrAljovJIz3qkJeASibGBVL3j_DjPEQG0nnUQdkUzs0yzLzsp-luikqseFNljF27mtW4hhMssxdMyMIMeuBeksRw4RfF9bMa_ykUjf5h3HizQtOCeK1A-aH3XJo-Vx7TB0TH_Lm1eNkHsEqqPZWYaB8np5CATJbTAUGMGu_Pwl0E3bx2Ee7-djRFIfuQO2TR14VDtsRzoYD7nXaslueSZ2BxjA6E5YO02bTPVP2U7oqWT3644rjj9vWelfsf33fQ4RxwJm1FwV7ODrKy53YZMhdsUyWtNag-UqqEebTCph97KXHmdlLdL6VG4dEm9Cyz2sQpatLexFJDJ8RAexhZRvjX9bl4UhClCRz65OD1kQbCPGHw85Q3DRQJPAObKoTdJOfR6IVjZ4qdTfElleYfnHq9pU5PmdeFzmGMHI2Jzo0RKnZ9EHcaA6SMmId65ZTOwyySvPKGEW__DU=w1440-h669-ft&quot;);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1130,6 +1438,13 @@ $side предлагает для нее название &quot;Команда �
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
+
+КОМАНДА ЗДОРОВЬЕ
+(print: $team&#39;s 1st)
+(print: $team&#39;s 2nd)
+(print: $team&#39;s 3rd)
+(print: $team&#39;s 4th)
+(print: $team&#39;s 5th)
  ]</tw-passagedata><tw-passagedata pid="36" name="Утро" tags="" position="866,1576.5" size="100,100">Наступило утро. 
 (if: $ap is &quot;Фаворит&quot;)[
 Ты плохо спал, зато стал любимчиком короля
@@ -1153,7 +1468,29 @@ $side предлагает для нее название &quot;Команда �
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="37" name="Доминировать всю ночь" tags="" position="404,1493.5" size="100,100">Кулерина устала, унижена вашими выходками. Вряд ли она хотела учиться этим приемам, к которым вы ее принудили. 
+
+КОМАНДА ЗДОРОВЬЕ
+(print: $team&#39;s 1st)
+(print: $team&#39;s 2nd)
+(print: $team&#39;s 3rd)
+(print: $team&#39;s 4th)
+(print: $team&#39;s 5th)
+ ]
+ 
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/ZXgn6TvD1VllGoTT2z4mlB7tV3F3CgG-ATp0jk3O6bGN9GuhXfsk8MTWNrNmswbTz0IEVT-FBtYCdThbY6vuGJcjIRxxT_ESItclffgtz96IUANXTNIn3XJ-dH9BhtfJYAokholVLWKQ07MSdmGytTRRGUcA6WP2Vgd0ojWlRL00ui5_EKzf6ZJuwDidm5dx-BqY4gn5GXYcV2TONrTQdZMb1prelM0pjUz2qOAaeEEjw2bvcNjcDvytxDTmr5tJCMHqCO5H6PtDB486FZdyEC40axRPCddRKRKtFtbhcl7CSAtTf_M60K7FVNlmfHl9a-0ZR1QLkYwq3h01bgqjmoINnAeKmRxC5BXdRTu-l4lpaozkWNqhj4zWALhRUbRulqx24EMaxjxCqqKzPEBqDpI9hZUbjhVwmRpccr_fQwczNMjndL9bTF_dWkC-4HFmFt8KJc7yefnHSy3ji02rUmE-Oj6ypXTaFJ5gOlA-4P-r2I_-7ocLvO59qADtfB4cvcJ5tTfjE53DIS8ffWkx9EcFnJwgRembww5jd7vtpTSbVIkFgbzNc6R6qmACU4HBuSwD5ytIQTLVRy7Brlsm1jvCaCYVOkb8Q9f8a15OJx4PBqCfHMy7UVAbr9OC24jzNnYl4A463ftykFJEpuELFzcQhRr3FbRCNhIor3Rh3-TV1gBC1x_Mli7fSYtUmiY=w1440-h669-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="37" name="Доминировать всю ночь" tags="" position="404,1493.5" size="100,100">Кулерина устала, унижена вашими выходками. Вряд ли она хотела учиться этим приемам, к которым вы ее принудили. 
 
 ++Ачивка открыта
 (set: $cool to &quot;v_ben&quot;)
@@ -1162,7 +1499,7 @@ $side предлагает для нее название &quot;Команда �
 
 &lt;style&gt;
   tw-story {
-    background-image: url(&quot;https://lh3.googleusercontent.com/KySeEAWRcrxp6q6aApjFWMW91WLT4F6UI1gHAuGBqOhmXX3k_lDe7v9TiWoW2-3Cqu9nxTiiFF00gn4QDDj1q0gnkdPiuIma8l3cHVzdW-AESiG53Ho2hahLY_KL6TdAE4hMMobY5SZSVTJGldTFpj5SqCuHjfgbSWAncSeM3LO1-zMbeyJBYRsDaNN1Pww_8ur3xjW85NN6jr4piXgfT-uHBcaH1XtP3X9R14qFHy0uPOOsy_9WLPLTsUGvoSrR26R948brt_WyUDu8XudhUP2h0JYPpZfme0dlM8EZSQNAFcb2rdaTdBn0UNXsO__GEhvhr9ufW8FZ46yMV-opzk_dALg56IOrRsos-FLys6ZXnYPwlYYpblgVoVEn92H1mumUAu5uZpetHJsns8Nt_M7_W37SJ3JujIajz8ZlsaSO4YvKUsQJ4zUG0RmwfpeUuTYAJHmIW0_yNHOzOCthHAuCE8_3cesrVXVrr7l-UZDXjGktn6IzXz503hfxDnUKVUeOD1olRf5_bQzbZkddnaJTNoOud2a-LTdRyxwZHVfpWPGkhN1cItNu8MCEgg1-NM1HNowEhHmJL6nib_MX2fWtMsXPzC7tdN3fejcGqI-IjCc0iqL1GTGN9_1f2s7SG_Wi9S9yYBG-_LueJjGikbTbN2PtvtD2Hdnu4sxyCHmXxVRTxigm4mdST7HVtZE=w1385-h620&quot;);
+    background-image: url(&quot;https://lh3.googleusercontent.com/NB-cVU1YIB1ooTZeCQrE8AoubVAZkFXGxO98gsXI8cxve17yKMj8_Fdoy96N33rWYAJQxjeT3v_28hdj6WEsJwtMe3mZTzeQDJaSA8ieuWKtwIxWZ57K9PrDYg7Ai_4SZri7nnmJ8g6Wh1agQwNLHIge2CcDbMFKoGhm_hzJJFDpdPKNUTxwFYUHO7h1CTyGoEnUngmVAj28cPMuBCS5VhERp7RqsMZmTH1V8jueU4k7lgFnUJrAljovJIz3qkJeASibGBVL3j_DjPEQG0nnUQdkUzs0yzLzsp-luikqseFNljF27mtW4hhMssxdMyMIMeuBeksRw4RfF9bMa_ykUjf5h3HizQtOCeK1A-aH3XJo-Vx7TB0TH_Lm1eNkHsEqqPZWYaB8np5CATJbTAUGMGu_Pwl0E3bx2Ee7-djRFIfuQO2TR14VDtsRzoYD7nXaslueSZ2BxjA6E5YO02bTPVP2U7oqWT3644rjj9vWelfsf33fQ4RxwJm1FwV7ODrKy53YZMhdsUyWtNag-UqqEebTCph97KXHmdlLdL6VG4dEm9Cyz2sQpatLexFJDJ8RAexhZRvjX9bl4UhClCRz65OD1kQbCPGHw85Q3DRQJPAObKoTdJOfR6IVjZ4qdTfElleYfnHq9pU5PmdeFzmGMHI2Jzo0RKnZ9EHcaA6SMmId65ZTOwyySvPKGEW__DU=w1440-h669-ft&quot;);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1186,12 +1523,20 @@ $side предлагает для нее название &quot;Команда �
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
+
+КОМАНДА ЗДОРОВЬЕ
+(print: $team&#39;s 1st)
+(print: $team&#39;s 2nd)
+(print: $team&#39;s 3rd)
+(print: $team&#39;s 4th)
+(print: $team&#39;s 5th)
  ]</tw-passagedata><tw-passagedata pid="38" name="AP bedroom" tags="" position="716,1726.5" size="100,100">На тридцатой истории про веселых парней с Бесплодных пустошей, Артем наконец закрывает глаза.
 За окном во всю разгорается рассвет, а ты охрип и почти не спал.Самое время улизнуть к себе.
 
+(if: $pip is &quot;rose&quot;)[
 В углу комнаты свалена куча одежды. Твое внимание привлекает красная майка с цифрой 1. Не о ней ли говорил мажордом?
 
-Забрать майку (click-replace: &quot;Забрать майку&quot;)[Ты засунул майку в штаны. Немного топорщится, но если передвигаться медленно, стража не пристанет.(set: $tshirt to true)]
+Забрать майку (click-replace: &quot;Забрать майку&quot;)[Ты засунул майку в штаны. Немного топорщится, но если передвигаться медленно, стража не пристанет.(set: $tshirt to true)]]
 
 
 Дверь не заперта.
@@ -1199,7 +1544,7 @@ $side предлагает для нее название &quot;Команда �
 
 &lt;style&gt;
   tw-story {
-    background-image: url(&quot;https://lh3.googleusercontent.com/KySeEAWRcrxp6q6aApjFWMW91WLT4F6UI1gHAuGBqOhmXX3k_lDe7v9TiWoW2-3Cqu9nxTiiFF00gn4QDDj1q0gnkdPiuIma8l3cHVzdW-AESiG53Ho2hahLY_KL6TdAE4hMMobY5SZSVTJGldTFpj5SqCuHjfgbSWAncSeM3LO1-zMbeyJBYRsDaNN1Pww_8ur3xjW85NN6jr4piXgfT-uHBcaH1XtP3X9R14qFHy0uPOOsy_9WLPLTsUGvoSrR26R948brt_WyUDu8XudhUP2h0JYPpZfme0dlM8EZSQNAFcb2rdaTdBn0UNXsO__GEhvhr9ufW8FZ46yMV-opzk_dALg56IOrRsos-FLys6ZXnYPwlYYpblgVoVEn92H1mumUAu5uZpetHJsns8Nt_M7_W37SJ3JujIajz8ZlsaSO4YvKUsQJ4zUG0RmwfpeUuTYAJHmIW0_yNHOzOCthHAuCE8_3cesrVXVrr7l-UZDXjGktn6IzXz503hfxDnUKVUeOD1olRf5_bQzbZkddnaJTNoOud2a-LTdRyxwZHVfpWPGkhN1cItNu8MCEgg1-NM1HNowEhHmJL6nib_MX2fWtMsXPzC7tdN3fejcGqI-IjCc0iqL1GTGN9_1f2s7SG_Wi9S9yYBG-_LueJjGikbTbN2PtvtD2Hdnu4sxyCHmXxVRTxigm4mdST7HVtZE=w1385-h620&quot;);
+    background-image: url(&quot;https://lh3.googleusercontent.com/NB-cVU1YIB1ooTZeCQrE8AoubVAZkFXGxO98gsXI8cxve17yKMj8_Fdoy96N33rWYAJQxjeT3v_28hdj6WEsJwtMe3mZTzeQDJaSA8ieuWKtwIxWZ57K9PrDYg7Ai_4SZri7nnmJ8g6Wh1agQwNLHIge2CcDbMFKoGhm_hzJJFDpdPKNUTxwFYUHO7h1CTyGoEnUngmVAj28cPMuBCS5VhERp7RqsMZmTH1V8jueU4k7lgFnUJrAljovJIz3qkJeASibGBVL3j_DjPEQG0nnUQdkUzs0yzLzsp-luikqseFNljF27mtW4hhMssxdMyMIMeuBeksRw4RfF9bMa_ykUjf5h3HizQtOCeK1A-aH3XJo-Vx7TB0TH_Lm1eNkHsEqqPZWYaB8np5CATJbTAUGMGu_Pwl0E3bx2Ee7-djRFIfuQO2TR14VDtsRzoYD7nXaslueSZ2BxjA6E5YO02bTPVP2U7oqWT3644rjj9vWelfsf33fQ4RxwJm1FwV7ODrKy53YZMhdsUyWtNag-UqqEebTCph97KXHmdlLdL6VG4dEm9Cyz2sQpatLexFJDJ8RAexhZRvjX9bl4UhClCRz65OD1kQbCPGHw85Q3DRQJPAObKoTdJOfR6IVjZ4qdTfElleYfnHq9pU5PmdeFzmGMHI2Jzo0RKnZ9EHcaA6SMmId65ZTOwyySvPKGEW__DU=w1440-h669-ft&quot;);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1223,6 +1568,13 @@ $side предлагает для нее название &quot;Команда �
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
+
+КОМАНДА ЗДОРОВЬЕ
+(print: $team&#39;s 1st)
+(print: $team&#39;s 2nd)
+(print: $team&#39;s 3rd)
+(print: $team&#39;s 4th)
+(print: $team&#39;s 5th)
  ]</tw-passagedata><tw-passagedata pid="39" name="Кул bad" tags="" position="537,1435.5" size="100,100">Вы громко стучитесь в дверь, но никто не отвечает. Проклятая фрейлина делает вид, что спит. 
 
 [[Вернуться к себе |Резиденция]]
@@ -1238,7 +1590,29 @@ $side предлагает для нее название &quot;Команда �
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="40" name="Strong word" tags="" position="476,1043.5" size="100,100">(if: $versus is &quot;et_2&quot; or &quot;et_3&quot; or &quot;ei_2&quot; or &quot;kt_2&quot; or&quot;kt_3&quot; or &quot;ki_2&quot;)
+
+КОМАНДА ЗДОРОВЬЕ
+(print: $team&#39;s 1st)
+(print: $team&#39;s 2nd)
+(print: $team&#39;s 3rd)
+(print: $team&#39;s 4th)
+(print: $team&#39;s 5th)
+ ]
+ 
+   &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/4PQLHNUboxWEjmOXSq0tdo48bS57zRH8sMETE2GrPU53iQVxkz5yhjBbGD8ONTgfQgZEGHKfJxWgjs3fmds1skO-rO6SrWgCZxh1bt47vr886uffEy9IsFC1DV7wHCh1xx6n0KQ1HvK58OUmgcfJblmywOEv1jUxKPIuA7nF4enI4zuiihp_2qVk1aPS9buWiVsoIofl1VQhkGCCIfdawNMO1qDbqUP_easbj6zHt55n45LuBXfibqx-YHMQBI1PiXA0NxKsqE75o85_iJdq68b9x0w0UecaRQgXLbrMUPVJMBMWUmYFjJSyzOm8e3ddrx3cQOYGOt0uVOU6ftDMEOcvjXzZloPgFAp6y0wicL4L-U6VL97ZENY7GPVdnhBAf1ixWcqiH9nOwrtWkMlxRunz508f8u5cN7y-gpE8SGGCUkphCxquh_pratmmbugbu4axub5id_3evwIHvcJW2LLyoFShaYMP2VPqKry2Lhcy63EE5XZFFuJfheUeNijShTfZi9TnjVMMia38f3jL7RFqJ735GKY03AT7NT4EgJm1n-c7ikjuS_VHRYzU-WjNJbaUtKYCRwghOGEK6JtUVazT1FCV1gNkN0UmMHUhuJHhOOPDNvfatGX9u-5pfXfs5mFJfeGtWFMs6KomjP4w8qag6F6hCsXUhWwWpY3EA3gXegBRpO_DLgbm3RJpRo4=w1440-h669-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="40" name="Strong word" tags="" position="476,1043.5" size="100,100">(if: $versus is &quot;et_2&quot; or &quot;et_3&quot; or &quot;ei_2&quot; or &quot;kt_2&quot; or&quot;kt_3&quot; or &quot;ki_2&quot;)
 [Ошалевшие от этих слов гости на миг замирают, прежде чем взорваться. Воодушевленная речью противная сторона быстро прикрывает вас. Их лидер от души стучит вас по плечу.
 - Отличная речь! Нужна будет помощь, обращайся.]
 (else:)
@@ -1256,7 +1630,17 @@ $side предлагает для нее название &quot;Команда �
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="41" name="CoolEnd" tags="" position="202,1500.5" size="100,100">&lt;style&gt;
+ ]
+ 
+  &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/9YZj0ogGMV-uOoBT_sCMGMp751LB2Yfd8KVTiDCY2k6OtNKit_YTNZwJIpm3scw8jNUZNqgg-cyIbB-ZhEyn0N9USLCQOJVT9AnG2xY7rNukpfBgcBIH0-IUboqQJCdBaSzwsU7sSZRrDW7p7Bk0ikTaomrG28PqgUjfNeu0xCzvZqpZl92TdshSgV8w8iobRBJlYovdeVClq64yMJI6wepOnBDafX5_1qzw1wgGDQo3V6blKOtO9NLd-duN6k36_FBJ7FFGY4N0hzxYGxNeVMZ9ZgOo2305KbMRWJv0LgikN37de48OaiKmOWF_gYz4z_yq0MUwvPZ3mKuO5fCiN-e4E7CqMz9PNFxjr3Uq4qIYCz2boMNii-b2bm5eamn4Q0pVBU8gf5Q3jjH2RErtBu_gLa1EAnj_o--0PO5Z7EUBa0lLzzTlQ3vKfa2a1BkWRTsDQza5rqI0GUwVCsh6Vj3gYOHiD4RjeQS-H-3Tbz4JQYr6qe4oEd-3nFI4-m5X5ucChwR5nbCdu3AbaB7BoPWXBDjP8hnzjkOOYmJa6AtDg0kVAXmrLoe9moyQ56lpQixd6acEagoxworaE4wVJAQgQ6c2__00s5HGtzLcrocApm2XdLe_vHuq9WBYnC2hM46yVFg3QzY7P9w8pjECPgXLftGf6GyV1tnqja2_B2q9uZDbmHvmj5Ht6ZvKmNc=w1440-h718-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="41" name="CoolEnd" tags="" position="202,1500.5" size="100,100">&lt;style&gt;
 tw-passage{text-align: center;
 }
 &lt;/style&gt;
@@ -1264,12 +1648,73 @@ tw-passage{text-align: center;
 (colour: orange) [Ты - Мечта Кулера&lt;h1&gt;]
 Ты знаешь что такое риск, у тебя длинное плечо и еще более длинный меч. Ты покорил сердце Кулера, а также завоевал другие его органы. И хоть ты бываешь жесток, глядя в твое брутальное лицо, Кулер ощущает то, что никогда не испытает от просмотра игр Филадельвии. Будть ты проклят. Будь благословлен.
 
-[[Конец игры -&gt;Results]]</tw-passagedata><tw-passagedata pid="42" name="Results" tags="" position="197,1259.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="43" name="Lot" tags="" position="1281,1746.5" size="100,100">(if: $ap is &quot;Фаворит&quot;)[
+[[Конец игры -&gt;Results]]</tw-passagedata><tw-passagedata pid="42" name="Results" tags="" position="96,1986.5" size="100,100">{(if: $rus is true)
+[ДОСТИЖЕНИЕ: ЩЕТИНА НОСТАЛЬГИИ
+Вы пощекотали воспоминания в приятной беседе с боевым товарищем Русланом]
+}
+{(if: $helg is &quot;blind&quot;)[
+ДОСТИЖЕНИЕ: ОТЕЦ ГОМЕРА
+Ты лишил зрения Хельга. Вот и все твои подвиги]
+}
+{(if: $swag is &quot;slave&quot;)[
+ДОСТИЖЕНИЕ: РАБОТОРГОВЕЦ
+У Свега появился шанс скинуть знаменитые килограммы]
+}
+{(if: $versus is &quot;et_2&quot; or &quot;et_3&quot;)[
+ДОСТИЖЕНИЕ: ПЕРЕСМЕШНИК
+Твоя токсичность повергла в ужас Орду]
+(else-if: $versus is &quot;kt_2&quot; or &quot;kt_3&quot;)[
+ДОСТИЖЕНИЕ: ПЕРЕСМЕШНИК
+Твоя токсичность повергла в ужас рыцарей Ебурга]
+(else-if: $versus is &quot;ei_2&quot; or &quot;ei_3&quot;)[
+ДОСТИЖЕНИЕ: СУБЪЕКТИВНЫЙ УМНИК
+Твоя заумь заставила Орду заткнуться]
+(else-if: $versus is &quot;кi_2&quot; or &quot;кi_3&quot;)[
+ДОСТИЖЕНИЕ: РАЗЯЩИЙ УМ
+Твоя заумь заставила ебуржцев заткнуться]
+}
+{(if: $vic is true)
+[ДОСТИЖЕНИЕ: ПЕРВЫЙ БУНТАРЬ
+Ты поднял первое знамя Революции и пробежал с ним некоторое расстояние]
+}
+{(if: $ded is true)[
+ДОСТИЖЕНИЕ: ИСПОРЧЕННЫЙ ПРИЕМ
+Память о тебе останется в веках, как и едкое пятно на королевском столе]
+}
+{(if: $cool is &quot;v_ben&quot;)[
+ДОСТИЖЕНИЕ: КОНТЕНДЕР ВОСТОКА
+Ты наконец-то смог победить Кулера в дебатах, использовав дедовский метод]
+}
+(if: $side is &quot;Свег&quot;)[
+ДОСТИЖЕНИЕ: ПОЭТ ЭТО ТОТ, КТО ХОДИТ С ПЕРОМ
+Ты встал на сторону Свега в этой междоусобной вражде]
+(else:)[
+ДОСТИЖЕНИЕ: БЕРСЕРКАМ ГОЛОВА НЕ НУЖНА
+Ты встал на сторону Хельга в этой междоусобной вражде]</tw-passagedata><tw-passagedata pid="43" name="Lot" tags="" position="1128,1578.5" size="100,100">(if: $ap is &quot;Фаворит&quot;)[
 Король решает, что начинает Команда Здоровья. Ты готов покляться, что АП подмигнул тебе.
 [[Начинаем|1poss]] ]
 (else:)[ Король решает, что начинает команда &quot;Мопсы-блиноеды&quot;. Никто не смеет возражать.
 [[Начинаем|1poss opp]] ]
-</tw-passagedata><tw-passagedata pid="44" name="Offence" tags="" position="978,1806.5" size="100,100">
+
+(append: ?SideBar)[
+
+Класс: $class 
+перк 1: $perk1
+перк 2: $perk2
+
+Характеристики
+Атлетизм: $power
+Реакция: $agile
+Интеллект: $intel
+Токсичность: $toxity
+
+КОМАНДА ЗДОРОВЬЕ
+(print: $team&#39;s 1st)
+(print: $team&#39;s 2nd)
+(print: $team&#39;s 3rd)
+(print: $team&#39;s 4th)
+(print: $team&#39;s 5th)
+ ]</tw-passagedata><tw-passagedata pid="44" name="Offence" tags="" position="978,1806.5" size="100,100">
 Самое время определиться с тактикой на игру. Стоит учитывать сильные и слабые стороны выбранных игроков.
 
 АП ТЕМПО
@@ -1287,19 +1732,40 @@ tw-passage{text-align: center;
 (dropdown: bind $offence, &quot;АП ТЕМПО&quot;, &quot;ПИК-Н-РОЛЛ&quot;, &quot;ДРАЙВ-Н-КИК&quot;,&quot;ПОСТ&quot;)
 
 [[Выбрать план на защиту -&gt; Deffence]]
-&lt;style&gt;
+ &lt;style&gt;
   tw-story {
-    background-image: url(&quot;https://cdn.shopify.com/s/files/1/0050/2756/1546/products/black_knight_1024x1024.png?v=1566424377&quot;);
+    background-image: url(&quot;https://lh3.googleusercontent.com/Un3OQDL2P6gtylKJzt-w62-AaGF5xy5_n9eLTcOiZQnx9_obVH7MxmHzFxVGXDZ6dsV778uvlmC38y4y9fKSZRkoYFQz8s9EraWUpiWgGtQEoxaOSQ4jz5KfyprHwgoq7jH63Jq7inNcxVweISqd9WrFHd8UR68JIY5obkJX7x7TXfUKruerbm55hA_W1hy2uo9m8VW37FFjFKDCPzorOg08u6gUoM3SusrGBVj9A0Bhuvf9BLS6BdkLU2ZpIfAI6UvJrVeTS46nPlnVGM1HI3bfQwus8BtZ0PlLYiMqQCDW4H6mnOSKsZK00TsJ0XNNY6e6RGuI1nT_BOW_u6kQ_oKjtW0tifMDdLkq2Z7urxI37IPfdpjhRWpX0px7oiOI77QHGHLlyh3h5F-prGXiqLNFnDl116S6IxcYSUi2zlcHYyM7Z8j3i_15hanNXrfpbsGdycniWu7_WKjZYQlEa0PooqtrxvXA_grFJx5YUFkK6V2M7IOXDEYBcHR10jd6OgCx2vrdZckDncliwHbaXOb-wLATkGl3aWLDq5KxmLVctmoHLVNXRbPmifNuMoi5pUcqtuc-IQye5H9ovfqLH2NuBiKiDcIURf96LFx-qRTcPp6xyYtN8XgwcJO-cQJkzuavXsrlXVwJVea3nDbHoycyp0ZVV1iZWPjK48u4bn5sSP-NKeg8c13DYYLEiOs=w1440-h669-ft&quot;);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+	opacity:0.999;
   }
 
   tw-link {
-    color: green;
+    color: orange;
     text-decoration: none;
   }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="45" name="1poss opp" tags="" position="1274,1626.5" size="100,100">Игроки противника мельтешат перед глазами, беря на понт умением играть в комбинации. Вы знаете что делать.
+&lt;/style&gt;
+
+(append: ?SideBar)[
+
+Класс: $class 
+перк 1: $perk1
+перк 2: $perk2
+
+Характеристики
+Атлетизм: $power
+Реакция: $agile
+Интеллект: $intel
+Токсичность: $toxity
+
+КОМАНДА ЗДОРОВЬЕ
+(print: $team&#39;s 1st)
+(print: $team&#39;s 2nd)
+(print: $team&#39;s 3rd)
+(print: $team&#39;s 4th)
+(print: $team&#39;s 5th)
+ ]</tw-passagedata><tw-passagedata pid="45" name="1poss opp" tags="" position="1456,1739.5" size="100,100">Игроки противника мельтешат перед глазами, беря на понт умением играть в комбинации. Вы знаете что делать.
 
 (link: &quot;Взять под песональную опеку их главную звезду&quot;) [(goto: &quot;def1 lose&quot;)]
 (if: $agile is &gt;=12 and $intel is &gt;=10)[(link: &quot;Пока они так много пасуют и меняют позиции, попробуем перехватить мяч&quot;) [(goto: &quot;def1&quot;)]]
@@ -1333,12 +1799,49 @@ tw-passage{text-align: center;
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="47" name="1poss" tags="" position="1103,1722.5" size="100,100">Мяч у нас. Противник еще явно не собрался с духом (как и мы). 
+
+КОМАНДА ЗДОРОВЬЕ
+(print: $team&#39;s 1st)
+(print: $team&#39;s 2nd)
+(print: $team&#39;s 3rd)
+(print: $team&#39;s 4th)
+(print: $team&#39;s 5th)
+ ]
+ (set: $power to 20)
+(set: $agile to 20)
+(set:$intel to 20)
+(set: $ap to &quot;Фаворит&quot;)
+(set: $class to &quot;Болтхендлер&quot;)
+(set: $perk1 to &quot;Шальная Треха&quot;)
+(set: $perk2 to &quot;Пасс из ниоткуда&quot;)
+(set: $offence to &quot;АП ТЕМПО&quot;)
+(set: $team to (a: &quot;Герой&quot;, &quot;Свег&quot;, &quot;Алекс Арон&quot;, &quot;Иван Медведев&quot;, &quot;Лаки Колчак&quot;))
+(set: $side to &quot;Свег&quot;)
+(set: $enemy to &quot;Олег&quot;)
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/Un3OQDL2P6gtylKJzt-w62-AaGF5xy5_n9eLTcOiZQnx9_obVH7MxmHzFxVGXDZ6dsV778uvlmC38y4y9fKSZRkoYFQz8s9EraWUpiWgGtQEoxaOSQ4jz5KfyprHwgoq7jH63Jq7inNcxVweISqd9WrFHd8UR68JIY5obkJX7x7TXfUKruerbm55hA_W1hy2uo9m8VW37FFjFKDCPzorOg08u6gUoM3SusrGBVj9A0Bhuvf9BLS6BdkLU2ZpIfAI6UvJrVeTS46nPlnVGM1HI3bfQwus8BtZ0PlLYiMqQCDW4H6mnOSKsZK00TsJ0XNNY6e6RGuI1nT_BOW_u6kQ_oKjtW0tifMDdLkq2Z7urxI37IPfdpjhRWpX0px7oiOI77QHGHLlyh3h5F-prGXiqLNFnDl116S6IxcYSUi2zlcHYyM7Z8j3i_15hanNXrfpbsGdycniWu7_WKjZYQlEa0PooqtrxvXA_grFJx5YUFkK6V2M7IOXDEYBcHR10jd6OgCx2vrdZckDncliwHbaXOb-wLATkGl3aWLDq5KxmLVctmoHLVNXRbPmifNuMoi5pUcqtuc-IQye5H9ovfqLH2NuBiKiDcIURf96LFx-qRTcPp6xyYtN8XgwcJO-cQJkzuavXsrlXVwJVea3nDbHoycyp0ZVV1iZWPjK48u4bn5sSP-NKeg8c13DYYLEiOs=w1440-h669-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+</tw-passagedata><tw-passagedata pid="47" name="1poss" tags="" position="1202,1719.5" size="100,100">Мяч у нас. Противник еще явно не собрался с духом (как и мы). 
 
 (if: $agile is &gt;=10 and $power is &gt;=10)[
 (link: &quot;Решительный наскок на кольцо&quot;) [(goto: &quot;attack1&quot;)]]
 (link: &quot;Шмальнуть свободную треху&quot;) [(goto: &quot;attack1 lose&quot;)]
-(link: &quot;Придерживаемся плана на игру&quot;)[(goto: &quot;attack1 style&quot;)]</tw-passagedata><tw-passagedata pid="48" name="Disel" tags="disel" position="576,183.5" size="100,100">(append: ?SideBar)[
+(link: &quot;Придерживаемся плана на игру&quot;)[(goto: &quot;attack1 style&quot;)]
+
+(append: ?SideBar)[
 
 Класс: $class 
 перк 1: $perk1
@@ -1349,14 +1852,37 @@ tw-passage{text-align: center;
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="49" name="attack1" tags="" position="1029,1943.5" size="100,100">Вы сминаете зевнувшего противника и легко заносите мяч в корзину. Первые два очка добыты. Теперь Мопсы будут осторожнее, но совсем в сухую вы уже не проиграете. (set: $ourscore to 2)
+
+КОМАНДА ЗДОРОВЬЕ
+(print: $team&#39;s 1st)
+(print: $team&#39;s 2nd)
+(print: $team&#39;s 3rd)
+(print: $team&#39;s 4th)
+(print: $team&#39;s 5th)
+
+МОПСЫ-БЛИНОЕДЫ
+$enemy
+Арт
+Игорь
+Стас Мелков
+Гоша Демурия
+ ]</tw-passagedata><tw-passagedata pid="48" name="Params" tags="" position="569,196.5" size="100,100">Класс: $class 
+перк 1: $perk1
+перк 2: $perk2
+
+Характеристики
+Атлетизм: $power
+Реакция: $agile
+Интеллект: $intel
+Токсичность: $toxity
+ </tw-passagedata><tw-passagedata pid="49" name="attack1" tags="" position="1321,1715.5" size="100,100">Вы сминаете зевнувшего противника и легко заносите мяч в корзину. Первые два очка добыты. Теперь Мопсы будут осторожнее, но совсем в сухую вы уже не проиграете. (set: $ourscore to 2)
 
 
 [[Владение у противника! -&gt;1poss opp]] 
 
 Счет
 Команда Здоровье $ourscore
-Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="50" name="attack1 style" tags="" position="1143,1896.5" size="100,100">{(if: $offence is &quot;АП ТЕМПО&quot; and $class is &quot;Болтхендлер&quot;)[(set: $ourscore to 2)
+Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="50" name="attack1 style" tags="" position="1321,1831.5" size="100,100">{(if: $offence is &quot;АП ТЕМПО&quot; and $class is &quot;Болтхендлер&quot;)[(set: $ourscore to 2)
 Вы молнией проноситесь меж рядов оторопевешего противника. И данчите. &quot;Вы что, поиграться пришли?&quot; - успеваете вы крикнуть Мопсам на обратном пусти на свою половину. 2 очка 
 ]
 (else-if: $offence is &quot;АП ТЕМПО&quot; and $class is not &quot;Болтхендлер&quot;)[(set: $ourscore to 2)
@@ -1397,7 +1923,7 @@ tw-passage{text-align: center;
 
 Счет
 Команда Здоровье $ourscore
-Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="51" name="attack1 lose" tags="" position="1031,2056" size="100,100">{(if: $perk1 is &quot;Шальная Треха&quot;)[(set: $ourscore to it+3)(Шальная Треха) Противник напрыгивает,а вы не видите сами куда бросаете: и все таки мяч каким-то чудом залетает в кольцо. Шальные три очка. &quot;Кто не рискует, тот мопсов целует&quot;, успеваете вы себя похвалить.
+Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="51" name="attack1 lose" tags="" position="1321,1605" size="100,100">{(if: $perk1 is &quot;Шальная Треха&quot;)[(set: $ourscore to it+3)(Шальная Треха) Противник напрыгивает,а вы не видите сами куда бросаете: и все таки мяч каким-то чудом залетает в кольцо. Шальные три очка. &quot;Кто не рискует, тот мопсов целует&quot;, успеваете вы себя похвалить.
 ]}
 {(else:)[Мяч бьется о дужку и улетает в руки противника. &quot;Ну, по крайней мере попытался&quot;, утешаете вы себя, бегом возвращаясь на свою половину.]}
 
@@ -1406,7 +1932,7 @@ tw-passage{text-align: center;
 
 Счет
 Команда Здоровье $ourscore
-Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="52" name="def1 style" tags="" position="1394,1509" size="100,100">Еще несколько переводов мяча между игроками, и наконец двое устремляются к кольцу. 
+Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="52" name="def1 style" tags="" position="1584,1628" size="100,100">Еще несколько переводов мяча между игроками, и наконец двое устремляются к кольцу. 
 
 {(if: $class is &quot;Болтхендлер&quot; and $perk1 is not &quot;Блок по лицу&quot;)[(set: $score to it+2)
 Противник играет в пик-н-ролл. Ты оказываешься против более мощного Арта, который заносит мяч и частично тебя в кольцо. Первые очки Мопсов.
@@ -1462,7 +1988,7 @@ tw-passage{text-align: center;
 
 Счет
 Команда Здоровье $ourscore
-Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="53" name="def1 lose" tags="" position="1507,1625" size="100,100">{(if: $class is &quot;Тяжкий&quot;)[ (set: $score to it+2)
+Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="53" name="def1 lose" tags="" position="1582,1744" size="100,100">{(if: $class is &quot;Тяжкий&quot;)[ (set: $score to it+2)
 $enemy получает мяч в посту и начинает толкаться, вкладываясь в локти. Вы пыхтите, но держите удар. Ложный замах, поворот - вы на месте. Следует полукрюк, за спиной слышен проклятый трепет сетки и огорченный вздох соратников. 2 очка противнику]
 (else-if: $class is &quot;Тяжкий&quot; and $intel &gt;=12)[(set: $score to it)
 $enemy получает мяч в посту и начинает толкаться, вкладываясь в локти. Вы пыхтите, но держите удар. Ложный замах, поворот, следует полукрюк, но в точный момент вы взмываете в воздух и со всей дури бьете по мячу. Шар отлетает в руки вашего игрока. Восторженные крики соратников]
@@ -1473,7 +1999,7 @@ $enemy получает мяч в посту. Вы активно обороня
 
 Счет
 Команда Здоровье $ourscore
-Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="54" name="def1" tags="" position="1405,1732" size="100,100">{$side и (print: $team&#39;s 4rd) прижимают игрока с мячом. Он с трудом видит партнера и пассует ему.} 
+Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="54" name="def1" tags="" position="1585,1862" size="100,100">{$side и (print: $team&#39;s 4rd) прижимают игрока с мячом. Он с трудом видит партнера и пассует ему.} 
 {(if: $perk2 is &quot;Карманник&quot;) [(Карманник) (set: $ourscore to it+2) Мяч прилипает к вашей руке. Противник щелкает клювом, а ноги уже несут вас к кольцу на той стороне. За вами несется лавина из ругающихся и вопящих тел. Лейап. 2 очка!]}
 {(if: $perk1 is &quot;Данчич&quot;) [(Данчич) (set: $ourscore to it+3) (print: $team&#39;s 3rd) выпрыгивает из засады, хватает мяч, пас - и вы в отрыве. За вами несется лавина из ругающихся и вопящих тел. Впереди последний рубеж из мускулов их центрового. Слэм-данк с контактом сотрясает и кольцо и чувства зрителей. Король восторженно орет, а судья позволяют вам пробить штрафной. Вы обескураживаще точны. Три очка!]}
 {(else:) [ (set: $ourscore to it+1) (print: $team&#39;s 3rd) выпрыгивает из засады, хватает мяч и несется в отрыв. Впереди последний рубеж из мускулов их центрового. Тот жестко фолит, дергая игрока за руку. Король удовлетворенно ухает. Судьи все таки разрешают пробить 2 штрафных броска. (print: $team&#39;s 3rd) попадает один. Вы встревожены, но он показывает, что может играть.]}
@@ -1481,9 +2007,9 @@ $enemy получает мяч в посту. Вы активно обороня
 [[Противник теперь будет внимательней. Его владение.-&gt;2poss opp]]
 Счет
 Команда Здоровье $ourscore
-Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="55" name="2poss" tags="" position="1657,1637" size="100,100">
-[[Пустить треху с ведения-&gt;attack2 lose]] 
-{(if: $offence is &quot;АП-ТЕМПО&quot;)[
+Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="55" name="2poss" tags="" position="1716,1693" size="100,100">
+[[Что там ждать-то, пустить треху с ведения!-&gt;attack2 lose]] 
+{(if: $offence is &quot;АП ТЕМПО&quot;)[
 (link: &quot;Придерживаемся стиля&quot;)[(goto: &quot;attack2 style ap&quot;)]]
 (if: $offence is &quot;ПИК-Н-РОЛЛ&quot;)[
 (link: &quot;Придерживаемся стиля&quot;)[(goto: &quot;attack2 style pick&quot;)]]
@@ -1507,7 +2033,22 @@ $enemy получает мяч в посту. Вы активно обороня
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="57" name="2poss opp" tags="" position="1578,1947" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="58" name="attack2 lose" tags="" position="1758,1760" size="100,100">{(if: $perk1 is &quot;Шальная Треха&quot; and $power&gt;17 and $agile&gt;15)[(set: $ourscore to it+3)(Шальная Треха) Ни противник, ни ваша собственная команда не ждала такой наглости. Свердальний бросок, мяч в корзине. От избытка чувств вы подпрыгиваете в воздухе и кричите название своей команды.
+ ]
+ 
+  &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/9YZj0ogGMV-uOoBT_sCMGMp751LB2Yfd8KVTiDCY2k6OtNKit_YTNZwJIpm3scw8jNUZNqgg-cyIbB-ZhEyn0N9USLCQOJVT9AnG2xY7rNukpfBgcBIH0-IUboqQJCdBaSzwsU7sSZRrDW7p7Bk0ikTaomrG28PqgUjfNeu0xCzvZqpZl92TdshSgV8w8iobRBJlYovdeVClq64yMJI6wepOnBDafX5_1qzw1wgGDQo3V6blKOtO9NLd-duN6k36_FBJ7FFGY4N0hzxYGxNeVMZ9ZgOo2305KbMRWJv0LgikN37de48OaiKmOWF_gYz4z_yq0MUwvPZ3mKuO5fCiN-e4E7CqMz9PNFxjr3Uq4qIYCz2boMNii-b2bm5eamn4Q0pVBU8gf5Q3jjH2RErtBu_gLa1EAnj_o--0PO5Z7EUBa0lLzzTlQ3vKfa2a1BkWRTsDQza5rqI0GUwVCsh6Vj3gYOHiD4RjeQS-H-3Tbz4JQYr6qe4oEd-3nFI4-m5X5ucChwR5nbCdu3AbaB7BoPWXBDjP8hnzjkOOYmJa6AtDg0kVAXmrLoe9moyQ56lpQixd6acEagoxworaE4wVJAQgQ6c2__00s5HGtzLcrocApm2XdLe_vHuq9WBYnC2hM46yVFg3QzY7P9w8pjECPgXLftGf6GyV1tnqja2_B2q9uZDbmHvmj5Ht6ZvKmNc=w1440-h718-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="57" name="2poss opp" tags="" position="1716,1976" size="100,100">Противник неторопливо разыгрывает мяч.
+
+(link: &quot;Взять под песональную опеку их главную звезду&quot;) [(goto: &quot;def2 lose&quot;)]
+(if: $agile is &gt;=12 and $intel is &gt;=10)[(link: &quot;Держусь по позиции&quot;) [(goto: &quot;def2&quot;)]]
+(link: &quot;Придерживаемся плана на игру&quot;)[(goto: &quot;def2 style&quot;)]
+</tw-passagedata><tw-passagedata pid="58" name="attack2 lose" tags="" position="1852.5,1699" size="100,100">{(if: $perk1 is &quot;Шальная Треха&quot; and $power&gt;17 and $agile&gt;15)[(set: $ourscore to it+3)(set: $agile to it-1)(Шальная Треха) Ни противник, ни ваша собственная команда не ждала такой наглости. Свердальний бросок, мяч в корзине. От избытка чувств вы подпрыгиваете в воздухе и кричите название своей команды.
 ]}
 {(else:)[Мяч улетает в аут, даже не задев щита. Ваша команда не успела расставиться, так что быстро вернется к защитным построениям. Это единственный плюс потраченного владения]}
 
@@ -1516,7 +2057,7 @@ $enemy получает мяч в посту. Вы активно обороня
 
 Счет
 Команда Здоровье $ourscore
-Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="59" name="attack2 style post" tags="" position="1727,1519.5" size="100,100">(else-if: $offence is &quot;ПОСТ&quot; and $class is &quot;Тяжкий&quot;)[(set: $ourscore to 2)
+Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="59" name="attack2 style post" tags="" position="2601,1497.5" size="100,100">(else-if: $offence is &quot;ПОСТ&quot; and $class is &quot;Тяжкий&quot;)[(set: $ourscore to 2)
 Пока ваши мелкие энергично отвлекают соперника, вы окольным путем добираетесь до краски. Пасс над головой зевнувшего опекуна прямо в руки-мачты. Легкие 2 очка. 
 ]
 (else-if: $offence is &quot;ПОСТ&quot; and $class is &quot;Болтхендлер&quot;)[(set: $ourscore to 2)
@@ -1524,14 +2065,14 @@ $enemy получает мяч в посту. Вы активно обороня
 ]
 (else-if: $offence is &quot;ПОСТ&quot; and $class is &quot;Растягивающий&quot;)[
 Ваши тяжкие ребята топчутся под кольцом. Вы утаскиваете опекуна на периметр, освобождая им место. В этот зазор лезет (print: $team&#39;s last). Бросок с вытянутых рук..(set: $ourscore to it + (either: 0, 2))
-]</tw-passagedata><tw-passagedata pid="60" name="attack2 style pick" tags="" position="1720,1399.5" size="100,100">(else-if: $offence is &quot;ПИК-Н-РОЛЛ&quot; and $class is &quot;Тяжкий&quot; and $agile is &gt;=15)[(set: $ourscore to 2) Вы ставите заслон (print: $team&#39;s 3rd)у и тут же несетесь к кольцу. Остается поднять руки, принять посылку и занести в кольцо. 2 очка. 
+]</tw-passagedata><tw-passagedata pid="60" name="attack2 style pick" tags="" position="2446,1496.5" size="100,100">(else-if: $offence is &quot;ПИК-Н-РОЛЛ&quot; and $class is &quot;Тяжкий&quot; and $agile is &gt;=15)[(set: $ourscore to 2) Вы ставите заслон (print: $team&#39;s 3rd)у и тут же несетесь к кольцу. Остается поднять руки, принять посылку и занести в кольцо. 2 очка. 
 ]
 (else-if: $offence is &quot;ПИК-Н-РОЛЛ&quot; and $class is &quot;Тяжкий&quot; and $agile is &lt;15)[Вы ставите заслон (print: $team&#39;s 3rd)у и тут же несетесь к кольцу. Мяч, отправленный разыгрывающим, касается ваших рук, но толчок со стороны успевшего защитника, провоцирует потерю. Вы спешите назад, пока это не превратилось в быстрый отрыв.
 ]
 (else-if: $offence is &quot;ПИК-Н-РОЛЛ&quot; and $class is not &quot;Тяжкий&quot; and $intel is &gt;=15)[(set: $ourscore to 2) (print: $team&#39;s last) ставит жесткий заслон вашему опекуну и вы на полных парах несетесь к кольцу. Запаздывающий защитник пытается прихватить за джерси, но мяч уже не у вас, а в руках (print: $team&#39;s last)а. 2 очка. 
 ]
 (else-if: $offence is &quot;ПИК-Н-РОЛЛ&quot; and $class is not &quot;Тяжкий&quot; and $power is &gt;=15)[(set: $ourscore to 2) (print: $team&#39;s last) ставит жесткий заслон вашему опекуну и вы на полных парах несетесь к кольцу. Запаздывающий защитник пытается прихватить за джерси, но вы уже взмываете воздух, а мяч нежно заваливается в корзину. 2 очка. 
-]</tw-passagedata><tw-passagedata pid="61" name="attack2 style drive" tags="" position="2016.5,1465.5" size="100,100">(else-if: $perk2 is not &quot;Пасс из ниоткуда&quot; and $intel &gt;=15)
+]</tw-passagedata><tw-passagedata pid="61" name="attack2 style drive" tags="" position="2285.5,1483.5" size="100,100">(else-if: $perk2 is not &quot;Пасс из ниоткуда&quot; and $intel &gt;=15)
 	(click: &quot;Ворваться, стянуть на себя людей. Если к кольцу не добраться - отдам пас&quot;)[(set: $ourscore to it+(either: 2,2,0,0,3)) (Интеллект 15) Вы проходите линию, неотступно сопровождаемый Игорем. Навстречу вам выдвигается $side. Пространства все меньше, и к кольцу не добраться.  Затылком или просто на фарт вы находите сзади $sideа. Следует передача, сквозь руки ваших опекунов. $side принимает и делает бросок...]
 	(click: &quot;Отдать мяч свободному игроку. Оторваться от защитника и открыться под бросок&quot;)[(set: $ourscore to it+(either: 2,2,0,2)) (Интеллект 15) Мяч принимает (print: $team&#39;s 3rd). На фоне быстрых перемещений, защитники реагируют невпопад, и вы оказыветесь один в трех метрах от кольца, к которому на всех парах несется большой. Следует пас на вас, и дальше отработанные рефлексы подбрасывают вас в воздух. Катапульта спущена...]
 
@@ -1548,45 +2089,25 @@ $enemy получает мяч в посту. Вы активно обороня
 
 Счет
 Команда Здоровье $ourscore
-Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="62" name="attack2 style ap" tags="" position="2141.5,1465.5" size="100,100">Быстрая атака вашими силами, пока противник возвращается в оборону
-(if: $perk2 is &quot;Пасс из ниоткуда&quot;)[
-(link: &quot;Пас через всю площадку&quot;)
-[(set: $ourscore to it+(either: 2,0,2)) (Пас из ниоткуда)(print: $team&#39;s 4rd) как вы ему и втолковывали, уже перебегает половину поля. Вы буквально вырываете мяч у своих. Следует пас через всю площадку. Самые боязливые пригнулись.(print: $team&#39;s 4rd) принимает подарок в руки и все что ему остается - тут же его выпустить, пока безнадежно запаздывающие защитники пытаются его накрыть. Мяч слетает с пальцев...
-]
-]
-(if: $class is not &quot;Тяжкий&quot; and $perk2 is not &quot;Пасс из ниоткуда&quot; and $intel &gt;=15)[
-(link: &quot;Пройти площадку через пасы&quot;)
-[(set: $ourscore to it+(either: 2,2,2,0)) (Интеллект 15) Вы и (print: $team&#39;s 3rd) уже впереди. Следует пас от вашего пятого на $sideа, тот заряжает мяч (print: $team&#39;s 3rd)у. Игорь и $enemy догоняют винга, он тянет сколько может, чтобы дать вам еще немного пространства. Мяч в воздухе, вы тоже, удастся ли переправить ...]
-]
+Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="62" name="attack2 style ap" tags="" position="1957.5,1543.5" size="100,100">Быстрая атака вашими силами, пока противник возвращается в оборону
 
-(if: $class is not &quot;Тяжкий&quot; and $power is &gt;=15 )
-[(link: &quot;От корзины к корзине&quot;)
-[(set: $ourscore to it+(either: 2,2,0,0))
-Вы по правой стороне врываетесь на территорию противника, когда $side находит вас пасом. Перед вами только запыхавшийся Игорь. Три прыжка - и мяч летит в кольцо... 
-]
-]
-(if: $perk1 is &quot;Шальная Треха&quot;)
-[(link: &quot;Трехочковый вторым эшелоном&quot;)
-[(set: $ourscore to it+(either: 3,3,0))
-Пока игроки Мопсов сломя голову бросились за вашими беглецами, вы добираетесь до периметра никем не опознанный. Винг противника Игорь спешит перекрыть косяк товарища. А в это время (print: $team&#39;s 3rd) находит вас передачей. Плавно, как на тренировке... 
-]]
-(if:$perk1 is not &quot;Шальная Треха&quot; and $agile is &gt;=15)[(link: &quot;Трехочковый вторым эшелоном&quot;)
-[(set: $ourscore to it+(either: 3,0,0))
-Пока игроки Мопсов сломя голову бросились за вашими беглецами, вы добираетесь до периметра никем не опознанный. Винг противника Игорь спешит перекрыть косяк товарища. А в это время (print: $team&#39;s 3rd) находит вас передачей. Плавно, как на тренировке... 
-]
-]
-(link: &quot;Поспешить за товарищами&quot;)[(set: $ourscore to it+(either: 2,0,0,0))(print: $team&#39;s 3rd) пробует разогнать нападение, но защитники уже успели выстроиться. Пас на $sideа, тот прет к кольцу, лейап... ]
+{(if: $perk2 is &quot;Пасс из ниоткуда&quot;)[
+[[Пас через всю площадку-&gt;attack2 style ap pass]] ]}
+{(if: $class is not &quot;Тяжкий&quot; and $perk2 is not &quot;Пасс из ниоткуда&quot; and $intel &gt;=15)[
+[[Пройти площадку через пасы-&gt;attack2 style ap pass2]] ]}
+{(if: $class is not &quot;Тяжкий&quot; and $power is &gt;=15 )
+[[[Спринт от корзины к корзине-&gt;attack2 style ap coast]] ]}
+{(if: $perk1 is &quot;Шальная Треха&quot;)
+[[[Трехочковый вторым эшелоном-&gt;attack2 style ap 3p]] ]}
+{[[[Поспешить за товарищами-&gt;attack2 style ap passiv]] ]}
 
-[[Владение у противника! -&gt;3poss opp]] 
 
-Счет
-Команда Здоровье $ourscore
-Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="63" name="3poss opp" tags="" position="1843.5,1550.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="64" name="Vic" tags="" position="1076.5,552.5" size="100,100">Довольно, братцы. Сколько мы терпели этого дерьма. Все, хватит, тут и закончим. Бей солнцеликого, свергай монархию! Даешь власть простым землепашцам и безымянным рыцарям! Все цеха отобрать у цеховых и раздать народу!
-[[Cорвать алый плащ с ближайшего дворянина и выбежать из дворца -&gt; Виктор]]</tw-passagedata><tw-passagedata pid="65" name="Decision" tags="" position="862.5,1118.5" size="100,100">Король некоторое время размышляет. По вашей шее стекает струйка пота. Ставки выросли в разы, когда вы тоже попали в разряд приговоренных. 
+</tw-passagedata><tw-passagedata pid="63" name="Vic" tags="" position="1076.5,552.5" size="100,100">Довольно, братцы. Сколько мы терпели этого дерьма. Все, хватит, тут и закончим. Бей солнцеликого, свергай монархию! Даешь власть простым землепашцам и безымянным рыцарям! Все цеха отобрать у цеховых и раздать народу!
+[[Cорвать алый плащ с ближайшего дворянина и выбежать из дворца -&gt; Виктор]]</tw-passagedata><tw-passagedata pid="64" name="Decision" tags="" position="862.5,1118.5" size="100,100">Король некоторое время размышляет. По вашей шее стекает струйка пота. Ставки выросли в разы, когда вы тоже попали в разряд приговоренных. 
 - Что ж. Учитывая что старую собаку не обучишь новым трюкам, и Кулеврина меня уже ничем не удивит... что даже за издевательствами над Пипом следует усталость... а объявлять войну Орде через пару месяцев после перемирия - слишком врыв даже по моим меркам...Да будет воля моя такой: завтра на рассвете пройдет баскетбольный поединок. У вас есть вечер, чтобы набрать в свои ряды согласных поддержать вас в Божием суде. С кем ты будешь в команде, безымянный наглец?
 
 //Выбери свою сторону//
-(dropdown: bind $side, &quot;Олег&quot;, &quot;Свег&quot;)
+(dropdown: bind $side, &quot;Хельг&quot;, &quot;Свег&quot;)
 
 [[Подтвердить выбор -&gt; Preparation]]
 
@@ -1616,9 +2137,9 @@ $enemy получает мяч в посту. Вы активно обороня
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="66" name="Lucky" tags="" position="1339,1018" size="100,100">Оба гондоны конченные. Нехай оба сгниют где-нибудь, а я в эти игры не собираюсь ввязываться. Да и вы не кусок сливочного масла, ваше говнячество. Зануден я для вас, говорите? Смотрите внимательно, сейчас будет не скучно.
+ ]</tw-passagedata><tw-passagedata pid="65" name="Lucky" tags="" position="1339,1018" size="100,100">Оба гондоны конченные. Нехай оба сгниют где-нибудь, а я в эти игры не собираюсь ввязываться. Да и вы не кусок сливочного масла, ваше говнячество. Зануден я для вас, говорите? Смотрите внимательно, сейчас будет не скучно.
 
-[[Снять штаны и нависнуть над королевским столом -&gt;Сapcake]]</tw-passagedata><tw-passagedata pid="67" name="Domination" tags="" position="387,1644.5" size="100,100">Вы забрались попой на мягкие подушки, нежно взяли пару золотистых локонов и самым воркующим голоском спросили у расслабленной фрейлины:
+[[Снять штаны и нависнуть над королевским столом -&gt;Сapcake]]</tw-passagedata><tw-passagedata pid="66" name="Domination" tags="" position="387,1644.5" size="100,100">Вы забрались попой на мягкие подушки, нежно взяли пару золотистых локонов и самым воркующим голоском спросили у расслабленной фрейлины:
 - А как там твой племянник-претендент поживает?
 Фрейлина вздрогнула и тут же ойкнула. От резкого движения пара волос осталась в вашей ладони.
 - Граф Беня Засос. Так его называют? Говорят, он сосет у всех. Сначала у своих насосал на целое состояние. Бедная нищая душенка, теперь они никого подписать не смогут.  А потом сосал у любого, кто только заявится. Это забавно, ведь он собирается вести людей на завоевание короны. Ух наверное его товарищи ждут не дождутся, когда наконец выйдут в поход. Вместе-то сосать веселее.  
@@ -1629,7 +2150,7 @@ $enemy получает мяч в посту. Вы активно обороня
 
 &lt;style&gt;
   tw-story {
-    background-image: url(&quot;https://lh3.googleusercontent.com/KySeEAWRcrxp6q6aApjFWMW91WLT4F6UI1gHAuGBqOhmXX3k_lDe7v9TiWoW2-3Cqu9nxTiiFF00gn4QDDj1q0gnkdPiuIma8l3cHVzdW-AESiG53Ho2hahLY_KL6TdAE4hMMobY5SZSVTJGldTFpj5SqCuHjfgbSWAncSeM3LO1-zMbeyJBYRsDaNN1Pww_8ur3xjW85NN6jr4piXgfT-uHBcaH1XtP3X9R14qFHy0uPOOsy_9WLPLTsUGvoSrR26R948brt_WyUDu8XudhUP2h0JYPpZfme0dlM8EZSQNAFcb2rdaTdBn0UNXsO__GEhvhr9ufW8FZ46yMV-opzk_dALg56IOrRsos-FLys6ZXnYPwlYYpblgVoVEn92H1mumUAu5uZpetHJsns8Nt_M7_W37SJ3JujIajz8ZlsaSO4YvKUsQJ4zUG0RmwfpeUuTYAJHmIW0_yNHOzOCthHAuCE8_3cesrVXVrr7l-UZDXjGktn6IzXz503hfxDnUKVUeOD1olRf5_bQzbZkddnaJTNoOud2a-LTdRyxwZHVfpWPGkhN1cItNu8MCEgg1-NM1HNowEhHmJL6nib_MX2fWtMsXPzC7tdN3fejcGqI-IjCc0iqL1GTGN9_1f2s7SG_Wi9S9yYBG-_LueJjGikbTbN2PtvtD2Hdnu4sxyCHmXxVRTxigm4mdST7HVtZE=w1385-h620&quot;);
+    background-image: url(&quot;https://lh3.googleusercontent.com/NB-cVU1YIB1ooTZeCQrE8AoubVAZkFXGxO98gsXI8cxve17yKMj8_Fdoy96N33rWYAJQxjeT3v_28hdj6WEsJwtMe3mZTzeQDJaSA8ieuWKtwIxWZ57K9PrDYg7Ai_4SZri7nnmJ8g6Wh1agQwNLHIge2CcDbMFKoGhm_hzJJFDpdPKNUTxwFYUHO7h1CTyGoEnUngmVAj28cPMuBCS5VhERp7RqsMZmTH1V8jueU4k7lgFnUJrAljovJIz3qkJeASibGBVL3j_DjPEQG0nnUQdkUzs0yzLzsp-luikqseFNljF27mtW4hhMssxdMyMIMeuBeksRw4RfF9bMa_ykUjf5h3HizQtOCeK1A-aH3XJo-Vx7TB0TH_Lm1eNkHsEqqPZWYaB8np5CATJbTAUGMGu_Pwl0E3bx2Ee7-djRFIfuQO2TR14VDtsRzoYD7nXaslueSZ2BxjA6E5YO02bTPVP2U7oqWT3644rjj9vWelfsf33fQ4RxwJm1FwV7ODrKy53YZMhdsUyWtNag-UqqEebTCph97KXHmdlLdL6VG4dEm9Cyz2sQpatLexFJDJ8RAexhZRvjX9bl4UhClCRz65OD1kQbCPGHw85Q3DRQJPAObKoTdJOfR6IVjZ4qdTfElleYfnHq9pU5PmdeFzmGMHI2Jzo0RKnZ9EHcaA6SMmId65ZTOwyySvPKGEW__DU=w1440-h669-ft&quot;);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1653,7 +2174,260 @@ $enemy получает мяч в посту. Вы активно обороня
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
- ]</tw-passagedata></tw-storydata>
+
+КОМАНДА ЗДОРОВЬЕ
+(print: $team&#39;s 1st)
+(print: $team&#39;s 2nd)
+(print: $team&#39;s 3rd)
+(print: $team&#39;s 4th)
+(print: $team&#39;s 5th)
+ ]</tw-passagedata><tw-passagedata pid="67" name="Penetration" tags="" position="1336,842.5" size="100,100">Король слушает со всем доступным его искушенной душе вниманием.
+- Говори. Да смотри, чтобы мне понравился выбор!
+
+[[- Накажите Свега! Он не может уследить за своими людьми, а значит никудышный сеньор. Пусть станет слугой у Хельга, поучится исполнять команды-&gt; Swag end]] 
+
+[[- Надо наказать Хельга. Он слишком зарвался в своей спеси, и считает что может решать без вашего ведома как ему поступать. Надо выколоть ему глаза, и отправить по свету. Пусть узнает, какого это, делать все по своему лишь усмотрению-&gt; Helg end]]
+
+[[- И я снова переобуваюсь, Ваше Величество! Этот выбор сводит меня с ума, но если вы так ставите вопрос, то пусть выясняют отношения по древним законам нашей страны, на поле, с мячом в руках!-&gt;Decision]]
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/E6ILZoT_qeHcYlUc5SlcNsgsb2m4ypj84GPUiH3iPaB0J1o-xk4p2SowCVzPkx9Ln-4VBkAToWY2U1GK_rBw92uOY15EbX7cgHPgEJYcAgluXhS8liPkff8GBOYP4F-NayUwKo9SguKI1aGKjFoMtGNmQWXs1v7YUcz3nn_t60fvLlxyFdJP5ERFT5LoaiXuBDXGtM7stukq5BwxJdVJXE-kFL9sleYuh4wFrKaFGnGVQ9NYjMk7fHYORzRB-_pKay_TaufdQYHmRArZkl_WTYE691JDjTUkvu5QLxIdoM3mH-YzeYgH25iNT8hwh7ws5meWhXNyU9mTOl9ni5XlHna4aXC2em1EBVwk1nF9kLY1_7Lqmg-5B4JPnFkw9PYyHj9iRN6-5r6LntjXOLGT79MwGR9Czvz1ABT-_09rBEE7c5AorlKmADLl7GoLJVcUDyUTKyQHp9he9z3amyqXBBHs6BlZyfjuT_v32u4VEp9bMQGRTaU9IE0xQPXJRJkZBVEWfYCjlz8DG5YVoqYG-gmsl19j9z9zhkkVwPFAgLzlQ0WMgINU4DpV5Te7gev61JxYVJy0jONS_duTWauvCLrJVAQhMzvvl17-MaZ4orhfZpO4Moi7j0f2805K397aHibr4PdfW6ggKRz2lrpM3M09hlxlV5JnkqU1g5qDachkx6-nXw447VxuHjcRAtk=w1385-h620&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="68" name=" Swag end" tags="" position="1491,800.5" size="100,100">&lt;style&gt;
+tw-passage{text-align: center;
+}
+&lt;/style&gt;
+&lt;img src= &quot;https://lh3.googleusercontent.com/jUa-zN-I7OBuvLTGRug-MrIqjkI5BmwNxZb2ztqLb2lkWuTJwmbUWjMILYGmPevE7dVvTrixA2TdsJAWisPaUa8S9cg7MWa44MBmTBYXPPo5VTRHSs76lKipBrPEpZDu4N_jA0TkVG_CNXlEjQjfpiLcdpDEnGEWDrKD5ebp24x-7u7p8vX28zhWfTqlDSgylK3GJYCZiAWvCGNuR6MIwrvC4ph7SxkpBovrh1Ya4nR_RpI5OQW1aZg5D2wh3BCKUU6L7jDFlPvj5XZkyW74ayomcoIc7L8PgkuUcFJBS7U1K6BOag2f2OwAbHfuhsSQES4uK1uxiOk6dU0LcnumVUKr4Ex7_BfOH26gcT0TE9sEEXuT0gu9521IYd4Tw_UhrBA18cj4ohTnr7YoR_tY97rURWQRsPlvAoZqLZMahngavMZLuZkFl_7TUwa2o-Qk42_h4aljQM-O0g5K2J7GP326ohz04BVlfWntBVG-xie3gCwKDln58f35aqb_vsnJW5rULSKbD0Y9LZVdXIX6MHBzyCEPAnkCK-NzV1erTmBRgWKR9W4qQP7uAEqQmLEhxP0eMZXtSq-W1F3BvlxlQhAG0i-T4sw9Yh4uTRn8Rsoi5T6aCO0dDGuyJ-6Y1oxKuufJhYZa9EUDSSPVg7pdwnEI6dzvX_z7v7F9giQQCrmRdFGXHyioS1ETKWAyEAM=w1440-h669-ft&quot;&gt;
+(colour: blue) [Ты отдал Свега в рабство Хельга&lt;h1&gt;]
+Он долго избегал ударов судьбы, пока фатум не нанес фаталити твоими руками прямо по его самодовольной роже. Сейчас, пока его кожа привыкает к ударам плетки-семихвостки и не знающим пощады лучам южного солнца, ты можешь довольно прошептать про себя &quot;Ну и кто смеется последним, токсичный хуила?&quot;
+
+[[Конец игры -&gt;Results]]
+
+(set: $swag to &quot;slave&quot;)</tw-passagedata><tw-passagedata pid="69" name=" Helg end" tags="" position="1480,972.5" size="100,100">&lt;style&gt;
+tw-passage{text-align: center;
+}
+&lt;/style&gt;
+&lt;img src= &quot;https://lh3.googleusercontent.com/RuagD9hmmSqVv-1YWOgNfT4FcDmjCjh6b1ezaueQ_hAIbtJAHz_uAFxBlwZtzVfPJOvh4ApQv_Anwm1eK33CYV9EF_NGomSqnQskJDIVnJz1ni0UFGJBd7H8QJZNkTHGZ1NREjZm0vdgBJ1Qley3P7fyKHk-F1GpIzquil9eaQpjqyhjsh-rREbhni7sZUdxvjgFJAc3FmLugfWmi9hJe6gCjB9ExOr-OUDZyz15BwD09aNIfloPwXCe6aVhh6jJ-w51fO0fCxEa8duvrRrK6qauFOj8YK54fJNX1ESM8NHtkH11OYQFqBNNKcah3ucIB3FjJNJOe3pa89ETTmtH1tOYkC0442e5R8JtwI6VBG00GDuBgo6cRLTpQgZzCZBh0ZqXcA5DUv48kk2N8FcQqCkj49od7AX_Wc-eIiwpJogxKvECirgHduP8ZCG2gzr41lOWBoASUPGAyTl-PoYTqT8lCvlnVFV-H5ZDp1dWF96Tq8LOLJzLkHrzZ00no1NPvixv0WCZgPPoVtghHRwR_2Oro6aw-SuE1lbmUIvD3iCFw4kfGa0TLlo5SzKsVVlZabEJBAsgdozIxl3561eTLdn4QsEXVO1zPLNcozUErmRoAb4OPw3TKrrdKPmQVTvUawnA5nnadOaipqRGLN4f8ynmcbgohGSSmUYmrQr3uhNWjwf8u_0YQ6m9S63QLrQ=w1440-h718-ft&quot;&gt;
+(colour: yellow) [Ты освободил Хельга&lt;h1&gt;]
+От судьбы и от молвы, от тюрьмы и от хулы. И, разумеется, от внимания Панча. Теперь Хельг может беззаботно путешествовать по дорогам Артемии, посетить много интересных мест и познакомиться с простыми людьми: ведь ты обспечил его до конца дней пропитанием, предложив лишить зрения. Ну по крайней мере, ты лично расчитываешь на щедрость жителей родной страны. 
+
+[[Конец игры -&gt;Results]]
+
+(set: $helg to &quot;blind&quot;)</tw-passagedata><tw-passagedata pid="70" name="attack2 style ap pass" tags="" position="1957.5,1655.5" size="100,100">(set: _TOscore to $ourscore)
+[(set: $ourscore to it+(either: 2,0,2,2)) (Пас из ниоткуда)(print: $team&#39;s 4rd) как вы ему и втолковывали, уже перебегает половину поля. Вы буквально вырываете мяч у своих. Следует пас через всю площадку. Самые боязливые пригнулись.(print: $team&#39;s 4rd) принимает подарок в руки и все что ему остается - тут же его выпустить, пока безнадежно запаздывающие защитники пытаются его накрыть. Мяч слетает с пальцев...
+]
+(if: $ourscore &gt;_TOscore)
+[Успех!]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))Промах!]
+
+(if: $reb is 1)[
+[[Ваш игрок вырывает мяч на подборе-&gt;attack2 style ap reb]]]
+(else:)[
+[[Владение у противника! -&gt;2poss opp]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="71" name="attack2 style ap pass2" tags="" position="2176.5,1652.5" size="100,100">(set: _TOscore to $ourscore)
+[(set: $ourscore to it+(either: 2,2,0,0,2))(Интеллект 15) Вы и (print: $team&#39;s 3rd) уже впереди. Следует пас от вашего пятого на $sideа, тот заряжает мяч (print: $team&#39;s 3rd)у. Игорь и $enemy догоняют винга, он тянет сколько может, чтобы дать вам еще немного пространства. Мяч в воздухе, вы тоже, удастся ли переправить ...
+]
+(if: $ourscore &gt;_TOscore)
+[Успех!]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))Промах!]
+
+(if: $reb is 1)[
+[[Ваш игрок вырывает мяч на подборе-&gt;attack2 style ap reb]]]
+(else:)[
+[[Владение у противника! -&gt;2poss opp]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="72" name="attack2 style ap coast" tags="" position="2339.5,1675.5" size="100,100">(set: _TOscore to $ourscore)
+[(set: $ourscore to it+(either: 2,2,0,0))
+Вы по правой стороне врываетесь на территорию противника, когда $side находит вас пасом. Перед вами только запыхавшийся Игорь. Три прыжка - и мяч летит в кольцо... 
+]
+
+(if: $ourscore &gt;_TOscore)
+[Успех!]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))Промах!]
+
+(if: $reb is 1)[
+[[Ваш игрок вырывает мяч на подборе-&gt;attack2 style ap reb]]]
+(else:)[
+[[Владение у противника! -&gt;2poss opp]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="73" name="attack2 style ap 3p" tags="" position="2484.5,1685.5" size="100,100">(set: _TOscore to $ourscore)
+[(set: $ourscore to it+(either: 3,3,0))
+Пока игроки Мопсов сломя голову бросились за вашими беглецами, вы добираетесь до периметра никем не опознанный. Винг противника Игорь спешит перекрыть косяк товарища. А в это время (print: $team&#39;s 3rd) находит вас передачей. Плавно, как на тренировке... 
+]]
+
+(if: $ourscore &gt;_TOscore)
+[Успех!]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))Промах!]
+
+(if: $reb is 1)[
+[[Ваш игрок вырывает мяч на подборе-&gt;attack2 style ap reb]]]
+(else:)[
+[[Владение у противника! -&gt;2poss opp]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="74" name="attack2 style ap passiv" tags="" position="2622.5,1667.5" size="100,100">(set: _TOscore to $ourscore)
+[(set: $ourscore to it+(either: 2,0,0,0))(print: $team&#39;s 3rd) пробует разогнать нападение, но защитники уже успели выстроиться. Пас на $sideа, тот прет к кольцу, лейап... ]
+
+
+(if: $ourscore &gt;_TOscore)
+[Успех!]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))Промах!]
+
+(if: $reb is 1)[
+[[Ваш игрок вырывает мяч на подборе-&gt;attack2 style ap reb]]]
+(else:)[
+[[Владение у противника! -&gt;2poss opp]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="75" name="attack2 style ap reb" tags="" position="1958.5,1772.5" size="100,100">{(if: $offence is &quot;АП ТЕМПО&quot;)[
+Ваш игрок тут же пробует запихать путбек обратно, но его накрывают и зверски лишают мяча, и немного здоровья.
+
+[[Скорее возвращаться назад в защиту!-&gt;2poss opp]]]
+(if: $offence is &quot;ПИК-Н-РОЛЛ&quot;)[Ваш игрок тут же пробует запихать путбек обратно, но его накрывают и зверски лишают мяча, и немного здоровья.
+
+[[Скорее возвращаться назад в защиту!-&gt;2poss opp]]]
+(if: $offence is &quot;ДРАЙВ-Н-КИК&quot;)[Ваш игрок тут же пробует запихать путбек обратно, но его накрывают и зверски лишают мяча, и немного здоровья.
+
+[[Скорее возвращаться назад в защиту!-&gt;2poss opp]]]
+(if: $offence is &quot;ПОСТ&quot;)[Ваш игрок тут же пробует запихать путбек обратно, но его накрывают и зверски лишают мяча, и немного здоровья.
+
+[[Скорее возвращаться назад в защиту!-&gt;2poss opp]]]</tw-passagedata><tw-passagedata pid="76" name="Clutch" tags="" position="1183,2348.5" size="100,100">Очень близкая игра!
+
+Ты пытаешься бросить на победу, мяч летит!
+
+[[Ну-же-&gt;Strike]]</tw-passagedata><tw-passagedata pid="77" name="Strike" tags="" position="902,2344.5" size="100,100">БАБАХ!
+Триумф твоей победы заслоняет треск замковых ворот.
+
+Ворота вылетают и внутрь прорываются войска Пятицарствия.
+
+
+Тревога!
+
+Ты отбрасываешь мяч в сторону и оглядываешься по сторонам. Всюду паника. Король поспешно покидает место событий.
+Игроки бросаются врасыпную.
+Ты видишь, что короля окружают Ебургцы и помогают ему отступить в сторону старого дожона - самой неприступной крепости замка.
+
+[[Что ж, Панч, приятно было познакомиться, но пора сваливать? попробовать скрыться-&gt;run]]
+
+[[Собирать верных соратников, пробиваться к королю-&gt;king_loyalty]]
+
+[[Устроить настоящий хаоc-&gt;chaos]]
+</tw-passagedata><tw-passagedata pid="78" name="run" tags="" position="752,2494.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="79" name="king_loyalty" tags="" position="902,2494.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="80" name="chaos" tags="" position="1052,2494.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="81" name="def2 lose" tags="" position="1576,2099.5" size="100,100">{(if: $class is &quot;Тяжкий&quot;)[ (set: $score to it+2)
+$enemy получает мяч в посту и начинает толкаться, вкладываясь в локти. Вы пыхтите, но держите удар. Ложный замах, поворот - вы на месте. Следует полукрюк, за спиной слышен проклятый трепет сетки и огорченный вздох соратников. 2 очка противнику]
+(else-if: $class is &quot;Тяжкий&quot; and $intel &gt;=12)[(set: $score to it)
+$enemy получает мяч в посту и начинает толкаться, вкладываясь в локти. Вы пыхтите, но держите удар. Ложный замах, поворот, следует полукрюк, но в точный момент вы взмываете в воздух и со всей дури бьете по мячу. Шар отлетает в руки вашего игрока. Восторженные крики соратников]
+(else:)[ (set: $score to it+2) (set: $penalty to it+1)
+$enemy получает мяч в посту. Вы активно обороняетесь, ведь хорошая защита это прежде всего энергичные действия и хастл. Но опытный $enemy подставляется под ваши прыжки. Свисток. Противник беспощадно точен, а у вас первый штраф.]}
+
+[[Отыграть до конца первой половины -&gt;1half]] 
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="82" name="def2" tags="" position="1711,2098.5" size="100,100">{$side и (print: $team&#39;s 4rd) прижимают игрока с мячом. Он с трудом видит партнера и пассует ему.} 
+{(if: $perk2 is &quot;Карманник&quot;) [(Карманник) (set: $ourscore to it+2) Мяч прилипает к вашей руке. Противник щелкает клювом, а ноги уже несут вас к кольцу на той стороне. За вами несется лавина из ругающихся и вопящих тел. Лейап. 2 очка!]}
+{(if: $perk1 is &quot;Данчич&quot;) [(Данчич) (set: $ourscore to it+3) (print: $team&#39;s 3rd) выпрыгивает из засады, хватает мяч, пас - и вы в отрыве. За вами несется лавина из ругающихся и вопящих тел. Впереди последний рубеж из мускулов их центрового. Слэм-данк с контактом сотрясает и кольцо и чувства зрителей. Король восторженно орет, а судья позволяют вам пробить штрафной. Вы обескураживаще точны. Три очка!]}
+{(else:) [ (set: $ourscore to it+1) (print: $team&#39;s 3rd) выпрыгивает из засады, хватает мяч и несется в отрыв. Впереди последний рубеж из мускулов их центрового. Тот жестко фолит, дергая игрока за руку. Король удовлетворенно ухает. Судьи все таки разрешают пробить 2 штрафных броска. (print: $team&#39;s 3rd) попадает один. Вы встревожены, но он показывает, что может играть.]}
+
+[[Отыграть до конца первой половины.-&gt;1half]]
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="83" name="def2 style" tags="" position="1835,2099.5" size="100,100">Еще несколько переводов мяча между игроками, и наконец двое устремляются к кольцу. 
+
+{(if: $class is &quot;Болтхендлер&quot; and $perk1 is not &quot;Блок по лицу&quot;)[(set: $score to it+2)
+Противник играет в пик-н-ролл. Ты оказываешься против более мощного Арта, который заносит мяч и частично тебя в кольцо. Первые очки Мопсов.
+]
+	(else-if: $class is &quot;Болтхендлер&quot; and $perk1 is &quot;Блок по лицу&quot;)[(set: $score to it + (either: 0, 2))
+(Блок по лицу) Противник играет в пик-н-ролл. Ты оказываешься против более мощного Арта. Он с криком обрушивает данк, но тебя таким не напугаешь. Ты подставляешь свою стальную пятерню..
+]
+	(else-if: $deffence is &quot;Прессинг&quot; and $agile is &gt;=20 and $power &gt;=15)[
+Вы и $side буквально оплетаете $enemyа своими телами. Он выбрасывает мяч, но лишь чтобы он поскорее оказался в наших руках. 
+]
+	(else-if: $deffence is &quot;Прессинг&quot; and $agile is &lt;=19 and $power &gt;=15)[
+(set: $score to it + (either: 0, 2))
+Вы и $side буквально оплетаете $enemyа своими телами. Он c трудом выбрасывает мяч, который каким-то чудом выцарапывает Арт. Бросок по вашему кольцу...
+]
+	(else-if: $deffence is &quot;Зона&quot; and $class is &quot;Тяжкий&quot;)[(set: $score to it+ (either: 0, 2))
+На тебя разменивается Гоша. Ты стараешься защищаться аккуратно, поэтому флотер над головой встречаешь почти фаталистично... 
+]
+	(else-if: $deffence is &quot;Зона&quot; and $class is &quot;Растягивающий&quot;)[(set: $score to it+0)
+Ты пресекаешь размен Гоши на тяжкого, и оказываешься с ним впритык. Демурия пытается заехать на тебе в кольцо, но ты уворачиваешься и от объятий, и от возможного фола. $side подбирает мяч.  
+]
+	(else-if: $deffence is &quot;Периметр&quot; and $class is &quot;Тяжкий&quot; and $agile &lt;=15 and $intel &lt;=15)[(set: $score to it+3)
+Еще один их пас, и ты спешишь прикрыть брошенного на дуге гарда. Выставленная вперед рука, что там еще обычно делают? Вместо ответа Гоша хладнокровно запускает треху мимо твоих ушей. 3 очка Мопсам. 
+]
+	(else-if: $deffence is &quot;Периметр&quot; and $class is &quot;Тяжкий&quot; and $agile &gt;=16 and $intel &gt;=16)[(set: $score to it+(either: 0, 2))
+Еще один их пас, и ты спешишь прикрыть брошенного на дуге гарда. Это хладнокровный Гоша, самый неудобный соперник для тебя сейчас. Ты делаешь заступ и поднимаешь руки - лишь бы согнать гада с дуги. Демурия предпочитает отдать мяч другому игроку - внутри. Бросок за твоей спиной... 
+]
+	(else-if: $deffence is &quot;Периметр&quot; and $class is &quot;Растягивающий&quot; and $agile &lt;=15 and $intel &lt;=15)[(set: $score to it+(either: 0, 2))
+Еще один их пас, и ты спешишь прикрыть брошенного на дуге гарда. Это хладнокровный Гоша, самый неудобный соперник для тебя сейчас. Ты делаешь заступ и поднимаешь руки - лишь бы согнать гада с дуги. Демурия предпочитает отдать мяч другому игроку - внутри. Бросок за твоей спиной... 
+]
+	(else-if: $deffence is &quot;Периметр&quot; and $class is &quot;Растягивающий&quot; and $agile &gt;=16 and $intel &gt;=16)[(set: $score to it+0)
+Еще один их пас, и ты спешишь прикрыть брошенного на дуге гарда. Это хладнокровный Гоша, самый неудобный соперник для тебя сейчас. Ты делаешь заступ и поднимаешь руки - лишь бы согнать гада с дуги. Демурия предпочитает отдать мяч другому игроку - внутри. Бросок за твоей спиной... 
+]
+	(else-if: $deffence is &quot;Краска&quot; and $class is &quot;Тяжкий&quot; and $perk1 is &quot;Блок по лицу&quot;)[(set: $score to it+(either: 0,0,0,2))
+(Блок по лицу) Противник играет в пик-н-ролл. Ты оказываешься против мощного Арта. Он с криком обрушивает данк, но тебя таким не напугаешь. Ты подставляешь свою стальную пятерню..
+]
+	(else-if: $deffence is &quot;Краска&quot; and $class is &quot;Тяжкий&quot; and $perk1 is not &quot;Блок по лицу&quot;)[(set: $score to it+(either: 1,0,2))(set: $penalty to it+1)
+Противник играет в пик-н-ролл. Ты оказываешься против мощного Арта. Поднятые руки пытаются занести мяч в кольцо. НЕ В ТВОЮ СМЕНУ. Арт валится на землю. Судья свистит и назначает штрафные. Ты надеешься, что от души приложился по гаду...
+]
+	(else-if: $deffence is &quot;Краска&quot; and $class is &quot;Растягивающий&quot; and $perk1 is &quot;Блок по лицу&quot;)[(set: $score to it+(either: 0,0,2))
+(Блок по лицу) Противник играет в пик-н-ролл. Ты оказываешься против мощного Арта. Он с криком обрушивает данк, но тебя таким не напугаешь. Ты подставляешь свою стальную пятерню..
+]
+	(else-if: $deffence is &quot;Краска&quot; and $class is &quot;Растягивающий&quot; and $agile &gt;=12 and $power &gt;=15)[(set: $score to it+(either: 0,,2))
+Противник играет в пик-н-ролл. Ты оказываешься против более мощного Арта. Он финтит, делает последний из дозволенных шагов и взмывает вверх. Ты чуть раньше, в попытке забраться еще выше..
+]
+(else:)[ (set: $score to it+2)
+Ты так и не понял, что случилось, но мяч уже выкочил из корзины, скачет по земле, а вам пора в атаку]
+}
+
+(if: $score is &gt;=1)[ПРОТИВНИК ПОПАЛ]
+(if: $score is &lt;=0)[УСПЕШНАЯ ЗАЩИТА]
+
+[[Отыграть до конца первой половины -&gt;1half]] 
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="84" name="1half" tags="" position="1718,2270.5" size="100,100">Счет к середине игры
+
+
+Хорошо идем, продолжаем!
+</tw-passagedata><tw-passagedata pid="85" name="11" tags="" position="620,2007" size="100,100">(display: &quot;Disel&quot;)
+
+
+
+
+(link-undo:&quot;Вернуться&quot;)</tw-passagedata><tw-passagedata pid="86" name="1" tags="" position="490,1887" size="100,100">234
+
+
+(append: ?SideBar)[
+[[Инвентарь-&gt;11]] 
+ ]</tw-passagedata><tw-passagedata pid="87" name="22" tags="" position="620,1895" size="100,100">45335а
+3456
+[[Инвентарь-&gt;11]] </tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
