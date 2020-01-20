@@ -11,7 +11,12 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="WTF-2" startnode="1" creator="Twine" creator-version="2.3.5" ifid="51F9C69D-F834-4BCA-B92A-1053EAB64077" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
+<tw-storydata name="WTF-2" startnode="1" creator="Twine" creator-version="2.3.5" ifid="51F9C69D-F834-4BCA-B92A-1053EAB64077" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+
+tw-sidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -23,8 +28,9 @@
     background-color: transparent;
 }
 tw-icon {
+    display: none;  
     text-align: right;
-    padding-right: 0.75em;
+    padding-right: 0.00em;
 }
 @media only screen and (max-device-width: 1080px) {
 
@@ -33,12 +39,12 @@ padding: 0 0.5em 0.5em 0.5em;
   text-align: center;
 }
 tw-sidebar {
-    position: relative;
+    position: static;
     top: 0;
     left: 0;
     width: 20%;                        /* padding-right of the tw-story element. */
     max-height: 100%;
-    margin-top: 5%;                    /* padding-top of the tw-story element. */
+    margin-top: -7%;                    /* padding-top of the tw-story element. */
     padding: 0 0.5em 0.5em 0.5em;
     text-align: left;
     background-color: transparent;
