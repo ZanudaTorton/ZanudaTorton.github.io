@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>WTF-2</title>
 <style title="Twine CSS">@-webkit-keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes appear{0%{opacity:0}to{opacity:1}}@-webkit-keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@-webkit-keyframes rumble{50%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}}@keyframes rumble{50%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}}@-webkit-keyframes shudder{50%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@keyframes shudder{50%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@-webkit-keyframes box-flash{0%{background-color:white;color:white}}@keyframes box-flash{0%{background-color:white;color:white}}@-webkit-keyframes pulse{0%{-webkit-transform:scale(0, 0);transform:scale(0, 0)}20%{-webkit-transform:scale(1.2, 1.2);transform:scale(1.2, 1.2)}40%{-webkit-transform:scale(0.9, 0.9);transform:scale(0.9, 0.9)}60%{-webkit-transform:scale(1.05, 1.05);transform:scale(1.05, 1.05)}80%{-webkit-transform:scale(0.925, 0.925);transform:scale(0.925, 0.925)}to{-webkit-transform:scale(1, 1);transform:scale(1, 1)}}@keyframes pulse{0%{-webkit-transform:scale(0, 0);transform:scale(0, 0)}20%{-webkit-transform:scale(1.2, 1.2);transform:scale(1.2, 1.2)}40%{-webkit-transform:scale(0.9, 0.9);transform:scale(0.9, 0.9)}60%{-webkit-transform:scale(1.05, 1.05);transform:scale(1.05, 1.05)}80%{-webkit-transform:scale(0.925, 0.925);transform:scale(0.925, 0.925)}to{-webkit-transform:scale(1, 1);transform:scale(1, 1)}}@-webkit-keyframes shudder-in{0%, to{-webkit-transform:translateX(0em);transform:translateX(0em)}5%, 25%, 45%{-webkit-transform:translateX(-1em);transform:translateX(-1em)}15%, 35%, 55%{-webkit-transform:translateX(1em);transform:translateX(1em)}65%{-webkit-transform:translateX(-0.6em);transform:translateX(-0.6em)}75%{-webkit-transform:translateX(0.6em);transform:translateX(0.6em)}85%{-webkit-transform:translateX(-0.2em);transform:translateX(-0.2em)}95%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@keyframes shudder-in{0%, to{-webkit-transform:translateX(0em);transform:translateX(0em)}5%, 25%, 45%{-webkit-transform:translateX(-1em);transform:translateX(-1em)}15%, 35%, 55%{-webkit-transform:translateX(1em);transform:translateX(1em)}65%{-webkit-transform:translateX(-0.6em);transform:translateX(-0.6em)}75%{-webkit-transform:translateX(0.6em);transform:translateX(0.6em)}85%{-webkit-transform:translateX(-0.2em);transform:translateX(-0.2em)}95%{-webkit-transform:translateX(0.2em);transform:translateX(0.2em)}}@-webkit-keyframes rumble-in{0%, to{-webkit-transform:translateY(0em);transform:translateY(0em)}5%, 25%, 45%{-webkit-transform:translateY(-1em);transform:translateY(-1em)}15%, 35%, 55%{-webkit-transform:translateY(1em);transform:translateY(1em)}65%{-webkit-transform:translateY(-0.6em);transform:translateY(-0.6em)}75%{-webkit-transform:translateY(0.6em);transform:translateY(0.6em)}85%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}95%{-webkit-transform:translateY(0.2em);transform:translateY(0.2em)}}@keyframes rumble-in{0%, to{-webkit-transform:translateY(0em);transform:translateY(0em)}5%, 25%, 45%{-webkit-transform:translateY(-1em);transform:translateY(-1em)}15%, 35%, 55%{-webkit-transform:translateY(1em);transform:translateY(1em)}65%{-webkit-transform:translateY(-0.6em);transform:translateY(-0.6em)}75%{-webkit-transform:translateY(0.6em);transform:translateY(0.6em)}85%{-webkit-transform:translateY(-0.2em);transform:translateY(-0.2em)}95%{-webkit-transform:translateY(0.2em);transform:translateY(0.2em)}}@-webkit-keyframes slide-right{0%{-webkit-transform:translateX(-100vw);transform:translateX(-100vw)}}@keyframes slide-right{0%{-webkit-transform:translateX(-100vw);transform:translateX(-100vw)}}@-webkit-keyframes slide-left{0%{-webkit-transform:translateX(100vw);transform:translateX(100vw)}}@keyframes slide-left{0%{-webkit-transform:translateX(100vw);transform:translateX(100vw)}}@-webkit-keyframes slide-up{0%{-webkit-transform:translateY(100vh);transform:translateY(100vh)}}@keyframes slide-up{0%{-webkit-transform:translateY(100vh);transform:translateY(100vh)}}@-webkit-keyframes slide-down{0%{-webkit-transform:translateY(-100vh);transform:translateY(-100vh)}}@keyframes slide-down{0%{-webkit-transform:translateY(-100vh);transform:translateY(-100vh)}}@-webkit-keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:0.2}64%{opacity:0.4}78%{opacity:0.6}87%{opacity:0.8}92%, to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:0.2}64%{opacity:0.4}78%{opacity:0.6}87%{opacity:0.8}92%, to{opacity:1}}.debug-mode tw-expression[type=hookref]{background-color:rgba(115,123,140,0.15)}.debug-mode tw-expression[type=hookref]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"?" attr(name)}.debug-mode tw-expression[type=variable]{background-color:rgba(140,128,115,0.15)}.debug-mode tw-expression[type=variable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]{background-color:rgba(140,128,115,0.15)}.debug-mode tw-expression[type=tempVariable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[type=macro]:nth-of-type(4n+0){background-color:rgba(136,153,102,0.15)}.debug-mode tw-expression[type=macro]:nth-of-type(2n+1){background-color:rgba(102,153,102,0.15)}.debug-mode tw-expression[type=macro]:nth-of-type(4n+2){background-color:rgba(102,153,136,0.15)}.debug-mode tw-expression[type=macro][name="for"],.debug-mode tw-expression[type=macro][name="loop"],.debug-mode tw-expression[type=macro][name="print"],.debug-mode tw-expression[type=macro][name="enchant"],.debug-mode tw-expression[type=macro][name="display"]{background-color:rgba(0,170,255,0.1) !important}.debug-mode tw-expression[type=macro][name="if"],.debug-mode tw-expression[type=macro][name="if"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="unless"],.debug-mode tw-expression[type=macro][name="unless"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="elseif"],.debug-mode tw-expression[type=macro][name="elseif"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="else"],.debug-mode tw-expression[type=macro][name="else"]+tw-hook:not([name]){background-color:rgba(0,255,0,0.1) !important}.debug-mode tw-expression[type=macro][name="hidden"],.debug-mode tw-expression[type=macro].false{background-color:rgba(255,0,0,0.2) !important}.debug-mode tw-expression[type=macro][name="hidden"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro].false+tw-hook:not([name]){display:none}.debug-mode tw-expression[type=macro][name="either"],.debug-mode tw-expression[type=macro][name="a"],.debug-mode tw-expression[type=macro][name="dm"],.debug-mode tw-expression[type=macro][name="ds"],.debug-mode tw-expression[type=macro][name="array"],.debug-mode tw-expression[type=macro][name^="sub"],.debug-mode tw-expression[type=macro][name="altered"],.debug-mode tw-expression[type=macro][name="count"],.debug-mode tw-expression[type=macro][name^="data"],.debug-mode tw-expression[type=macro][name="find"],.debug-mode tw-expression[type=macro][name$="ed"],.debug-mode tw-expression[type=macro][name$="-pass"],.debug-mode tw-expression[type=macro][name="range"],.debug-mode tw-expression[type=macro][name^="num"],.debug-mode tw-expression[type=macro][name^="str"],.debug-mode tw-expression[type=macro][name="text"],.debug-mode tw-expression[type=macro][name^="lower"],.debug-mode tw-expression[type=macro][name^="upper"],.debug-mode tw-expression[type=macro][name="words"],.debug-mode tw-expression[type=macro][name="ceil"],.debug-mode tw-expression[type=macro][name="floor"],.debug-mode tw-expression[type=macro][name="random"],.debug-mode tw-expression[type=macro][name="abs"],.debug-mode tw-expression[type=macro][name="cos"],.debug-mode tw-expression[type=macro][name="exp"],.debug-mode tw-expression[type=macro][name^="log"],.debug-mode tw-expression[type=macro][name="max"],.debug-mode tw-expression[type=macro][name="min"],.debug-mode tw-expression[type=macro][name="pow"],.debug-mode tw-expression[type=macro][name="sign"],.debug-mode tw-expression[type=macro][name="sin"],.debug-mode tw-expression[type=macro][name="sqrt"],.debug-mode tw-expression[type=macro][name="tan"],.debug-mode tw-expression[type=macro][name="round"],.debug-mode tw-expression[type=macro][name^="hsl"],.debug-mode tw-expression[type=macro][name^="rgb"]{background-color:rgba(255,255,0,0.2) !important}.debug-mode tw-expression[type=macro][name$="-game"],.debug-mode tw-expression[type=macro][name="move"],.debug-mode tw-expression[type=macro][name="put"],.debug-mode tw-expression[type=macro][name="set"]{background-color:rgba(255,128,0,0.2) !important}.debug-mode tw-expression[type=macro][name^="link"],.debug-mode tw-expression[type=macro][name$="-link"],.debug-mode tw-expression[type=macro][name="dropdown"],.debug-mode tw-expression[type=macro][name^="click"],.debug-mode tw-expression[type=macro][name="goto"],.debug-mode tw-expression[type=macro][name="undo"],.debug-mode tw-expression[type=macro][name^="mouseo"]{background-color:rgba(32,191,223,0.2) !important}.debug-mode tw-expression[type=macro][name^="replace"],.debug-mode tw-expression[type=macro][name^="prepend"],.debug-mode tw-expression[type=macro][name^="append"],.debug-mode tw-expression[type=macro][name="show"],.debug-mode tw-expression[type=macro][name^="remove"]{background-color:rgba(223,96,32,0.2) !important}.debug-mode tw-expression[type=macro][name="event"],.debug-mode tw-expression[type=macro][name="live"]{background-color:rgba(32,32,223,0.2) !important}.debug-mode tw-expression[type=macro][name="align"],.debug-mode tw-expression[type=macro][name^="colo"],.debug-mode tw-expression[type=macro][name="background"],.debug-mode tw-expression[type=macro][name="css"],.debug-mode tw-expression[type=macro][name="font"],.debug-mode tw-expression[type=macro][name="hook"],.debug-mode tw-expression[type=macro][name$="-style"],.debug-mode tw-expression[type=macro][name^="text-"],.debug-mode tw-expression[type=macro][name^="transition"],.debug-mode tw-expression[type=macro][name^="t8n"],.debug-mode tw-expression[type=macro][name="live"]{background-color:rgba(255,191,0,0.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 0.5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,0.5)}.debug-mode tw-hook{background-color:rgba(0,85,255,0.1) !important}.debug-mode tw-hook::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,0.1) !important}.debug-mode tw-collapsed::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 50%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, rgba(255,204,189,0.25) 0%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,0.2)}.debug-mode tw-enchantment{animation:enchantment 0.5s infinite;-webkit-animation:enchantment 0.5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,0.1)}.debug-mode tw-include::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(type) ' "' attr(title) '"'}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}@-webkit-keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:10em;min-height:1em;padding:0em 1em 1em 1em;font-size:1.25em;font-family:sans-serif;color:#000;border-left:solid #000 2px;border-top:solid #000 2px;border-top-left-radius:.5em;background:#fff;opacity:1}tw-debugger select{margin-right:1em;width:12em}tw-debugger button{border-radius:3px;border:solid #999 1px;margin:auto 4px;background-color:#fff;font-size:inherit;color:#000}tw-debugger button.enabled{background-color:#eee;box-shadow:inset #ddd 3px 5px 0.5em}tw-debugger .panel{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;max-height:40vh;overflow-y:scroll;overflow-x:hidden;z-index:999998;background:#fff;border:inherit;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:0.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger .panel table{border-spacing:0px}tw-debugger .variable-row{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-moz-flex-direction:row;-ms-flex-direction:row;flex-direction:row;flex-shrink:0}tw-debugger .variable-row:nth-child(2n){background:#EEE}tw-debugger .variable-name{display:inline-block;width:50%}tw-debugger .temporary-variable-scope{opacity:0.8;font-size:0.75em}tw-debugger .temporary-variable-scope::before{content:" in "}tw-debugger .global::before{content:"$"}tw-debugger .temporary::before{content:"_"}tw-debugger .variable-path{opacity:0.4}tw-debugger .variable-value{display:inline-block;width:50%}tw-debugger .error-row{background-color:rgba(230,101,204,0.3)}tw-debugger .error-row:nth-child(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .error-row *{padding:0.25em 0.5em}tw-debugger .error-row .error-message{cursor:help}tw-debugger .panel-source{font-family:monospace;overflow-x:scroll;white-space:pre}tw-debugger .tabs{padding-bottom:0.5em}tw-debugger .tab{border-radius:0px 0px 0.5em 0.5em;border-top:none}tw-dialog{z-index:999997;position:fixed;left:auto;right:auto;bottom:auto;top:auto;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block;max-width:50vw;max-height:75vh;overflow:hidden}tw-dialog input[type=text]{font-size:inherit;width:100%}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center}tw-link,.link,tw-icon,.enchantment-clickblock{cursor:pointer}tw-link,.enchantment-link{color:#4169E1;font-weight:bold;text-decoration:none;transition:color 0.2s ease-in-out}tw-passage tw-enchantment[style^="color"] tw-link:not(:hover),tw-passage tw-enchantment[style*=" color"] tw-link:not(:hover),tw-passage tw-enchantment[style^="color"] .enchantment-link:not(:hover),tw-passage tw-enchantment[style*=" color"] .enchantment-link:not(:hover){color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#DD4B39}.visited{color:#6941e1}tw-passage tw-enchantment[style^="color"] .visited:not(:hover),tw-passage tw-enchantment[style*=" color"] .visited:not(:hover){color:inherit}.visited:hover{color:#E3E}tw-broken-link{color:#993333;border-bottom:2px solid #993333;cursor:not-allowed}tw-passage tw-enchantment[style^="color"] tw-broken-link:not(:hover),tw-passage tw-enchantment[style*=" color"] tw-broken-link:not(:hover){color:inherit}.enchantment-mouseover{border-bottom:1px dashed #666}.enchantment-mouseout{border:rgba(64,149,191,0.25) 1px solid}.enchantment-mouseout:hover{background-color:rgba(64,149,191,0.25);border:transparent 1px solid;border-radius:0.2em}.enchantment-clickblock{box-shadow:inset 0 0 0 0.5vmax;display:block;color:rgba(65,105,225,0.5);transition:color 0.2s ease-in-out}.enchantment-clickblock:hover{color:rgba(0,191,255,0.5)}.enchantment-clickblock:active{color:rgba(222,78,59,0.5)}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;-moz-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font:100% Georgia, serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 20%;margin:0;overflow:hidden;background-color:#000;color:#fff}tw-story br[data-cons]{display:block;height:0;margin:0.8ex 0}tw-story select{background-color:transparent;font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-passage{display:block}tw-sidebar{left:-5em;width:3em;position:absolute;text-align:center;display:block}tw-icon{display:block;margin:0.5em 0;opacity:0.2;font-size:2.75em}tw-icon:hover{opacity:0.4}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:0.2em;padding:0.2em;font-size:1rem;cursor:help}tw-error.error{background-color:rgba(223,58,190,0.4);color:#fff}tw-error.warning{background-color:rgba(223,140,58,0.4);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:0.8rem;line-height:1rem}tw-error-explanation-button{cursor:pointer;line-height:0em;border-radius:1px;border:1px solid black;font-size:0.8rem;margin:0 0.4rem;opacity:0.5}tw-error-explanation-button .folddown-arrowhead{display:inline-block}tw-notifier{border-radius:0.2em;padding:0.2em;font-size:1rem;background-color:rgba(223,182,58,0.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid black;display:inline-block;width:1em;height:1em}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:0.3em 0 0.6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,0.6);background-color:#ff9}ins{color:rgba(0,0,0,0.6);background-color:rgba(255,242,204,0.5);border-radius:0.5em;box-shadow:0em 0em 0.2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate;-webkit-animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-moz-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;-webkit-justify-content:space-between;-moz-justify-content:space-between;justify-content:space-between}tw-outline{color:white;text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000}tw-shadow{text-shadow:0.08em 0.08em 0.08em #000}tw-emboss{text-shadow:0.08em 0.08em 0em #000;color:white}tw-condense{letter-spacing:-0.08em}tw-expand{letter-spacing:0.1em}tw-blur{color:transparent;text-shadow:0em 0em 0.08em #000}tw-blurrier{color:transparent;text-shadow:0em 0em 0.2em #000}tw-blurrier::selection{background-color:transparent;color:transparent}tw-blurrier::-moz-selection{background-color:transparent;color:transparent}tw-smear{color:transparent;text-shadow:0em 0em 0.02em rgba(0,0,0,0.75),-0.2em 0em 0.5em rgba(0,0,0,0.5),0.2em 0em 0.5em rgba(0,0,0,0.5)}tw-mirror{display:inline-block;transform:scaleX(-1);-webkit-transform:scaleX(-1)}tw-upside-down{display:inline-block;transform:scaleY(-1);-webkit-transform:scaleY(-1)}tw-fade-in-out{text-decoration:none;animation:fade-in-out 2s ease-in-out infinite alternate;-webkit-animation:fade-in-out 2s ease-in-out infinite alternate}tw-rumble{-webkit-animation:rumble linear 0.1s 0s infinite;animation:rumble linear 0.1s 0s infinite;display:inline-block}tw-shudder{-webkit-animation:shudder linear 0.1s 0s infinite;animation:shudder linear 0.1s 0s infinite;display:inline-block}tw-shudder-in{animation:shudder-in 1s ease-out;-webkit-animation:shudder-in 1s ease-out}.transition-in{-webkit-animation:appear 0ms step-start;animation:appear 0ms step-start}.transition-out{-webkit-animation:appear 0ms step-end;animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in{-webkit-animation:appear .8s;animation:appear .8s}[data-t8n^=dissolve].transition-out{-webkit-animation:appear .8s reverse;animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block;-webkit-animation:shudder-in .8s;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block;-webkit-animation:shudder-in .8s reverse;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block;-webkit-animation:rumble-in .8s;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block;-webkit-animation:rumble-in .8s reverse;animation:rumble-in .8s reverse}[data-t8n^=boxflash].transition-in{-webkit-animation:box-flash .8s;animation:box-flash .8s}[data-t8n^=pulse].transition-in{-webkit-animation:pulse .8s;animation:pulse .8s;display:inline-block}[data-t8n^=pulse].transition-out{-webkit-animation:pulse .8s reverse;animation:pulse .8s reverse;display:inline-block}[data-t8n^=slideleft].transition-in{-webkit-animation:slide-left .8s;animation:slide-left .8s;display:inline-block}[data-t8n^=slideleft].transition-out{-webkit-animation:slide-right .8s reverse;animation:slide-right .8s reverse;display:inline-block}[data-t8n^=slideright].transition-in{-webkit-animation:slide-right .8s;animation:slide-right .8s;display:inline-block}[data-t8n^=slideright].transition-out{-webkit-animation:slide-left .8s reverse;animation:slide-left .8s reverse;display:inline-block}[data-t8n^=slideup].transition-in{-webkit-animation:slide-up .8s;animation:slide-up .8s;display:inline-block}[data-t8n^=slideup].transition-out{-webkit-animation:slide-down .8s reverse;animation:slide-down .8s reverse;display:inline-block}[data-t8n^=slidedown].transition-in{-webkit-animation:slide-down .8s;animation:slide-down .8s;display:inline-block}[data-t8n^=slidedown].transition-out{-webkit-animation:slide-up .8s reverse;animation:slide-up .8s reverse;display:inline-block}[data-t8n^=flicker].transition-in{-webkit-animation:flicker .8s;animation:flicker .8s}[data-t8n^=flicker].transition-out{-webkit-animation:flicker .8s reverse;animation:flicker .8s reverse}[data-t8n$=fast]{animation-duration:.4s;-webkit-animation-duration:.4s}[data-t8n$=slow]{animation-duration:1.6s;-webkit-animation-duration:1.6s}
 </style>
@@ -209,16 +210,8 @@ tw-icon {
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+]
  
   &lt;style&gt;
   tw-story {
@@ -238,16 +231,8 @@ tw-icon {
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+]
  
   &lt;style&gt;
   tw-story {
@@ -276,16 +261,8 @@ tw-icon {
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+]
   &lt;style&gt;
   tw-story {
     background-image: url(&quot;https://lh3.googleusercontent.com/9YZj0ogGMV-uOoBT_sCMGMp751LB2Yfd8KVTiDCY2k6OtNKit_YTNZwJIpm3scw8jNUZNqgg-cyIbB-ZhEyn0N9USLCQOJVT9AnG2xY7rNukpfBgcBIH0-IUboqQJCdBaSzwsU7sSZRrDW7p7Bk0ikTaomrG28PqgUjfNeu0xCzvZqpZl92TdshSgV8w8iobRBJlYovdeVClq64yMJI6wepOnBDafX5_1qzw1wgGDQo3V6blKOtO9NLd-duN6k36_FBJ7FFGY4N0hzxYGxNeVMZ9ZgOo2305KbMRWJv0LgikN37de48OaiKmOWF_gYz4z_yq0MUwvPZ3mKuO5fCiN-e4E7CqMz9PNFxjr3Uq4qIYCz2boMNii-b2bm5eamn4Q0pVBU8gf5Q3jjH2RErtBu_gLa1EAnj_o--0PO5Z7EUBa0lLzzTlQ3vKfa2a1BkWRTsDQza5rqI0GUwVCsh6Vj3gYOHiD4RjeQS-H-3Tbz4JQYr6qe4oEd-3nFI4-m5X5ucChwR5nbCdu3AbaB7BoPWXBDjP8hnzjkOOYmJa6AtDg0kVAXmrLoe9moyQ56lpQixd6acEagoxworaE4wVJAQgQ6c2__00s5HGtzLcrocApm2XdLe_vHuq9WBYnC2hM46yVFg3QzY7P9w8pjECPgXLftGf6GyV1tnqja2_B2q9uZDbmHvmj5Ht6ZvKmNc=w1440-h718-ft&quot;);
@@ -309,17 +286,8 @@ tw-icon {
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
- 
+[[Параметры-&gt;Params]] 
+]
   &lt;style&gt;
   tw-story {
     background-image: url(&quot;https://lh3.googleusercontent.com/9YZj0ogGMV-uOoBT_sCMGMp751LB2Yfd8KVTiDCY2k6OtNKit_YTNZwJIpm3scw8jNUZNqgg-cyIbB-ZhEyn0N9USLCQOJVT9AnG2xY7rNukpfBgcBIH0-IUboqQJCdBaSzwsU7sSZRrDW7p7Bk0ikTaomrG28PqgUjfNeu0xCzvZqpZl92TdshSgV8w8iobRBJlYovdeVClq64yMJI6wepOnBDafX5_1qzw1wgGDQo3V6blKOtO9NLd-duN6k36_FBJ7FFGY4N0hzxYGxNeVMZ9ZgOo2305KbMRWJv0LgikN37de48OaiKmOWF_gYz4z_yq0MUwvPZ3mKuO5fCiN-e4E7CqMz9PNFxjr3Uq4qIYCz2boMNii-b2bm5eamn4Q0pVBU8gf5Q3jjH2RErtBu_gLa1EAnj_o--0PO5Z7EUBa0lLzzTlQ3vKfa2a1BkWRTsDQza5rqI0GUwVCsh6Vj3gYOHiD4RjeQS-H-3Tbz4JQYr6qe4oEd-3nFI4-m5X5ucChwR5nbCdu3AbaB7BoPWXBDjP8hnzjkOOYmJa6AtDg0kVAXmrLoe9moyQ56lpQixd6acEagoxworaE4wVJAQgQ6c2__00s5HGtzLcrocApm2XdLe_vHuq9WBYnC2hM46yVFg3QzY7P9w8pjECPgXLftGf6GyV1tnqja2_B2q9uZDbmHvmj5Ht6ZvKmNc=w1440-h718-ft&quot;);
@@ -340,20 +308,10 @@ tw-icon {
 
 [[Вернуться к столу -&gt;Food]] 
 
-(set: $pip to &quot;rose&quot;)
-
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+]
  
   &lt;style&gt;
   tw-story {
@@ -387,17 +345,8 @@ tw-icon {
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
- 
+[[Параметры-&gt;Params]] 
+]
   &lt;style&gt;
   tw-story {
     background-image: url(&quot;https://lh3.googleusercontent.com/9YZj0ogGMV-uOoBT_sCMGMp751LB2Yfd8KVTiDCY2k6OtNKit_YTNZwJIpm3scw8jNUZNqgg-cyIbB-ZhEyn0N9USLCQOJVT9AnG2xY7rNukpfBgcBIH0-IUboqQJCdBaSzwsU7sSZRrDW7p7Bk0ikTaomrG28PqgUjfNeu0xCzvZqpZl92TdshSgV8w8iobRBJlYovdeVClq64yMJI6wepOnBDafX5_1qzw1wgGDQo3V6blKOtO9NLd-duN6k36_FBJ7FFGY4N0hzxYGxNeVMZ9ZgOo2305KbMRWJv0LgikN37de48OaiKmOWF_gYz4z_yq0MUwvPZ3mKuO5fCiN-e4E7CqMz9PNFxjr3Uq4qIYCz2boMNii-b2bm5eamn4Q0pVBU8gf5Q3jjH2RErtBu_gLa1EAnj_o--0PO5Z7EUBa0lLzzTlQ3vKfa2a1BkWRTsDQza5rqI0GUwVCsh6Vj3gYOHiD4RjeQS-H-3Tbz4JQYr6qe4oEd-3nFI4-m5X5ucChwR5nbCdu3AbaB7BoPWXBDjP8hnzjkOOYmJa6AtDg0kVAXmrLoe9moyQ56lpQixd6acEagoxworaE4wVJAQgQ6c2__00s5HGtzLcrocApm2XdLe_vHuq9WBYnC2hM46yVFg3QzY7P9w8pjECPgXLftGf6GyV1tnqja2_B2q9uZDbmHvmj5Ht6ZvKmNc=w1440-h718-ft&quot;);
@@ -427,16 +376,8 @@ tw-icon {
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+]
  
   &lt;style&gt;
   tw-story {
@@ -466,17 +407,8 @@ tw-icon {
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
- 
+[[Параметры-&gt;Params]] 
+]
   &lt;style&gt;
   tw-story {
     background-image: url(&quot;https://lh3.googleusercontent.com/9YZj0ogGMV-uOoBT_sCMGMp751LB2Yfd8KVTiDCY2k6OtNKit_YTNZwJIpm3scw8jNUZNqgg-cyIbB-ZhEyn0N9USLCQOJVT9AnG2xY7rNukpfBgcBIH0-IUboqQJCdBaSzwsU7sSZRrDW7p7Bk0ikTaomrG28PqgUjfNeu0xCzvZqpZl92TdshSgV8w8iobRBJlYovdeVClq64yMJI6wepOnBDafX5_1qzw1wgGDQo3V6blKOtO9NLd-duN6k36_FBJ7FFGY4N0hzxYGxNeVMZ9ZgOo2305KbMRWJv0LgikN37de48OaiKmOWF_gYz4z_yq0MUwvPZ3mKuO5fCiN-e4E7CqMz9PNFxjr3Uq4qIYCz2boMNii-b2bm5eamn4Q0pVBU8gf5Q3jjH2RErtBu_gLa1EAnj_o--0PO5Z7EUBa0lLzzTlQ3vKfa2a1BkWRTsDQza5rqI0GUwVCsh6Vj3gYOHiD4RjeQS-H-3Tbz4JQYr6qe4oEd-3nFI4-m5X5ucChwR5nbCdu3AbaB7BoPWXBDjP8hnzjkOOYmJa6AtDg0kVAXmrLoe9moyQ56lpQixd6acEagoxworaE4wVJAQgQ6c2__00s5HGtzLcrocApm2XdLe_vHuq9WBYnC2hM46yVFg3QzY7P9w8pjECPgXLftGf6GyV1tnqja2_B2q9uZDbmHvmj5Ht6ZvKmNc=w1440-h718-ft&quot;);
@@ -507,16 +439,8 @@ tw-passage{text-align: center;
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="13" name="CoolGossip" tags="" position="84,904.5" size="100,100">Твою руку хватают за кисть тонкие нежные пальцы. Ты поворачиваешься.
+[[Параметры-&gt;Params]] 
+]</tw-passagedata><tw-passagedata pid="13" name="CoolGossip" tags="" position="84,904.5" size="100,100">Твою руку хватают за кисть тонкие нежные пальцы. Ты поворачиваешься.
 Кулерина обеззаруживающе улыбается.
 - Люблю острых собеседников, даже если они грубоваты.
 Она отводит тебя в сторону, где нет других гостей и берет с тебя слово, что ты заглянешь к ней вечером в покои для интересных бесед.
@@ -528,16 +452,8 @@ tw-passage{text-align: center;
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+]
  
   &lt;style&gt;
   tw-story {
@@ -557,16 +473,8 @@ tw-passage{text-align: center;
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+]
  
   &lt;style&gt;
   tw-story {
@@ -576,7 +484,7 @@ tw-passage{text-align: center;
     background-position: center center;
 	opacity:0.999;
   }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="15" name="Doubt" tags="" position="1081,658.5" size="100,100">
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="15" name="Doubt" tags="" position="1081,657.5" size="100,100">
 Увидев гербы вблизи, ты тут же пожалел о своем решении. Стокнулись люди, которых ты старался последнее время избегать - два твоих кузена. 
 
 Эти двое вот уже который год сживали друг друга со света. Каждый из них пытался привлечь тебя на свою сторону, а все попытки уладить конфликт лишь раздували огонь ревности и недовольства. 
@@ -606,16 +514,8 @@ tw-passage{text-align: center;
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="16" name="Audience" tags="" position="1006,808.5" size="100,100">- Эти двое надоели мне до чертиков. Больше не желаю получать отчеты об их стычках, сожженых домах и потоптанных посевах. А более всего читать их бесконечные кляузы друг на друга! Оба мне отвратны, так что подумываю, уж не наказать ли обоих? Что думаешь ты, безымянный? У папашки твоего всегда было мнение, хоть его никогда и не спрашивали. Не сомневаюсь, что и у тебя найдется. Кого мне из них наказать?
+[[Параметры-&gt;Params]] 
+]</tw-passagedata><tw-passagedata pid="16" name="Audience" tags="" position="1006,808.5" size="100,100">- Эти двое надоели мне до чертиков. Больше не желаю получать отчеты об их стычках, сожженых домах и потоптанных посевах. А более всего читать их бесконечные кляузы друг на друга! Оба мне отвратны, так что подумываю, уж не наказать ли обоих? Что думаешь ты, безымянный? У папашки твоего всегда было мнение, хоть его никогда и не спрашивали. Не сомневаюсь, что и у тебя найдется. Кого мне из них наказать?
 
 Ты пытаешься выбраться из переплета, но король неуклонен и ждет от тебя четкого ответа.
 
@@ -640,16 +540,8 @@ tw-passage{text-align: center;
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="17" name=" Виктор" tags="" position="1072,427.5" size="100,100">&lt;style&gt;
+[[Параметры-&gt;Params]] 
+]</tw-passagedata><tw-passagedata pid="17" name=" Виктор" tags="" position="1072,427.5" size="100,100">&lt;style&gt;
 tw-passage{text-align: center;
 }
 &lt;/style&gt;
@@ -681,16 +573,8 @@ tw-passage{text-align: center;
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+]
  
   &lt;style&gt;
   tw-story {
@@ -720,16 +604,8 @@ tw-passage{text-align: center;
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+]
  
   &lt;style&gt;
   tw-story {
@@ -771,16 +647,8 @@ tw-passage{text-align: center;
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="21" name=" Swag" tags="" position="1151,901.5" size="100,100">Ваш кузен Свег мрачно кивает головой. Ты распрашиваешь, что послужило причиной перебранки в этот раз.
+[[Параметры-&gt;Params]] 
+]</tw-passagedata><tw-passagedata pid="21" name=" Swag" tags="" position="1151,901.5" size="100,100">Ваш кузен Свег мрачно кивает головой. Ты распрашиваешь, что послужило причиной перебранки в этот раз.
 - Ничего особенного. Хельг не нравится мне, и это взаимно. Единственный аргумент на моей чаше весов - только один из нас пытается не попадаться на глаза другому. Если бы Хельг демонстративно не начал оскорблять моих вассалов на общем собрании, может быть я бы удержал себя в руках.
 - Возможно ли примерение?
 - Да сколько можно. Эти ежегодные клятвы наши перед свидетелями о успокоении унижают Великую Бороду больше, чем пятый брак Хельга. Я намерен покончить с ним окончательно. Может хотя бы одну женщину от случайной летальной болезни успею спасти.
@@ -806,16 +674,8 @@ tw-passage{text-align: center;
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="22" name="Helg" tags="" position="1151,783.5" size="100,100">Ваш кузен Хельг сердечно обнимает тебя. Ты узнаешь его версию событий.
+[[Параметры-&gt;Params]] 
+]</tw-passagedata><tw-passagedata pid="22" name="Helg" tags="" position="1151,783.5" size="100,100">Ваш кузен Хельг сердечно обнимает тебя. Ты узнаешь его версию событий.
 - Свег пересек последнюю линию. Как всегда у него кишка тонка сделать все самостоятельно. Виконт Арчаков, его известный прихлебатель, посмел выпороть моих охотников, заблудившихся в нашем же лесу. Если б я дал спуск щенку, то чтобы говорили обо мне другие дворяне? Да даже к черту их всех, но мои собственные люди больше не могли бы полагаться на такого сюзерена. Токсичному хуиле в кружевах только этого и надо.
 - Примерение возможно?
 - Когда в протяную руку в ответ суют первичные половые признаки, в первый раз я извинюсь, что неправильно понял собеседника. А во второй - вырву к чертовой бабушке все причиндалы. Свег активно домогается меня в пятидесятый раз. Мы закончим это здесь и немедленно.
@@ -841,16 +701,8 @@ tw-passage{text-align: center;
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="23" name="Сapcake" tags="" position="1166,1054.5" size="100,100">&lt;style&gt;
+[[Параметры-&gt;Params]] 
+]</tw-passagedata><tw-passagedata pid="23" name="Сapcake" tags="" position="1166,1054.5" size="100,100">&lt;style&gt;
 tw-passage{text-align: center;
 }
 &lt;/style&gt;
@@ -892,16 +744,8 @@ $side ждет тебя на выходе и горячо благодарит �
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+]
  
  &lt;style&gt;
   tw-story {
@@ -949,16 +793,8 @@ $side ждет тебя на выходе и горячо благодарит �
 	
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+]
  
   &lt;style&gt;
   tw-story {
@@ -986,16 +822,8 @@ $side ждет тебя на выходе и горячо благодарит �
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+]
  
    &lt;style&gt;
   tw-story {
@@ -1050,16 +878,8 @@ $side ждет тебя на выходе и горячо благодарит �
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+]
  
    &lt;style&gt;
   tw-story {
@@ -1087,17 +907,8 @@ $side ждет тебя на выходе и горячо благодарит �
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
- 
+[[Параметры-&gt;Params]] 
+]
    &lt;style&gt;
   tw-story {
     background-image: url(&quot;https://lh3.googleusercontent.com/vfkyazCEdz0QncpinLiQpDh-GSIhzdXN3r-XFMgwNhaGljGvfW0ZhCD9xJuUGwtWI5R-EGyw_jaekfaiz8Q_awM3x8wjF2BawHNdbp33bAeqqDI6qdw7dzzf6e5MRNRSK4uDJB0f-T0LhLiPMMRLAUQZ21dzsW-2faxrxgOZhFoHcRzOwde33KU_V7q9wbUxdPchqh-Dc3VuGwgsi7N_ZRqTDPYC5cJAHV5OeOGIdMXvbRXhtxFqVw278eJy8Xr-iqu4aNQM4u35TD4nM8-ykW-72TQQIzv0a3a9oSFUS57gFi0F_mAm6P8hVrxumWlmnHJX0liYEC737Z-uDMjkdYXddIQ9UspaIM9Kq-th7hNgQ-LX5E4Iz2zL7N9glo7nv2VyoOzb7GxpEKvrHelRfGOYqTPOSET-bf1k907Li71wS_yQF3-OZBTeMNRFeUul9Tpg_yY9g50jPfOe3XrcSC2WINgcSqNIsJ0UM22e-vzZcwpTEg36h2WFAhhsChR7PEstS5CwkFt16dH0hRHyYAEpoEdg7F-CtzdoNtE1m3vcm5q8w5sk1H2VWsrSFDd44oozHLhUtuifzsOSTiGxiGqeGLQQ5oMxH7uUBMeq5mwOXXpfi5-U5D9fM2de1qPfHzf4aZvJhSvckt6l_4wAwXJ-l2vE2f_9aVyA45D4cNeWIvCHbsmpp5LcrL5g3-8=w1440-h669-ft&quot;);
@@ -1150,16 +961,8 @@ $side ждет тебя на выходе и горячо благодарит �
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+]
  
    &lt;style&gt;
   tw-story {
@@ -1188,16 +991,8 @@ $side ждет тебя на выходе и горячо благодарит �
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+]
  
    &lt;style&gt;
   tw-story {
@@ -1251,17 +1046,8 @@ $side ждет тебя на выходе и горячо благодарит �
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
- 
+[[Параметры-&gt;Params]] 
+]
    &lt;style&gt;
   tw-story {
     background-image: url(&quot;https://lh3.googleusercontent.com/vfkyazCEdz0QncpinLiQpDh-GSIhzdXN3r-XFMgwNhaGljGvfW0ZhCD9xJuUGwtWI5R-EGyw_jaekfaiz8Q_awM3x8wjF2BawHNdbp33bAeqqDI6qdw7dzzf6e5MRNRSK4uDJB0f-T0LhLiPMMRLAUQZ21dzsW-2faxrxgOZhFoHcRzOwde33KU_V7q9wbUxdPchqh-Dc3VuGwgsi7N_ZRqTDPYC5cJAHV5OeOGIdMXvbRXhtxFqVw278eJy8Xr-iqu4aNQM4u35TD4nM8-ykW-72TQQIzv0a3a9oSFUS57gFi0F_mAm6P8hVrxumWlmnHJX0liYEC737Z-uDMjkdYXddIQ9UspaIM9Kq-th7hNgQ-LX5E4Iz2zL7N9glo7nv2VyoOzb7GxpEKvrHelRfGOYqTPOSET-bf1k907Li71wS_yQF3-OZBTeMNRFeUul9Tpg_yY9g50jPfOe3XrcSC2WINgcSqNIsJ0UM22e-vzZcwpTEg36h2WFAhhsChR7PEstS5CwkFt16dH0hRHyYAEpoEdg7F-CtzdoNtE1m3vcm5q8w5sk1H2VWsrSFDd44oozHLhUtuifzsOSTiGxiGqeGLQQ5oMxH7uUBMeq5mwOXXpfi5-U5D9fM2de1qPfHzf4aZvJhSvckt6l_4wAwXJ-l2vE2f_9aVyA45D4cNeWIvCHbsmpp5LcrL5g3-8=w1440-h669-ft&quot;);
@@ -1287,15 +1073,9 @@ $side предлагает для нее название &quot;Команда �
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+[[Команда-&gt;Team]]
+]
  
   &lt;style&gt;
   tw-story {
@@ -1316,24 +1096,9 @@ $side предлагает для нее название &quot;Команда �
 {[[Дождаться утра|Утро]]}
 
 (append: ?SideBar)[
-
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
-
-КОМАНДА ЗДОРОВЬЕ
-(print: $team&#39;s 1st)
-(print: $team&#39;s 2nd)
-(print: $team&#39;s 3rd)
-(print: $team&#39;s 4th)
-(print: $team&#39;s 5th)
- ]
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]
  
    &lt;style&gt;
   tw-story {
@@ -1377,24 +1142,9 @@ $side предлагает для нее название &quot;Команда �
 &lt;/style&gt;
 
 (append: ?SideBar)[
-
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
-
-КОМАНДА ЗДОРОВЬЕ
-(print: $team&#39;s 1st)
-(print: $team&#39;s 2nd)
-(print: $team&#39;s 3rd)
-(print: $team&#39;s 4th)
-(print: $team&#39;s 5th)
- ]</tw-passagedata><tw-passagedata pid="35" name="Покои Артема" tags="" position="716,1576.5" size="100,100">(if: visits is &gt;=2)
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="35" name="Покои Артема" tags="" position="716,1576.5" size="100,100">(if: visits is &gt;=2)
 [Второго шанса король не даст. Надо было решаться сразу.
 [[Вернуться к себе|Резиденция]]]
 
@@ -1428,24 +1178,9 @@ $side предлагает для нее название &quot;Команда �
 &lt;/style&gt;
 
 (append: ?SideBar)[
-
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
-
-КОМАНДА ЗДОРОВЬЕ
-(print: $team&#39;s 1st)
-(print: $team&#39;s 2nd)
-(print: $team&#39;s 3rd)
-(print: $team&#39;s 4th)
-(print: $team&#39;s 5th)
- ]</tw-passagedata><tw-passagedata pid="36" name="Утро" tags="" position="866,1576.5" size="100,100">Наступило утро. 
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="36" name="Утро" tags="" position="866,1576.5" size="100,100">Наступило утро. 
 (if: $ap is &quot;Фаворит&quot;)[
 Ты плохо спал, зато стал любимчиком короля
 ++Получен перк!
@@ -1458,24 +1193,9 @@ $side предлагает для нее название &quot;Команда �
 [[Выход на ристалище|Offence]] 
 
 (append: ?SideBar)[
-
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
-
-КОМАНДА ЗДОРОВЬЕ
-(print: $team&#39;s 1st)
-(print: $team&#39;s 2nd)
-(print: $team&#39;s 3rd)
-(print: $team&#39;s 4th)
-(print: $team&#39;s 5th)
- ]
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]
  
  &lt;style&gt;
   tw-story {
@@ -1513,24 +1233,9 @@ $side предлагает для нее название &quot;Команда �
 &lt;/style&gt;
 
 (append: ?SideBar)[
-
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
-
-КОМАНДА ЗДОРОВЬЕ
-(print: $team&#39;s 1st)
-(print: $team&#39;s 2nd)
-(print: $team&#39;s 3rd)
-(print: $team&#39;s 4th)
-(print: $team&#39;s 5th)
- ]</tw-passagedata><tw-passagedata pid="38" name="AP bedroom" tags="" position="716,1726.5" size="100,100">На тридцатой истории про веселых парней с Бесплодных пустошей, Артем наконец закрывает глаза.
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="38" name="AP bedroom" tags="" position="716,1726.5" size="100,100">На тридцатой истории про веселых парней с Бесплодных пустошей, Артем наконец закрывает глаза.
 За окном во всю разгорается рассвет, а ты охрип и почти не спал.Самое время улизнуть к себе.
 
 (if: $pip is &quot;rose&quot;)[
@@ -1558,46 +1263,16 @@ $side предлагает для нее название &quot;Команда �
 &lt;/style&gt;
 
 (append: ?SideBar)[
-
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
-
-КОМАНДА ЗДОРОВЬЕ
-(print: $team&#39;s 1st)
-(print: $team&#39;s 2nd)
-(print: $team&#39;s 3rd)
-(print: $team&#39;s 4th)
-(print: $team&#39;s 5th)
- ]</tw-passagedata><tw-passagedata pid="39" name="Кул bad" tags="" position="537,1435.5" size="100,100">Вы громко стучитесь в дверь, но никто не отвечает. Проклятая фрейлина делает вид, что спит. 
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="39" name="Кул bad" tags="" position="537,1435.5" size="100,100">Вы громко стучитесь в дверь, но никто не отвечает. Проклятая фрейлина делает вид, что спит. 
 
 [[Вернуться к себе |Резиденция]]
 
 (append: ?SideBar)[
-
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
-
-КОМАНДА ЗДОРОВЬЕ
-(print: $team&#39;s 1st)
-(print: $team&#39;s 2nd)
-(print: $team&#39;s 3rd)
-(print: $team&#39;s 4th)
-(print: $team&#39;s 5th)
- ]
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]
  
    &lt;style&gt;
   tw-story {
@@ -1621,16 +1296,8 @@ $side предлагает для нее название &quot;Команда �
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+]
  
   &lt;style&gt;
   tw-story {
@@ -1697,39 +1364,25 @@ tw-passage{text-align: center;
 [[Начинаем|1poss opp]] ]
 
 (append: ?SideBar)[
-
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
-
-КОМАНДА ЗДОРОВЬЕ
-(print: $team&#39;s 1st)
-(print: $team&#39;s 2nd)
-(print: $team&#39;s 3rd)
-(print: $team&#39;s 4th)
-(print: $team&#39;s 5th)
- ]</tw-passagedata><tw-passagedata pid="44" name="Offence" tags="" position="978,1806.5" size="100,100">
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]
+(set: $game to &quot;start&quot;)</tw-passagedata><tw-passagedata pid="44" name="Offence" tags="" position="978,1806.5" size="100,100">
 Самое время определиться с тактикой на игру. Стоит учитывать сильные и слабые стороны выбранных игроков.
 
-АП ТЕМПО
-Будем играть быстрым темпом. Все несутся в атаку при первой возможности.  Мои шутеры должны успевать занимать позицию, чтобы если противник окопался в краске - немедленно наказывать открытым дальним броском. Погнали!
+НАЛЕТ 
+Все несутся в атаку при первой возможности, жутко кричат и бесстрашно гогочат. Противник обескуражен скоростью и глотает пыль. Подходит для быстрых реакцией, сильных и не думающих о последствиях.
 
-ПИК-Н-РОЛЛ
-Пик-н-ролл все зарешает. Мяч каждый раз должен оказываться у моих лучших игроков. Если совсем прижмут, то отдадут пас на открытого.
+ЩИТ-И-МЕЧ
+Рыцарь прикрывает болхенделра от защитников, освобождая путь к кольцу. Если защитники реагируют на прорыв, рыцырь получает мяч и идет на таран. Комбинация лучше всего работает, если воин силен, а болхендлер обладает хорошим интелектом.
 
-ДРАЙВ-Н-КИК
-Расставились, болхендер идет к кольцу, стягивает на себя сколько может - и пасует на шутеров. Маскируем выход на позиции наших снайперов и прикрываем заслонами.
+АЗЕНКУР
+Расставляем стрелков по позициям и ищем слабые места в обороне противника. Отвлекающий маневр, пасс, расстрел. Повторить до полной победы. Подходит для тех, у кого высокий интеллект, чтобы правильно расчитать момент. 
 
-ПОСТ
-Грузим краску. Давим противника нашей превосходящей физической мощью и боремся за каждый подбор как за родной.
+ОСАДА
+Грузим нашу башню в чужой краске. Неотвратимо накатываем на кольцо и давим противника нашей превосходящей физической мощью.
 
-(dropdown: bind $offence, &quot;АП ТЕМПО&quot;, &quot;ПИК-Н-РОЛЛ&quot;, &quot;ДРАЙВ-Н-КИК&quot;,&quot;ПОСТ&quot;)
+(dropdown: bind $offense, &quot;НАЛЕТ&quot;, &quot;ЩИТ-И-МЕЧ&quot;, &quot;АЗЕНКУР&quot;,&quot;ОСАДА&quot;)
 
 [[Выбрать план на защиту -&gt; Deffence]]
  &lt;style&gt;
@@ -1748,24 +1401,10 @@ tw-passage{text-align: center;
 &lt;/style&gt;
 
 (append: ?SideBar)[
-
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
-
-КОМАНДА ЗДОРОВЬЕ
-(print: $team&#39;s 1st)
-(print: $team&#39;s 2nd)
-(print: $team&#39;s 3rd)
-(print: $team&#39;s 4th)
-(print: $team&#39;s 5th)
- ]</tw-passagedata><tw-passagedata pid="45" name="1poss opp" tags="" position="1456,1739.5" size="100,100">Игроки противника мельтешат перед глазами, беря на понт умением играть в комбинации. Вы знаете что делать.
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]
+(set: $game to &quot;offense&quot;)</tw-passagedata><tw-passagedata pid="45" name="1poss opp" tags="" position="1456,1739.5" size="100,100">Игроки противника мельтешат перед глазами, беря на понт умением играть в комбинации. Вы знаете что делать.
 
 (link: &quot;Взять под песональную опеку их главную звезду&quot;) [(goto: &quot;def1 lose&quot;)]
 (if: $agile is &gt;=12 and $intel is &gt;=10)[(link: &quot;Пока они так много пасуют и меняют позиции, попробуем перехватить мяч&quot;) [(goto: &quot;def1&quot;)]]
@@ -1784,40 +1423,9 @@ tw-passage{text-align: center;
 КРАСКА
 Встаем каменной стеной. Никого не пускать к кольцу. С периметра гоним на римпроекторов, но позволяем каким-то ноунеймам шмалять случайные дальние.
 
-(dropdown: bind $deffence, &quot;ПРЕССИНГ&quot;, &quot;ПЕРИМЕТР&quot;, &quot;ЗОНА&quot;,&quot;КРАСКА&quot;)
+(dropdown: bind $defense, &quot;ПРЕССИНГ&quot;, &quot;ПЕРИМЕТР&quot;, &quot;ЗОНА&quot;,&quot;КРАСКА&quot;)
 
 [[Подойти к его высочеству -&gt;Lot]] 
-
-(append: ?SideBar)[
-
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
-
-КОМАНДА ЗДОРОВЬЕ
-(print: $team&#39;s 1st)
-(print: $team&#39;s 2nd)
-(print: $team&#39;s 3rd)
-(print: $team&#39;s 4th)
-(print: $team&#39;s 5th)
- ]
- (set: $power to 20)
-(set: $agile to 20)
-(set:$intel to 20)
-(set: $ap to &quot;Фаворит&quot;)
-(set: $class to &quot;Болтхендлер&quot;)
-(set: $perk1 to &quot;Шальная Треха&quot;)
-(set: $perk2 to &quot;Пасс из ниоткуда&quot;)
-(set: $offence to &quot;АП ТЕМПО&quot;)
-(set: $team to (a: &quot;Герой&quot;, &quot;Свег&quot;, &quot;Алекс Арон&quot;, &quot;Иван Медведев&quot;, &quot;Лаки Колчак&quot;))
-(set: $side to &quot;Свег&quot;)
-(set: $enemy to &quot;Олег&quot;)
 
  &lt;style&gt;
   tw-story {
@@ -1834,7 +1442,11 @@ tw-passage{text-align: center;
   }
 &lt;/style&gt;
 
-</tw-passagedata><tw-passagedata pid="47" name="1poss" tags="" position="1202,1719.5" size="100,100">Мяч у нас. Противник еще явно не собрался с духом (как и мы). 
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]
+(set: $game to &quot;defense&quot;)</tw-passagedata><tw-passagedata pid="47" name="1poss" tags="" position="1202,1719.5" size="100,100">Мяч у нас. Противник еще явно не собрался с духом (как и мы). 
 
 (if: $agile is &gt;=10 and $power is &gt;=10)[
 (link: &quot;Решительный наскок на кольцо&quot;) [(goto: &quot;attack1&quot;)]]
@@ -1842,40 +1454,19 @@ tw-passage{text-align: center;
 (link: &quot;Придерживаемся плана на игру&quot;)[(goto: &quot;attack1 style&quot;)]
 
 (append: ?SideBar)[
-
-Класс: $class 
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="48" name="Params" tags="" position="569,196.5" size="100,100">Класс: $class 
 перк 1: $perk1
 перк 2: $perk2
 
 Характеристики
-Атлетизм: $power
+Атлетизм:$power
 Реакция: $agile
 Интеллект: $intel
 Токсичность: $toxity
 
-КОМАНДА ЗДОРОВЬЕ
-(print: $team&#39;s 1st)
-(print: $team&#39;s 2nd)
-(print: $team&#39;s 3rd)
-(print: $team&#39;s 4th)
-(print: $team&#39;s 5th)
-
-МОПСЫ-БЛИНОЕДЫ
-$enemy
-Арт
-Игорь
-Стас Мелков
-Гоша Демурия
- ]</tw-passagedata><tw-passagedata pid="48" name="Params" tags="" position="569,196.5" size="100,100">Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- </tw-passagedata><tw-passagedata pid="49" name="attack1" tags="" position="1321,1715.5" size="100,100">Вы сминаете зевнувшего противника и легко заносите мяч в корзину. Первые два очка добыты. Теперь Мопсы будут осторожнее, но совсем в сухую вы уже не проиграете. (set: $ourscore to 2)
+(link-undo:&quot;Вернуться&quot;)</tw-passagedata><tw-passagedata pid="49" name="attack1" tags="" position="1321,1715.5" size="100,100">Вы сминаете зевнувшего противника и легко заносите мяч в корзину. Первые два очка добыты. Теперь Мопсы будут осторожнее, но совсем в сухую вы уже не проиграете. (set: $ourscore to 2)
 
 
 [[Владение у противника! -&gt;1poss opp]] 
@@ -2024,16 +1615,8 @@ $enemy получает мяч в посту. Вы активно обороня
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]
+[[Параметры-&gt;Params]] 
+]
  
   &lt;style&gt;
   tw-story {
@@ -2128,16 +1711,8 @@ $enemy получает мяч в посту. Вы активно обороня
 
 (append: ?SideBar)[
 
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
- ]</tw-passagedata><tw-passagedata pid="65" name="Lucky" tags="" position="1339,1018" size="100,100">Оба гондоны конченные. Нехай оба сгниют где-нибудь, а я в эти игры не собираюсь ввязываться. Да и вы не кусок сливочного масла, ваше говнячество. Зануден я для вас, говорите? Смотрите внимательно, сейчас будет не скучно.
+[[Параметры-&gt;Params]] 
+]</tw-passagedata><tw-passagedata pid="65" name="Lucky" tags="" position="1339,1018" size="100,100">Оба гондоны конченные. Нехай оба сгниют где-нибудь, а я в эти игры не собираюсь ввязываться. Да и вы не кусок сливочного масла, ваше говнячество. Зануден я для вас, говорите? Смотрите внимательно, сейчас будет не скучно.
 
 [[Снять штаны и нависнуть над королевским столом -&gt;Сapcake]]</tw-passagedata><tw-passagedata pid="66" name="Domination" tags="" position="387,1644.5" size="100,100">Вы забрались попой на мягкие подушки, нежно взяли пару золотистых локонов и самым воркующим голоском спросили у расслабленной фрейлины:
 - А как там твой племянник-претендент поживает?
@@ -2164,23 +1739,9 @@ $enemy получает мяч в посту. Вы активно обороня
 &lt;/style&gt;
 
 (append: ?SideBar)[
-
-Класс: $class 
-перк 1: $perk1
-перк 2: $perk2
-
-Характеристики
-Атлетизм: $power
-Реакция: $agile
-Интеллект: $intel
-Токсичность: $toxity
-
-КОМАНДА ЗДОРОВЬЕ
-(print: $team&#39;s 1st)
-(print: $team&#39;s 2nd)
-(print: $team&#39;s 3rd)
-(print: $team&#39;s 4th)
-(print: $team&#39;s 5th)
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]nt: $team&#39;s 5th)
  ]</tw-passagedata><tw-passagedata pid="67" name="Penetration" tags="" position="1336,842.5" size="100,100">Король слушает со всем доступным его искушенной душе вниманием.
 - Говори. Да смотри, чтобы мне понравился выбор!
 
@@ -2203,7 +1764,12 @@ $enemy получает мяч в посту. Вы активно обороня
     color: orange;
     text-decoration: none;
   }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="68" name=" Swag end" tags="" position="1491,800.5" size="100,100">&lt;style&gt;
+&lt;/style&gt;
+
+(append: ?SideBar)[
+
+[[Параметры-&gt;Params]] 
+]</tw-passagedata><tw-passagedata pid="68" name=" Swag end" tags="" position="1491,800.5" size="100,100">&lt;style&gt;
 tw-passage{text-align: center;
 }
 &lt;/style&gt;
@@ -2415,19 +1981,28 @@ $enemy получает мяч в посту. Вы активно обороня
 
 
 Хорошо идем, продолжаем!
-</tw-passagedata><tw-passagedata pid="85" name="11" tags="" position="620,2007" size="100,100">(display: &quot;Disel&quot;)
+</tw-passagedata><tw-passagedata pid="85" name="Team" tags="" position="690,196.5" size="100,100">КОМАНДА ЗДОРОВЬЕ
+*Капитан и тренер* (print: $team&#39;s 1st)
+*Франчайз* (print: $team&#39;s 2nd)
+//Навык// (print: $tPerks&#39;s 1st)
+*Оллстар* (print: $team&#39;s 3rd)
+//Навык// (print: $tPerks&#39;s 2nd)
+*Проспект* (print: $team&#39;s 4th)
+//Навык// (print: $tPerks&#39;s 3rd)
+*Ветеран* (print: $team&#39;s 5th)
+//Навык// (print: $tPerks&#39;s 4th)
+(if: $game is &quot;offense&quot; or &quot;defense&quot; or &quot;start&quot;)[Тактика нападения $offense]
+(if: $game is &quot;defense&quot; or &quot;start&quot;)[Тактика защиты $defense]
 
+(if: $game is &quot;start&quot;)[
+МОПСЫ-БЛИНОЕДЫ
+*Их капитан, тренер и франчайз* $enemy
+*Их ветеран* Арт
+*Их винг* Игорь
+*Их человек-клей* Стас Мелков
+*Их шутер-снайпер* Гоша Демурия]
 
-
-
-(link-undo:&quot;Вернуться&quot;)</tw-passagedata><tw-passagedata pid="86" name="1" tags="" position="490,1887" size="100,100">234
-
-
-(append: ?SideBar)[
-[[Инвентарь-&gt;11]] 
- ]</tw-passagedata><tw-passagedata pid="87" name="22" tags="" position="620,1895" size="100,100">45335а
-3456
-[[Инвентарь-&gt;11]] </tw-passagedata></tw-storydata>
+(link-undo:&quot;Вернуться&quot;)</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
