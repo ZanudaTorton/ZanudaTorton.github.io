@@ -14,6 +14,7 @@
 <tw-storydata name="WTF-2" startnode="1" creator="Twine" creator-version="2.3.5" ifid="51F9C69D-F834-4BCA-B92A-1053EAB64077" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">  tw-link {
     color: orange;
     text-decoration: none;
+	text-align: right;
   }
 
 tw-sidebar {
@@ -36,7 +37,7 @@ tw-icon {
 
 tw-story {
 padding: 0 0.5em 0.5em 0.5em;
-  text-align: center;
+  text-align: justify;
 }
 tw-sidebar {
     position: static;
@@ -49,6 +50,11 @@ tw-sidebar {
     text-align: left;
     background-color: transparent;
 }
+   tw-link {
+    color: orange;
+    text-decoration: none;
+	text-align: right;
+  }
 }
 
 
@@ -305,8 +311,11 @@ tw-sidebar {
 У окна оживленно галдят две группы, в том числе судя по одежде - посланцы Великой Орды.
 
 [[Вернуться в зал|Party]]
+
 [[Поговорить с Русланом|Timer]]
+
 [[Послушать побасенки Кулерины|Gossip]] 
+
 [[Узнать, о чем шум|Versus]]
 
 (append: ?SideBar)[
@@ -1491,7 +1500,10 @@ tw-passage{text-align: center;
 Интеллект: $intel
 Токсичность: $toxity
 
-(link-undo:&quot;Вернуться&quot;)</tw-passagedata><tw-passagedata pid="49" name="attack1" tags="" position="1321,1715.5" size="100,100">Вы сминаете зевнувшего противника и легко заносите мяч в корзину. Первые два очка добыты. Теперь Мопсы будут осторожнее, но совсем в сухую вы уже не проиграете. (set: $ourscore to 2)
+
+(link-undo:&quot;Вернуться&quot;)
+
+Перезапуск игры (click:&quot;Перезапуск игры&quot;)[(reload:)]</tw-passagedata><tw-passagedata pid="49" name="attack1" tags="" position="1321,1715.5" size="100,100">Вы сминаете зевнувшего противника и легко заносите мяч в корзину. Первые два очка добыты. Теперь Мопсы будут осторожнее, но совсем в сухую вы уже не проиграете. (set: $ourscore to 2)
 
 
 [[Владение у противника! -&gt;1poss opp]] 
