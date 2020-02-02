@@ -31,7 +31,6 @@ tw-sidebar {
     background-color: transparent;
 }
 tw-icon { 
-    display: none; 
     text-align: right;
     padding-right: 0.00em;
 }
@@ -1425,11 +1424,8 @@ tw-passage{text-align: center;
 (set: $game to &quot;start&quot;)</tw-passagedata><tw-passagedata pid="44" name="Offence" tags="" position="978,1806.5" size="100,100">
 Самое время определиться с тактикой на игру. Стоит учитывать сильные и слабые стороны выбранных игроков.
 
-НАЛЕТ 
+НАБЕГ 
 Все несутся в атаку при первой возможности, жутко кричат и бесстрашно гогочат. Противник обескуражен скоростью и глотает пыль. Подходит для быстрых реакцией, сильных и не думающих о последствиях.
-
-ЩИТ-И-МЕЧ
-Рыцарь прикрывает болхенделра от защитников, освобождая путь к кольцу. Если защитники реагируют на прорыв, рыцырь получает мяч и идет на таран. Комбинация лучше всего работает, если воин силен, а болхендлер обладает хорошим интелектом.
 
 АЗЕНКУР
 Расставляем стрелков по позициям и ищем слабые места в обороне противника. Отвлекающий маневр, пасс, расстрел. Повторить до полной победы. Подходит для тех, у кого высокий интеллект, чтобы правильно расчитать момент. 
@@ -1437,7 +1433,7 @@ tw-passage{text-align: center;
 ОСАДА
 Грузим нашу башню в чужой краске. Неотвратимо накатываем на кольцо и давим противника нашей превосходящей физической мощью.
 
-(dropdown: bind $offense, &quot;НАЛЕТ&quot;, &quot;ЩИТ-И-МЕЧ&quot;, &quot;АЗЕНКУР&quot;,&quot;ОСАДА&quot;)
+(dropdown: bind $offense, &quot;НАБЕГ&quot;, &quot;АЗЕНКУР&quot;,&quot;ОСАДА&quot;)
 
 [[Выбрать план на защиту -&gt; Deffence]]
  &lt;style&gt;
@@ -1486,9 +1482,6 @@ tw-passage{text-align: center;
 [[Команда-&gt;Team]]
 ]</tw-passagedata><tw-passagedata pid="46" name=" Deffence" tags="" position="993,1578.5" size="100,100">Осталось определиться с защитными построениями на игру.
 
-КАПКАН
-Искусство охотника состоит в том, чтобы поймать зверя врасплох. Ведь чем больше будет суеты, тем глубже вонзятся зубцы ловушки. Рискованная защита, подходящая всесторонне развитым командам, которая приносит много выгоды в случае успеха - и много неудач, в случае провала.
-
 БАСТИОН
 Аккуратная оборона по всем направлениям. Наша сила в слаженности и дисциплине, передаем друг другу игроков противника, не ссымься оказаться против их великана - друзья прикроют. Подходит умным командам и атлетичным командам.
 
@@ -1498,7 +1491,7 @@ tw-passage{text-align: center;
 ДОНЖОН
 Защищаем краску как последний клочок земли. Пусть враг дойдет до кольца по нашим трупам, теряя своих лучших солдат в груде тел. Подходит для перекаченных команд с плохой реакцией.
 
-(dropdown: bind $defense, &quot;КАПКАН&quot;, &quot;БАСТИОН&quot;, &quot;РОВ И КОЛЬЯ&quot;,&quot;ДОНЖОН&quot;)
+(dropdown: bind $defense, &quot;БАСТИОН&quot;, &quot;РОВ И КОЛЬЯ&quot;,&quot;ДОНЖОН&quot;)
 
 [[Подойти к его высочеству -&gt;Lot]] 
 
@@ -1524,10 +1517,6 @@ tw-passage{text-align: center;
 (set: $game to &quot;defense&quot;)</tw-passagedata><tw-passagedata pid="47" name="1poss" tags="" position="1202,1719.5" size="100,100">Мяч у нас. Противник еще явно не собрался с духом.  Самое время произвести атаку! 
 
 (link: &quot;Решительный наскок на кольцо&quot;) [(goto: &quot;attack1&quot;)]
-
-(link: &quot;Шмальнуть свободную треху&quot;) [(goto: &quot;attack1 lose&quot;)]
-
-(link: &quot;Придерживаемся плана на игру&quot;)[(goto: &quot;attack1 style&quot;)]
 
 
  &lt;style&gt;
@@ -1564,69 +1553,12 @@ tw-passage{text-align: center;
 Перезапуск игры (click:&quot;Перезапуск игры&quot;)[(reload:)]</tw-passagedata><tw-passagedata pid="49" name="attack1" tags="" position="1333,1725.5" size="100,100">Разгон атаки вашими собственными силами приводит вас в упор к хмурому защитнику.
 
 (link: &quot;Обхожу на первом шаге, скольжу как бабочка, жалю кольцо как пчела. Пчела по имени ШАААК О НИИИЛ (заносит данк).&quot;) [(goto: &quot;attack1-dunk&quot;)]
+
 (link: &quot;(Токсичность)Ошарашить противника громким пердежом по заветам Леброна.&quot;) [(goto: &quot;attack1-fart&quot;)]
+
 (link: &quot;Отдать мяч открытому игроку. Я на такое не подписывался. &quot;)[(goto: &quot;attack1-open&quot;)]
 
- &lt;style&gt;
-  tw-story {
-    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-	opacity:0.999;
-  }
-
-  tw-link {
-    color: orange;
-    text-decoration: none;
-  }
-&lt;/style&gt;
-
-(append: ?SideBar)[
-[[Параметры-&gt;Params]]
-[[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="50" name="attack1 style" tags="" position="1334,1842.5" size="100,100">(if: $offense is &quot;НАЛЕТ&quot; and $class is &quot;Болтхендлер&quot; and $power &gt;= 10)[(set: $ourscore to 2)
-Вы молнией проноситесь меж рядов оторопевешего противника, взмываете в воздух и нежно, как перезрелый фрукт, кладете мяч в корзину. &quot;Вы что, поиграться пришли?&quot; - успеваете вы крикнуть Мопсам на обратном пути на свою половину. 2 очка 
-]
-(else-if: $offense is &quot;НАЛЕТ&quot; and $class is not &quot;Болтхендлер&quot; and $power &gt;= 14)[(set: $ourscore to 2)
-Ваш разыгрывающий молнией проносится меж рядов оторопевешего противника. &quot;Вы что, поиграться пришли?&quot; - успеваете вы крикнуть Мопсам на обратном пусти на свою половину. 2 очка. 
-]
-(else-if: $offense is &quot;ОСАДА&quot; and $class is &quot;Тяжкий&quot; and $power &gt;=12)[(set: $ourscore to 2)
-Пока ваши мелкие энергично отвлекают соперника, вы окольным путем добираетесь до краски. Пасс над головой зевнувшего опекуна прямо вам в руки, чтобы вы просто положили его на место. Легкие 2 очка. 
-]
-(else-if: $offense is &quot;ОСАДА&quot; and $class is &quot;Болтхендлер&quot; and $intel &gt;=15)[(set: $ourscore to 2)
-Вы молнией проноситесь меж рядов оторопевешего противника. На вас летят руки защитников, но вы уже пихнули мяч своему большому. С ревом дракона он вносит его в кольцо. &quot;Вы что, поиграться пришли?&quot; - успеваете вы крикнуть Мопсам на обратном пусти на свою половину. 2 очка. 
-]
-(else-if: $offense is &quot;ПОСТ&quot; and $class is &quot;Растягивающий&quot; and $agile &gt;=13)[
-Ваши тяжкие ребята топчутся под кольцом. Вы утаскиваете опекуна на периметр, освобождая им место. В этот зазор лезет (print: $team&#39;s last). Бросок с вытянутых рук..(set: $ourscore to it + (either: 0, 2))
-]
-(else-if: $offense is &quot;ЩИТ-И-МЕЧ&quot; and $class is &quot;Тяжкий&quot; and $agile is &gt;=15)[(set: $ourscore to 2) Вы ставите заслон (print: $team&#39;s 3rd)у и тут же несетесь к кольцу. Остается поднять руки, принять посылку и занести в кольцо. 2 очка. 
-]
-(else-if: $offense is &quot;ЩИТ-И-МЕЧ&quot; and $class is &quot;Тяжкий&quot; and $agile is &lt;=15)[Вы ставите заслон (print: $team&#39;s 3rd)у и тут же несетесь к кольцу. Мяч, отправленный разыгрывающим, касается ваших рук, но толчок со стороны успевшего защитника провоцирует потерю. Вы спешите назад, пока это не превратилось в быстрый отрыв.
-]
-(else-if: $offense is &quot;ЩИТ-И-МЕЧ&quot; and $class is not &quot;Тяжкий&quot; and $intel is &gt;=15)[(set: $ourscore to 2) (print: $team&#39;s last) ставит жесткий заслон вашему опекуну и вы на полных парах несетесь к кольцу. Запаздывающий защитник пытается прихватить за джерси, но мяч уже не у вас, а в руках (print: $team&#39;s last)а. 2 очка. 
-]
-(else-if: $offense is &quot;ЩИТ-И-МЕЧ&quot; and $class is not &quot;Тяжкий&quot; and $power is &gt;=15)[(set: $ourscore to 2) (print: $team&#39;s last) ставит жесткий заслон вашему опекуну и вы на полных парах несетесь к кольцу. Запаздывающий защитник пытается прихватить за джерси, но вы уже взмываете воздух, а мяч нежно заваливается в корзину. 2 очка. 
-]
-(else-if: $offense is &quot;АЗЕНКУР&quot; and $class is &quot;Болтхендлер&quot; and $intel is &gt;=18)[(set: $ourscore to it +(either: 2, 3)) Вы рветесь к кольцу, а $side в это время встаете стеной на пути соперника. (print: $team&#39;s 3rd) освобожден от опеки и занимает место в угу. Вы утыкатесь в стену мяса их больших, но тут же откидываете мяч на периметр, бросок... 
-]
-(else-if: $offense is &quot;АЗЕНКУР&quot; and $class is &quot;Тяжкий&quot; and $agile is &gt;=18)[(set: $ourscore to 3) $side рвется к кольцу, а вы в это время встаете стеной на пути соперника. (print: $team&#39;s 3rd) освобожден от опеки и занимает место в угу. $side откидывает мяч на периметр, бросок...3 очка. 
-]
-(else-if: $offense is &quot;АЗЕНКУР&quot; and $perk is &quot;Шальная Треха&quot;)[(set: $ourscore to 3) $side рвется к кольцу, (print: $team&#39;s last) ставит жесткий заслон вашему опекуну, а вы занимаете место в угу. $side откидывает мяч на периметр, бросок...3 очка. 
-]
-(else-if: $offense is &quot;АЗЕНКУР&quot; and $class is &quot;Тяжкий&quot; and $agile is &lt;=15)[$side рвется к кольцу, а вы в это время встаете стеной на пути соперника. (print: $team&#39;s 3rd) освобожден от опеки и занимает место в угу. $side откидывает мяч на периметр, бросок...(set: $ourscore to it + (either: 0, 2, 3))
-]
-(else:)[
-Атака захлебывается, не начавшись. Неудачный пас перехвачен соперником]
-
-(if: $ourscore is &gt;0)[УСПЕХ!]
-(if: $ourscore is &lt;=0) [ПРОВАЛ]
-
-[[Владение у противника! -&gt;1poss opp]] 
-
-Счет
-Команда Здоровье $ourscore
-Мопсы-блиноеды $score
+(link: &quot;Шмальнуть треху в лоб&quot;) [(goto: &quot;attack1 lose&quot;)]
 
  &lt;style&gt;
   tw-story {
@@ -1646,7 +1578,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="51" name="attack1 lose" tags="" position="1332,1615" size="100,100">{(if: $perk1 is &quot;Шальная Треха&quot;)[(set: $ourscore to it+3)(Шальная Треха) Противник напрыгивает,а вы не видите сами куда бросаете: и все таки мяч каким-то чудом залетает в кольцо. Шальные три очка. &quot;Кто не рискует, тот мопсов целует&quot;, успеваете вы себя похвалить.
+]</tw-passagedata><tw-passagedata pid="50" name="attack1 lose" tags="" position="1335,1605" size="100,100">{(if: $perk1 is &quot;Шальная Треха&quot;)[(set: $ourscore to it+3)(Шальная Треха) Противник напрыгивает, а вы не видите сами куда бросаете: и все таки мяч каким-то чудом залетает в кольцо. Шальные три очка. &quot;Кто не рискует, тот мопсов целует&quot;, успеваете вы себя похвалить.
 ]}
 {(else:)[Мяч бьется о дужку и улетает в руки противника. &quot;Ну, по крайней мере показали этим, что нам страх неведом&quot;, утешаете вы себя, бегом возвращаясь на свою половину.]}
 
@@ -1676,7 +1608,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="52" name="def1 style" tags="" position="1748,1666" size="100,100">Еще несколько переводов мяча между игроками, и наконец двое устремляются к кольцу. 
+]</tw-passagedata><tw-passagedata pid="51" name="def1 style" tags="" position="1748,1666" size="100,100">Еще несколько переводов мяча между игроками, и наконец двое устремляются к кольцу. 
 
 (if: $class is &quot;Болтхендлер&quot; and $perk1 is not &quot;Блок по лицу&quot;)[(set: $score to it+2)
 Противник играет в пик-н-ролл. Ты оказываешься против более мощного Арта, который заносит мяч и частично тебя в кольцо. Первые очки Мопсов.
@@ -1752,7 +1684,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="53" name="def1 lose" tags="" position="1744,1787" size="100,100">(if: $class is &quot;Тяжкий&quot;)[ (set: $score to it+2)
+]</tw-passagedata><tw-passagedata pid="52" name="def1 lose" tags="" position="1744,1787" size="100,100">(if: $class is &quot;Тяжкий&quot;)[ (set: $score to it+2)
 $enemy получает мяч в посту и начинает толкаться, вкладываясь в локти. Вы пыхтите, но держите удар. Ложный замах, поворот - вы на месте. Следует полукрюк, за спиной слышен проклятый трепет сетки и огорченный вздох соратников. 2 очка противнику]
 (else-if: $agile &gt;=15 and $power &gt;=12 and $perk1 is &quot;Блок по лицу&quot;)[(set: $score to it) (Блок по лицу)
 $enemy получает мяч в посту и начинает толкаться, вкладываясь в локти. Вы пыхтите, но держите удар. Ложный замах, поворот, следует полукрюк, но в точный момент вы взмываете в воздух и со всей дури бьете по мячу. Шар отлетает в руки вашего игрока. Восторженные крики соратников]
@@ -1785,7 +1717,7 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="54" name="def1" tags="" position="1739,1923" size="100,100">{$side и (print: $team&#39;s 4rd) прижимают игрока с мячом. Он с трудом видит партнера и пассует ему.} 
+]</tw-passagedata><tw-passagedata pid="53" name="def1" tags="" position="1739,1908" size="100,100">{$side и (print: $team&#39;s 4rd) прижимают игрока с мячом. Он с трудом видит партнера и пассует ему.} 
 {(if: $perk2 is &quot;Карманник&quot;) [(Карманник) (set: $ourscore to it+2) Мяч прилипает к вашей руке. Противник щелкает клювом, а ноги уже несут вас к кольцу на той стороне. За вами несется лавина из ругающихся и вопящих тел. Лейап. 2 очка!]}
 {(if: $perk1 is &quot;Данчич&quot;) [(Данчич) (set: $ourscore to it+3) (print: $team&#39;s 3rd) выпрыгивает из засады, хватает мяч, пас - и вы в отрыве. За вами несется лавина из ругающихся и вопящих тел. Впереди последний рубеж из мускулов их центрового. Слэм-данк с контактом сотрясает и кольцо и чувства зрителей. Король восторженно орет, а судья позволяют вам пробить штрафной. Вы обескураживаще точны. Три очка!]}
 {(else:) [ (set: $ourscore to it+1) (print: $team&#39;s 3rd) выпрыгивает из засады, хватает мяч и несется в отрыв. Впереди последний рубеж из мускулов их центрового. Тот жестко фолит, дергая игрока за руку. Король удовлетворенно ухает. Судьи все таки разрешают пробить 2 штрафных броска. (print: $team&#39;s 3rd) попадает один. Вы встревожены, но он показывает, что может играть.]}
@@ -1813,16 +1745,14 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="55" name="2poss" tags="" position="1905,1673.5" size="100,100">
-[[Что там ждать-то, пустить треху с ведения!-&gt;attack2 lose]] 
-{(if: $offence is &quot;АП ТЕМПО&quot;)[
-(link: &quot;Придерживаемся стиля&quot;)[(goto: &quot;attack2 style ap&quot;)]]
-(if: $offence is &quot;ПИК-Н-РОЛЛ&quot;)[
-(link: &quot;Придерживаемся стиля&quot;)[(goto: &quot;attack2 style pick&quot;)]]
-(if: $offence is &quot;ДРАЙВ-Н-КИК&quot;)[
-(link: &quot;Придерживаемся стиля&quot;)[(goto: &quot;attack2 style drive&quot;)]]
-(if: $offence is &quot;ПОСТ&quot;)[
-(link: &quot;Придерживаемся стиля&quot;)[(goto: &quot;attack2 style post&quot;)]]}
+]</tw-passagedata><tw-passagedata pid="54" name="2poss" tags="" position="1872,1641.5" size="100,100">Наше владение. Есть время подумать как проводить атаку.
+
+{(if: $offense is &quot;НАБЕГ&quot;)[
+(link: &quot;Спланировать атаку&quot;)[(goto: &quot;attack2 style ap&quot;)]]
+(if: $offense is &quot;АЗЕНКУР&quot;)[
+(link: &quot;Спланировать атаку&quot;)[(goto: &quot;attack2 style drive&quot;)]]
+(if: $offense is &quot;ОСАДА&quot;)[
+(link: &quot;Спланировать атаку&quot;)[(goto: &quot;attack2 style post&quot;)]]}
 
  &lt;style&gt;
   tw-story {
@@ -1842,7 +1772,7 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="56" name="Rus bye" tags="" position="122,466.5" size="100,100">Вы чудесно проводите время.
+]</tw-passagedata><tw-passagedata pid="55" name="Rus bye" tags="" position="122,466.5" size="100,100">Вы чудесно проводите время.
 Но всему хорошему, даже волшебству общения с Русланом, приходит конец.
 Вы сердечно прощаетесь и желаете друг другу наилучшего.
 
@@ -1861,12 +1791,34 @@ $enemy получает мяч в посту. Вы активно обороня
     background-position: center center;
 	opacity:0.999;
   }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="57" name="2poss opp" tags="" position="1820,2205" size="100,100">Противник неторопливо разыгрывает мяч.
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="56" name="2poss opp" tags="" position="1820,2205" size="100,100">Противник неторопливо разыгрывает мяч. Шутки кончились.
 
-(link: &quot;Взять под песональную опеку их главную звезду&quot;) [(goto: &quot;def2 lose&quot;)]
-(if: $agile is &gt;=12 and $intel is &gt;=10)[(link: &quot;Держусь по позиции&quot;) [(goto: &quot;def2&quot;)]]
-(link: &quot;Придерживаемся плана на игру&quot;)[(goto: &quot;def2 style&quot;)]
-</tw-passagedata><tw-passagedata pid="58" name="attack2 lose" tags="" position="1970.5,1793.5" size="100,100">{(if: $perk1 is &quot;Шальная Треха&quot; and $power&gt;17 and $agile&gt;15)[(set: $ourscore to it+3)(set: $agile to it-1)(Шальная Треха) Ни противник, ни ваша собственная команда не ждала такой наглости. Свердальний бросок, мяч в корзине. От избытка чувств вы подпрыгиваете в воздухе и кричите название своей команды.
+{(if: $offense is &quot;БАСТИОН&quot;)[
+(link: &quot;Настроиться на защиту&quot;)[(goto: &quot;&quot;)]]
+(if: $offense is &quot;РОВ И КОЛЬЯ&quot;)[
+(link: &quot;Настроиться на защиту&quot;)[(goto: &quot;&quot;)]]
+(if: $offense is &quot;ДОНЖОН&quot;)[
+(link: &quot;Настроиться на защиту&quot;)[(goto: &quot;&quot;)]]}
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="57" name="attack2 lose" tags="" position="2151.5,1326.5" size="100,100">{(if: $perk1 is &quot;Шальная Треха&quot; and $power&gt;17 and $agile&gt;15)[(set: $ourscore to it+3)(set: $agile to it-1)(Шальная Треха) Ни противник, ни ваша собственная команда не ждала такой наглости. Свердальний бросок, мяч в корзине. От избытка чувств вы подпрыгиваете в воздухе и кричите название своей команды.
 ]}
 {(else:)[Мяч улетает в аут, даже не задев щита. Ваша команда не успела расставиться, так что быстро вернется к защитным построениям. Это единственный плюс потраченного владения]}
 
@@ -1895,49 +1847,15 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="59" name="attack2 style post" tags="" position="2618,1507.5" size="100,100">(else-if: $offence is &quot;ПОСТ&quot; and $class is &quot;Тяжкий&quot;)[(set: $ourscore to 2)
-Пока ваши мелкие энергично отвлекают соперника, вы окольным путем добираетесь до краски. Пасс над головой зевнувшего опекуна прямо в руки-мачты. Легкие 2 очка. 
-]
-(else-if: $offence is &quot;ПОСТ&quot; and $class is &quot;Болтхендлер&quot;)[(set: $ourscore to 2)
-Вы молнией проноситесь меж рядов оторопевешего противника. На вас летят руки защитников, но вы уже пихнули мяч своему большому. С ревом дракона он вносит его в кольцо. &quot;Вы что, поиграться пришли?&quot; - успеваете вы крикнуть Мопсам на обратном пусти на свою половину. 2 очка. 
-]
-(else-if: $offence is &quot;ПОСТ&quot; and $class is &quot;Растягивающий&quot;)[
-Ваши тяжкие ребята топчутся под кольцом. Вы утаскиваете опекуна на периметр, освобождая им место. В этот зазор лезет (print: $team&#39;s last). Бросок с вытянутых рук..(set: $ourscore to it + (either: 0, 2))
-]</tw-passagedata><tw-passagedata pid="60" name="attack2 style pick" tags="" position="2463,1506.5" size="100,100">(else-if: $offence is &quot;ПИК-Н-РОЛЛ&quot; and $class is &quot;Тяжкий&quot; and $agile is &gt;=15)[(set: $ourscore to 2) Вы ставите заслон (print: $team&#39;s 3rd)у и тут же несетесь к кольцу. Остается поднять руки, принять посылку и занести в кольцо. 2 очка. 
-]
-(else-if: $offence is &quot;ПИК-Н-РОЛЛ&quot; and $class is &quot;Тяжкий&quot; and $agile is &lt;15)[Вы ставите заслон (print: $team&#39;s 3rd)у и тут же несетесь к кольцу. Мяч, отправленный разыгрывающим, касается ваших рук, но толчок со стороны успевшего защитника, провоцирует потерю. Вы спешите назад, пока это не превратилось в быстрый отрыв.
-]
-(else-if: $offence is &quot;ПИК-Н-РОЛЛ&quot; and $class is not &quot;Тяжкий&quot; and $intel is &gt;=15)[(set: $ourscore to 2) (print: $team&#39;s last) ставит жесткий заслон вашему опекуну и вы на полных парах несетесь к кольцу. Запаздывающий защитник пытается прихватить за джерси, но мяч уже не у вас, а в руках (print: $team&#39;s last)а. 2 очка. 
-]
-(else-if: $offence is &quot;ПИК-Н-РОЛЛ&quot; and $class is not &quot;Тяжкий&quot; and $power is &gt;=15)[(set: $ourscore to 2) (print: $team&#39;s last) ставит жесткий заслон вашему опекуну и вы на полных парах несетесь к кольцу. Запаздывающий защитник пытается прихватить за джерси, но вы уже взмываете воздух, а мяч нежно заваливается в корзину. 2 очка. 
-]</tw-passagedata><tw-passagedata pid="61" name="attack2 style drive" tags="" position="2302.5,1493.5" size="100,100">(else-if: $perk2 is not &quot;Пасс из ниоткуда&quot; and $intel &gt;=15)
-	(click: &quot;Ворваться, стянуть на себя людей. Если к кольцу не добраться - отдам пас&quot;)[(set: $ourscore to it+(either: 2,2,0,0,3)) (Интеллект 15) Вы проходите линию, неотступно сопровождаемый Игорем. Навстречу вам выдвигается $side. Пространства все меньше, и к кольцу не добраться.  Затылком или просто на фарт вы находите сзади $sideа. Следует передача, сквозь руки ваших опекунов. $side принимает и делает бросок...]
-	(click: &quot;Отдать мяч свободному игроку. Оторваться от защитника и открыться под бросок&quot;)[(set: $ourscore to it+(either: 2,2,0,2)) (Интеллект 15) Мяч принимает (print: $team&#39;s 3rd). На фоне быстрых перемещений, защитники реагируют невпопад, и вы оказыветесь один в трех метрах от кольца, к которому на всех парах несется большой. Следует пас на вас, и дальше отработанные рефлексы подбрасывают вас в воздух. Катапульта спущена...]
+]</tw-passagedata><tw-passagedata pid="58" name="attack2 style post" tags="" position="3274,1769.5" size="100,100">Наш стиль (print: $offense) предполагает, что мы ставим на силу и собираемся задавить противника в его собсвенной краске.
+А даже если нет, какая разница - погнали!
 
 
-(else-if: $offence is &quot;ДРАЙВ-Н-КИК&quot; and $class is &quot;Болтхендлер&quot; and $intel is &gt;=18)[(set: $ourscore to it +(either: 2, 3)) Вы рветесь к кольцу, а $side в это время встаете стеной на пути соперника. (print: $team&#39;s 3rd) освобожден от опеки и занимает место в угу. Вы утыкатесь в стену мяса их больших, но тут же откидываете мяч на периметр, бросок... 
-]
-(else-if: $offence is &quot;ДРАЙВ-Н-КИК&quot; and $class is &quot;Тяжкий&quot; and $agile is &gt;=18)[(set: $ourscore to 3) $side рвется к кольцу, а вы в это время встаете стеной на пути соперника. (print: $team&#39;s 3rd) освобожден от опеки и занимает место в угу. $side откидывает мяч на периметр, бросок...3 очка. 
-]
-(else-if: $offence is &quot;ДРАЙВ-Н-КИК&quot; and $perk is &quot;Шальная Треха&quot;)[(set: $ourscore to 3) $side рвется к кольцу, (print: $team&#39;s last) ставит жесткий заслон вашему опекуну, а вы занимаете место в угу. $side откидывает мяч на периметр, бросок...3 очка. 
-]
-(else-if: $offence is &quot;ДРАЙВ-Н-КИК&quot; and $class is &quot;Тяжкий&quot; and $agile is &lt;=15)[$side рвется к кольцу, а вы в это время встаете стеной на пути соперника. (print: $team&#39;s 3rd) освобожден от опеки и занимает место в угу. $side откидывает мяч на периметр, бросок...(set: $ourscore to it + (either: 0, 2, 3))
-]
-[[Владение у противника! -&gt;3poss opp]] 
+[[Я не башня, я король. Сам рулю атакой-&gt;attack2 style post self]]
 
-Счет
-Команда Здоровье $ourscore
-Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="62" name="attack2 style ap" tags="" position="1974.5,1553.5" size="100,100">Быстрая атака вашими силами, пока противник возвращается в оборону
+[[Отдать мяч тому, кто умеет им пользоваться-&gt;attack2 style post passiv]]
 
-{(if: $perk2 is &quot;Пасс из ниоткуда&quot;)[
-[[Пас через всю площадку-&gt;attack2 style ap pass]] ]}
-{(if: $class is not &quot;Тяжкий&quot; and $perk2 is not &quot;Пасс из ниоткуда&quot; and $intel &gt;=15)[
-[[Пройти площадку через пасы-&gt;attack2 style ap pass2]] ]}
-{(if: $class is not &quot;Тяжкий&quot; and $power is &gt;=15 )
-[[[Спринт от корзины к корзине-&gt;attack2 style ap coast]] ]}
-{(if: $perk1 is &quot;Шальная Треха&quot;)
-[[[Трехочковый вторым эшелоном-&gt;attack2 style ap 3p]] ]}
-{[[[Поспешить за товарищами-&gt;attack2 style ap passiv]] ]}
+[[У меня вместо рук дальнобойная катапульта. Треху в лоб -&gt;attack2 post 3p]]
 
 
  &lt;style&gt;
@@ -1958,8 +1876,69 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="63" name="Vic" tags="" position="1093.5,562.5" size="100,100">Довольно, братцы. Сколько мы терпели этого дерьма. Все, хватит, тут и закончим. Бей солнцеликого, свергай монархию! Даешь власть простым землепашцам и безымянным рыцарям! Все цеха отобрать у цеховых и раздать народу!
-[[Cорвать алый плащ с ближайшего дворянина и выбежать из дворца -&gt; Виктор]]</tw-passagedata><tw-passagedata pid="64" name="Decision" tags="" position="862.5,1118.5" size="100,100">Король некоторое время размышляет. По вашей шее стекает струйка пота. Ставки выросли в разы, когда вы тоже попали в разряд приговоренных. 
+]</tw-passagedata><tw-passagedata pid="59" name="attack2 style drive" tags="" position="2792.5,1619.5" size="100,100">Наш стиль (print: $offense) предполагает, что мы набрали умных и быстрых игроков, которые умеют хладнокровно расстреливать противника издалека. 
+А даже если нет, какая разница - погнали!
+
+
+[[Разыграть самостоятельно -&gt;attack2 style dr self]]
+
+[[Отдать мяч тому, кто умеет им пользоваться-&gt;attack2 style dr passiv]]
+
+[[Протащить и бросить треху -&gt;attack2 dr 3p]]
+
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="60" name="attack2 style ap" tags="" position="1988.5,1641.5" size="100,100">Наш стиль (print: $offense) предполагает, что мы набрали быстрых и атлетичных игроков, которые умеют принимать меткие пасы. 
+А даже если нет, какая разница - погнали!
+
+[[Отдать пас через всю площадку на самого быстрого игрока-&gt;attack2 style ap pass]]
+
+[[Метнуться кабанчиком и разорвать их корзину-&gt;attack2 style ap coast]]
+
+[[Отдать мяч тому, кто умеет им пользоваться-&gt;attack2 style ap passiv]]
+
+[[Сыграть в вышибалу со спиной ближайшего противника-&gt;attack2 style ap tox]]
+
+[[Бросить дальнюю треху со своей половины-&gt;attack2 lose]]
+
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="61" name="Vic" tags="" position="1093.5,562.5" size="100,100">Довольно, братцы. Сколько мы терпели этого дерьма. Все, хватит, тут и закончим. Бей солнцеликого, свергай монархию! Даешь власть простым землепашцам и безымянным рыцарям! Все цеха отобрать у цеховых и раздать народу!
+[[Cорвать алый плащ с ближайшего дворянина и выбежать из дворца -&gt; Виктор]]</tw-passagedata><tw-passagedata pid="62" name="Decision" tags="" position="862.5,1118.5" size="100,100">Король некоторое время размышляет. По вашей шее стекает струйка пота. Ставки выросли в разы, когда вы тоже попали в разряд приговоренных. 
 - Что ж. Учитывая что старую собаку не обучишь новым трюкам, и Кулеврина меня уже ничем не удивит... что даже за издевательствами над Пипом следует усталость... а объявлять войну Орде через пару месяцев после перемирия - слишком врыв даже по моим меркам...Да будет воля моя такой: завтра на рассвете пройдет баскетбольный поединок. У вас есть вечер, чтобы набрать в свои ряды согласных поддержать вас в Божием суде. С кем ты будешь в команде, безымянный наглец?
 
 //Выбери свою сторону//
@@ -1985,9 +1964,9 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 
 [[Параметры-&gt;Params]] 
-]</tw-passagedata><tw-passagedata pid="65" name="Lucky" tags="" position="1356,1028" size="100,100">Оба гондоны конченные. Нехай оба сгниют где-нибудь, а я в эти игры не собираюсь ввязываться. Да и вы не кусок сливочного масла, ваше говнячество. Зануден я для вас, говорите? Смотрите внимательно, сейчас будет не скучно.
+]</tw-passagedata><tw-passagedata pid="63" name="Lucky" tags="" position="1356,1028" size="100,100">Оба гондоны конченные. Нехай оба сгниют где-нибудь, а я в эти игры не собираюсь ввязываться. Да и вы не кусок сливочного масла, ваше говнячество. Зануден я для вас, говорите? Смотрите внимательно, сейчас будет не скучно.
 
-[[Снять штаны и нависнуть над королевским столом -&gt;Сapcake]]</tw-passagedata><tw-passagedata pid="66" name="Domination" tags="" position="387,1644.5" size="100,100">Вы забрались попой на мягкие подушки, нежно взяли пару золотистых локонов и самым воркующим голоском спросили у расслабленной фрейлины:
+[[Снять штаны и нависнуть над королевским столом -&gt;Сapcake]]</tw-passagedata><tw-passagedata pid="64" name="Domination" tags="" position="387,1644.5" size="100,100">Вы забрались попой на мягкие подушки, нежно взяли пару золотистых локонов и самым воркующим голоском спросили у расслабленной фрейлины:
 - А как там твой племянник-претендент поживает?
 Фрейлина вздрогнула и тут же ойкнула. От резкого движения пара волос осталась в вашей ладони.
 - Граф Беня Засос. Так его называют? Говорят, он сосет у всех. Сначала у своих насосал на целое состояние. Бедная нищая душенка, теперь они никого подписать не смогут.  А потом сосал у любого, кто только заявится. Это забавно, ведь он собирается вести людей на завоевание короны. Ух наверное его товарищи ждут не дождутся, когда наконец выйдут в поход. Вместе-то сосать веселее.  
@@ -2014,7 +1993,7 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
- ]</tw-passagedata><tw-passagedata pid="67" name="Penetration" tags="" position="1336,842.5" size="100,100">Король слушает со всем доступным его искушенной душе вниманием.
+ ]</tw-passagedata><tw-passagedata pid="65" name="Penetration" tags="" position="1336,842.5" size="100,100">Король слушает со всем доступным его искушенной душе вниманием.
 - Говори. Да смотри, чтобы мне понравился выбор!
 
 [[- Накажите Свега! Он не может уследить за своими людьми, а значит никудышный сеньор. Пусть станет слугой у Хельга, поучится исполнять команды-&gt; Swag end]] 
@@ -2041,7 +2020,7 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 
 [[Параметры-&gt;Params]] 
-]</tw-passagedata><tw-passagedata pid="68" name=" Swag end" tags="" position="1508,810.5" size="100,100">&lt;style&gt;
+]</tw-passagedata><tw-passagedata pid="66" name=" Swag end" tags="" position="1508,810.5" size="100,100">&lt;style&gt;
 tw-passage{text-align: center;
 }
 &lt;/style&gt;
@@ -2051,7 +2030,7 @@ tw-passage{text-align: center;
 
 [[Конец игры -&gt;Results]]
 
-(set: $swag to &quot;slave&quot;)</tw-passagedata><tw-passagedata pid="69" name=" Helg end" tags="" position="1497,982.5" size="100,100">&lt;style&gt;
+(set: $swag to &quot;slave&quot;)</tw-passagedata><tw-passagedata pid="67" name=" Helg end" tags="" position="1497,982.5" size="100,100">&lt;style&gt;
 tw-passage{text-align: center;
 }
 &lt;/style&gt;
@@ -2061,103 +2040,165 @@ tw-passage{text-align: center;
 
 [[Конец игры -&gt;Results]]
 
-(set: $helg to &quot;blind&quot;)</tw-passagedata><tw-passagedata pid="70" name="attack2 style ap pass" tags="" position="2090.5,1739.5" size="100,100">(set: _TOscore to $ourscore)
-[(set: $ourscore to it+(either: 2,0,2,2)) (Пас из ниоткуда)(print: $team&#39;s 4rd) как вы ему и втолковывали, уже перебегает половину поля. Вы буквально вырываете мяч у своих. Следует пас через всю площадку. Самые боязливые пригнулись.(print: $team&#39;s 4rd) принимает подарок в руки и все что ему остается - тут же его выпустить, пока безнадежно запаздывающие защитники пытаются его накрыть. Мяч слетает с пальцев...
+(set: $helg to &quot;blind&quot;)</tw-passagedata><tw-passagedata pid="68" name="attack2 style ap pass" tags="" position="2144.5,1557.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $perk2 is &quot;Пас из ниоткуда&quot; and $agile &gt;=17)[
+(set: $ourscore to it+(either: 2,0,2,2)) (Пас из ниоткуда) (print: $team&#39;s 4rd) как вы ему и втолковывали, уже перебегает половину поля. Вы буквально вырываете мяч у своих. Следует пас через всю площадку. Самые боязливые пригнулись.(print: $team&#39;s 4rd) принимает подарок в руки и все что ему остается - тут же его выпустить, пока безнадежно запаздывающие защитники пытаются его накрыть. Мяч слетает с пальцев...
+
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
 ]
-(if: $ourscore &gt;_TOscore)
-[Успех!]
-(else:)
-[(set: $reb to (either: 1,0,0,1,0))Промах!]
-
 (if: $reb is 1)[
-[[Ваш игрок вырывает мяч на подборе-&gt;attack2 style ap reb]]]
-(else:)[
-[[Владение у противника! -&gt;2poss opp]]]
+[[Ваш игрок вырывает мяч на подборе-&gt;attack2 style ap reb]]
+]]]
 
-Счет
-Команда Здоровье $ourscore
-Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="71" name="attack2 style ap pass2" tags="" position="2193.5,1662.5" size="100,100">(set: _TOscore to $ourscore)
-[(set: $ourscore to it+(either: 2,2,0,0,2))(Интеллект 15) Вы и (print: $team&#39;s 3rd) уже впереди. Следует пас от вашего пятого на $sideа, тот заряжает мяч (print: $team&#39;s 3rd)у. Игорь и $enemy догоняют винга, он тянет сколько может, чтобы дать вам еще немного пространства. Мяч в воздухе, вы тоже, удастся ли переправить ...
+(else-if: $power &gt;= 15 and $agile &gt;=20)[(set: $ourscore to it+(either: 2,0,0,2))(print: $team&#39;s 4rd) ловит мяч у самой краски, где его жестко встречает Арт. Ваш игрок делает скидку на $sideа, который тут же совершает бросок с места...
+
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
 ]
-(if: $ourscore &gt;_TOscore)
-[Успех!]
-(else:)
-[(set: $reb to (either: 1,0,0,1,0))Промах!]
-
 (if: $reb is 1)[
-[[Ваш игрок вырывает мяч на подборе-&gt;attack2 style ap reb]]]
-(else:)[
-[[Владение у противника! -&gt;2poss opp]]]
+[[Ваш игрок вырывает мяч на подборе-&gt;attack2 style ap reb]]
+]]]
 
-Счет
-Команда Здоровье $ourscore
-Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="72" name="attack2 style ap coast" tags="" position="2356.5,1685.5" size="100,100">(set: _TOscore to $ourscore)
-[(set: $ourscore to it+(either: 2,2,0,0))
-Вы по правой стороне врываетесь на территорию противника, когда $side находит вас пасом. Перед вами только запыхавшийся Игорь. Три прыжка - и мяч летит в кольцо... 
+(else:)[ Мяч улетает в аут, даже не задев щита. Ваша команда не успела расставиться, так что быстро вернется к защитным построениям. Это единственный плюс потраченного владения.
+
+[[Владение у противника! -&gt;2poss opp]] 
 ]
 
-(if: $ourscore &gt;_TOscore)
-[Успех!]
-(else:)
-[(set: $reb to (either: 1,0,0,1,0))Промах!]
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
 
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="69" name="attack2 style ap coast" tags="" position="2146.5,1919.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $perk1 is &quot;Данчич&quot; and $power &gt;=17 and $agile &gt;=17) [(set: $ourscore to it +2)(Данчич) Вы выпущенной стрелой пронзаете поле, разбрасывая грязь во все стороны, и оказываетесь в чужой штрафной. Навстречу подворачивается бедный Стас Мелков, пытающийся вспомнить положение для чарджа. С диким криком вы вонзаете пальцы ему в волосы, отталкиваетесь от макушки и, преодолевая крики Стаса и тяготение, вгоняете мяч  в корзину по самую сетку. ХАММЕР ДАУН!!!!]
+
+(else-if: $power &gt;=20 and $agile &gt;=20) [(set: $ourscore to it+(either: 2,0,0,2,2)) Вы мчитесь как разогнавшаяся колесница, не разбирающая своих и чужих. Сзади кто-то задыхается, ругается и умоляет отдать пас, ведь Мелков готовится принять вас в объятия чарджа. Но вы не просто так на коне: шахматные прыжки буквой Г, обескураженный защитник за спиной, лейап...  
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
 (if: $reb is 1)[
-[[Ваш игрок вырывает мяч на подборе-&gt;attack2 style ap reb]]]
-(else:)[
-[[Владение у противника! -&gt;2poss opp]]]
+[[Ваш игрок вырывает мяч на подборе-&gt;attack2 style ap reb]]
+]]]
+
+(else:)[ Вы мчитесь как разогнавшаяся колесница, не разбирающая своих и чужих. Сзади кто-то задыхается, ругается и умоляет отдать пас, ведь Мелков готовится принять вас в объятия чарджа.
+
+[[Врезаться в Стаса - стоит не по позиции-&gt;a2 coast charge]]
+
+[[Метнуть пас нытику из своей команды-&gt;attack2 style ap passiv]]
+
+[[КРОССОВЕР, АНКЛ БРЕЙК, ДАНК-&gt;a2 coast cross]]
+]
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="70" name="attack2 style ap passiv" tags="" position="2143.5,1681.5" size="100,100">(print: $team&#39;s 3rd) берет на себя организацию нападения. Вы получате сигнал на комбинацию &quot;Кастрированный Буйвол&quot;, она же &quot;Четырехугольник&quot;. 
+
+[[Увести за собой защитника, открывая зазор для прохода-&gt;at2 open]]
+
+[[Убежать на дугу и открыться под бросок-&gt;at2 3p]]
+
+[[Играем в &quot;щит-и-меч&quot; с разыгрывающим-&gt;at2 roll]]
+
+[[Забрать мяч, я звезда, сам зарешаю-&gt;at2 star]]
+
+
 
 Счет
 Команда Здоровье $ourscore
-Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="73" name="attack2 style ap 3p" tags="" position="2501.5,1695.5" size="100,100">(set: _TOscore to $ourscore)
-[(set: $ourscore to it+(either: 3,3,0))
-Пока игроки Мопсов сломя голову бросились за вашими беглецами, вы добираетесь до периметра никем не опознанный. Винг противника Игорь спешит перекрыть косяк товарища. А в это время (print: $team&#39;s 3rd) находит вас передачей. Плавно, как на тренировке... 
-]]
+Мопсы-блиноеды $score
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
 
-(if: $ourscore &gt;_TOscore)
-[Успех!]
-(else:)
-[(set: $reb to (either: 1,0,0,1,0))Промах!]
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
 
-(if: $reb is 1)[
-[[Ваш игрок вырывает мяч на подборе-&gt;attack2 style ap reb]]]
-(else:)[
-[[Владение у противника! -&gt;2poss opp]]]
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="71" name="attack2 style ap reb" tags="" position="2416.5,1563.5" size="100,100">(if: $tPerks&#39;s 4th is &quot;Идеальность&quot;)[(set: $ourscore to it +3)(Идеальность) Виктор не просто вырывает мяч, он убегает с ним на дугу и кидает треху. И попадает. Да, он это сделал. У всех отвисает челюсть.
 
-Счет
-Команда Здоровье $ourscore
-Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="74" name="attack2 style ap passiv" tags="" position="2639.5,1677.5" size="100,100">(set: _TOscore to $ourscore)
-[(set: $ourscore to it+(either: 2,0,0,0))(print: $team&#39;s 3rd) пробует разогнать нападение, но защитники уже успели выстроиться. Пас на $sideа, тот прет к кольцу, лейап... ]
+[[Владение переходит к противнику-&gt;2poss opp]]]
 
+(else-if: $tPerks&#39;s 4th is &quot;Дед&quot;)[(set: $ourscore to it +2) (Дед) Капкейк, дождавшись пока буйные мопсы подпрыгнут в воздух, подбирает мяч у самой земли и не спеша засовывает путбек. По пути назад он успевает обматерить каждого встреченного игрока соперника.
 
-(if: $ourscore &gt;_TOscore)
-[Успех!]
-(else:)
-[(set: $reb to (either: 1,0,0,1,0))Промах!]
+[[Владение переходит к противнику-&gt;2poss opp]]]
 
-(if: $reb is 1)[
-[[Ваш игрок вырывает мяч на подборе-&gt;attack2 style ap reb]]]
-(else:)[
-[[Владение у противника! -&gt;2poss opp]]]
+(else-if: $tPerks&#39;s 4th is &quot;Пулемет пустоты&quot;)[(set: $ourscore to it+2) (set:$penalty to it +1)(Пулемет пустоты) Майк Ю на easy отбирает у этих low-life trash свое,закидывает ball in the hoop, но потом немедленно переворачивает игру и переступает через поверженного Арта. Завязывается конфликт, вы тоже участвуете и получаете штраф.
 
-Счет
-Команда Здоровье $ourscore
-Мопсы-блиноеды $score</tw-passagedata><tw-passagedata pid="75" name="attack2 style ap reb" tags="" position="2203.5,1933.5" size="100,100">{(if: $offence is &quot;АП ТЕМПО&quot;)[
-Ваш игрок тут же пробует запихать путбек обратно, но его накрывают и зверски лишают мяча, и немного здоровья.
+[[Владение переходит к противнику-&gt;2poss opp]]]
 
-[[Скорее возвращаться назад в защиту!-&gt;2poss opp]]]
-(if: $offence is &quot;ПИК-Н-РОЛЛ&quot;)[Ваш игрок тут же пробует запихать путбек обратно, но его накрывают и зверски лишают мяча, и немного здоровья.
+(else-if: $tPerks&#39;s 4th is &quot;Бычий тут&quot;)[(set: $penalty to it +1)(Бычий тут) Зе Луишу не нравится, что игроки противника пытаются отобрать у него мяч, поэтому охлаждает самого дерзкого ударом локтя в нос. Завязывается конфликт, вы тоже участвуете и получаете штраф.
 
-[[Скорее возвращаться назад в защиту!-&gt;2poss opp]]]
-(if: $offence is &quot;ДРАЙВ-Н-КИК&quot;)[Ваш игрок тут же пробует запихать путбек обратно, но его накрывают и зверски лишают мяча, и немного здоровья.
+[[Владение переходит к противнику-&gt;2poss opp]]]
 
-[[Скорее возвращаться назад в защиту!-&gt;2poss opp]]]
-(if: $offence is &quot;ПОСТ&quot;)[Ваш игрок тут же пробует запихать путбек обратно, но его накрывают и зверски лишают мяча, и немного здоровья.
+(else-if: $tPerks&#39;s 4th is &quot;Внутренний войс&quot;)[(Внутренний войс) Володя Войсоеб в могучем прыжке выцарапывает мяч, но потом что-то идет не по плану. Бормоча сложно различимые слова, он разворачивается и бежит к вашему кольцу. До последнего никто не догадывается, чем это грозит, пока он не пытается заданчить собственное кольцо. В последний момент $side делает ему блокшот по заднице, меняя траекторию полета. Мяч сносит в аут, но Володя хотя бы приходит в себя
 
-[[Скорее возвращаться назад в защиту!-&gt;2poss opp]]]</tw-passagedata><tw-passagedata pid="76" name="Clutch" tags="" position="1200,2358.5" size="100,100">Очень близкая игра!
+(else:)[$side подбирает мяч - и тут же пытается засунуть его обратно путбеком...
+Промах! На этот раз мопсы на страже.]
+
+[[Владение переходит к противнику-&gt;2poss opp]]]</tw-passagedata><tw-passagedata pid="72" name="Clutch" tags="" position="1200,2358.5" size="100,100">Очень близкая игра!
 
 Ты пытаешься бросить на победу, мяч летит!
 
-[[Ну-же-&gt;Strike]]</tw-passagedata><tw-passagedata pid="77" name="Strike" tags="" position="902,2344.5" size="100,100">БАБАХ!
+[[Ну-же-&gt;Strike]]</tw-passagedata><tw-passagedata pid="73" name="Strike" tags="" position="902,2344.5" size="100,100">БАБАХ!
 Триумф твоей победы заслоняет треск замковых ворот.
 
 Ворота вылетают и внутрь прорываются войска Пятицарствия.
@@ -2174,7 +2215,7 @@ tw-passage{text-align: center;
 [[Собирать верных соратников, пробиваться к королю-&gt;king_loyalty]]
 
 [[Устроить настоящий хаоc-&gt;chaos]]
-</tw-passagedata><tw-passagedata pid="78" name="run" tags="" position="752,2494.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="79" name="king_loyalty" tags="" position="902,2494.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="80" name="chaos" tags="" position="1052,2494.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="81" name="def2 lose" tags="" position="1525,2330.5" size="100,100">{(if: $class is &quot;Тяжкий&quot;)[ (set: $score to it+2)
+</tw-passagedata><tw-passagedata pid="74" name="run" tags="" position="752,2494.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="75" name="king_loyalty" tags="" position="902,2494.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="76" name="chaos" tags="" position="1052,2494.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="77" name="def2 lose" tags="" position="1525,2330.5" size="100,100">{(if: $class is &quot;Тяжкий&quot;)[ (set: $score to it+2)
 $enemy получает мяч в посту и начинает толкаться, вкладываясь в локти. Вы пыхтите, но держите удар. Ложный замах, поворот - вы на месте. Следует полукрюк, за спиной слышен проклятый трепет сетки и огорченный вздох соратников. 2 очка противнику]
 (else-if: $class is &quot;Тяжкий&quot; and $intel &gt;=12)[(set: $score to it)
 $enemy получает мяч в посту и начинает толкаться, вкладываясь в локти. Вы пыхтите, но держите удар. Ложный замах, поворот, следует полукрюк, но в точный момент вы взмываете в воздух и со всей дури бьете по мячу. Шар отлетает в руки вашего игрока. Восторженные крики соратников]
@@ -2193,7 +2234,7 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="82" name="def2" tags="" position="1673,2335.5" size="100,100">{$side и (print: $team&#39;s 4rd) прижимают игрока с мячом. Он с трудом видит партнера и пассует ему.} 
+]</tw-passagedata><tw-passagedata pid="78" name="def2" tags="" position="1673,2335.5" size="100,100">{$side и (print: $team&#39;s 4rd) прижимают игрока с мячом. Он с трудом видит партнера и пассует ему.} 
 {(if: $perk2 is &quot;Карманник&quot;) [(Карманник) (set: $ourscore to it+2) Мяч прилипает к вашей руке. Противник щелкает клювом, а ноги уже несут вас к кольцу на той стороне. За вами несется лавина из ругающихся и вопящих тел. Лейап. 2 очка!]}
 {(if: $perk1 is &quot;Данчич&quot;) [(Данчич) (set: $ourscore to it+3) (print: $team&#39;s 3rd) выпрыгивает из засады, хватает мяч, пас - и вы в отрыве. За вами несется лавина из ругающихся и вопящих тел. Впереди последний рубеж из мускулов их центрового. Слэм-данк с контактом сотрясает и кольцо и чувства зрителей. Король восторженно орет, а судья позволяют вам пробить штрафной. Вы обескураживаще точны. Три очка!]}
 {(else:) [ (set: $ourscore to it+1) (print: $team&#39;s 3rd) выпрыгивает из засады, хватает мяч и несется в отрыв. Впереди последний рубеж из мускулов их центрового. Тот жестко фолит, дергая игрока за руку. Король удовлетворенно ухает. Судьи все таки разрешают пробить 2 штрафных броска. (print: $team&#39;s 3rd) попадает один. Вы встревожены, но он показывает, что может играть.]}
@@ -2208,7 +2249,7 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="83" name="def2 style" tags="" position="1835,2343.5" size="100,100">Еще несколько переводов мяча между игроками, и наконец двое устремляются к кольцу. 
+]</tw-passagedata><tw-passagedata pid="79" name="def2 style" tags="" position="1835,2343.5" size="100,100">Еще несколько переводов мяча между игроками, и наконец двое устремляются к кольцу. 
 
 {(if: $class is &quot;Болтхендлер&quot; and $perk1 is not &quot;Блок по лицу&quot;)[(set: $score to it+2)
 Противник играет в пик-н-ролл. Ты оказываешься против более мощного Арта, который заносит мяч и частично тебя в кольцо. Первые очки Мопсов.
@@ -2270,17 +2311,27 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="84" name="1half" tags="" position="1694,2500.5" size="100,100">Счет к середине игры
+]</tw-passagedata><tw-passagedata pid="80" name="1half" tags="" position="1694,2500.5" size="100,100">(set: $ourscore to 60)
+(set: $score to 60)
+(set: $diff to $ourscore - $score)
+Прошла половина игры.
 
 
-Хорошо идем, продолжаем!
+Вы бросаете последний взгляд на счет и удаляетесь в раздевалку.
 
+[[Пройти в подтрибунное помещение-&gt;good half]]
+
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+Разница $diff
 
 
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="85" name="Team" tags="" position="690,196.5" size="100,100">КОМАНДА ЗДОРОВЬЕ
+]</tw-passagedata><tw-passagedata pid="81" name="Team" tags="" position="690,196.5" size="100,100">КОМАНДА ЗДОРОВЬЕ
 *Капитан и тренер* (print: $team&#39;s 1st)
 *Франчайз* (print: $team&#39;s 2nd)(//Навык// (print: $tPerks&#39;s 1st))
 *Умник* (print: $team&#39;s 3rd) (//Навык// (print: $tPerks&#39;s 2nd))
@@ -2297,7 +2348,7 @@ $enemy получает мяч в посту. Вы активно обороня
 *Их человек-клей* Стас Мелков
 *Их шутер-снайпер* Гоша Демурия]
 
-(link-undo:&quot;Вернуться&quot;)</tw-passagedata><tw-passagedata pid="86" name="attack1-dunk" tags="" position="1468,1651.5" size="100,100">(if: $perk1 is &quot;Данчич&quot;)[(set: $ourscore to it+2)(Данчич)
+(link-undo:&quot;Вернуться&quot;)</tw-passagedata><tw-passagedata pid="82" name="attack1-dunk" tags="" position="1468,1651.5" size="100,100">(if: $perk1 is &quot;Данчич&quot;)[(set: $ourscore to it+2)(Данчич)
 Вы сминаете зевнувшего противника и устраиваете мячом резню в корзине. Ошеломленный соперник старается не шевелиться, валяясь на полу, пока вы в припадке гормонов истошно орете. Первые два очка добыты. Теперь Мопсы будут осторожнее, но совсем в сухую вы уже не проиграете.]
 (else-if: $agile &gt;= 15 and $power&gt;=13)[(set: $ourscore to it+2)
 Ваш первый шаг чуть не стал последним в этом владении: мяч зацепился за развевающиеся штаны защитника и попрыгал в сторону. Но вы совсем свежий, поэтому легко доганяете снаряд, а там уже и до кольца всего ничего. Прыжок.Первые два очка добыты. Теперь Мопсы будут осторожнее, но совсем в сухую вы уже не проиграете.]
@@ -2328,7 +2379,7 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="87" name="attack1-fart" tags="" position="1467,1760.5" size="100,100">(if: $toxity &gt;=15)[(set: $ourscore to it + 2)
+]</tw-passagedata><tw-passagedata pid="83" name="attack1-fart" tags="" position="1467,1760.5" size="100,100">(if: $toxity &gt;=15)[(set: $ourscore to it + 2)
 Громкий и ультимативный звук взывает к самым древним инстинктам вашего опекуна, который застывает в ужасе. И секундного замешательства хватает, чтобы на этом ускорении долететь до кольца. Другие игроки к вам тоже совсем не спешат. Лейап. Два очка не пахнут.]
 (else:)[Жалкий чпок сконфузил вас больше, чем оппонента. В вашем замысле явно не хватило подготовительных действий. Смущенный, вы стараетесь двинуть мяч, но $enemy легко читает передачу - и забирает себе]
 
@@ -2356,7 +2407,7 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="88" name="attack1-open" tags="" position="1465,1868.5" size="100,100">(if: $perk2 is &quot;Пас из ниоткуда&quot;)[(set: $ourscore to it + 2)(Пас из ниоткуда) 
+]</tw-passagedata><tw-passagedata pid="84" name="attack1-open" tags="" position="1465,1868.5" size="100,100">(if: $perk2 is &quot;Пас из ниоткуда&quot;)[(set: $ourscore to it + 2)(Пас из ниоткуда) 
 Вы выбрасываете мяч подальше от себя и от защитника. В это время $side подпрыгивает у кольца. Прямо в его поднятые руки приземляется мяч. ДАНК. Вы с невозмутимым видом возвращаетесь назад, а на все восторженные крики киваете - да, так и было задумано.]
 (else-if: $intel is &gt;=15 and $agile &gt;=13)[ (set: $ourscore to it + 2) 
 Вы быстро передаете мяч $sideу и бежите в угол. Защитник на секунду теряется, но только чтобы крикнуть напарнику присматривать за вами. А вам того и надо - оставленный в одиночестве (print: $team&#39;s 4th) делает кат с другой стороны, принимает отскок от $sideа и приносит 2 очка!]
@@ -2385,7 +2436,1260 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata></tw-storydata>
+]</tw-passagedata><tw-passagedata pid="85" name="attack2 style ap tox" tags="" position="2147.5,1448.5" size="100,100">(if: $toxity &gt;=19)[(Токсичность 19) 
+Гоша Демурия подскакивает - и тут же падает, изображая нечеловеческие муки. Его перекатов хватило бы, чтобы пересечь всю Артемию. Вы сочувственно охаете и разводите руки, ведь сами не понимаете как так вышло.
+Да, владение у противника, но вы уже оставили свой след на поле - и на гошиной спине.]
+(else:)[(set: $score to it + 1) (set: $penalty to it + 1)Мяч пружинит от тощих ягодиц Гоши. Демурия на инстинктах с громким воем падает под ноги судье, выражая невыносимые страдания. Вам назначают нарушение. Гоша сам исполняет бросок и приносит очко своей команде. Мяч остается у них.]
+
+[[Владение у противника! -&gt;2poss opp]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="86" name="a2 coast charge" tags="" position="2074.5,2048.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $class is &quot;Болтхендлер&quot; and $intel &gt;=18) [(set: $ourscore to it+(either: 2,1,2))(Болтхендлер) Вы входите в Стаса так мягко, что со стороны выглядит как будто это он врезается в вас с порочными намерениями. Незамедлительно следует свисток. Вам дают пробить штрафные.
+[[Владение переходит к противнику-&gt;2poss opp]]]
+
+(else:)[(set: $penalty to it + 1) Стас героически принимает на себя вашу тушу. Без всякого промедления вам свистят чардж и забирают мяч. Обидно.  
+[[Владение переходит к противнику-&gt;2poss opp]]]
+
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="87" name="a2 coast cross" tags="" position="2205.5,2055.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $class is &quot;Болтхендлер&quot; and $agile &gt;=20) [(set: $ourscore to it+(either: 2,0,0,0,2,2))(Болтхендлер) Качнув мяч и Стаса, вы делаете шаг назад. Мелков не разобравшись в этом па, валится в грязь. Вы взмываете в мощном прыжке, а на щит, как в театре теней, накладывается черная тень преследующего вас $enemyа. Успеете или накроет?...
+
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Блокшот!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Блокшот. Но вы ловите отскок мяча!-&gt;attack2 style ap reb]]
+]]]
+
+(else:)[(set: $ourscore to it+(either: 1,0,0,1,2)) Попробовав качнуть Стаса, вы получаете хлесткий удар по дышлу. $side призывает судей.  
+(if: $ourscore &gt;_TOscore)[Успешно. Тебе дают пробить штрафные.
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[Судья в это время изучает птиц в небе. Жалобы бесполезны.
+
+[[Владение переходит к противнику-&gt;2poss opp]]]]
+
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="88" name="at2 open" tags="" position="2012.5,1802.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $class is &quot;Растягивающий&quot; and $agile &gt;=15)[(set: $ourscore to it+(either: 2,0,2,2))(Растягивающий) С какого-то перепугу за вами увязался не один, а даже два игрока. (print: $team&#39;s 3rd) мигом находит передачей (print: $team&#39;s 5rd), ворвавшегося под кольцо...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Блокшот!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Блокшот! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+(else-if: $agile &gt;=17 and $intel &gt;=14)[(set: $ourscore to it+(either: 2,0,0,2))Вы тащите игрока за собой и ухитряетесь на секунду привлечь внимание $enemyа, который топчется под кольцом. (print: $team&#39;s 3rd) тут же выбрасывает флоатер...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+(else:) [(set: $ourscore to it+(either: 2,0,3,0,0,0))Вы обежали всю вражескую половину поля, несколько раз перепрыгнули через судей, линии, и столик короля, петляли и заметали следы - пока противник хладнокровно передавал вас от игрока к игроку. (print: $team&#39;s 3rd) не дождавшись пользы от ваших действий, совершает дальний бросок...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="89" name="at2 3p" tags="" position="2143.5,1798.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $perk1 is &quot;Шальная Треха&quot; and $agile &gt;=18)[(set: $ourscore to it+(either: 3,0,3)) Вы и (print: $team&#39;s 5rd) устремляетесь на встречу друг другу. Он врезается в вашего опекуна, пока его собственный опонент не может выбрать сторону с которой обежать широкую задницу $sideа. Заветный пустой угол, (print: $team&#39;s 3rd) мигом находит вас передачей , прыжок, бросок...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+(else-if: $power is &gt;=15 and $agile &gt;=18)[(set: $ourscore to it+(either: 3,0,2,3)) Вы и (print: $team&#39;s 5rd) устремляетесь на встречу друг другу. Он врезается в вашего опекуна, пока его собственный опонент не может выбрать сторону с которой обежать широкую задницу $sideа. Заветный пустой угол, вы почти на линии, (print: $team&#39;s 3rd) мигом находит вас передачей, прыжок, бросок...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+(else:) [(set: $ourscore to it+(either: 3,0,0,2)) Вы и (print: $team&#39;s 5rd) устремляетесь на встречу друг другу. Он врезается в вашего опекуна, пока его собственный опонент не может выбрать сторону с которой обежать широкую задницу $sideа. Заветный пустой угол, вы почти на линии, (print: $team&#39;s 3rd) мигом находит вас передачей, прыжок, бросок...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="90" name="at2 roll" tags="" position="2276.5,1794.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $class is &quot;Тяжкий&quot; and $agile &gt;=15 and $intel &gt;=12)[(set: $ourscore to it+(either: 2,0,2)) (Тяжкий) Вы ставите &quot;щит&quot; болхендлеру. (print: $team&#39;s 3rd), освобожденный от прикрытия, мчит к кольцу, где его уже ждет Стас Мелков. Но настоящий &quot;меч&quot; в этой комбинации вы. (print: $team&#39;s 3rd) отскоком загоняет мяч вам в руки, могучий прыжок, мяч слетает с пальцев...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+(else-if: $perk1 is &quot;Пас из ниоткуда&quot; and $intel &gt;=18)[(set: $ourscore to it+(either: 2,0,2,0)) (Пас из ниоткуда) Вы ставите &quot;щит&quot; и поначалу соперник смотрит на это с недоумением, потому что он больше вас в два раза. Но когда (print: $team&#39;s 3rd) начинает движение, то встречает Игоря вовсе не ваша грудь, а могучая задница (print: $team&#39;s 5rd)а, подкравшегося с другой стороны. Вы же вылавливаете пас, добегаете до кольца - и передаете его на свободного $sideа. Прыжок, бросок...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+(else:) [(set: $ourscore to it+(either: 0,0,0,2)) Вы ставите &quot;щит&quot; болхендлеру. (print: $team&#39;s 3rd), освобожденный от прикрытия, мчит к кольцу, где его уже ждет Стас Мелков. Но настоящий &quot;меч&quot; в этой комбинации вы. (print: $team&#39;s 3rd) отскоком загоняет мяч вам в руки, могучий прыжок, мяч слетает с пальцев...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="91" name="at2 star" tags="" position="2397.5,1795.5" size="100,100">Вы мчитесь к кольцу как разогнавшаяся колесница, не разбирающая своих и чужих. Сзади кто-то орет, что надо включить голову - ведь Мелков готовится принять вас в объятия чарджа.
+
+[[Включить голову и врезаться ею в Стаса - стоит не по позиции-&gt;a2 coast charge]]
+
+[[КРОССОВЕР, АНКЛ БРЕЙК, ДАНК-&gt;a2 coast cross]]
+
+[[Поворачиваюсь жопой-&gt;a2 post]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="92" name="a2 post" tags="" position="2524.5,1792.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $perk1 is &quot;Стальная задница&quot; and $power &gt;=12) [(set: $ourscore to it+(either: 2,0,2,2))(Стальная задница) Могучими ягодицами вы загоняете Стаса в неудобную позу. Его партнеры спешат на помощь, но вы не для того приседаете надо столом с явствами несколько десятков раз в сутки, чтобы вас достаточно было просто облепить. С грацией землетрясения вы взмываете в воздух, раскидывая людей во все стороны. Мяч летит в корзину...
+
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах. Но вы ловите отскок мяча!-&gt;attack2 style ap reb]]
+]]]
+
+(else-if: $agile &gt;=14 and $power &gt;=18) [(set: $ourscore to it+(either: 2,0,0,0,2)) Используя жопу как таран, вы загоняете Стаса под кольцо. Прежде чем подоспеют его партнеры, вы исхитряетесь закинуть мяч крюком в корзину...
+
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах. Но вы ловите отскок мяча!-&gt;attack2 style ap reb]]
+]]]
+
+(else:)[(set: $ourscore to it+(either: 1,0,0,1,2)) Используя жопу как таран, вы загоняете Стаса под кольцо, где уже ждут его партнеры. Вас забивают дружной компанией. $side призывает судей.  
+(if: $ourscore &gt;_TOscore)[Успешно. Тебе дают пробить штрафные.
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[Судья в это время изучает птиц в небе. Жалобы бесполезны.
+
+[[Владение переходит к противнику-&gt;2poss opp]]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="93" name="attack2 style dr self" tags="" position="2979.5,1776.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $perk1 is &quot;Данчич&quot; and $intel &gt;=17 and $agile &gt;=17) [(set: $ourscore to it +2)(Данчич) Пока $side и (print: $team&#39;s 3rd) растягивают защиту угрозой атаки с дуги, вы замечаете образовавшийся зазор в построении Мопсов. А чего ждать, думаете вы - и врываетесь. Навстречу подворачивается бедный Стас Мелков, пытающийся вспомнить положение для чарджа. С диким криком вы вонзаете пальцы ему в волосы, отталкиваетесь от макушки и, преодолевая крики Стаса и тяготение, вгоняете мяч  в корзину по самую сетку. ХАММЕР ДАУН!!!!]
+
+(else-if: $power &gt;=15 and $agile &gt;=17 and $intel &gt;=17) [(set: $ourscore to it+(either: 2,0,0,2,2)) Пока $side и (print: $team&#39;s 3rd) растягивают защиту угрозой атаки с дуги, вы замечаете образовавшийся зазор в построении Мопсов. А чего ждать, думаете вы - и врываетесь. Мелков готовится принять вас в объятия чарджа. Но вы не просто так на коне: шахматные прыжки буквой Г, обескураженный защитник за спиной, лейап...  
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Ваш игрок вырывает мяч на подборе-&gt;attack2 style ap reb]]
+]]]
+
+(else:)[$side и (print: $team&#39;s 3rd) растягивают защиту угрозой атаки с дуги, а вы в это время замечаете образовавшийся зазор в построении Мопсов. Вас прикрывает быстроногий шутер соперников Гоша Демурия.
+
+[[Поймать Гошу на фол при показе броска -&gt;a2 dr charge]]
+
+[[Передать мяч по цепочке другому игроку -&gt;attack2 style dr passiv]]
+
+[[Ворваться в краску -&gt;a2 dr drive]]
+]
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="94" name="attack2 style dr passiv" tags="" position="2981.5,1648.5" size="100,100">(print: $team&#39;s 3rd) берет на себя организацию нападения. Вы получате сигнал на комбинацию &quot;Сагиттарий&quot;, она же &quot;Круг&quot;. 
+
+[[Уйти в обманный маневр-&gt;attack2 dr 3p pass]]
+
+[[Убежать на дугу и открыться под бросок-&gt;attack2 dr 3p]]
+
+[[Знаю только комбинацию &quot;Чикаго&quot; -&gt;attack2 style dr self]]
+
+
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="95" name="attack2 dr 3p" tags="" position="2954.5,1532.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $perk1 is &quot;Шальная Треха&quot; and $agile &gt;=18)[(set: $ourscore to it+(either: 3,0,3)) Вы и (print: $team&#39;s 5rd) устремляетесь на встречу друг другу. Он врезается в вашего опекуна, пока его собственный опонент не может выбрать сторону с которой обежать широкую задницу $sideа. Заветный пустой угол, (print: $team&#39;s 3rd) мигом находит вас передачей , прыжок, бросок...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+(else-if: $power is &gt;=15 and $agile &gt;=18)[(set: $ourscore to it+(either: 3,0,2,3)) Вы и (print: $team&#39;s 5rd) устремляетесь на встречу друг другу. Он врезается в вашего опекуна, пока его собственный опонент не может выбрать сторону с которой обежать широкую задницу $sideа. Заветный пустой угол, вы почти на линии, (print: $team&#39;s 3rd) мигом находит вас передачей, прыжок, бросок...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+(else:) [(set: $ourscore to it+(either: 3,0,0,0,2)) Вы и (print: $team&#39;s 5rd) устремляетесь на встречу друг другу. Он врезается в вашего опекуна, пока его собственный опонент не может выбрать сторону с которой обежать широкую задницу $sideа. Заветный пустой угол, вы почти на линии, (print: $team&#39;s 3rd) мигом находит вас передачей, прыжок, бросок...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="96" name="a2 dr charge" tags="" position="2826.5,1898.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $agile &gt;=18 and $intel &gt;=18) [(set: $ourscore to it+(either: 3,1,2))Вы так реалистично изображаете бросок, что Гоша рубит вас со всем должным уважением. Незамедлительно следует свисток. Вам дают пробить штрафные.
+[[Владение переходит к противнику-&gt;2poss opp]]]
+
+(else:)[(set: $penalty to it + 1) Гоша хладнокровно остается на месте, а вы приземляетесь на землю, так и не выпустив мяч из рук. Свисток, потеря.  
+[[Владение переходит к противнику-&gt;2poss opp]]]
+
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="97" name="a2 dr drive" tags="" position="3052.5,1902.5" size="100,100">Вы рветесь к кольцу. Сзади пыхтит Гоша, перед лицом маячит Стас Мелков.  Сзади кто-то орет, что надо включить голову - ведь Стас готовится принять вас в объятия чарджа.
+
+[[Флоатер в лицо защитнику -&gt; a2 floater]]
+
+[[Включить голову и врезаться ею в Стаса - стоит не по позиции-&gt;a2 coast charge]]
+
+[[Так и было задумано. &quot;Кикаю&quot; передачу на дугу -&gt;a2 dr kick]]
+
+[[Поворачиваюсь спиной. Задавим ублюдков жопой -&gt;a2 post]]
+
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="98" name="attack2 dr 3p pass" tags="" position="3114.5,1527.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $perk1 is &quot;Пас из ниоткуда&quot; and $agile &gt;=15)[(Пас из ниоткуда)(set: $ourscore to it+(either: 3,0,3)) Вы выскакиваете на линию и (print: $team&#39;s 3rd) немедленно скидывает вам мяч. Гоша Демурия напрыгивает в попытке напугать вас, но это работает как против ежа голой жопой. $side своим &quot;щитом&quot; сносит $enemyа, и освобожденный от опеки (print: $team&#39;s 4rd) мчится в угол. Он криками пытается привлечь ваше внимание, но уже поздно - мяч давно у него в руках. Свободный бросок, и даже возможно лишняя секунда на прицел. Прыжок...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+(else-if: $agile is &gt;=15 and $intel &gt;=18)[(set: $ourscore to it+(either: 3,0,2,3)) Вы выскакиваете на линию и (print: $team&#39;s 3rd) немедленно скидывает вам мяч. Гоша Демурия напрыгивает в попытке напугать вас, но это работает как против ежа голой жопой. $side своим &quot;щитом&quot; сносит $enemyа, и освобожденный от опеки (print: $team&#39;s 4rd) мчится в угол. Вы закидываете мяч ему в руки. Открытый бросок, и даже возможно лишняя секунда на прицел. Прыжок...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+(else:) [(set: $ourscore to it+(either: 3,0,0,2)) Вы выскакиваете на линию и (print: $team&#39;s 3rd) немедленно скидывает вам мяч. Гоша Демурия напрыгивает в попытке напугать вас, но это работает как против ежа голой жопой. $side своим &quot;щитом&quot; сносит $enemyа, и освобожденный от опеки (print: $team&#39;s 5rd) мчится в угол. Вы закидываете мяч ему в руки. Открытый бросок, и даже возможно лишняя секунда на прицел. Прыжок...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="99" name=" a2 floater" tags="" position="2960.5,2025.5" size="100,100">{(set: _TOscore to $ourscore)}
+
+(if: $agile &gt;=18 and $power &gt;=12) [(set: $ourscore to it+(either: 2,0,0,2)) Мач пролетает над головой Стаса, бьется о щиток, падает на дужку кольца и на миг замирает на узкой полоске железа...
+
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах. Но вы ловите отскок мяча!-&gt;attack2 style ap reb]]
+]]]
+
+(else:)[(set: $ourscore to it+(either: 1,0,0,1,2)) Прежде чем мяч успевает сорваться с пальцев, Гоша толкает вас в спину. Баскетбольные инстинкты подсказывают вам плюхнуться на поле. 
+(if: $ourscore &gt;_TOscore)[Успешно. Тебе дают пробить штрафные.
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[Судья в это время изучает птиц в небе. Жалобы бесполезны.
+
+[[Владение переходит к противнику-&gt;2poss opp]]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="100" name="a2 dr kick" tags="" position="3127.5,2052.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $perk1 is &quot;Пас из ниоткуда&quot; and $agile &gt;=15)[(Пас из ниоткуда)(set: $ourscore to it+(either: 3,0,3)) Вас накрывает с десяток рук, но мяч каким-то чудом оказывается в воздухе, словно зависает, а потом, пококотничав, находит на дуге вашего игрока. (print: $team&#39;s 4rd) принимает его как родного. Свободный бросок, и даже возможно лишняя секунда на прицел. Прыжок...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+(else-if: $agile is &gt;=15 and $intel &gt;=18)[(set: $ourscore to it+(either: 3,0,2,3)) Вас накрывает с десяток рук, но мяч каким-то чудом оказывается в воздухе, словно зависает, а потом, пококотничав, находит на дуге вашего игрока. (print: $team&#39;s 4rd) принимает его как родного. Свободный бросок, и даже возможно лишняя секунда на прицел. Прыжок...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+(else:) [(set: $ourscore to it+(either: 3,0,0,2)) Вас накрывает с десяток рук, но мяч каким-то чудом оказывается в воздухе, словно зависает, а потом, пококотничав, находит на дуге вашего игрока. (print: $team&#39;s 4rd) принимает его как родного. Свободный бросок, и даже возможно лишняя секунда на прицел. Прыжок...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="101" name="attack2 style post self" tags="" position="3172.5,1919.5" size="100,100">Напротив вас Игорь, тяжелый Мопсов-Блиноедов. Ваши игроки ждут сигнала. Что же придумает тренер-капитан?
+
+[[Поворачиваюсь жопой к Игорю. Время легенд.-&gt;a2 post low]]
+
+[[Исполняю балканский хэндофф. Ну то есть опять жопой - но дальше халтурю.-&gt;a2 post yokic]]
+
+[[Играем в две ладьи. Эта комбинция у меня в шашках проходила.-&gt;a2 post spurs]]
+
+[[(Токсичность) Поворачиваю жопой мамку Игоря. Разумеется, только на словах. Но я ему все равно раскажу все в подробностях.-&gt; a2 post garnett]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="102" name="attack2 style post passiv" tags="" position="3299,1912.5" size="100,100">(print: $team&#39;s 3rd) берет на себя организацию нападения. Но вы не упускаете возможность подсказать ему свое тренерское мнение.
+
+[[Разменяться на Гошу. Пусть ощутит мощь &quot;айзо&quot; -&gt;attack2 post iso]]
+
+[[Щит и меч. Смертоносная классика -&gt;at2 roll]]
+
+[[Вообще, давай мяч сюда, сам нарисую -&gt;attack2 style post self]]
+
+
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="103" name="attack2 post 3p" tags="" position="3424,1919.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $perk1 is &quot;Шальная Треха&quot; and $agile &gt;=18)[(set: $ourscore to it+(either: 3,0,3)) Вы и (print: $team&#39;s 5rd) устремляетесь на встречу друг другу. Он врезается в вашего опекуна, пока его собственный опонент не может выбрать сторону с которой обежать широкую задницу $sideа. Заветный пустой угол, (print: $team&#39;s 3rd) мигом находит вас передачей , прыжок, бросок...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+(else-if: $power is &gt;=15 and $agile &gt;=18)[(set: $ourscore to it+(either: 3,0,2,3)) Вы и (print: $team&#39;s 5rd) устремляетесь на встречу друг другу. Он врезается в вашего опекуна, пока его собственный опонент не может выбрать сторону с которой обежать широкую задницу $sideа. Заветный пустой угол, вы почти на линии, (print: $team&#39;s 3rd) мигом находит вас передачей, прыжок, бросок...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+(else:) [(set: $ourscore to it+(either: 3,0,0,2)) Вы и (print: $team&#39;s 5rd) устремляетесь на встречу друг другу. Он врезается в вашего опекуна, пока его собственный опонент не может выбрать сторону с которой обежать широкую задницу $sideа. Заветный пустой угол, вы почти на линии, (print: $team&#39;s 3rd) мигом находит вас передачей, прыжок, бросок...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="104" name="a2 post low" tags="" position="3266.5,2196.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $perk1 is &quot;Стальная задница&quot; and $power &gt;=12) [(set: $ourscore to it+(either: 2,0,2,2))(Стальная задница) Могучими ягодицами вы загоняете Игоря в неудобную позу. Его партнеры спешат на помощь, но вы не для того приседаете надо столом с явствами несколько десятков раз в сутки, чтобы вас достаточно было просто облепить. С грацией землетрясения вы взмываете в воздух, раскидывая людей во все стороны. Мяч летит в корзину...
+
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах. Но вы ловите отскок мяча!-&gt;attack2 style ap reb]]
+]]]
+
+(else-if: $agile &gt;=14 and $power &gt;=18) [(set: $ourscore to it+(either: 2,0,0,0,2)) Используя жопу как таран, вы загоняете Игоря под кольцо. Прежде чем подоспеют его партнеры, вы исхитряетесь закинуть мяч крюком в корзину...
+
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах. Но вы ловите отскок мяча!-&gt;attack2 style ap reb]]
+]]]
+
+(else:)[(set: $ourscore to it+(either: 1,0,0,1,2)) Используя жопу как таран, вы загоняете Игоря под кольцо, где уже ждут его партнеры. Вас забивают дружной компанией. $side призывает судей.  
+(if: $ourscore &gt;_TOscore)[Успешно. Тебе дают пробить штрафные.
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[Судья в это время изучает птиц в небе. Жалобы бесполезны.
+
+[[Владение переходит к противнику-&gt;2poss opp]]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="105" name="a2 post yokic" tags="" position="3404.5,2191.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $perk1 is &quot;Пас из ниоткуда&quot; and $power &gt;=15)[(Пас из ниоткуда)(set: $ourscore to it+(either: 2,0,3)) Мощным движением таза вы отпихиваете Игоря и поднимаете мяч на вытянутых руках. Мимо вас в разных стороны проносятся  (print: $team&#39;s 3rd) и (print: $team&#39;s 4rd), за которыми семенят опекуны. С мастерством фокусника вы передаете снаряд как эстафету. (print: $team&#39;s 4rd) выскакивает на свободный пятачок, взмывает вверх и бросает...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+(else-if: $power is &gt;=15 and $intel &gt;=18)[(set: $ourscore to it+(either: 2,0,2)) Мощным движением таза вы отпихиваете Игоря и поднимаете мяч на вытянутых руках. Мимо вас в разных стороны проносятся  (print: $team&#39;s 3rd) и (print: $team&#39;s 4rd), за которыми семенят опекуны. С мастерством фокусника вы передаете снаряд как эстафету. (print: $team&#39;s 4rd) выскакивает на свободный пятачок, взмывает вверх и бросает...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+(else:) [(set: $ourscore to it+(either: 0,0,2,2)) Мощным движением таза вы отпихиваете Игоря и поднимаете мяч на вытянутых руках. Мимо вас в разных стороны проносятся  (print: $team&#39;s 3rd) и (print: $team&#39;s 4rd), за которыми семенят опекуны. С мастерством фокусника вы передаете снаряд как эстафету. (print: $team&#39;s 4rd) выскакивает на свободный пятачок, взмывает вверх и бросает...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="106" name="a2 post spurs" tags="" position="3271.5,2075.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $perk1 is &quot;Стальная задница&quot; and $power &gt;=15)[(Стальная задница)(set: $ourscore to it+(either: 2,0,2)) Вы и (print: $team&#39;s 5rd) вдвоем давите защиту Мопсов как перезрелые фрукты. Игорь разрывается между вами, оставшись последним на баррикадах. Пас от вашего партнера, шаг, поворот - вы сносите Игоря ударом бедер и выпускаете мяч, прежде чем подкравшийся сзади $enemy выбьет его из ваших рук...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Блокшот!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Блокшот! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+(else-if: $perk1 is &quot;Данчич&quot; and $power &gt;=15 and $agile &gt;=15)[(set: $ourscore to it+(either: 2,0,2)) (Данчич) Вы и (print: $team&#39;s 5rd) вдвоем давите защиту Мопсов как перезрелые фрукты. Игорь разрывается между вами, оставшись последним на баррикадах. Пас от вашего партнера, два шага - и прыжок над головой Игоря, с победным рыком, прежде чем подкравшийся сзади $enemy выбьет его из ваших рук...
+(if: $ourscore &gt;_TOscore)[ДАААНК!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Блокшот!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Блокшот! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+(else:) [(set: $ourscore to it+(either: 0,0,0,2)) Вы и (print: $team&#39;s 5rd) вдвоем давите защиту Мопсов как перезрелые фрукты. Игорь разрывается между вами, оставшись последним на баррикадах. Пас от вашего партнера, шаг, поворот - вы сносите Игоря ударом бедер и выпускаете мяч, прежде чем подкравшийся сзади $enemy выбьет его из ваших рук...
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Блокшот!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Блокшот! Но ваш игрок подбирает мяч-&gt;attack2 style ap reb]]
+]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="107" name=" a2 post garnett" tags="" position="3396.5,2074.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $toxity &gt;=20) [(set: $ourscore to it+(either: 2,1,2))(Токсичность 20) После пары ласковых слов, ошарашенный Игорь делает данк вам в лицо. Незамедлительно следует свисток. Вам дают пробить штрафные, а Игоря снимают с игры. 
+[[Владение переходит к противнику-&gt;2poss opp]]]
+
+(else:)[(set: $penalty to it + 1) Игорь героически терпит ваше красноречие. В отличие от судей. Они немедленно забирают мяч отдают его Мопсам и выписывают фол. В блиноеды вас не возьмут.  
+[[Владение переходит к противнику-&gt;2poss opp]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="108" name="attack2 post iso" tags="" position="3556.5,1918.5" size="100,100">{(set: _TOscore to $ourscore)}
+(if: $perk1 is &quot;Данчич&quot; and $agile &gt;=16) [(set: $ourscore to it+(either: 2,0,2,2))(Данчич) (print: $team&#39;s 3rd) пробегает мимо вас и передает сразу и своего опекуна Гошу и мяч, утащив на дугу Игоря. $side всячески изображает решимость бросить из своего угла, удерживая от резких действий $enemyа. Вы тут же бросаетесь к кольцу. Демурия поздно соображает, что лучше было так и остаться на месте, поэтому вы с полным правом взлетаете, садитесь ему на плечи, да еще и засаживаете мяч в корзину...
+(if: $ourscore &gt;_TOscore)[ДААНК!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[МЯЧ БЬЕТСЯ О ДУЖКУ И ВЫЛЕТАЕТ!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[МЯЧ БЬЕТСЯ О ДУЖКУ И ВЫЛЕТАЕТ. Но вы ловите отскок мяча!-&gt;attack2 style ap reb]]
+]]]
+
+(else-if: $agile &gt;=14 and $power &gt;=18) [(set: $ourscore to it+(either: 2,0,0,2)) (print: $team&#39;s 3rd) пробегает мимо вас и передает сразу и своего опекуна Гошу и мяч, утащив на дугу Игоря. $side всячески изображает решимость бросить из своего угла, удерживая от резких действий $enemyа. Вы тут же бросаетесь к кольцу. Демурия пыхтит сбоку, но вы отталкиваете его и взмываете сбоку от кольца. Мяч бьется об щит и ...
+
+(if: $ourscore &gt;_TOscore)[Успех!
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[(set: $reb to (either: 1,0,0,1,0))
+(if: $reb is 0)[Промах!
+[[Владение переходит к противнику-&gt;2poss opp]]
+]
+(if: $reb is 1)[
+[[Промах. Но вы ловите отскок мяча!-&gt;attack2 style ap reb]]
+]]]
+
+(else:)[(set: $ourscore to it+(either: 2,0,0,0))(print: $team&#39;s 3rd) пробегает мимо вас и передает сразу и своего опекуна Гошу и мяч, утащив на дугу Игоря. $side всячески изображает решимость бросить из своего угла, удерживая от резких действий $enemyа. Вы тут же бросаетесь к кольцу. Демурия пыхтит сбоку, но вы отталкиваете его и взмываете сбоку от кольца. Мяч залетает одновременно со свистком. Вы смотрите на судей - неужели еще и штрафной забить дадут дадут? 
+(if: $ourscore &gt;_TOscore)[Фол дают Гоше. Ты промахиваешься, но 2 очка уже никто не отберет.
+
+[[Владение переходит к противнику-&gt;2poss opp]]]
+(else:)
+[Фол дают тебе. Жалобы бесполезны.
+
+[[Владение переходит к противнику-&gt;2poss opp]]]]
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="109" name="good half" tags="" position="1686,2625.5" size="100,100">(if: $diff is &lt;= 0)[У вас есть немного времени. Вы можете потратить его на то, чтобы переломить ход игры, а можете полноценно отдохнуть. Это важно, потому что вы потеряли силы после напряженной первой половины.]
+
+(else:)[
+Игра отлично складывается. У вас есть немного времени. Вы можете потратить его на то, чтобы закрепить преимущество, а можете полноценно отдохнуть. Это важно, потому что вы потеряли силы после напряженной первой половины.]
+
+(if: visits &gt;=4)[
+Время вышло! 
+[[Пора возвращаться в игру-&gt;2 half]]]
+(else:)[
+(if: visits &lt;2)[
+[[Дать себе полноценно отдохнуть-&gt;full rest]]]
+
+[[Поменять схему игры-&gt;change playbook]]
+
+[[Добиться внеигрового преимущества-&gt;cry to ap]]
+
+[[Мотивировать команду-&gt;oratory]]]
+
+</tw-passagedata><tw-passagedata pid="110" name="full rest" tags="" position="1471,2783.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="111" name="change playbook" tags="" position="1601,2786.5" size="100,100">Какую схему вы хотите поменять?
+
+[[Защита-&gt;Deffence-2]] 
+[[Атака-&gt;Offence-2]]
+
+[[Я закончил с тактикой-&gt;good half]] </tw-passagedata><tw-passagedata pid="112" name="cry to ap" tags="" position="1727,2784.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="113" name="oratory" tags="" position="1891,2785.5" size="100,100">(if: visits &lt;= 1)[
+(if: $diff is &lt;= 0)[Вы обводите взглядом своих игроков. Они нахмурены, сосредоточены, злятся. $side долбанул по скамейке кулаком. Вы раздумываете как привести их в чувство.
+
+[[Призвать к лучшему в этих людях-&gt;oratory-light]]
+[[Исполнить сурового тренера-&gt;oratory-dark]]
+]
+
+(else:)[
+Вы обводите взглядом своих игроков. Они сияют, гогочут и в целом излучают уверенность. Даже обычно хмуррый $side приветлив с остальными. Вы думаете как поддержать этот настрой.
+[[Призвать к лучшему в этих людях-&gt;oratory-light]]
+[[Исполнить сурового тренера-&gt;oratory-dark]]
+]
+(if: $toxity is &gt;= 20)[
+[[(Токсичность 20) Разнести к чертям всю раздевалку вместе с этими ублюдками-&gt;oratory tox]]]]
+(else:)[Вы уже читали людям нравоучения. Дайте их ушам отдохнуть!
+[[Просто не все сказал-&gt;good half]]]</tw-passagedata><tw-passagedata pid="114" name="2 half" tags="" position="2004,2604.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="115" name="Deffence-2" tags="" position="1547,2934.5" size="100,100">Осталось определиться с защитными построениями на игру.
+
+БАСТИОН
+Аккуратная оборона по всем направлениям. Наша сила в слаженности и дисциплине, передаем друг другу игроков противника, не ссымься оказаться против их великана - друзья прикроют. Подходит умным командам и атлетичным командам.
+
+РОВ И КОЛЬЯ
+Наша сила - в нашей слабости. Мы позволим проникать в наш город, где врага ждут затяжные бои, а сами атакуем его стрелков. Потому что это баскетбол Нового Времени, детка, и получить меткий выстрел из-за дуги равно гибели. Подходит командам без атлетизма, но с хорошей реакцией.  
+
+ДОНЖОН
+Защищаем краску как последний клочок земли. Пусть враг дойдет до кольца по нашим трупам, теряя своих лучших солдат в груде тел. Подходит для перекаченных команд с плохой реакцией.
+
+(dropdown: bind $defense, &quot;БАСТИОН&quot;, &quot;РОВ И КОЛЬЯ&quot;,&quot;ДОНЖОН&quot;)
+
+[[Подтвердить -&gt;change playbook]] 
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/Un3OQDL2P6gtylKJzt-w62-AaGF5xy5_n9eLTcOiZQnx9_obVH7MxmHzFxVGXDZ6dsV778uvlmC38y4y9fKSZRkoYFQz8s9EraWUpiWgGtQEoxaOSQ4jz5KfyprHwgoq7jH63Jq7inNcxVweISqd9WrFHd8UR68JIY5obkJX7x7TXfUKruerbm55hA_W1hy2uo9m8VW37FFjFKDCPzorOg08u6gUoM3SusrGBVj9A0Bhuvf9BLS6BdkLU2ZpIfAI6UvJrVeTS46nPlnVGM1HI3bfQwus8BtZ0PlLYiMqQCDW4H6mnOSKsZK00TsJ0XNNY6e6RGuI1nT_BOW_u6kQ_oKjtW0tifMDdLkq2Z7urxI37IPfdpjhRWpX0px7oiOI77QHGHLlyh3h5F-prGXiqLNFnDl116S6IxcYSUi2zlcHYyM7Z8j3i_15hanNXrfpbsGdycniWu7_WKjZYQlEa0PooqtrxvXA_grFJx5YUFkK6V2M7IOXDEYBcHR10jd6OgCx2vrdZckDncliwHbaXOb-wLATkGl3aWLDq5KxmLVctmoHLVNXRbPmifNuMoi5pUcqtuc-IQye5H9ovfqLH2NuBiKiDcIURf96LFx-qRTcPp6xyYtN8XgwcJO-cQJkzuavXsrlXVwJVea3nDbHoycyp0ZVV1iZWPjK48u4bn5sSP-NKeg8c13DYYLEiOs=w1440-h669-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="116" name="Offence-2" tags="" position="1676,2936.5" size="100,100">
+Самое время определиться с тактикой на игру. Стоит учитывать сильные и слабые стороны выбранных игроков.
+
+НАБЕГ 
+Все несутся в атаку при первой возможности, жутко кричат и бесстрашно гогочат. Противник обескуражен скоростью и глотает пыль. Подходит для быстрых реакцией, сильных и не думающих о последствиях.
+
+АЗЕНКУР
+Расставляем стрелков по позициям и ищем слабые места в обороне противника. Отвлекающий маневр, пасс, расстрел. Повторить до полной победы. Подходит для тех, у кого высокий интеллект, чтобы правильно расчитать момент. 
+
+ОСАДА
+Грузим нашу башню в чужой краске. Неотвратимо накатываем на кольцо и давим противника нашей превосходящей физической мощью.
+
+(dropdown: bind $offense, &quot;НАБЕГ&quot;, &quot;АЗЕНКУР&quot;,&quot;ОСАДА&quot;)
+
+[[Подтвердить -&gt;change playbook]]
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/Un3OQDL2P6gtylKJzt-w62-AaGF5xy5_n9eLTcOiZQnx9_obVH7MxmHzFxVGXDZ6dsV778uvlmC38y4y9fKSZRkoYFQz8s9EraWUpiWgGtQEoxaOSQ4jz5KfyprHwgoq7jH63Jq7inNcxVweISqd9WrFHd8UR68JIY5obkJX7x7TXfUKruerbm55hA_W1hy2uo9m8VW37FFjFKDCPzorOg08u6gUoM3SusrGBVj9A0Bhuvf9BLS6BdkLU2ZpIfAI6UvJrVeTS46nPlnVGM1HI3bfQwus8BtZ0PlLYiMqQCDW4H6mnOSKsZK00TsJ0XNNY6e6RGuI1nT_BOW_u6kQ_oKjtW0tifMDdLkq2Z7urxI37IPfdpjhRWpX0px7oiOI77QHGHLlyh3h5F-prGXiqLNFnDl116S6IxcYSUi2zlcHYyM7Z8j3i_15hanNXrfpbsGdycniWu7_WKjZYQlEa0PooqtrxvXA_grFJx5YUFkK6V2M7IOXDEYBcHR10jd6OgCx2vrdZckDncliwHbaXOb-wLATkGl3aWLDq5KxmLVctmoHLVNXRbPmifNuMoi5pUcqtuc-IQye5H9ovfqLH2NuBiKiDcIURf96LFx-qRTcPp6xyYtN8XgwcJO-cQJkzuavXsrlXVwJVea3nDbHoycyp0ZVV1iZWPjK48u4bn5sSP-NKeg8c13DYYLEiOs=w1440-h669-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="117" name="oratory-light" tags="" position="1816,2935.5" size="100,100">Вы хлопаете в ладоши и выходите в центр помещение. Все внимание игроков обращено на вас.
+
+
+{(if: $toxity is &gt;=15) [
+(link: &quot;(Токсичность 15)Вы сами все видите. Я горд, что сегодня сражаюсь на этом поле с вами, рыцари. Клянусь, после такой славной битвы ни одна шлюха не посмеет взять с вас оплаты. В крайнем случае, скажите, чтобы высылала счет Мопсам. А теперь соберемся - и еще раз хорошенько надерем жопы этим засранцам.&quot;)[(set: $agile to it +4)(set: $oratory to &quot;s&quot;)(set: $power to it +4)(goto: &quot;After oratory&quot;)]
+]}
+
+{(if: $intel is &gt;= 15) [
+(link: &quot;(Интеллект 15) Мы бились как львы. Наш дух, наша уверенность в товарищах - вот наша главная сила. Придерживайтесь плана. Слушайте друг друга. И победа от нас не уйдет.&quot;)[(set: $intel to it +4)(set: $oratory to &quot;s&quot;)(set: $power to it +4)(goto: &quot;After oratory&quot;)]]
+(else:)[
+(link: &quot;Мяч не врет, господа. Вы сами все видите. Так что соберемся еще разок с силами - и закончим это так как должно!&quot;)[(set: $agile to it +1)(set: $oratory to &quot;w&quot;)(set: $power to it +1)(goto: &quot;After oratory&quot;)]]}
+
+
+(append: ?SideBar)[
+
+[[Параметры-&gt;Params]] 
+]
+ 
+</tw-passagedata><tw-passagedata pid="118" name="oratory-dark" tags="" position="1966,2935.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="119" name="oratory tox" tags="" position="2107,2933.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="120" name="After oratory" tags="" position="1900,3065.5" size="100,100">(if: $oratory is &quot;s&quot;)[
+Ваши люди одобрительно хлопают в ладони и затягивают походную песню. Вы чувствуете как у всех присутствующих прибавляется сил]
+
+(else-if: $oratory is &quot;w&quot;)[
+Ваши люди вас выслушали. Кто-то подбадривающе захлопал. Как минимум, они немного отдохнули, пока вы говорили. Это немножко даст им сил]
+
+[[Подготовиться к игре-&gt;good half]]</tw-passagedata><tw-passagedata pid="121" name="Yosu end" tags="" position="2262,2932.5" size="100,100">&lt;style&gt;
+tw-passage{text-align: center;
+}
+&lt;/style&gt;
+&lt;img src= &quot;https://www.stihi.ru/pics/2010/01/10/7425.gif&quot;&gt;
+(colour: blue) [Ты - чертов ронин&lt;h1&gt;]
+Считавшийся одним из лучших воинов, ты оказался шелудивым псом. Победа была близка, но ты бросил товарищей посреди игры. В тебе ни верности, ни чести. Пусть эта печать будет с тобой до окончания жизни. Гораздо более скорого, чем ты смеешь хотя бы надеяться. Ведь без защиты хозяина, любой имеет право 
+пресечь твой никчемный путь негодяя.
+
+[[Конец игры -&gt;Results]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
