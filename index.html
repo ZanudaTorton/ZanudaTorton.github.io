@@ -2123,7 +2123,7 @@ tw-passage{text-align: center;
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
 ]</tw-passagedata><tw-passagedata pid="69" name="Clutch" tags="" position="655.9999999999998,5272.5" size="100,100">{(set: $ourscore to $score +10)}
-{(set: $score to it +11)}
+{(set: $score to it +10)}
 Вы отстаете на одно очко. Последние десять секунд вашего владения - и всей схватки. Мяч у тебя в руках. 
 Ты устал, но можно ли кому-то еще доверить это решение?
 
@@ -2156,28 +2156,68 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="70" name="Strike" tags="" position="268,2427.8333333333335" size="100,100">БАБАХ!
-Триумф твоей победы заслоняет треск замковых ворот.
+]</tw-passagedata><tw-passagedata pid="70" name="Strike" tags="" position="268,2427.8333333333335" size="100,100">Оглушительный рев труб и рокот барабанов, слишком воинственных для поддравлений.
+Крики поздравлений сменяют вопли, а люди начинают разбегаться в стороны. 
 
-Ворота вылетают и внутрь прорываются войска Пятицарствия.
+БАБАХ!!!
 
+Ворота замка разлетаются на части. Внутрь ломятся войска в цветах Пятицарствия.
 
-Тревога!
+- Вторжение!
+Это наконец проснулся королевский глашатай.
 
-Ты отбрасываешь мяч в сторону и оглядываешься по сторонам. Всюду паника. Король поспешно покидает место событий.
-Игроки бросаются врасыпную.
-Ты видишь, что короля окружают Ебургцы и помогают ему отступить в сторону старого дожона - самой неприступной крепости замка.
+Ты отбрасываешь мяч в сторону. Всюду паника. Рыцари Артемии и стража окружат короля, чтобы вывести его с поля боя.
+Игроки Мопсов бросаются врассыпную. Твои товарищи наоборот, полны решимости драться.
 
-[[Что ж, Панч, приятно было познакомиться, но пора сваливать? попробовать скрыться-&gt;run]]
 
 [[Собирать верных соратников, пробиваться к королю-&gt;king loyalty]]
 
-[[Устроить настоящий хаоc-&gt;chaos]]
-</tw-passagedata><tw-passagedata pid="71" name="run" tags="" position="166.33333333333331,2573.5" size="100,100">Вы бежите что есть сил, но на секунду вас посещает мысль - может все таки вернуться?
+[[Что ж, Панч, приятно было познакомиться, но пора сваливать (попробовать скрыться)-&gt;run]]
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="71" name="run" tags="" position="166.33333333333331,2573.5" size="100,100">Вы бежите что есть сил, но на секунду вас посещает мысль - может все таки вернуться?
 
 [[Устыдиться собственной трусости и вернуться на поле боя-&gt;king loyalty]]
 
-[[Устыдиться, что не прихватил ценное и подцепить ближайший золотой подсвечник -&gt; Zefirend]]</tw-passagedata><tw-passagedata pid="72" name="king loyalty" tags="" position="324.6666666666667,2691.8333333333335" size="100,100">Ты призываешь единомышленников и вы пробиваетесь навстречу королю.
+[[Устыдиться, что не прихватил ценное и подцепить ближайший золотой подсвечник -&gt; Zefirend]]
+
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="72" name="king loyalty" tags="" position="324.6666666666667,2691.8333333333335" size="100,100">Ты призываешь единомышленников и вы пробиваетесь навстречу королю.
 
 Армия Высокой пятерни в большинстве своем состоит из безмозглых зомбарей, который послушны воле короля Булата. Его чемпион, герцог Сошников, командует легионом продавших свою душу простаков, желаюших легкой наживы. А гондольер Серхио Абаев возглавляет в этом легионе роту иностранных наемников из Атланты.
 
@@ -2185,7 +2225,26 @@ tw-passage{text-align: center;
 
 [[Сразиться с Абаевым-&gt;битва с Абакой]]
 
-</tw-passagedata><tw-passagedata pid="73" name="chaos" tags="" position="491.3333333333333,2576.8333333333335" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="74" name="d2 bas" tags="" position="1514.6666666666667,2337.5" size="100,100">Еще несколько переводов мяча между игроками, и наконец двое устремляются к кольцу. 
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="73" name="d2 bas" tags="" position="1514.6666666666667,2337.5" size="100,100">Еще несколько переводов мяча между игроками, и наконец двое устремляются к кольцу. 
 
 [[Играю по позиции и держу своего игрока-&gt;d2 tw position]]
 
@@ -2218,7 +2277,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="75" name="d2 pike" tags="" position="1657.6666666666667,2341.5" size="100,100">
+]</tw-passagedata><tw-passagedata pid="74" name="d2 pike" tags="" position="1657.6666666666667,2341.5" size="100,100">
 Еще несколько переводов мяча между игроками, и наконец двое устремляются к кольцу. 
 
 [[Играю по позиции и держу своего игрока-&gt;d2 pike position]]
@@ -2259,7 +2318,7 @@ tw-passage{text-align: center;
 
 
 
-</tw-passagedata><tw-passagedata pid="76" name="d2 tw" tags="" position="1798.6666666666667,2336.5" size="100,100">Еще несколько переводов мяча между игроками, и наконец двое устремляются к кольцу. 
+</tw-passagedata><tw-passagedata pid="75" name="d2 tw" tags="" position="1798.6666666666667,2336.5" size="100,100">Еще несколько переводов мяча между игроками, и наконец двое устремляются к кольцу. 
 
 [[Играю по позиции и держу своего игрока-&gt;d2 tw position]]
 
@@ -2292,7 +2351,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="77" name="1half" tags="" position="1288.6666666666667,2732.5" size="100,100">{(if: $score &lt;=6)[
+]</tw-passagedata><tw-passagedata pid="76" name="1half" tags="" position="1288.6666666666667,2732.5" size="100,100">{(if: $score &lt;=6)[
 (if: $ourscore &gt;=5)[
 (set: $ourscore to (it +(it*10)) - $score)
 (set: $score to it +(it*10))]
@@ -2344,7 +2403,7 @@ tw-passage{text-align: center;
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
 ]
-</tw-passagedata><tw-passagedata pid="78" name="Team" tags="" position="690,196.5" size="100,100">КОМАНДА ЗДОРОВЬЕ
+</tw-passagedata><tw-passagedata pid="77" name="Team" tags="" position="690,196.5" size="100,100">КОМАНДА ЗДОРОВЬЕ
 *Капитан и тренер* (print: $team&#39;s 1st) 
 Количество фолов $penalty
 *Франчайз* (print: $team&#39;s 2nd)(//Навык// (print: $tPerks&#39;s 1st))
@@ -2362,7 +2421,7 @@ tw-passage{text-align: center;
 *Их человек-клей* Стас Мелков
 *Их шутер-снайпер* Гоша Демурия]
 
-(link-undo:&quot;Вернуться&quot;)</tw-passagedata><tw-passagedata pid="79" name="attack1-dunk" tags="" position="1468,1651.5" size="100,100">(if: $perk1 is &quot;Данчич&quot;)[(set: $ourscore to it+2)(Данчич)
+(link-undo:&quot;Вернуться&quot;)</tw-passagedata><tw-passagedata pid="78" name="attack1-dunk" tags="" position="1468,1651.5" size="100,100">(if: $perk1 is &quot;Данчич&quot;)[(set: $ourscore to it+2)(Данчич)
 Вы сминаете зевнувшего противника и устраиваете мячом резню в корзине. Ошеломленный соперник старается не шевелиться, валяясь на полу, пока вы в припадке гормонов истошно орете. Первые два очка добыты. Теперь Мопсы будут осторожнее, но совсем в сухую вы уже не проиграете.]
 (else-if: $agile &gt;= 15 and $power&gt;=13)[(set: $ourscore to it+2)
 Ваш первый шаг чуть не стал последним в этом владении: мяч зацепился за развевающиеся штаны защитника и попрыгал в сторону. Но вы совсем свежий, поэтому легко доганяете снаряд, а там уже и до кольца всего ничего. Прыжок.Первые два очка добыты. Теперь Мопсы будут осторожнее, но совсем в сухую вы уже не проиграете.]
@@ -2393,7 +2452,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="80" name="attack1-fart" tags="" position="1467,1760.5" size="100,100">(if: $toxity &gt;=15)[(set: $ourscore to it + 2)
+]</tw-passagedata><tw-passagedata pid="79" name="attack1-fart" tags="" position="1467,1760.5" size="100,100">(if: $toxity &gt;=15)[(set: $ourscore to it + 2)
 Громкий и ультимативный звук взывает к самым древним инстинктам вашего опекуна, который застывает в ужасе. И секундного замешательства хватает, чтобы на этом ускорении долететь до кольца. Другие игроки к вам тоже совсем не спешат. Лейап. Два очка не пахнут.]
 (else:)[Жалкий чпок сконфузил вас больше, чем оппонента. В вашем замысле явно не хватило подготовительных действий. Смущенный, вы стараетесь двинуть мяч, но $enemy легко читает передачу - и забирает себе]
 
@@ -2421,7 +2480,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="81" name="attack1-open" tags="" position="1451.6666666666667,1898.5" size="100,100">(if: $perk2 is &quot;Пас из ниоткуда&quot;)[(set: $ourscore to it + 2)(Пас из ниоткуда) 
+]</tw-passagedata><tw-passagedata pid="80" name="attack1-open" tags="" position="1451.6666666666667,1898.5" size="100,100">(if: $perk2 is &quot;Пас из ниоткуда&quot;)[(set: $ourscore to it + 2)(Пас из ниоткуда) 
 Вы выбрасываете мяч подальше от себя и от защитника. В это время $side подпрыгивает у кольца. Прямо в его поднятые руки приземляется мяч. ДАНК. Вы с невозмутимым видом возвращаетесь назад, а на все восторженные крики киваете - да, так и было задумано.]
 (else-if: $intel is &gt;=15 and $agile &gt;=13)[ (set: $ourscore to it + 2) 
 Вы быстро передаете мяч $sideу и бежите в угол. Защитник на секунду теряется, но только чтобы крикнуть напарнику присматривать за вами. А вам того и надо - оставленный в одиночестве (print: $team&#39;s 4th) делает кат с другой стороны, принимает отскок от $sideа и приносит 2 очка!]
@@ -2450,7 +2509,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="82" name="attack2 style ap tox" tags="" position="2147.5,1448.5" size="100,100">(if: $toxity &gt;=19)[(Токсичность 19) 
+]</tw-passagedata><tw-passagedata pid="81" name="attack2 style ap tox" tags="" position="2147.5,1448.5" size="100,100">(if: $toxity &gt;=19)[(Токсичность 19) 
 Гоша Демурия подскакивает - и тут же падает, изображая нечеловеческие муки. Его перекатов хватило бы, чтобы пересечь всю Артемию. Вы сочувственно охаете и разводите руки, ведь сами не понимаете как так вышло.
 Да, владение у противника, но вы уже оставили свой след на поле - и на гошиной спине.]
 (else:)[(set: $score to it + 1) (set: $penalty to it + 1)Мяч пружинит от тощих ягодиц Гоши. Демурия на инстинктах с громким воем падает под ноги судье, выражая невыносимые страдания. Вам назначают нарушение. Гоша сам исполняет бросок и приносит очко своей команде. Мяч остается у них.]
@@ -2479,7 +2538,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="83" name="a2 coast charge" tags="" position="2061.1666666666665,2078.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="82" name="a2 coast charge" tags="" position="2061.1666666666665,2078.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $class is &quot;Болтхендлер&quot; and $intel &gt;=18) [(set: $ourscore to it+(either: 2,1,2))(Болтхендлер) Вы входите в Стаса так мягко, что со стороны выглядит как будто это он врезается в вас с порочными намерениями. Незамедлительно следует свисток. Вам дают пробить штрафные.
 [[Владение переходит к противнику-&gt;2poss opp]]]
 
@@ -2505,7 +2564,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="84" name="a2 coast cross" tags="" position="2192.1666666666665,2085.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="83" name="a2 coast cross" tags="" position="2192.1666666666665,2085.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $class is &quot;Болтхендлер&quot; and $agile &gt;=20) [(set: $ourscore to it+(either: 2,0,0,0,2,2))(Болтхендлер) Качнув мяч и Стаса, вы делаете шаг назад. Мелков не разобравшись в этом па, валится в грязь. Вы взмываете в мощном прыжке, а на щит, как в театре теней, накладывается черная тень преследующего вас $enemyа. Успеете или накроет?...
 
 (if: $ourscore &gt;_TOscore)[Успех!
@@ -2548,7 +2607,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="85" name="at2 open" tags="" position="1999.1666666666667,1832.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="84" name="at2 open" tags="" position="1999.1666666666667,1832.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $class is &quot;Растягивающий&quot; and $agile &gt;=15)[(set: $ourscore to it+(either: 2,0,2,2))(Растягивающий) С какого-то перепугу за вами увязался не один, а даже два игрока. (print: $team&#39;s 3rd) мигом находит передачей (print: $team&#39;s 5rd), ворвавшегося под кольцо...
 (if: $ourscore &gt;_TOscore)[Успех!
 
@@ -2608,7 +2667,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="86" name="at2 3p" tags="" position="2130.1666666666665,1828.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="85" name="at2 3p" tags="" position="2130.1666666666665,1828.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Шальная Треха&quot; and $agile &gt;=18)[(set: $ourscore to it+(either: 3,0,3)) Вы и (print: $team&#39;s 5rd) устремляетесь на встречу друг другу. Он врезается в вашего опекуна, пока его собственный опонент не может выбрать сторону с которой обежать широкую задницу $sideа. Заветный пустой угол, (print: $team&#39;s 3rd) мигом находит вас передачей , прыжок, бросок...
 (if: $ourscore &gt;_TOscore)[Успех!
 
@@ -2668,7 +2727,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="87" name="at2 roll" tags="" position="2263.1666666666665,1824.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="86" name="at2 roll" tags="" position="2263.1666666666665,1824.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $class is &quot;Тяжкий&quot; and $agile &gt;=15 and $intel &gt;=12)[(set: $ourscore to it+(either: 2,0,2)) (Тяжкий) Вы ставите &quot;щит&quot; болхендлеру. (print: $team&#39;s 3rd), освобожденный от прикрытия, мчит к кольцу, где его уже ждет Стас Мелков. Но настоящий &quot;меч&quot; в этой комбинации вы. (print: $team&#39;s 3rd) отскоком загоняет мяч вам в руки, могучий прыжок, мяч слетает с пальцев...
 (if: $ourscore &gt;_TOscore)[Успех!
 
@@ -2728,7 +2787,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="88" name="at2 star" tags="" position="2384.1666666666665,1825.5" size="100,100">Вы мчитесь к кольцу как разогнавшаяся колесница, не разбирающая своих и чужих. Сзади кто-то орет, что надо включить голову - ведь Мелков готовится принять вас в объятия чарджа.
+]</tw-passagedata><tw-passagedata pid="87" name="at2 star" tags="" position="2384.1666666666665,1825.5" size="100,100">Вы мчитесь к кольцу как разогнавшаяся колесница, не разбирающая своих и чужих. Сзади кто-то орет, что надо включить голову - ведь Мелков готовится принять вас в объятия чарджа.
 
 [[Включить голову и врезаться ею в Стаса - стоит не по позиции-&gt;a2 coast charge]]
 
@@ -2757,7 +2816,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="89" name="a2 post" tags="" position="2511.1666666666665,1822.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="88" name="a2 post" tags="" position="2511.1666666666665,1822.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Стальная задница&quot; and $power &gt;=12) [(set: $ourscore to it+(either: 2,0,2,2))(Стальная задница) Могучими ягодицами вы загоняете Стаса в неудобную позу. Его партнеры спешат на помощь, но вы не для того приседаете надо столом с явствами несколько десятков раз в сутки, чтобы вас достаточно было просто облепить. С грацией землетрясения вы взмываете в воздух, раскидывая людей во все стороны. Мяч летит в корзину...
 
 (if: $ourscore &gt;_TOscore)[Успех!
@@ -2817,7 +2876,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="90" name="attack2 style dr self" tags="" position="2966.1666666666665,1806.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="89" name="attack2 style dr self" tags="" position="2966.1666666666665,1806.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Данчич&quot; and $intel &gt;=17 and $agile &gt;=17) [(set: $ourscore to it +2)(Данчич) Пока $side и (print: $team&#39;s 3rd) растягивают защиту угрозой атаки с дуги, вы замечаете образовавшийся зазор в построении Мопсов. А чего ждать, думаете вы - и врываетесь. Навстречу подворачивается бедный Стас Мелков, пытающийся вспомнить положение для чарджа. С диким криком вы вонзаете пальцы ему в волосы, отталкиваетесь от макушки и, преодолевая крики Стаса и тяготение, вгоняете мяч  в корзину по самую сетку. ХАММЕР ДАУН!!!!]
 
 (else-if: $power &gt;=15 and $agile &gt;=17 and $intel &gt;=17) [(set: $ourscore to it+(either: 2,0,0,2,2)) Пока $side и (print: $team&#39;s 3rd) растягивают защиту угрозой атаки с дуги, вы замечаете образовавшийся зазор в построении Мопсов. А чего ждать, думаете вы - и врываетесь. Мелков готовится принять вас в объятия чарджа. Но вы не просто так на коне: шахматные прыжки буквой Г, обескураженный защитник за спиной, лейап...  
@@ -2860,7 +2919,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="91" name="attack2 style dr passiv" tags="" position="2968.1666666666665,1678.5" size="100,100">(print: $team&#39;s 3rd) берет на себя организацию нападения. Вы получате сигнал на комбинацию &quot;Сагиттарий&quot;, она же &quot;Круг&quot;. 
+]</tw-passagedata><tw-passagedata pid="90" name="attack2 style dr passiv" tags="" position="2968.1666666666665,1678.5" size="100,100">(print: $team&#39;s 3rd) берет на себя организацию нападения. Вы получате сигнал на комбинацию &quot;Сагиттарий&quot;, она же &quot;Круг&quot;. 
 
 [[Уйти в обманный маневр-&gt;attack2 dr 3p pass]]
 
@@ -2891,7 +2950,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="92" name="attack2 dr 3p" tags="" position="2954.5,1532.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="91" name="attack2 dr 3p" tags="" position="2954.5,1532.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Шальная Треха&quot; and $agile &gt;=18)[(set: $ourscore to it+(either: 3,0,3)) Вы и (print: $team&#39;s 5rd) устремляетесь на встречу друг другу. Он врезается в вашего опекуна, пока его собственный опонент не может выбрать сторону с которой обежать широкую задницу $sideа. Заветный пустой угол, (print: $team&#39;s 3rd) мигом находит вас передачей , прыжок, бросок...
 (if: $ourscore &gt;_TOscore)[Успех!
 
@@ -2951,7 +3010,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="93" name="a2 dr charge" tags="" position="2813.1666666666665,1928.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="92" name="a2 dr charge" tags="" position="2813.1666666666665,1928.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $agile &gt;=18 and $intel &gt;=18) [(set: $ourscore to it+(either: 3,1,2))Вы так реалистично изображаете бросок, что Гоша рубит вас со всем должным уважением. Незамедлительно следует свисток. Вам дают пробить штрафные.
 [[Владение переходит к противнику-&gt;2poss opp]]]
 
@@ -2977,7 +3036,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="94" name="a2 dr drive" tags="" position="3039.1666666666665,1932.5" size="100,100">Вы рветесь к кольцу. Сзади пыхтит Гоша, перед лицом маячит Стас Мелков.  Сзади кто-то орет, что надо включить голову - ведь Стас готовится принять вас в объятия чарджа.
+]</tw-passagedata><tw-passagedata pid="93" name="a2 dr drive" tags="" position="3039.1666666666665,1932.5" size="100,100">Вы рветесь к кольцу. Сзади пыхтит Гоша, перед лицом маячит Стас Мелков.  Сзади кто-то орет, что надо включить голову - ведь Стас готовится принять вас в объятия чарджа.
 
 [[Флоатер в лицо защитнику -&gt; a2 floater]]
 
@@ -3009,7 +3068,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="95" name="attack2 dr 3p pass" tags="" position="3101.1666666666665,1557.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="94" name="attack2 dr 3p pass" tags="" position="3101.1666666666665,1557.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Пас из ниоткуда&quot; and $agile &gt;=15)[(Пас из ниоткуда)(set: $ourscore to it+(either: 3,0,3)) Вы выскакиваете на линию и (print: $team&#39;s 3rd) немедленно скидывает вам мяч. Гоша Демурия напрыгивает в попытке напугать вас, но это работает как против ежа голой жопой. $side своим &quot;щитом&quot; сносит $enemyа, и освобожденный от опеки (print: $team&#39;s 4rd) мчится в угол. Он криками пытается привлечь ваше внимание, но уже поздно - мяч давно у него в руках. Свободный бросок, и даже возможно лишняя секунда на прицел. Прыжок...
 (if: $ourscore &gt;_TOscore)[Успех!
 
@@ -3069,7 +3128,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="96" name=" a2 floater" tags="" position="2947.1666666666665,2055.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="95" name=" a2 floater" tags="" position="2947.1666666666665,2055.5" size="100,100">{(set: _TOscore to $ourscore)}
 
 (if: $agile &gt;=18 and $power &gt;=12) [(set: $ourscore to it+(either: 2,0,0,2)) Мач пролетает над головой Стаса, бьется о щиток, падает на дужку кольца и на миг замирает на узкой полоске железа...
 
@@ -3116,7 +3175,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="97" name="a2 dr kick" tags="" position="3114.1666666666665,2082.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="96" name="a2 dr kick" tags="" position="3114.1666666666665,2082.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Пас из ниоткуда&quot; and $agile &gt;=15)[(Пас из ниоткуда)(set: $ourscore to it+(either: 3,0,3)) Вас накрывает с десяток рук, но мяч каким-то чудом оказывается в воздухе, словно зависает, а потом, пококотничав, находит на дуге вашего игрока. (print: $team&#39;s 4rd) принимает его как родного. Свободный бросок, и даже возможно лишняя секунда на прицел. Прыжок...
 (if: $ourscore &gt;_TOscore)[Успех!
 
@@ -3176,7 +3235,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="98" name="attack2 style post self" tags="" position="3159.1666666666665,1949.5" size="100,100">Напротив вас Игорь, тяжелый Мопсов-Блиноедов. Ваши игроки ждут сигнала. Что же придумает тренер-капитан?
+]</tw-passagedata><tw-passagedata pid="97" name="attack2 style post self" tags="" position="3159.1666666666665,1949.5" size="100,100">Напротив вас Игорь, тяжелый Мопсов-Блиноедов. Ваши игроки ждут сигнала. Что же придумает тренер-капитан?
 
 [[Поворачиваюсь жопой к Игорю. Время легенд.-&gt;a2 post low]]
 
@@ -3207,7 +3266,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="99" name="attack2 style post passiv" tags="" position="3285.6666666666665,1942.5" size="100,100">(print: $team&#39;s 3rd) берет на себя организацию нападения. Но вы не упускаете возможность подсказать ему свое тренерское мнение.
+]</tw-passagedata><tw-passagedata pid="98" name="attack2 style post passiv" tags="" position="3285.6666666666665,1942.5" size="100,100">(print: $team&#39;s 3rd) берет на себя организацию нападения. Но вы не упускаете возможность подсказать ему свое тренерское мнение.
 
 [[Разменяться на Гошу. Пусть ощутит мощь &quot;айзо&quot; -&gt;attack2 post iso]]
 
@@ -3238,7 +3297,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="100" name="attack2 post 3p" tags="" position="3410.6666666666665,1949.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="99" name="attack2 post 3p" tags="" position="3410.6666666666665,1949.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Шальная Треха&quot; and $agile &gt;=18)[(set: $ourscore to it+(either: 3,0,3)) Вы и (print: $team&#39;s 5rd) устремляетесь на встречу друг другу. Он врезается в вашего опекуна, пока его собственный опонент не может выбрать сторону с которой обежать широкую задницу $sideа. Заветный пустой угол, (print: $team&#39;s 3rd) мигом находит вас передачей , прыжок, бросок...
 (if: $ourscore &gt;_TOscore)[Успех!
 
@@ -3298,7 +3357,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="101" name="a2 post low" tags="" position="3253.1666666666665,2226.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="100" name="a2 post low" tags="" position="3253.1666666666665,2226.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Стальная задница&quot; and $power &gt;=12) [(set: $ourscore to it+(either: 2,0,2,2))(Стальная задница) Могучими ягодицами вы загоняете Игоря в неудобную позу. Его партнеры спешат на помощь, но вы не для того приседаете надо столом с явствами несколько десятков раз в сутки, чтобы вас достаточно было просто облепить. С грацией землетрясения вы взмываете в воздух, раскидывая людей во все стороны. Мяч летит в корзину...
 
 (if: $ourscore &gt;_TOscore)[Успех!
@@ -3358,7 +3417,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="102" name="a2 post yokic" tags="" position="3391.1666666666665,2221.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="101" name="a2 post yokic" tags="" position="3391.1666666666665,2221.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Пас из ниоткуда&quot; and $power &gt;=15)[(Пас из ниоткуда)(set: $ourscore to it+(either: 2,0,3)) Мощным движением таза вы отпихиваете Игоря и поднимаете мяч на вытянутых руках. Мимо вас в разных стороны проносятся  (print: $team&#39;s 3rd) и (print: $team&#39;s 4rd), за которыми семенят опекуны. С мастерством фокусника вы передаете снаряд как эстафету. (print: $team&#39;s 4rd) выскакивает на свободный пятачок, взмывает вверх и бросает...
 (if: $ourscore &gt;_TOscore)[Успех!
 
@@ -3418,7 +3477,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="103" name="a2 post spurs" tags="" position="3258.1666666666665,2105.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="102" name="a2 post spurs" tags="" position="3258.1666666666665,2105.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Стальная задница&quot; and $power &gt;=15)[(Стальная задница)(set: $ourscore to it+(either: 2,0,2)) Вы и (print: $team&#39;s 5rd) вдвоем давите защиту Мопсов как перезрелые фрукты. Игорь разрывается между вами, оставшись последним на баррикадах. Пас от вашего партнера, шаг, поворот - вы сносите Игоря ударом бедер и выпускаете мяч, прежде чем подкравшийся сзади $enemy выбьет его из ваших рук...
 (if: $ourscore &gt;_TOscore)[Успех!
 
@@ -3478,7 +3537,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="104" name=" a2 post garnett" tags="" position="3383.1666666666665,2104.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="103" name=" a2 post garnett" tags="" position="3383.1666666666665,2104.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $toxity &gt;=20) [(set: $ourscore to it+(either: 2,1,2))(Токсичность 20) После пары ласковых слов, ошарашенный Игорь делает данк вам в лицо. Незамедлительно следует свисток. Вам дают пробить штрафные, а Игоря снимают с игры. 
 [[Владение переходит к противнику-&gt;2poss opp]]]
 
@@ -3507,7 +3566,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="105" name="attack2 post iso" tags="" position="3543.1666666666665,1948.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="104" name="attack2 post iso" tags="" position="3543.1666666666665,1948.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Данчич&quot; and $agile &gt;=16) [(set: $ourscore to it+(either: 2,0,2,2))(Данчич) (print: $team&#39;s 3rd) пробегает мимо вас и передает сразу и своего опекуна Гошу и мяч, утащив на дугу Игоря. $side всячески изображает решимость бросить из своего угла, удерживая от резких действий $enemyа. Вы тут же бросаетесь к кольцу. Демурия поздно соображает, что лучше было так и остаться на месте, поэтому вы с полным правом взлетаете, садитесь ему на плечи, да еще и засаживаете мяч в корзину...
 (if: $ourscore &gt;_TOscore)[ДААНК!
 
@@ -3566,7 +3625,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="106" name="good half" tags="" position="1275.6666666666667,2847.5" size="100,100">(if: $diff is &lt;= 0)[У вас есть немного времени. Вы можете потратить его на то, чтобы переломить ход игры, а можете полноценно отдохнуть. Это важно, потому что вы потеряли силы после напряженной первой половины.]
+]</tw-passagedata><tw-passagedata pid="105" name="good half" tags="" position="1275.6666666666667,2847.5" size="100,100">(if: $diff is &lt;= 0)[У вас есть немного времени. Вы можете потратить его на то, чтобы переломить ход игры, а можете полноценно отдохнуть. Это важно, потому что вы потеряли силы после напряженной первой половины.]
 
 (else:)[
 Игра отлично складывается. У вас есть немного времени. Вы можете потратить его на то, чтобы закрепить преимущество, а можете полноценно отдохнуть. Это важно, потому что вы потеряли силы после напряженной первой половины.]
@@ -3603,7 +3662,7 @@ tw-passage{text-align: center;
     color: orange;
     text-decoration: none;
   }
-  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="107" name="full rest" tags="" position="1129,2979.1666666666665" size="100,100">{(set: $agile to it+3) (set: $power to it+2)(set: $intel to it+2)}
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="106" name="full rest" tags="" position="1129,2979.1666666666665" size="100,100">{(set: $agile to it+3) (set: $power to it+2)(set: $intel to it+2)}
 Вы позволили людям отдохнуть в тишине. Каждый сам понимает серьезность ситуации, пусть сам решает, как ему восстановиться.
 
 Опытные наемники набираются сил, а веселые беседы в раздевалке позволяют восстановить настрой на игру.
@@ -3629,12 +3688,12 @@ tw-passage{text-align: center;
     color: orange;
     text-decoration: none;
   }
-  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="108" name="change playbook" tags="" position="1237.6666666666667,2989.1666666666665" size="100,100">Какую схему вы хотите поменять?
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="107" name="change playbook" tags="" position="1237.6666666666667,2989.1666666666665" size="100,100">Какую схему вы хотите поменять?
 
 [[Защита-&gt;Deffence-2]] 
 [[Атака-&gt;Offence-2]]
 
-[[Я закончил с тактикой-&gt;good half]] </tw-passagedata><tw-passagedata pid="109" name="cry to ap" tags="" position="1394.6666666666667,2992.5" size="100,100">(if: $cry is true)[
+[[Я закончил с тактикой-&gt;good half]] </tw-passagedata><tw-passagedata pid="108" name="cry to ap" tags="" position="1394.6666666666667,2992.5" size="100,100">(if: $cry is true)[
 Ну нет, второй раз ты на это не пойдешь. Спасибо, что цел остался.
 [[Вернуться в раздевалку-&gt;good half]]]
 (else:)[Ты просишь $side порулить раздевалкой, а сам быстро выскакиваешь из помещения. Окольные пути ведут тебя к обратной стороне трибуны короля, где ты намерен повысить свои шансы на успех.
@@ -3670,7 +3729,7 @@ tw-passage{text-align: center;
   }
 &lt;/style&gt;
 
-</tw-passagedata><tw-passagedata pid="110" name="oratory" tags="" position="1226,3137.1666666666665" size="100,100">(if: visits &lt;= 1)[
+</tw-passagedata><tw-passagedata pid="109" name="oratory" tags="" position="1226,3137.1666666666665" size="100,100">(if: visits &lt;= 1)[
 (if: $diff is &lt;= 0)[Вы обводите взглядом своих игроков. Они нахмурены, сосредоточены, злятся. $side долбанул по скамейке кулаком. Вы раздумываете как привести их в чувство.
 
 [[Призвать к лучшему в этих людях-&gt;oratory-light]]
@@ -3707,7 +3766,7 @@ tw-passage{text-align: center;
     color: orange;
     text-decoration: none;
   }
-  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="111" name="3 pos" tags="" position="1276,3392.5" size="100,100">Мы начинаем эту атаку.
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="110" name="3 pos" tags="" position="1276,3392.5" size="100,100">Мы начинаем эту атаку.
 
 (if: $offense is &quot;НАБЕГ&quot;)[
 [[Спланировать атаку-&gt;attack3 style drive]]]
@@ -3734,7 +3793,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="112" name="Deffence-2" tags="" position="1533.6666666666667,2964.5" size="100,100">Осталось определиться с защитными построениями на игру.
+]</tw-passagedata><tw-passagedata pid="111" name="Deffence-2" tags="" position="1533.6666666666667,2964.5" size="100,100">Осталось определиться с защитными построениями на игру.
 
 БАСТИОН
 Аккуратная оборона по всем направлениям. Наша сила в слаженности и дисциплине, передаем друг другу игроков противника, не ссымься оказаться против их великана - друзья прикроют. Подходит умным командам и атлетичным командам.
@@ -3767,7 +3826,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="113" name="Offence-2" tags="" position="1662.6666666666667,2966.5" size="100,100">
+]</tw-passagedata><tw-passagedata pid="112" name="Offence-2" tags="" position="1662.6666666666667,2966.5" size="100,100">
 Самое время определиться с тактикой на игру. Стоит учитывать сильные и слабые стороны выбранных игроков.
 
 НАБЕГ 
@@ -3800,7 +3859,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="114" name="oratory-light" tags="" position="1802.6666666666667,2965.5" size="100,100">Вы хлопаете в ладоши и выходите в центр помещение. Все внимание игроков обращено на вас.
+]</tw-passagedata><tw-passagedata pid="113" name="oratory-light" tags="" position="1802.6666666666667,2965.5" size="100,100">Вы хлопаете в ладоши и выходите в центр помещение. Все внимание игроков обращено на вас.
 
 
 {(if: $toxity is &gt;=15) [
@@ -3832,7 +3891,7 @@ tw-passage{text-align: center;
     color: orange;
     text-decoration: none;
   }
-  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="115" name="oratory-dark" tags="" position="1966,2935.5" size="100,100">Зычным рыком вы требуете внимания. Воцаряется напряженная тишина.
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="114" name="oratory-dark" tags="" position="1966,2935.5" size="100,100">Зычным рыком вы требуете внимания. Воцаряется напряженная тишина.
 
 
 {(if: $toxity is &gt;=15) [
@@ -3864,7 +3923,7 @@ tw-passage{text-align: center;
     color: orange;
     text-decoration: none;
   }
-  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="116" name="oratory tox" tags="" position="2082,2965.1666666666665" size="100,100">Вы подходите к шкафчику, чтобы снять с себя кольчугу. Вам кажется, что вы сможете сдержать клокочущую ярость. Но что-то идет не по плану. Кольчуга летит в $sideа. Вы пинаете со всей злости мебель, и хлипкая древесина разлетается вздребезги под натиском кованного рыцарского сапога. Люди начинают жаться к стенке, но это их не спасает.
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="115" name="oratory tox" tags="" position="2082,2965.1666666666665" size="100,100">Вы подходите к шкафчику, чтобы снять с себя кольчугу. Вам кажется, что вы сможете сдержать клокочущую ярость. Но что-то идет не по плану. Кольчуга летит в $sideа. Вы пинаете со всей злости мебель, и хлипкая древесина разлетается вздребезги под натиском кованного рыцарского сапога. Люди начинают жаться к стенке, но это их не спасает.
 - ВЫ. ДОЛБОЕБЫ. ЗАЧЕМ Я С ВАМИ ТОЛЬКО СВЯЗАЛСЯ, НИКЧЕМНЫЕ КУСКИ НИЧТОЖЕСТВА!
 Кто-то пытается вас успокоить. На протянутую руку помощи следует удар латной перчаткой. Начинается всеобщая свалка. Люди взрываются, накопившиеся эмоции хлещут во все стороны.
 Буквально через минуту побоище затихает. Раздевалка разгромлена, эмоции выплеснуты.
@@ -3893,7 +3952,7 @@ tw-passage{text-align: center;
     color: orange;
     text-decoration: none;
   }
-  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="117" name="After oratory" tags="" position="1886.6666666666667,3095.5" size="100,100">(if: $oratory is &quot;s&quot;)[(set: $agile to it+3)(set: $power to it+3) (set: $intel to it+2)
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="116" name="After oratory" tags="" position="1886.6666666666667,3095.5" size="100,100">(if: $oratory is &quot;s&quot;)[(set: $agile to it+3)(set: $power to it+3) (set: $intel to it+2)
 Ваши люди переполняются эмоциями и затягивают походную песню. Вы чувствуете как у всех присутствующих прибавляется сил]
 
 (else-if: $oratory is &quot;w&quot;)[(set: $agile to it+1) (set: $power to it+1)
@@ -3920,7 +3979,7 @@ tw-passage{text-align: center;
     color: orange;
     text-decoration: none;
   }
-  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="118" name="Yosu end" tags="" position="2248.6666666666665,2962.5" size="100,100">&lt;style&gt;
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="117" name="Yosu end" tags="" position="2248.6666666666665,2962.5" size="100,100">&lt;style&gt;
 tw-passage{text-align: center;
 }
 &lt;/style&gt;
@@ -3929,7 +3988,7 @@ tw-passage{text-align: center;
 Считавшийся одним из лучших воинов, ты оказался шелудивым псом. Победа была близка, но ты бросил товарищей посреди игры. В тебе ни верности, ни чести. Пусть эта печать будет с тобой до окончания жизни. Гораздо более скорого, чем ты смеешь хотя бы надеяться. Ведь без защиты хозяина, любой имеет право 
 пресечь твой никчемный путь негодяя.
 
-[[Конец игры -&gt;Results]]</tw-passagedata><tw-passagedata pid="119" name="d2 versus enemy" tags="" position="2086.6666666666665,2287.5" size="100,100">{(set: _TOscore to $score)}
+[[Конец игры -&gt;Results]]</tw-passagedata><tw-passagedata pid="118" name="d2 versus enemy" tags="" position="2086.6666666666665,2287.5" size="100,100">{(set: _TOscore to $score)}
 (if: $perk2 is &quot;Карманник&quot; and $agile &gt;=17 and $intel &gt;=17) [(set: $score to it+(either: 0,0,2,2))(Карманник) $enemy получает мяч в посту и начинает толкаться, вкладываясь в локти. А вы и не против - делаете шаг в бок, оставляя место этому слону. $enemy крутится волчком, проскакивает мимо вас - но уже без мяча, прилипшего к вашим пальцам...
 
 (if: $score &lt;=_TOscore)[Успешный перехват!
@@ -3979,7 +4038,7 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="120" name="d2 tw position" tags="" position="2085.6666666666665,2652.5" size="100,100">{(set: _TOscore to $score)}
+]</tw-passagedata><tw-passagedata pid="119" name="d2 tw position" tags="" position="2085.6666666666665,2652.5" size="100,100">{(set: _TOscore to $score)}
 (if: $perk2 is &quot;Карманник&quot; and $agile &gt;=17 and $intel &gt;=17) [(set: $score to it+(either: 0,0,0,2))(Карманник) Арт и Стас Мелков разыгрывают щит-и-меч. Ты оказываешься против гарда. Стас не очень быстр, но очень любит красивую игру. Вспомнив об этом, ты вытягиваешь руку в нужную сторону в тот самый момент, когда он пассует на Арта. Мяч бьется о твои пальцы...
 
 (if: $score &lt;=_TOscore)[Успешный перехват!
@@ -4041,7 +4100,7 @@ $enemy получает мяч в посту. Вы активно обороня
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
 ]
-</tw-passagedata><tw-passagedata pid="121" name="d2 tw gober" tags="" position="2086.6666666666665,2530.5" size="100,100">{(set: _TOscore to $score)}
+</tw-passagedata><tw-passagedata pid="120" name="d2 tw gober" tags="" position="2086.6666666666665,2530.5" size="100,100">{(set: _TOscore to $score)}
 (if: $agile &gt;=20 and $power &gt;=20) [(set: $score to it+(either: 0,2,0,2))Арт и Стас Мелков разыгрывают щит-и-меч. Ты оказываешься против гарда. Стас не очень быстр, но очень любит красивую игру. Вспомнив об этом, ты напрыгиваешь в его сторону и тут же переключаешься на Арта, которому Стас немедленно пасует. Вы взмываете в воздух одновременно...
 
 (if: $score &lt;=_TOscore)[Арт промахивается, а ты вылавливаешь подбор!
@@ -4101,7 +4160,7 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="122" name="d2 tox" tags="" position="2086.6666666666665,2417.5" size="100,100">{(set: _TOscore to $score)}
+]</tw-passagedata><tw-passagedata pid="121" name="d2 tox" tags="" position="2086.6666666666665,2417.5" size="100,100">{(set: _TOscore to $score)}
 (if: $toxity is &gt;=19 and $intel &gt;=17) [(Токсичность 19) Ваш грозный рык заставляет партнеров мобилизоваться. Когда тяжкий противника поворачивается спиной, чтобы поставить заслон врывающемуся Гоше, вы и $side хватаетесь за руки и ловити в эту сеть Арта, не давая ему занять нужное положение. Прикрывающий Гошу (print: $team&#39;s 3rd) врезается в Арта и судьи немедленно свистят Осадный Щит. Самоотверженностью и парой синяков вы отбираете мяч у противника. 
 [[Отыграть до конца первой половины матча -&gt;1half]] ]
 
@@ -4137,7 +4196,7 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="123" name="d2 pike position" tags="" position="1584.6666666666667,2503.5" size="100,100">{(set: _TOscore to $score)}
+]</tw-passagedata><tw-passagedata pid="122" name="d2 pike position" tags="" position="1584.6666666666667,2503.5" size="100,100">{(set: _TOscore to $score)}
 (if: $perk2 is &quot;Карманник&quot; and $agile &gt;=17 and $intel &gt;=17) [(set: $score to it+(either: 0,0,2,2))(Карманник) Арт и Стас Мелков разыгрывают щит-и-меч. Ты оказываешься против гарда. Стас не очень быстр, но очень любит красивую игру. Вспомнив об этом, ты вытягиваешь руку в нужную сторону в тот самый момент, когда он пассует на Арта. Мяч бьется о твои пальцы...
 
 (if: $score &lt;=_TOscore)[Успешный перехват!
@@ -4199,7 +4258,7 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="124" name="d2 pike gober" tags="" position="1734.6666666666667,2503.5" size="100,100">{(set: _TOscore to $score)}
+]</tw-passagedata><tw-passagedata pid="123" name="d2 pike gober" tags="" position="1734.6666666666667,2503.5" size="100,100">{(set: _TOscore to $score)}
 (if: $agile &gt;=20 and $power &gt;=20) [(set: $score to it+(either: 2,2,0,2))Арт и Стас Мелков разыгрывают щит-и-меч. Ты оказываешься против гарда. Стас не очень быстр, но очень любит красивую игру. Вспомнив об этом, ты напрыгиваешь в его сторону и тут же переключаешься на Арта, которому Стас немедленно пасует. Вы взмываете в воздух одновременно...
 
 (if: $score &lt;=_TOscore)[Арт промахивается, а ты вылавливаешь подбор!
@@ -4259,7 +4318,7 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="125" name="d1 tw" tags="" position="1202.1666666666667,1949" size="100,100">Вам начинает казаться, что вы уловили общий замысел. Стрелки противника рассредоточились на периметре, а $enemy и болхендлер идут на прорыв.
+]</tw-passagedata><tw-passagedata pid="124" name="d1 tw" tags="" position="1202.1666666666667,1949" size="100,100">Вам начинает казаться, что вы уловили общий замысел. Стрелки противника рассредоточились на периметре, а $enemy и болхендлер идут на прорыв.
 
 [[Играю по позиции и держу своего игрока-&gt;d1 tw position]]
 
@@ -4292,7 +4351,7 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="126" name="d1 bas" tags="" position="1056.1666666666667,1955" size="100,100">Вам начинает казаться, что вы уловили общий замысел. Стрелки противника рассредоточились на периметре, а $enemy и болхендлер идут на прорыв.
+]</tw-passagedata><tw-passagedata pid="125" name="d1 bas" tags="" position="1056.1666666666667,1955" size="100,100">Вам начинает казаться, что вы уловили общий замысел. Стрелки противника рассредоточились на периметре, а $enemy и болхендлер идут на прорыв.
 
 [[Играю по позиции и держу своего игрока-&gt;d1 tw position]]
 
@@ -4325,7 +4384,7 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="127" name="d1 pike" tags="" position="1315.1666666666667,1950" size="100,100">Вам начинает казаться, что вы уловили общий замысел. Стрелки противника рассредоточились на периметре, а $enemy и болхендлер идут на прорыв.
+]</tw-passagedata><tw-passagedata pid="126" name="d1 pike" tags="" position="1315.1666666666667,1950" size="100,100">Вам начинает казаться, что вы уловили общий замысел. Стрелки противника рассредоточились на периметре, а $enemy и болхендлер идут на прорыв.
 
 [[Играю по позиции и держу своего игрока-&gt;d1 pike position]]
 
@@ -4358,7 +4417,7 @@ $enemy получает мяч в посту. Вы активно обороня
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="128" name="d1 tw position" tags="" position="958.1666666666666,2100" size="100,100">{(set: _TOscore to $score)}
+]</tw-passagedata><tw-passagedata pid="127" name="d1 tw position" tags="" position="958.1666666666666,2100" size="100,100">{(set: _TOscore to $score)}
 (if: $perk2 is &quot;Карманник&quot; and $agile &gt;=17 and $intel &gt;=17) [(set: $score to it+(either: 0,2,0,2))(Карманник) $enemy и Стас Мельков влетают в наши ряды, стягивая на себя всех, кто желает расквасить им нос. Тут же следует передача на Игоря. Но ты предвидел такой ход, поэтому успеваешь вытянуть руку на пути мяча...
 
 (if: $score &lt;=_TOscore)[Успешный перехват!
@@ -4413,7 +4472,7 @@ $enemy получает мяч в посту. Вы активно обороня
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
 ]
-</tw-passagedata><tw-passagedata pid="129" name="d1 tw gober" tags="" position="1108.1666666666667,2100" size="100,100">{(set: _TOscore to $score)}
+</tw-passagedata><tw-passagedata pid="128" name="d1 tw gober" tags="" position="1108.1666666666667,2100" size="100,100">{(set: _TOscore to $score)}
 (if: $agile &gt;=19 and $power &gt;=17 and $intel &gt;=14) [(set: $score to it+(either: 0,0,0,2,0,3))$enemy и Стас Мельков влетают в наши ряды, стягивая на себя всех, кто желает расквасить им нос. Ты, рассчитав верный момент, переключаешься на Игоря, которому следует передача. $side спешит перекрыть ему возможность для паса. Игорь принимает решение бросать сам. Вы подпрыгиваете вместе, но он все таки бросает мяч по дикий дуге...
 
 (if: $score &lt;=_TOscore)[Промах!
@@ -4467,7 +4526,7 @@ $enemy получает мяч в посту. Вы активно обороня
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
 ]
-</tw-passagedata><tw-passagedata pid="130" name="d1 versus enemy" tags="" position="1243.1666666666667,2100" size="100,100">{(set: _TOscore to $score)}
+</tw-passagedata><tw-passagedata pid="129" name="d1 versus enemy" tags="" position="1243.1666666666667,2100" size="100,100">{(set: _TOscore to $score)}
 (if: $perk2 is &quot;Карманник&quot; and $agile &gt;=17 and $power &gt;=17) [(set: $score to it+(either: 3,0,0,0))(Карманник) $enemy и Стас Мельков влетают в наши ряды, стягивая на себя всех, кто желает расквасить им нос. В этой суматохе ты из-за спины выбиваешь у $enemyа мяч...
 
 (if: $score &lt;=_TOscore)[Успешный перехват!
@@ -4516,7 +4575,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="131" name="d1 intel" tags="" position="1370.1666666666667,2110" size="100,100">{(set: _TOscore to $score)}
+]</tw-passagedata><tw-passagedata pid="130" name="d1 intel" tags="" position="1370.1666666666667,2110" size="100,100">{(set: _TOscore to $score)}
 (if: $agile &gt;=17 and $intel &gt;=19) [(set: $score to it+(either: 3,0,0,0))(Интеллект) Прежде чем $enemy успевает тронуться, вы с $sideом прижимаете его к линии. За вашими широкими спинами не видно Стаса Мелькова, который тщетно пытается подать знак прижатому капитану. Вы решительно тянете руки к мячу, и враг понимает, что прятать его некуда. $enemy бодает вас головой и совершает степбэк веры, выпуская мяч из рук...
 
 (if: $score &lt;=_TOscore)[Мяч неспешно приземляется за кольцом.
@@ -4565,7 +4624,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="132" name="d1 pike position" tags="" position="1164.1666666666667,2233" size="100,100">{(set: _TOscore to $score)}
+]</tw-passagedata><tw-passagedata pid="131" name="d1 pike position" tags="" position="1164.1666666666667,2233" size="100,100">{(set: _TOscore to $score)}
 (if: $perk2 is &quot;Карманник&quot; and $agile &gt;=17 and $intel &gt;=17) [(set: $score to it+(either: 0,0,0,2))(Карманник) $enemy и Стас Мельков влетают в наши ряды, стягивая на себя всех, кто желает расквасить им нос. Тут же следует передача на Игоря. Но ты предвидел такой ход, поэтому успеваешь вытянуть руку на пути мяча...
 
 (if: $score &lt;=_TOscore)[Успешный перехват!
@@ -4620,7 +4679,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
 ]
-</tw-passagedata><tw-passagedata pid="133" name="d1 pike gober" tags="" position="1267.8333333333335,2231.3333333333335" size="100,100">{(set: _TOscore to $score)}
+</tw-passagedata><tw-passagedata pid="132" name="d1 pike gober" tags="" position="1267.8333333333335,2231.3333333333335" size="100,100">{(set: _TOscore to $score)}
 (if: $agile &gt;=19 and $power &gt;=17 and $intel &gt;=14) [(set: $score to it+(either: 0,0,0,2,0))$enemy и Стас Мельков влетают в наши ряды, стягивая на себя всех, кто желает расквасить им нос. Ты, рассчитав верный момент, переключаешься на Игоря, которому следует передача. $side спешит перекрыть ему возможность для паса. Игорь принимает решение бросать сам. Вы подпрыгиваете вместе, но он все таки бросает мяч по дикий дуге...
 
 (if: $score &lt;=_TOscore)[Промах!
@@ -4674,7 +4733,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
 ]
-</tw-passagedata><tw-passagedata pid="134" name="attack3 style drive" tags="" position="1258.6666666666667,3695.5" size="100,100">Противник уже понимает как мы играем. Но какая разница, лучшее оружие - то, которое работает.
+</tw-passagedata><tw-passagedata pid="133" name="attack3 style drive" tags="" position="1258.6666666666667,3695.5" size="100,100">Противник уже понимает как мы играем. Но какая разница, лучшее оружие - то, которое работает.
 
 
 [[Разыграть самостоятельно -&gt;attack3 style dr self]]
@@ -4701,7 +4760,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="135" name="attack3 style post" tags="" position="1408.6666666666667,3695.5" size="100,100">Противник уже понимает как мы играем. Но какая разница, лучшее оружие - то, которое работает.
+]</tw-passagedata><tw-passagedata pid="134" name="attack3 style post" tags="" position="1408.6666666666667,3695.5" size="100,100">Противник уже понимает как мы играем. Но какая разница, лучшее оружие - то, которое работает.
 
 [[Могу доверить мяч только себе-&gt;attack3 style post self]]
 
@@ -4726,7 +4785,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="136" name="attack3 style dr self" tags="" position="1158.666666666667,3867.1666666666665" size="100,100">Ваши игроки ждут сигнала. Что же придумает тренер-капитан?
+]</tw-passagedata><tw-passagedata pid="135" name="attack3 style dr self" tags="" position="1158.666666666667,3867.1666666666665" size="100,100">Ваши игроки ждут сигнала. Что же придумает тренер-капитан?
 
 [[Ищу пространство для врыва в краску -&gt;a3 drive self]]
 
@@ -4756,7 +4815,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="137" name="attack3 style dr passiv" tags="" position="1283.6666666666665,3882.166666666667" size="100,100">(print: $team&#39;s 4rd) хочет сыграть энчпочмак.
+]</tw-passagedata><tw-passagedata pid="136" name="attack3 style dr passiv" tags="" position="1283.6666666666665,3882.166666666667" size="100,100">(print: $team&#39;s 4rd) хочет сыграть энчпочмак.
 
 [[Отвлекаю от снайпера-&gt;a3 post passiv triangle]]
 
@@ -4785,7 +4844,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="138" name="attack3 style post self" tags="" position="1553.6666666666667,3858.5" size="100,100">Ваши игроки ждут сигнала. Что же придумает тренер-капитан?
+]</tw-passagedata><tw-passagedata pid="137" name="attack3 style post self" tags="" position="1553.6666666666667,3858.5" size="100,100">Ваши игроки ждут сигнала. Что же придумает тренер-капитан?
 
 [[Поворачиваюсь спиной и штурмую жопой кольцо -&gt;a3 post low]]
 
@@ -4815,7 +4874,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="139" name="attack3 style post passiv" tags="" position="1577,3720.5" size="100,100">(print: $team&#39;s 4rd) хочет сыграть энчпочмак.
+]</tw-passagedata><tw-passagedata pid="138" name="attack3 style post passiv" tags="" position="1577,3720.5" size="100,100">(print: $team&#39;s 4rd) хочет сыграть энчпочмак.
 
 [[Отвлекаю от снайпера-&gt;a3 post passiv triangle]]
 
@@ -4844,7 +4903,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="140" name="3poss opp" tags="" position="1425.6666666666667,4104.5" size="100,100">Игроки противника мельтешат перед глазами, беря на понт умением играть в комбинации. Вы же знаете что делать?
+]</tw-passagedata><tw-passagedata pid="139" name="3poss opp" tags="" position="1425.6666666666667,4104.5" size="100,100">Игроки противника мельтешат перед глазами, беря на понт умением играть в комбинации. Вы же знаете что делать?
 
 
 {(if: $defense is &quot;БАСТИОН&quot;)[
@@ -4872,7 +4931,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="141" name="attack3 style ap reb" tags="" position="1421.3333333333335,3931.5000000000005" size="100,100">(if: $tPerks&#39;s 4th is &quot;Идеальность&quot;)[(set: $ourscore to it +2)(Идеальность) Виктор с мясом забирает мяч и пасует его вам. Так как все кинулись на Виктора, вам остается просто положить его в корзину. 
+]</tw-passagedata><tw-passagedata pid="140" name="attack3 style ap reb" tags="" position="1421.3333333333335,3931.5000000000005" size="100,100">(if: $tPerks&#39;s 4th is &quot;Идеальность&quot;)[(set: $ourscore to it +2)(Идеальность) Виктор с мясом забирает мяч и пасует его вам. Так как все кинулись на Виктора, вам остается просто положить его в корзину. 
 
 [[Владение переходит к противнику-&gt;3poss opp]]]
 
@@ -4922,7 +4981,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="142" name="d3 bas" tags="" position="1295.6666666666667,4222.833333333333" size="100,100">Еще несколько переводов мяча между игроками, и $enemy вместе с Сашкой устремляются к нашему кольцу.
+]</tw-passagedata><tw-passagedata pid="141" name="d3 bas" tags="" position="1295.6666666666667,4222.833333333333" size="100,100">Еще несколько переводов мяча между игроками, и $enemy вместе с Сашкой устремляются к нашему кольцу.
 
 [[Держу своего игрока, ноги готовы к взрыву-&gt;d3 tw position]]
 
@@ -4953,7 +5012,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="143" name="d3 pike" tags="" position="1414,4242.833333333334" size="100,100">Еще несколько переводов мяча между игроками, и $enemy вместе с Сашкой устремляются к нашему кольцу.
+]</tw-passagedata><tw-passagedata pid="142" name="d3 pike" tags="" position="1414,4242.833333333334" size="100,100">Еще несколько переводов мяча между игроками, и $enemy вместе с Сашкой устремляются к нашему кольцу.
 
 [[Охраняю периметр, наши ребята разберутся-&gt;d3 pike position]]
 
@@ -4984,7 +5043,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="144" name="d3 tw" tags="" position="1585.6666666666667,4209.5" size="100,100">Еще несколько переводов мяча между игроками, и $enemy вместе с Сашкой устремляются к нашему кольцу.
+]</tw-passagedata><tw-passagedata pid="143" name="d3 tw" tags="" position="1585.6666666666667,4209.5" size="100,100">Еще несколько переводов мяча между игроками, и $enemy вместе с Сашкой устремляются к нашему кольцу.
 
 [[Изо всех сил держу своего игрока-&gt;d3 tw position]]
 
@@ -5015,7 +5074,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="145" name="d3 tw position" tags="" position="1329,4399.5" size="100,100">Сашка накрывает тебя щитом, позволяя $enemyу оторваться - и рвануть к кольцу.  
+]</tw-passagedata><tw-passagedata pid="144" name="d3 tw position" tags="" position="1329,4399.5" size="100,100">Сашка накрывает тебя щитом, позволяя $enemyу оторваться - и рвануть к кольцу.  
 
 [[Изо всех сил преследую кузена. -&gt;d3versus star]]
 
@@ -5045,7 +5104,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="146" name="d3 tw gober" tags="" position="1459,4382.833333333333" size="100,100">Ты забираешь краску, отгоняя противника. Но Сашка после заслона от Гоши, остается один с мячом! $enemy в это время рвет к кольцу с другой стороны.  
+]</tw-passagedata><tw-passagedata pid="145" name="d3 tw gober" tags="" position="1459,4382.833333333333" size="100,100">Ты забираешь краску, отгоняя противника. Но Сашка после заслона от Гоши, остается один с мячом! $enemy в это время рвет к кольцу с другой стороны.  
 
 [[Изо всех сил преследую кузена, я поклялся защищать эту зону -&gt;d3versus star]]
 
@@ -5075,7 +5134,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="147" name="d3 tox" tags="" position="1737.3333333333335,4264.5" size="100,100">{(set: _TOscore to $score)}
+]</tw-passagedata><tw-passagedata pid="146" name="d3 tox" tags="" position="1737.3333333333335,4264.5" size="100,100">{(set: _TOscore to $score)}
 (if: $intel &gt;=17 and $toxity &gt;=18) [(set: $score to it+(either: 2,0,0,0))(Токсичность) Вы создаете свободный проход к кольцу и $enemy немедленно врывается. Прежде чем он понимает, что происходит, корридор смыкается, а вы накатываетесь на него как волна. Ты и $side наносите удары со всех сторон, но не трогаете руку с мячом. $enemy выбирает рухнуть и запросить фол. Его можно понять, вложились вы от души...
 
 (if: $score &lt;=_TOscore)[Судьи ничего не заметили, видимо не зря в это время (print: $team&#39;s 5th) устраивал спектакли возле них. 
@@ -5124,7 +5183,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="148" name="4poss" tags="" position="2259,4547.833333333333" size="100,100">(if: $penalty &gt;=5 and $snitch is true)[
+]</tw-passagedata><tw-passagedata pid="147" name="4poss" tags="" position="2259,4547.833333333333" size="100,100">(if: $penalty &gt;=5 and $snitch is true)[
 Ты грубо останавливаешь игрока соперника. Это большая ошибка, ведь у тебя уже было пять предужпредений. Однако судьи дают фол совсем другому игроку. Ты чувствуешь, что эта поддержка не разовая - и возможно объясняет некоторые спорные моменты в пользу твоей команды.
 Мы начинаем эту атаку.
 
@@ -5170,7 +5229,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="149" name="attack4 style ap" tags="" position="2042.3333333333335,4647.833333333332" size="100,100">Противник не успевает занять защитное построение, а твой (print: $team&#39;s 4th) уже добегает до вражеского периметра.
+]</tw-passagedata><tw-passagedata pid="148" name="attack4 style ap" tags="" position="2042.3333333333335,4647.833333333332" size="100,100">Противник не успевает занять защитное построение, а твой (print: $team&#39;s 4th) уже добегает до вражеского периметра.
 
 [[Это же набег! Пасую - пусть заносит в кольцо -&gt;a4 ap tempo]]
 
@@ -5199,7 +5258,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="150" name="attack4 style drive" tags="" position="2297.333333333333,4759.5" size="100,100">Противник не успевает занять защитное построение, а твой (print: $team&#39;s 4th) уже добегает до вражеского периметра.
+]</tw-passagedata><tw-passagedata pid="149" name="attack4 style drive" tags="" position="2297.333333333333,4759.5" size="100,100">Противник не успевает занять защитное построение, а твой (print: $team&#39;s 4th) уже добегает до вражеского периметра.
 
 [[Пасую - пусть заносит в кольцо -&gt;a4 ap tempo]]
 
@@ -5228,7 +5287,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="151" name="attack4 style post" tags="" position="2454,4684.5" size="100,100">Ты с партнерами расположился на чужой половине.
+]</tw-passagedata><tw-passagedata pid="150" name="attack4 style post" tags="" position="2454,4684.5" size="100,100">Ты с партнерами расположился на чужой половине.
 
 
 [[Сам поведу атаку-&gt;attack4 style post self]]
@@ -5254,7 +5313,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="152" name="attack4 style post self" tags="" position="2554,4881.166666666668" size="100,100">Гоша опрометчиво встал напротив нашего Четвертого.
+]</tw-passagedata><tw-passagedata pid="151" name="attack4 style post self" tags="" position="2554,4881.166666666668" size="100,100">Гоша опрометчиво встал напротив нашего Четвертого.
 
 [[Разменяться на Гошу. Раскатаю в &quot;айзо&quot; -&gt;attack4 post iso]]
 
@@ -5283,7 +5342,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="153" name="attack4 style post passiv" tags="" position="2589,4549.5" size="100,100">Гоша Демурия опрометчиво расположился напротив нашего Четвертого. (print: $team&#39;s 3rd) cобирается отдать мяч туда.
+]</tw-passagedata><tw-passagedata pid="152" name="attack4 style post passiv" tags="" position="2589,4549.5" size="100,100">Гоша Демурия опрометчиво расположился напротив нашего Четвертого. (print: $team&#39;s 3rd) cобирается отдать мяч туда.
 
 [[Давай, дави его! -&gt;attack4 style post other]]
 [[Разменяться на Гошу. Моя жопа тверже-&gt;attack4 post iso]]
@@ -5308,7 +5367,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="154" name="attack4 post 3p" tags="" position="2880.6666666666665,4719.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="153" name="attack4 post 3p" tags="" position="2880.6666666666665,4719.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Шальная Треха&quot; and $agile &gt;=18)[(set: $ourscore to it+(either: 3,0,3)) Вы и (print: $team&#39;s 5rd) устремляетесь на встречу друг другу. Он врезается в вашего опекуна, пока его собственный опонент не может выбрать сторону с которой обежать широкую задницу $sideа. Заветный пустой угол, (print: $team&#39;s 3rd) мигом находит вас передачей , прыжок, бросок...
 (if: $ourscore &gt;_TOscore)[Успех!
 
@@ -5368,7 +5427,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="155" name="4poss opp" tags="" position="1516.3333333333335,5376.5" size="100,100">Вы сражаетесь отчаяно, как и противник. Каков бы не был исход, вам не в чем себя упрекнуть.
+]</tw-passagedata><tw-passagedata pid="154" name="4poss opp" tags="" position="1516.3333333333335,5376.5" size="100,100">Вы сражаетесь отчаяно, как и противник. Каков бы не был исход, вам не в чем себя упрекнуть.
 
 [[Доиграть до конца матча-&gt;preclutch]] 
 
@@ -5395,7 +5454,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="156" name="attack4 style ap reb" tags="" position="2220.333333333333,4986.833333333333" size="100,100">(if: $tPerks&#39;s 2nd is &quot;Cтоличные стволы&quot;)[(set: $ourscore to it +2)(Столичные стволы) Пхпхпх каким-то чудом вырывает мяч у значительно превосходящих его ростом тяжких Мопсов, отпрыгивает в сторону, разгоняется и врезается в толпу с криком &quot;Хибачи!!!&quot;. Сулья дает пробить Пхпхпх два штрафных. Разыгрывающий точен.
+]</tw-passagedata><tw-passagedata pid="155" name="attack4 style ap reb" tags="" position="2220.333333333333,4986.833333333333" size="100,100">(if: $tPerks&#39;s 2nd is &quot;Cтоличные стволы&quot;)[(set: $ourscore to it +2)(Столичные стволы) Пхпхпх каким-то чудом вырывает мяч у значительно превосходящих его ростом тяжких Мопсов, отпрыгивает в сторону, разгоняется и врезается в толпу с криком &quot;Хибачи!!!&quot;. Сулья дает пробить Пхпхпх два штрафных. Разыгрывающий точен.
 
 [[Владение переходит к противнику-&gt;4poss opp]]]
 
@@ -5444,7 +5503,7 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="157" name="preclutch" tags="" position="939.6666666666663,5293.166666666667" size="100,100">(set: $ourscore to it+50)
+]</tw-passagedata><tw-passagedata pid="156" name="preclutch" tags="" position="939.6666666666663,5293.166666666667" size="100,100">(set: $ourscore to it+50)
 (set: $score to it+50)
 
 (if: $diff &lt;=5 and &gt;=-5)[
@@ -5482,12 +5541,40 @@ $enemy и Стас Мельков влетают в наши ряды, стяг�
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="158" name="endgame" tags="" position="404.33333333333337,5194.499999999999" size="100,100">(else-if: $diff &gt;=6)[
+]</tw-passagedata><tw-passagedata pid="157" name="endgame" tags="" position="404.33333333333337,5194.499999999999" size="100,100">{(set: $ourscore to it +10)}
+{(set: $score to it +10)}
+(else-if: $diff &gt;=6)[(set: $game to &quot;l&quot;)
 Последнее ничего не значащее владение - и вы победили! Вы не верите своим глазам, но это правда!
 [[Отпраздновать-&gt;Strike]]]
-(else-if: $diff &lt;=-6)[
+(else-if: $diff &lt;=-6)[(set: $game to &quot;v&quot;)
 Последнее ничего не значащее владение - и вы продули! Вы не верите своим глазам, но это правда!
-[[Оплакать-&gt;Strike]]]</tw-passagedata><tw-passagedata pid="159" name=" Zefirend" tags="" position="35,2557.8333333333335" size="100,100">&lt;style&gt;
+[[Оплакать-&gt;Strike]]]
+
+
+
+Счет
+Команда Здоровье $ourscore
+Мопсы-блиноеды $score
+
+ &lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="158" name=" Zefirend" tags="" position="35,2557.8333333333335" size="100,100">&lt;style&gt;
 tw-passage{text-align: center;
 }
 &lt;/style&gt;
@@ -5495,7 +5582,7 @@ tw-passage{text-align: center;
 (colour: grey) [Ты - цыган&lt;h1&gt;]
 Ветер не удержать в руке, как привязи - коня. Беспечный и неуловимый, ты пришел ко двору и ушел, ничего не потерял, а только нашел. Дорога твоя лежит далеко, до самых до Броваров. Рома не любит воевать, рома не любит насилия. Рома хочет однажды увидеть великий парад в Детройте - и твой кошелек. 
 
-[[Конец игры -&gt;Results]]</tw-passagedata><tw-passagedata pid="160" name="cry check" tags="" position="1519.3333333333335,3142.5" size="100,100">(if: $ap is &quot;Фаворит&quot;)[
+[[Конец игры -&gt;Results]]</tw-passagedata><tw-passagedata pid="159" name="cry check" tags="" position="1519.3333333333335,3142.5" size="100,100">(if: $ap is &quot;Фаворит&quot;)[
 Король выслушал тебя до конца. 
 -Ступай, и покажи на что ты способен. С остальным разберутся те, кому это положено, мой друг.
 Что ж. Он не отругал тебя. Но что означали его последние слова?
@@ -5528,7 +5615,7 @@ tw-passage{text-align: center;
   }
 &lt;/style&gt;
 
-</tw-passagedata><tw-passagedata pid="161" name="cry canchler" tags="" position="1664.3333333333335,3169.1666666666665" size="100,100">{(set: $cry to true)}
+</tw-passagedata><tw-passagedata pid="160" name="cry canchler" tags="" position="1664.3333333333335,3169.1666666666665" size="100,100">{(set: $cry to true)}
 - Да я бы повесил любого, кто только бы заикнулся о каких-то поблажках для этих псов! Не испытывай мое терпение, канцлер!
 - И тем не менее, Ваше Величество, самих псов вы не вешаете. Смею утверждать, что королевские гончие питаются лучше, чем все Бровары.
 - Псы не поднимут бунт на сытый желудок. А дай голотьбе денек отвлечься от поиска еды, как они тут же начнут мутить смуту. Нет, канцлер, это даже не обсуждается.
@@ -5568,7 +5655,7 @@ tw-passage{text-align: center;
   }
 &lt;/style&gt;
 
-</tw-passagedata><tw-passagedata pid="162" name="mike yu end" tags="" position="2244.3333333333335,3110.8333333333335" size="100,100">&lt;style&gt;
+</tw-passagedata><tw-passagedata pid="161" name="mike yu end" tags="" position="2244.3333333333335,3110.8333333333335" size="100,100">&lt;style&gt;
 tw-passage{text-align: center;
 }
 &lt;/style&gt;
@@ -5578,7 +5665,7 @@ tw-passage{text-align: center;
 
 [[Конец игры -&gt;Results]]
 
-(set: $myu to true)</tw-passagedata><tw-passagedata pid="163" name="0 opp pos" tags="" position="567.9999999999999,1910.1666666666665" size="100,100">Игроки противника переходят линию фронта и вторгаются на нашу половину. 
+(set: $myu to true)</tw-passagedata><tw-passagedata pid="162" name="0 opp pos" tags="" position="567.9999999999999,1910.1666666666665" size="100,100">Игроки противника переходят линию фронта и вторгаются на нашу половину. 
 
 
 [[Настроиться на защиту-&gt;d0]]
@@ -5602,7 +5689,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="164" name="d0" tags="" position="741.3333333333333,1923.5" size="100,100">Мяч в руках Стаса Мелькова. Игорь и Арт, два тяжких, на его стороне. На противоположной - $enemy и шутер Гоша Демурия.
+]</tw-passagedata><tw-passagedata pid="163" name="d0" tags="" position="741.3333333333333,1923.5" size="100,100">Мяч в руках Стаса Мелькова. Игорь и Арт, два тяжких, на его стороне. На противоположной - $enemy и шутер Гоша Демурия.
 
 [[Да это ж энчпочмак, главная комбинация ордынских буйволов! Меняем всех на всех!-&gt;d0 triangle]]
 
@@ -5633,7 +5720,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="165" name="d0 triangle" tags="" position="504.6666666666666,2068.5" size="100,100">Ты прикрываешь Игоря. Он резко стартует и бежит в &quot;усы&quot;. На твоем пути вырастает Арт.
+]</tw-passagedata><tw-passagedata pid="164" name="d0 triangle" tags="" position="504.6666666666666,2068.5" size="100,100">Ты прикрываешь Игоря. Он резко стартует и бежит в &quot;усы&quot;. На твоем пути вырастает Арт.
 
 [[Просачиваюсь как вода, главное чтобы в штаны мои не лез -&gt;d0 triangle 1]]
 
@@ -5664,7 +5751,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="166" name="d0 tox" tags="" position="651.3333333333333,2071.833333333333" size="100,100">{(set: _TOscore to $score)}
+]</tw-passagedata><tw-passagedata pid="165" name="d0 tox" tags="" position="651.3333333333333,2071.833333333333" size="100,100">{(set: _TOscore to $score)}
 (if: $toxity is &gt;=17 and $power is&gt;=17)[(set: $penalty to it+1 and set: $score to it+(either: 0,1,0,1))
 Только почувствовав заслон, вы немедленно засаживаете локоть опекуну в грудину. На реактивном ускорении от резкого вынужденного выдоха Арта сметает в сторону. Вам освобождается кратчайший путь - по прямой. Игорь с ужасом видит, как ваши локти бегут на него, и отбрасывает мяч на дугу. Но это все равно его не спасает. Свисток. Судьи выписывают вам фол и дают пробить штрафные Мопсам.
 (if: $score &lt;=_TOscore)[Игорь промазал обе попытки. (print: $team&#39;s 5rd) надежно забирает подбор.
@@ -5707,7 +5794,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="167" name="d0 green" tags="" position="777.9999999999999,2075" size="100,100">{(set: _TOscore to $score)}
+]</tw-passagedata><tw-passagedata pid="166" name="d0 green" tags="" position="777.9999999999999,2075" size="100,100">{(set: _TOscore to $score)}
 (if: $agile is &gt;=16 and $power is&gt;=16 and $intel &gt;=16)[(set: $score to it+(either: 0,2,0,0,2))
 Вы сосредотачиваетесь на $enemyе и говорите $sideу, что он должен не дать вас заблокировать. В момент, когда $enemy резко уходит в угол, ваш второй кузен упирается в Арта, не давая ему поставить нормальный заслон. Вы сами мчитесь за $enemyом, не обращая внимания на забегания остальных Мопсов, поэтому успеваете закрыть обзор перед броском...
 (if: $score &lt;=_TOscore)[Промах! (print: $team&#39;s 5rd) надежно забирает подбор.
@@ -5759,7 +5846,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="168" name="d0 triangle 1" tags="" position="456.33333333333326,2221.8333333333335" size="100,100">(set: _TOscore to $score)
+]</tw-passagedata><tw-passagedata pid="167" name="d0 triangle 1" tags="" position="456.33333333333326,2221.8333333333335" size="100,100">(set: _TOscore to $score)
 (if: $class is not &quot;Тяжкий&quot; and $agile is &gt;=18)[(set: $score to it+(either: 0,2,0,2,0,3))
 Ты подпрыгиваешь над выставленными конечностями Арта и как-то ухитряешься проскочить в узкий зазор между ним и Игорем. В углу того уже ждет мяч, но ему приходится вернуть его обратно, уткнувшись в твое наглое присутствие. Время владения истекает, Стас бросает сам...
 (if: $score &lt;=_TOscore)[Промах! (print: $team&#39;s 5rd) надежно забирает подбор.
@@ -5800,7 +5887,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="169" name="d0 triangle 2" tags="" position="579.6666666666665,2223.5000000000005" size="100,100">(set: _TOscore to $score)
+]</tw-passagedata><tw-passagedata pid="168" name="d0 triangle 2" tags="" position="579.6666666666665,2223.5000000000005" size="100,100">(set: _TOscore to $score)
 (if: $tPerks&#39;s 2nd is &quot;Пудж&quot; or &quot;Пловец&quot;)[((print: $tPerks&#39;s 2nd)) (print: $team&#39;s 3rd) стремительно переключается на Игоря и заставляет его расстаться с мячом энергичными криками и прыжками. В момент паса, мяч задевает голову защитника и чудом вылетает вам в руки! Вы орете &quot;Вот так и надо!&quot;
 
 [[Мяч у нас. Пора в атаку-&gt;1poss]]]
@@ -5833,7 +5920,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="170" name="a3 post low" tags="" position="1775.3333333333335,4057.8333333333335" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="169" name="a3 post low" tags="" position="1775.3333333333335,4057.8333333333335" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Данчич&quot; and $power &gt;=18) [(set: $ourscore to it+(either: 2,0,2,2))(Данчич) Вы проталкиваете Арта и ему на помощь спешит Сашка, заменивший Игоря. Тогда особо точным ударом копчика вы вгоняете Арта в его помощника, и на секунду освободившись - взмываете в воздух. Разворот, разлетевшиеся руки, мяч на вытянутых пальцах как родимый заходит в кольцо  ...
 (if: $ourscore &gt;_TOscore)[ДААНК!
 
@@ -5896,7 +5983,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="171" name="a3 post triangle" tags="" position="1775.3333333333335,3933.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="170" name="a3 post triangle" tags="" position="1775.3333333333335,3933.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk2 is &quot;Пас из ниоткуда&quot; and $agile &gt;=17 and $power &gt;=15)[
 (set: $ourscore to it+(either: 2,0,3,3,0)) (Пас из ниоткуда) Ты и (print: $team&#39;s 4rd) начинаете носиться на своей стороне, заставляя противника усиленно переживать. (print: $team&#39;s 4rd) устремляется в угол с мячом, а на пути преследующего его $enemyа оказываешься ты. Тебя обегают со всех сторон как закрытую дверь без стен. Имено в этот момент тебе следует пас, который ты передаешь еще дальше. Совершенно свободный (print: $team&#39;s 3rd) пробует открытый бросок...
 
@@ -5962,7 +6049,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="172" name="a3 post harden" tags="" position="1770.3333333333335,3808.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="171" name="a3 post harden" tags="" position="1770.3333333333335,3808.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Шальная Треха&quot; and $agile &gt;=18)[(set: $ourscore to it+(either: 3,0,3,0,0))(Шальная Треха) Вы делаете шажок вперед и два назад. Оказавшись один, словно корабль в океане, вы взмываете в воздух и спускаете тетиву...
 (if: $ourscore &gt;_TOscore)[Успех!
 
@@ -6013,7 +6100,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="173" name="a3 post passiv triangle" tags="" position="1663.6666666666667,3520.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="172" name="a3 post passiv triangle" tags="" position="1663.6666666666667,3520.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $intel &gt;= 15 and $agile &gt;=16)[(set: $ourscore to it+(either: 2,0,3,2,0))Ты и (print: $team&#39;s 4rd) начинаете носиться на своей стороне, заставляя противника усиленно переживать. (print: $team&#39;s 4rd) устремляется в угол с мячом, а на пути преследующего его $enemyа оказываешься ты. Тебя обегают со всех сторон как закрытую дверь без стен. Имено в этот момент тебе следует пас, который ты передаешь еще дальше. Совершенно свободный (print: $team&#39;s 3rd) пробует открытый бросок...
 
 (if: $ourscore &gt;_TOscore)[Успех!
@@ -6064,7 +6151,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="174" name="a3 post passive harden" tags="" position="1520.3333333333335,3562.166666666667" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="173" name="a3 post passive harden" tags="" position="1520.3333333333335,3562.166666666667" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Шальная Треха&quot; and $agile &gt;=16)[(set: $ourscore to it+(either: 3,0,3,0,0))(Шальная Треха) Через серию заслонов вы оказываетесь на дуге. $side, находящийся на вершине эчпочмака, тут же отправляет вам пас. Оказавшись один, словно корабль в океане, вы взмываете в воздух и спускаете тетиву...
 (if: $ourscore &gt;_TOscore)[Успех!
 
@@ -6115,7 +6202,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="175" name="a3 post tox" tags="" position="1773.666666666667,3628.8333333333335" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="174" name="a3 post tox" tags="" position="1773.666666666667,3628.8333333333335" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $toxity &gt;= 20 and $power &gt;=17)[(set: $ourscore to it+(either: 2,0,3,2,0))На энергии спортивной злости и мерзкого характера ты обегаешь зону противника несколько раз, успев по пути наступить кому-то на ногу, потолкаться и плюнуть в лицо. Половина Мопсов отправилась за тобой в погоню. Это дало возможность $side бросить открытый бросок...
 
 (if: $ourscore &gt;_TOscore)[Успех!
@@ -6157,7 +6244,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="176" name="a3 drive self" tags="" position="1155.3333333333335,3998.1666666666665" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="175" name="a3 drive self" tags="" position="1155.3333333333335,3998.1666666666665" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Данчич&quot; and $agile &gt;=16) [(set: $ourscore to it+(either: 2,0,2,2))(Данчич) $side и (print: $team&#39;s 4rd) перепасовкой стягивают на себя внимание защитников. Ты решаешься на врыв под кольцо. Тебя встречает Сашка, заменивший Игоря. Ложный показ перед носом, два прыжка... Ты взмываешь в воздух. Разворот, разлетевшиеся руки, мяч на вытянутых пальцах как родимый заходит в кольцо  ...
 (if: $ourscore &gt;_TOscore)[ДААНК!
 
@@ -6220,7 +6307,7 @@ tw-passage{text-align: center;
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="177" name="check canzler" tags="" position="1764.3333333333335,3300.833333333333" size="100,100">Панч разгоняет окружающие уши и позволяет тебе приблизиться к себе. Твой жаркий шепот в его уши вещает о различных преступлениях, которые члены команды Мопсов злоумышляют против короны. Чем больше возмутительных подробностей ты выдумываешь на ходу, тем больше хмурится его лицо.
+]</tw-passagedata><tw-passagedata pid="176" name="check canzler" tags="" position="1764.3333333333335,3300.833333333333" size="100,100">Панч разгоняет окружающие уши и позволяет тебе приблизиться к себе. Твой жаркий шепот в его уши вещает о различных преступлениях, которые члены команды Мопсов злоумышляют против короны. Чем больше возмутительных подробностей ты выдумываешь на ходу, тем больше хмурится его лицо.
 &quot;И собираются разбить все статуи Великой Бороды, а на них месте водрузить мерзкого моромонского Гобера&quot;.
 Начальник стражи, Гуд Гай, ждет сигнала. Взмах колючих ресниц короля - и он приказывает арестовать канцлера. Стас и не думает сопротивляться.
 - Заговорщики будут допрошены после игры. Если вела тебя одна любовь к моему величеству, то ты совершил великое дело, молодой человек. Но знай, если навет это черный..даже распятый в прошлом году на базарной площади БигБостон позавидует твоей участи.
@@ -6246,7 +6333,7 @@ tw-passage{text-align: center;
     text-decoration: none;
   }
 &lt;/style&gt;
-</tw-passagedata><tw-passagedata pid="178" name="check canzler g" tags="" position="1592.6666666666667,3294.1666666666665" size="100,100">
+</tw-passagedata><tw-passagedata pid="177" name="check canzler g" tags="" position="1592.6666666666667,3294.1666666666665" size="100,100">
 
 - Да вы что, сговорились!
 Король раздраженно бранится. Тем не менее, он останавливает стражу, на рефлексах бросившуюся хватать тебя и вязать.
@@ -6279,7 +6366,7 @@ tw-passage{text-align: center;
     color: orange;
     text-decoration: none;
   }
-  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="179" name="cry check g" tags="" position="1389.6666666666667,3140.8333333333335" size="100,100">Панч разгоняет окружающие уши и позволяет тебе приблизиться к себе. Начальник стражи Гуд Гай косится на тебя с подозрением, но подчиняется своему владыке. Твой жаркий шепот в его уши вещает о различных преступлениях, которые члены команды Мопсов злоумышляют против короны.
+  &lt;/style&gt;</tw-passagedata><tw-passagedata pid="178" name="cry check g" tags="" position="1389.6666666666667,3140.8333333333335" size="100,100">Панч разгоняет окружающие уши и позволяет тебе приблизиться к себе. Начальник стражи Гуд Гай косится на тебя с подозрением, но подчиняется своему владыке. Твой жаркий шепот в его уши вещает о различных преступлениях, которые члены команды Мопсов злоумышляют против короны.
 - Этого достаточно, мой друг. А теперь иди, и покажи мощь и стать Артемии. Да будет с тобой благословение Великой Бороды.
 {(set: $cry to true)}
 
@@ -6304,7 +6391,7 @@ tw-passage{text-align: center;
   }
 &lt;/style&gt;
 
-</tw-passagedata><tw-passagedata pid="180" name="d3versus star" tags="" position="1257.3333333333333,4579.5" size="100,100">{(set: _TOscore to $score)}
+</tw-passagedata><tw-passagedata pid="179" name="d3versus star" tags="" position="1257.3333333333333,4579.5" size="100,100">{(set: _TOscore to $score)}
 (if: $perk2 is &quot;Карманник&quot; and $agile &gt;=17 and $intel &gt;=17) [(set: $score to it+(either: 0,0,2,2))(Карманник) $enemy рвет к кольцу, получает мяч и огромными прыжками преодолевает расстояние. Вы пытаетесь шлепнуть по мячу - и не попасть по руке...
 (if: $score &lt;=_TOscore)[Успешный перехват!
 [[Мяч у нас-&gt;4poss]] ]
@@ -6354,7 +6441,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="181" name="d3 versus guard" tags="" position="1388.9999999999998,4541.166666666667" size="100,100">{(set: _TOscore to $score)}
+]</tw-passagedata><tw-passagedata pid="180" name="d3 versus guard" tags="" position="1388.9999999999998,4541.166666666667" size="100,100">{(set: _TOscore to $score)}
 (if: $perk2 is &quot;Карманник&quot; and $agile &gt;=17 and $intel &gt;=17) [(set: $score to it+(either: 0,0,0,2,1))(Карманник) Сашка оказывается вовсе не шутером, а хитрожопым типом, который пытается поймать тебя на ложный замах. Вместо этого ты выбиваешь мяч из его рук и тут же прибираешь снаряд себе...
 (if: $score &lt;=_TOscore)[Успешный перехват!
 [[Мяч у нас-&gt;4poss]] ]
@@ -6404,7 +6491,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="182" name="d3 triangle" tags="" position="1517.3333333333335,4542.833333333333" size="100,100">{(set: _TOscore to $score)}
+]</tw-passagedata><tw-passagedata pid="181" name="d3 triangle" tags="" position="1517.3333333333335,4542.833333333333" size="100,100">{(set: _TOscore to $score)}
 (if: $agile &gt;=16 and $intel &gt;=17) [(set: $score to it+(either: 0,0,3,0,0))(Интеллект) $enemy бежит к кольцу, Сашка замахивается со средней - а вы несетесь к линии. Вы прибываете туда одновременно с Гошей Демурия, который получает заветную передачу. Вы взмываете вверх, полностью перекрывая ему обзор, но Гоша все равно бросает...
 
 (if: $score &lt;=_TOscore)[Мяч прилетает прямо в руки вашего игрока.
@@ -6455,7 +6542,7 @@ $enemy бежит к кольцу, Сашка замахивается со ср
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="183" name="d3 pike position" tags="" position="1060.6666666666665,4349.5" size="100,100">(set: _TOscore to $score)
+]</tw-passagedata><tw-passagedata pid="182" name="d3 pike position" tags="" position="1060.6666666666665,4349.5" size="100,100">(set: _TOscore to $score)
 (if: $tPerks&#39;s 3rd is &quot;ОУКБ&quot; or &quot;Ростов-папа&quot;)[(set: $score to it+(either: 0,2,0,2,0,0))((print: $tPerks&#39;s 3rd)) (print: $team&#39;s 4rd) включается на $enemyа и упорно держится рядом. Когда Сашка пытается оттеснить его щитом, (print: $team&#39;s 4rd) могучим плечом в грудь отбивает желание на такое фокусы. $enemy не удается сбить с хвоста погоню, и он совершает сложный бросок...
 (if: $score &lt;=_TOscore)[Промах! (print: $team&#39;s 5rd) надежно забирает подбор.
 [[Мяч переходит к нам -&gt;4poss]]]
@@ -6500,7 +6587,7 @@ $enemy бежит к кольцу, Сашка замахивается со ср
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="184" name="d3 pike gober" tags="" position="1055.6666666666665,4476.166666666667" size="100,100">Ты становишься на полпути между Стасом Мельковы и кольцом, готовый реагировать в зависимости от ситуации. После провала других защитников, $enemy оказывается один и набирает ход.
+]</tw-passagedata><tw-passagedata pid="183" name="d3 pike gober" tags="" position="1055.6666666666665,4476.166666666667" size="100,100">Ты становишься на полпути между Стасом Мельковы и кольцом, готовый реагировать в зависимости от ситуации. После провала других защитников, $enemy оказывается один и набирает ход.
 
 [[Успею флопнуться на его пути. Борода, дай мне сил! -&gt;d3 pike versus star]]
 
@@ -6530,7 +6617,7 @@ $enemy бежит к кольцу, Сашка замахивается со ср
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="185" name="d3 pike versus star" tags="" position="900.6666666666665,4697.833333333334" size="100,100">{(set: _TOscore to $score)}
+]</tw-passagedata><tw-passagedata pid="184" name="d3 pike versus star" tags="" position="900.6666666666665,4697.833333333334" size="100,100">{(set: _TOscore to $score)}
 (if: $agile &gt;=16 and $intel &gt;=15) [(set: $score to it+(either: 2,1,0,0,0))Вы на долю секунды раньше $emenyа вбегаете в краску и занимате защитную позу. Он сносит вас без вариантов, хоть вы тоже придали красоты своему падени.. Следует свисток. Теперь осталось узнать - кому...
 (if: $score &lt;=_TOscore)[Судьи выписывают фол в нападении противнику!
 
@@ -6563,7 +6650,7 @@ $enemy бежит к кольцу, Сашка замахивается со ср
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="186" name="d3 pike versus guard" tags="" position="1029,4697.833333333333" size="100,100">{(set: _TOscore to $score)}
+]</tw-passagedata><tw-passagedata pid="185" name="d3 pike versus guard" tags="" position="1029,4697.833333333333" size="100,100">{(set: _TOscore to $score)}
 (if: $perk2 is &quot;Карманник&quot; and $agile &gt;=17 and $intel &gt;=17) [(set: $score to it+(either: 0,0,2,2))(Карманник) $enemy рвет к кольцу, получает мяч и огромными прыжками преодолевает расстояние. Вы пытаетесь шлепнуть по мячу - и не попасть по руке...
 (if: $score &lt;=_TOscore)[Успешный перехват!
 [[Мяч у нас-&gt;4poss]] ]
@@ -6613,7 +6700,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="187" name="d3 pike triangle" tags="" position="1175.6666666666665,4699.5" size="100,100">{(set: _TOscore to $rscore)}
+]</tw-passagedata><tw-passagedata pid="186" name="d3 pike triangle" tags="" position="1175.6666666666665,4699.5" size="100,100">{(set: _TOscore to $rscore)}
 (if: $perk2 is &quot;Карманник&quot; and $intel &gt;=14) [(set: $score to it+(either: 0,2,0,0,0))(Карманник) Ты напрыгиваешь на $enemy и он немедленно пасует Стасу. Но на самом деле ты тоже возвращаешься к Мелькову, поэтому когда рядом свистит мяч, твои ворованные руки бездумно хватаются за него. Весь секрет в том, чтобы удержать отнятое при себе...
 
 (if: $score &lt;=_TOscore)[Ты не даешь отобрать у себя мяч. 
@@ -6664,7 +6751,10 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="188" name="a4 ap tempo" tags="" position="1885.6666666666667,4696.166666666666" size="100,100">Ты собираешься отдать пас.
+]</tw-passagedata><tw-passagedata pid="187" name="a4 ap tempo" tags="" position="1885.6666666666667,4696.166666666666" size="100,100">(set: $team to (&quot;Вася&quot;, &quot;Вася&quot;, &quot;Вася&quot;, &quot;Вася&quot;))
+
+
+Ты собираешься отдать пас.
 
 [[На врыв под кольцо-&gt;a4 ap hoop]]
 [[На быстрый трехочковый-&gt;a4 ap 3pt]]
@@ -6691,7 +6781,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="189" name="a4 ap self" tags="" position="1874,4834.5" size="100,100">Что ты предпринимаешь?
+]</tw-passagedata><tw-passagedata pid="188" name="a4 ap self" tags="" position="1874,4834.5" size="100,100">Что ты предпринимаешь?
 
 [[Молнией атакую их кольцо-&gt;a4 ap coast]]
 [[Неспешная осада-&gt;attack4 post iso]]
@@ -6719,7 +6809,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="190" name="a4 ap per" tags="" position="1875.6666666666667,4957.833333333333" size="100,100">Вы доводите мяч до дуги. Ваши партнеры по команде нагове.
+]</tw-passagedata><tw-passagedata pid="189" name="a4 ap per" tags="" position="1875.6666666666667,4957.833333333333" size="100,100">Вы доводите мяч до дуги. Ваши партнеры по команде нагове.
 
 [[Дать шанс отличиться своим парням-&gt;attack4 style ap 3pt pas]]
 [[Нарисовать комбинацию под себя-&gt;attack4 style ap 3pt combo]] 
@@ -6747,7 +6837,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="191" name="a4 ap hoop" tags="" position="1429.0000000000002,4762.833333333332" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="190" name="a4 ap hoop" tags="" position="1429.0000000000002,4762.833333333332" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk2 is &quot;Пас из ниоткуда&quot; and $power &gt;=15)[(set: $ourscore to it+(either: 2,2,0,2))(Пас из ниоткуда)(print: $team&#39;s 4rd) обегает Арта, и в этот момент ему в руки прилетает посланный тобой издалека мяч...
 (if: $ourscore &gt; _TOscore)[Могучий данк заставляет трепыхать кольцо и Арта. 2 очка!
 
@@ -6807,7 +6897,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="192" name="a4 ap 3pt" tags="" position="1680.6666666666667,4756.166666666667" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="191" name="a4 ap 3pt" tags="" position="1680.6666666666667,4756.166666666667" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $intel &gt;=17 and $agile &gt;=17)[(set: $ourscore to it+(either: 3,0,3,0))Ты предпочитаешь отправить мяч другому игроку, набегающему следом. (print: $team&#39;s 3rd) получает мяч, резко останавливается и за палец до дуги взмывает в воздух. Бросок...
 (if: $ourscore &gt;_TOscore)[Успех!
 
@@ -6848,7 +6938,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="193" name="a4 ap lob" tags="" position="1552.3333333333333,4751.166666666666" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="192" name="a4 ap lob" tags="" position="1552.3333333333333,4751.166666666666" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk2 is &quot;Пас из ниоткуда&quot; and $agile &gt;=17)[(set: $ourscore to it+(either: 2,2,3,2,2))(Пас из ниоткуда)(print: $team&#39;s 4rd) пронзает зону Мопсов и взлетает над головой Арта. Ему в руки прилетает посланный тобой мяч...
 (if: $ourscore - _TOscore == 2)[Могучий данк заставляет трепыхать кольцо и Арта. 2 очка!
 
@@ -6905,7 +6995,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="194" name="a4 ap coast" tags="" position="1309.0000000000002,4922.833333333332" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="193" name="a4 ap coast" tags="" position="1309.0000000000002,4922.833333333332" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Данчич&quot; and $power &gt;=17 and $agile &gt;=17) [(set: $ourscore to it +2)(Данчич) Вы выпущенной стрелой пронзаете поле, разбрасывая грязь во все стороны, и оказываетесь в чужой штрафной. Навстречу подворачивается бедный Стас Мелков, пытающийся вспомнить положение для чарджа. С диким криком вы вонзаете пальцы ему в волосы, отталкиваетесь от макушки и, преодолевая крики Стаса и тяготение, вгоняете мяч  в корзину по самую сетку. ХАММЕР ДАУН!!!!
 
 [[Владение переходит к противнику-&gt;4poss opp]]]
@@ -6946,7 +7036,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="195" name="a4 ap kick" tags="" position="1502.3333333333335,4917.833333333333" size="100,100">Ты собираешь на себе двух защитников и, извернувшись, отправляешь мяч на дугу.
+]</tw-passagedata><tw-passagedata pid="194" name="a4 ap kick" tags="" position="1502.3333333333335,4917.833333333333" size="100,100">Ты собираешь на себе двух защитников и, извернувшись, отправляешь мяч на дугу.
 {(set: _TOscore to $ourscore)}
 (if: $intel &gt;=17 and $agile &gt;=17)[(set: $ourscore to it+(either: 3,0,3,0)) (print: $team&#39;s 3rd) получает мяч, резко останавливается и взмывает в воздух. Бросок...
 (if: $ourscore &gt;_TOscore)[Успех!
@@ -6988,7 +7078,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="196" name="a4 ap 3pt self" tags="" position="1714,4924.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="195" name="a4 ap 3pt self" tags="" position="1714,4924.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Шальная Треха&quot; and $power &gt;=15 and $agile &gt;=16)[(set: $ourscore to it+(either: 3,0,3)) Вы добегаете до дуги и шмаляете. Как вы где-то читали, главное - не передерживать мяч...
 (if: $ourscore &gt;_TOscore)[Успех!
 
@@ -7048,7 +7138,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="197" name="attack4 style ap passiv" tags="" position="1309.0000000000002,5072.833333333332" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="196" name="attack4 style ap passiv" tags="" position="1309.0000000000002,5072.833333333332" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $intel &gt;=17 and $agile &gt;=17)[(set: $ourscore to it+(either: 2,2,2,0))Ты предпочитаешь отправить мяч другому игроку, набегающему следом. (print: $team&#39;s 3rd) получает мяч, резко останавливается и взмывает в воздух. Бросок...
 (if: $ourscore &gt;_TOscore)[Успех!
 
@@ -7089,7 +7179,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="198" name="attack4 style ap 3pt pas" tags="" position="1725.6666666666667,5107.833333333333" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="197" name="attack4 style ap 3pt pas" tags="" position="1725.6666666666667,5107.833333333333" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $intel &gt;=17 and $agile &gt;=17)[(set: $ourscore to it+(either: 3,0,3,0))Ты переводишь мяч другому игроку, набегающему следом. (print: $team&#39;s 3rd) получает мяч, резко останавливается и за палец до дуги взмывает в воздух. Бросок...
 (if: $ourscore &gt;_TOscore)[Успех!
 
@@ -7130,7 +7220,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="199" name="attack4 style ap 3pt combo" tags="" position="1875.6666666666667,5107.833333333333" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="198" name="attack4 style ap 3pt combo" tags="" position="1875.6666666666667,5107.833333333333" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $power is &gt;=15 and $agile &gt;=18)[(set: $ourscore to it+(either: 3,0,2,3)) Вы и (print: $team&#39;s 5rd) устремляетесь на встречу друг другу. Он врезается в вашего опекуна, пока его собственный опонент не может выбрать сторону с которой обежать широкую задницу $sideа. Заветный пустой угол, вы почти на линии, (print: $team&#39;s 3rd) мигом находит вас передачей, прыжок, бросок...
 (if: $ourscore &gt;_TOscore)[Успех!
 
@@ -7177,7 +7267,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="200" name="toothpaste" tags="" position="167.66666666666663,1261.5" size="100,100">(if: visits is &gt;=2)
+]</tw-passagedata><tw-passagedata pid="199" name="toothpaste" tags="" position="167.66666666666663,1261.5" size="100,100">(if: visits is &gt;=2)
 [Ты задумался еще раз. Да к черту эти новомодные штучки!
 [[Пойти спать|Резиденция]]]
 (else:)[
@@ -7212,7 +7302,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
     color: orange;
     text-decoration: none;
   }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="201" name="Стража" tags="" position="130,1109.8333333333333" size="100,100">На твои крики врывается закованный в броню хлопец. Оценив ситуацию, он просит тебя покинуть помещение. &quot;Надо с тараканами разобраться&quot; - как объясняет стражник.
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="200" name="Стража" tags="" position="130,1109.8333333333333" size="100,100">На твои крики врывается закованный в броню хлопец. Оценив ситуацию, он просит тебя покинуть помещение. &quot;Надо с тараканами разобраться&quot; - как объясняет стражник.
 
 Судя по всему тараканы попадаются живучие. Только через час к тебе приходит начальник стражи Гуд Гай в своей неизменной кольжужной балаклаве и с мечом Истинное пламя на перевязи.
 
@@ -7240,7 +7330,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
     color: orange;
     text-decoration: none;
   }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="202" name="Встреча с Андрюхой" tags="" position="2.6666666666666075,1359.8333333333333" size="100,100">На ободок сортира плюхается грязная рука, следом за ней вторая. С помощью Бороды и чьей-то матери, руки вытягивают своего обладателя по пояс. Это бородатый и, разумеется, очень грязный человек в мантии. Он переваливается через бортик и полностью оказывается в комнате. 
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="201" name="Встреча с Андрюхой" tags="" position="2.6666666666666075,1359.8333333333333" size="100,100">На ободок сортира плюхается грязная рука, следом за ней вторая. С помощью Бороды и чьей-то матери, руки вытягивают своего обладателя по пояс. Это бородатый и, разумеется, очень грязный человек в мантии. Он переваливается через бортик и полностью оказывается в комнате. 
 Вслед за ним появляется грязный, но вроде бы значительно более молодой человек. Он же первым замечает тебя и зависает в позе. Как минимум он силен.
 
 - Привет, - очень нежным, почти воркочущим голосом, обращается к тебе бородач.
@@ -7268,7 +7358,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
     color: orange;
     text-decoration: none;
   }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="203" name="Клык" tags="" position="0,1504.8333333333333" size="100,100">Размахивая ножом ты загоняешь пришельцев обратно в сортир. Противник позорно, но крайне ловко отступает. Смачные звуки шлепания из темноты подсказывают, что враг уходит по столь сколзьким местам, что ни одна собака не возьмет их след. Из мер предосторожности ты накрываешь дыру крышкой и вбиваешь Клык так, чтобы сдвинуть ее было невозможно.
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="202" name="Клык" tags="" position="0,1504.8333333333333" size="100,100">Размахивая ножом ты загоняешь пришельцев обратно в сортир. Противник позорно, но крайне ловко отступает. Смачные звуки шлепания из темноты подсказывают, что враг уходит по столь сколзьким местам, что ни одна собака не возьмет их след. Из мер предосторожности ты накрываешь дыру крышкой и вбиваешь Клык так, чтобы сдвинуть ее было невозможно.
 
 Чтобы это не было - ты жив  и победил. 
 
@@ -7293,7 +7383,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
     color: orange;
     text-decoration: none;
   }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="204" name="Разговор с Андреем" tags="" position="170,1384.8333333333333" size="100,100">Ты показываешь нарушителям покоя, что они могут продолжить свою речь.
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="203" name="Разговор с Андреем" tags="" position="170,1384.8333333333333" size="100,100">Ты показываешь нарушителям покоя, что они могут продолжить свою речь.
 Бородач сообщает, что он Андрей, купец из Броваров. Его товарища зовут Иван, он сын кузнеца. 
 - Заблудились мы, господин.
 Ты неплохо знаешь этот гнусный клочок земли, полный некромантов, скверны и украденного повелителем Броваров у других имущества. История Андрея имеет мало смысла, и только в этм смысле похожа на правду.
@@ -7323,7 +7413,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
     text-decoration: none;
   }
 &lt;/style&gt;
-</tw-passagedata><tw-passagedata pid="205" name="Друг некроманта" tags="" position="51.66666666666666,1656.5" size="100,100">Ты спрашиваешь, что им собственно нужно. Ночные визитеры просят выпустить их в корридор, а дальше они сами разберутся.
+</tw-passagedata><tw-passagedata pid="204" name="Друг некроманта" tags="" position="51.66666666666666,1656.5" size="100,100">Ты спрашиваешь, что им собственно нужно. Ночные визитеры просят выпустить их в корридор, а дальше они сами разберутся.
 
 -Ребята, называйте меня доверчивым, но я лично вас до ворот провожу, чтобы вас из замка выпустили. Но учтите, если вы еще раз &quot;заплутаете&quot; - я буду первым, кто отведет вас на висилицу. Совершать больше одной глупости за ночь мне не позволяет обещание, данное покойному батюшке.
 
@@ -7353,34 +7443,166 @@ $enemy рвет к кольцу, получает мяч и огромными �
     color: orange;
     text-decoration: none;
   }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="206" name="битва с Абакой" tags="" position="228,2871.8333333333335" size="100,100">(print: $team&#39;s 5th) своим гигантским молотом сносит ближайшего телохранителя Абаки. Вы оказываетесь один на один.
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="205" name="битва с Абакой" tags="" position="228,2871.8333333333335" size="100,100">(print: $team&#39;s 5th) своим гигантским молотом сносит ближайшего телохранителя Абаки. Вы оказываетесь один на один.
 
-[[Надавать по щщам-&gt;Абака щит]]
-[[Припомнить все грешки Абаки-&gt;Абака грех]]</tw-passagedata><tw-passagedata pid="207" name="Абака щит" tags="" position="153,3021.8333333333335" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="208" name="Абака грех" tags="" position="384.6666666666667,2890.166666666667" size="100,100">Сабля Сержа слегка задевает твою рубашку, оставляя слабый порез.
+[[Припомнить все грешки Абаки-&gt;Абака грех]]
+
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="206" name="Абака грех" tags="" position="384.6666666666667,2890.166666666667" size="100,100">Сабля Сержа слегка задевает твою рубашку, оставляя слабый порез.
 
 - Очень неглубоко! - ты смеешься и делаешь ответный выпад. Серхио отпрыгивает и теряет равновесие, подскользнувшись на внутренностях разможенной грудной клетки телохранителя.
-- Ты скользкий тип!
+- Ну и скользкий тип!
 Сергей в отчаянии бросает в тебя сгусток того, что оказывается под рукой. Ты легко отбиваешь шматок кровоточащей плоти.
-- Одна вода!
-Но Абаев не так прост, он подскакивает и пытаеся сразить тебя тем же выпадом, что ты применил в его сторону. Но так как это твой выпад, тебе удается защититься.
-- Только и можешь, что копировать!
+- Одна вода.
+Но Абаев не так прост: он подскакивает и пытаеся сразить тебя тем же выпадом, что ты применил в его сторону. Правда, так как это твой выпад, ты знаешь и как защититься.
+- Только и можешь, что копировать.
 
 [[Хватит играть с самозванным героем. Прикончить выскочку-&gt;Абака смерть]]
-[[Обеззоружить молодого. Еще есть время перевоспитать-&gt;Абака поражение]]</tw-passagedata><tw-passagedata pid="209" name="Абака смерть" tags="" position="393,3026.8333333333335" size="100,100">Подловив Сергея на очередной запальной, но не продуманной атаке, ты оказываешься у него за спиной. Безжалостный сильный рубящий удар - и Абака совсем теряет голову.
+
+[[Обеззоружить молодого. Еще есть возможность перевоспитать-&gt;Абака поражение]]
+
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="207" name="Абака смерть" tags="" position="393,3026.8333333333335" size="100,100">Подловив Сергея на очередной запальной, но не продуманной атаке, ты оказываешься у него за спиной. Безжалостный сильный рубящий удар - и Абака совсем теряет голову.
 
 [[Кто там следующий?!!-&gt;Сошников]]
-(set: $abaka to  &quot;dead&quot;)</tw-passagedata><tw-passagedata pid="210" name="Абака поражение" tags="" position="586.3333333333334,3026.8333333333335" size="100,100">Подловив Сергея на очередной запальной, но не продуманной атаке, ты оказываешься у него за спиной. Безжалостный сильный поджопник - и Абака оказывается в грязи. Ты приказываешь скрутить проспекта.
+(set: $abaka to  &quot;dead&quot;)
+
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="208" name="Абака поражение" tags="" position="626.3333333333334,3030.166666666667" size="100,100">Подловив Сергея на очередной запальной, но не продуманной атаке, ты оказываешься у него за спиной. Безжалостный сильный поджопник - и Абака оказывается в грязи. Ты приказываешь скрутить проспекта.
 
 [[Кто там следующий?!!-&gt;Сошников]]
-(set: $abaka to  &quot;defeat&quot;)</tw-passagedata><tw-passagedata pid="211" name="Сошников" tags="" position="393,3176.8333333333335" size="100,100">Легион Сошникова теснит последних стражников, сплотившихся вокруг своего короля. Сам Панч яростно сражается, размахивая огромной булавой. Твой отряд как заноза вошел во флаг войск Пятерни и пробился к офицерам. Сейчас вас либо сметут, либо ты сможешь обезглавить противника.
+(set: $abaka to  &quot;defeat&quot;)
+
+
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="209" name="Сошников" tags="" position="393,3176.8333333333335" size="100,100">Легион Сошникова теснит последних стражников, сплотившихся вокруг своего короля. Сам Панч яростно сражается, размахивая огромной булавой. Твой отряд как заноза вошел во флаг войск Пятерни и пробился к офицерам. Сейчас вас либо сметут, либо ты сможешь обезглавить противника.
 Герцог Сошников, оценив серьезность ситуации, предпочитает не рисковать и отходит в глубь своих позиций, бросив на тебя личную охрану.
+{(if: $versus is &quot;et_2&quot; or &quot;et_3&quot; or &quot;ei_2&quot; or &quot;ei_3&quot;)[
+[[Сразиться с приспешниками Соша-&gt;support ekb]]]
+(else-if: $versus is &quot;kt_2&quot; or &quot;kt_3&quot; or &quot;кi_2&quot; or &quot;кi_3&quot;)[
+[[Сразиться с приспешниками Соша-&gt;support kaz]]]}
+(else:)[
+[[Сразиться с приспешниками Соша-&gt;Битва комментариев]]]
 
-[[Сразиться с приспешниками Соша-&gt;Битва комментариев]]</tw-passagedata><tw-passagedata pid="212" name="Битва комментариев" tags="" position="393,3326.8333333333335" size="100,100">Вы сталкиваетесь у разгромленной судейской кабинки, посреди разбросанных протоколов и комментариев.
+
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="210" name="Битва комментариев" tags="" position="393,3326.8333333333335" size="100,100">Вы сталкиваетесь у разгромленной судейской кабинки, посреди разбросанных протоколов и комментариев.
 Твои воины немногочислены, но хорошо подготовлены. Легионеры Сошникова неистово орут и ругаются, зато их значительно больше.
 
 [[Я беру сотню слева, мои ребята сотню справа-&gt;hero]]
-[[Оставить ребят держать удар и броситься в погоню за Сошниковым-&gt;Сошников битва]]
-[[Отступить-&gt;good defeat]]</tw-passagedata><tw-passagedata pid="213" name="hero" tags="" position="243,3476.8333333333335" size="100,100">(if: $necro is &quot;enemy&quot;)[
+[[Оставить ребят держать удар и броситься в погоню за Сошниковым-&gt;Сошников битва бросил ребят]]
+[[Отступить-&gt;good defeat]]
+
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="211" name="hero" tags="" position="243,3476.8333333333335" size="100,100">(if: $necro is &quot;enemy&quot;)[
 Вас теснят. Вы славно сражаетесь, но силы противника неисчислимы. Падает товарищ, падает легионер. Ты упускаешь взмах клинка сбоку и даже не успеваешь зажмуриться...
 Рука другого легионера в латной перчатке крепко держит лезвие прямо перед твоим лицом. Ты переводишь на него взгляд - на мертвом, раскроенном твоим собственным оружием несколько мгновений назад лице застыло выражение безразличия. Но руки его так же сильны. Или даже сильнее. Одним ударом он протыкает атакующего тебя - и извлекает наружу бюьщееся сердце.
 
@@ -7399,7 +7621,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 Тут и там павшие легионеры начинают вставать, чтобы напасть на собственных живых товарищей. Поле комментариев наполняет стоны ужаса. Но ваших воинов нежить не трогает.
 
 Откуда-то в голове тебе доносится мысль. &quot;Не успел сказать при расставании, но мой отец говорил, что долг платежом красен&quot;.
-
+(set: $battle to &quot;fv&quot;)
 [[Разбираться будет потом.Появилась возможность догнать Соша!-&gt;Сошников битва]]
 ]
 
@@ -7413,18 +7635,84 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (else:)[
 Вас теснят. Вы славно сражаетесь, но силы противника неисчислимы. Падает $side. Падают твои товарищи. Отчаяние, бессилие, страх. Так выглядит смерть в Артемии..
 Еще один удар опрокидывает тебя. Последний момент ужаса - и все твои мучения закончены.
-[[Конец игры-&gt;Results]] 
+[[Ползти, пригнув голову, спасая свою жизнь-&gt;bad defeat]] 
 ]
 ]
-</tw-passagedata><tw-passagedata pid="214" name="Сошников битва" tags="" position="393,3476.8333333333335" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="215" name="good defeat" tags="" position="621.3333333333334,3281.8333333333335" size="100,100">Ты отводишь своих парней. За этот день ты привязался к ним больше, чем к Панчу за предыдущую жизнь.
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="212" name="Сошников битва" tags="" position="393,3671.8333333333335" size="100,100">- Стой, позорник! На этот раз тебе придется ответить за все!
+
+Герцог медленно неохотно поворачивается. Пред тобой предстает обычное лицо, прикрытое выятнутой каской со сплющенными краями. Удивительно, что этот человек считался таким неуловимым.
+
+Его охранники нацеливают на тебя длиные пики. Но Игорь останавливает их.
+- Я сам. 
+
+Сошников делает шаг вперед и извлекает клинок. Держит он его вполне уверенно. Символично или нет, но тут же валяется мяч, каким-то чудом прикатившийя с поля.
+
+[[Скрестить клинки с проклятым Сошниковым-&gt;Сош дуэль]]
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="213" name="good defeat" tags="" position="636.3333333333334,3260.166666666667" size="100,100">Ты отводишь своих парней. За этот день ты привязался к ним больше, чем к Панчу за предыдущую жизнь.
 
 Вариантов осталось немного. Попробовать скрыться - или приветствовать новых правителей Артемии
 
-[[Что ж, Панч, приятно было познакомиться, но пора сваливать? попробовать скрыться-&gt;run]]
+[[Что ж, Панч, приятно было познакомиться, но пора сваливать! (попробовать скрыться)-&gt; Zefirend]]
 
-[[Cдаться на милость победителя-&gt;bulat_king]]
+[[Cдаться на милость победителя-&gt;bulat king]]
 
-</tw-passagedata><tw-passagedata pid="216" name="bulat_king" tags="" position="621.3333333333334,3431.8333333333335" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="217" name="attack4 style post other" tags="" position="2640.6666666666665,4706.166666666666" size="100,100">{(set: _TOscore to $ourscore)}
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="214" name="bulat king" tags="" position="839.6666666666667,3506.8333333333335" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="215" name="attack4 style post other" tags="" position="2640.6666666666665,4706.166666666666" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $tPerks&#39;s 3rd is &quot;Дюймовочка&quot;)[(set: $ourscore to it+(either: 2,2,0,2))((print: $tPerks&#39;s 3rd)) (print: $team&#39;s 4rd) уделывает Гошу на первом шаге и мчится к кольцу. Арт спешно бросает своего игрока и пытаеся размазать угрозу своими медвежими лапами. (print: $team&#39;s 4rd) ухитряется не получить по голове - и из под плеча Арта бросить мяч в корзину...
 (if: $ourscore &gt;_TOscore)[Успех!
 [[Владение переходит к противнику-&gt;4poss opp]]]
@@ -7446,7 +7734,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (else:)
 [Промах!
 [[Владение переходит к противнику-&gt;4poss opp]]
-]]</tw-passagedata><tw-passagedata pid="218" name="attack4 post iso" tags="" position="2700.6666666666665,4994.5" size="100,100">{(set: _TOscore to $ourscore)}
+]]</tw-passagedata><tw-passagedata pid="216" name="attack4 post iso" tags="" position="2700.6666666666665,4994.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: perk1 is &quot;Стальная задница&quot; and $power &gt;=15)[(set: $ourscore to it+(either: 2,2,0,2,2)) (print: $team&#39;s 4rd) меняется с тобой соперниками и утаскивает за собой Cашку. Ты проталкиваешь Гошу под кольцо. Теряя позицию, он пытается выбить у тебя мяч. Этот момент ты используешь для прыжка - и пуляешь прямо в щиток...
 
 (if: $ourscore &gt;_TOscore)[Точный расчет угла приносит два очка!
@@ -7500,7 +7788,7 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="219" name="at4 roll" tags="" position="2882.333333333333,4877.833333333334" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="217" name="at4 roll" tags="" position="2882.333333333333,4877.833333333334" size="100,100">{(set: _TOscore to $ourscore)}
 (if: perk2 is &quot;Пас из ниоткуда&quot; and $agile &gt;=15)[(set: $ourscore to it+(either: 3,2,0,0,3))(Пас из ниоткуда) (print: $team&#39;s 4rd) и $side образуют затор в углу площадки. Ты резко убегаешь в другую сторону, и защита зевает. На середине своего маневра, ты снова меняешь направление - чтобы нацелиться на кольцо. Арт спешно занимает позицию и выставляет руки. Но ты не собираешься доверять судьям: (print: $team&#39;s 3rd) получает пас в районе дуги. Он сразу бросает... 
 
 (if: $ourscore &gt;_TOscore)[Точное попадание!
@@ -7563,34 +7851,37 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="220" name="clutch tox" tags="" position="505.9999999999998,5422.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="218" name="clutch tox" tags="" position="505.9999999999998,5422.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: $perk1 is &quot;Данчич&quot; and $agile &gt;=18 )[(set: $ourscore to it+(either: 2,2,0,2))(Данчич) Вы тараните кольцо, c повисшими на плечах Мопсами. Вы слишком быстрый, чтобы они успели отобрать мяч. Вопрос только в том, сломаете вы корзину - или все свое тело. Отчанный прыжок, выше столба, выше поля...
 
 (if: $ourscore &gt;_TOscore)[Точное попадание! Это победа!!! ПОБЕДА!!!
-
+(set: $game to &quot;v&quot;)
 [[Принять заслуженные комплименты-&gt;Strike]]]
 (else:)
 [ПРОМАХ! Последний свисток ознаменовал крушение всех ваших сил и надежд.
+(set: $game to &quot;v&quot;)
 [[Вытерпеть позор-&gt;Strike]]
 ]]
 
 (else-if: $perk1 is &quot;Стальная задница&quot; and $power &gt;=17)[(set: $ourscore to it+(either: 2,0,2,2)) (Стальная задница)Вы тараните кольцо, c повисшими на плечах Мопсами. Вы слишком разогнались, и они отлетают от вас как брызги. $enemy готовится пожертвовать собой, но остановить вас. Когда он пытается свалиться под ваши ноги, вы мощнейшим движением бедер закручиваетя себя в маленький ураган, проноситесь мимо него - и подлетаете к кольцу...   
 
 (if: $ourscore &gt;_TOscore)[Точное попадание! Это победа!!! ПОБЕДА!!!
-
+(set: $game to &quot;v&quot;)
 [[Принять заслуженные комплименты-&gt;Strike]]]
 (else:)
 [ПРОМАХ! Последний свисток ознаменовал крушение всех ваших сил и надежд.
+(set: $game to &quot;l&quot;)
 [[Вытерпеть позор-&gt;Strike]]
 ]]
 
 (else:)[(set: $ourscore to it+(either: 2,0,0,0))Вы тараните кольцо, c повисшими на плечах Мопсами. Вы слишком разогнались, и они отлетают от вас как брызги. $enemy готовится пожертвовать собой, но остановить вас. Удар, свисток судей. Вам дают два броска. Момент истины...
 
 (if: $ourscore &gt;_TOscore)[Два точных попадания! Это победа!!! ПОБЕДА!!!
-
+(set: $game to &quot;v&quot;)
 [[Принять заслуженные комплименты-&gt;Strike]]]
 (else:)
 [ДВА ПРОМАХА ПОДРЯД! Последний свисток ознаменовал крушение всех ваших сил и надежд.
+(set: $game to &quot;l&quot;)
 [[Вытерпеть позор-&gt;Strike]]
 ]]
 
@@ -7615,34 +7906,37 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="221" name="clutch lebron" tags="" position="655.9999999999998,5422.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="219" name="clutch lebron" tags="" position="655.9999999999998,5422.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: perk2 is &quot;Пас из ниоткуда&quot; and $agile &gt;=15 )[(set: $ourscore to it+(either: 3,3,0,3,3))(Пас из ниоткуда) Двое игроков противника пытаются остановить вас, но вы из последних сил тараните их, не давая при этом отобрать мяч. Кольцо так близко. А перед ним спешно стянувшийся $enemy, оставившмй $sideа одного на дуге. Видит Борода, тот не лучший шутер на свете. Поэтому вы кладете самый мягкий, самый удобный пас в своей жизни прямо в руки этому говнюку... 
 
 (if: $ourscore &gt;_TOscore)[Точное попадание! Это победа!!! ПОБЕДА!!!
-
+(set: $game to &quot;v&quot;)
 [[Принять заслуженные комплименты-&gt;Strike]]]
 (else:)
 [[ПРОМАХ! Последний свисток ознаменовал крушение всех ваших сил и надежд.
+(set: $game to &quot;l&quot;)
 [[Вытерпеть позор-&gt;Strike]]
 ]
 
 (else-if: $intel &gt;=17 and $agile &gt;=15 )[(set: $ourscore to it+(either: 3,0,3,0))Двое игроков противника пытаются остановить вас, но вы из последних сил тараните их, не давая при этом отобрать мяч. Кольцо так близко. А перед ним спешно стянувшийся $enemy, оставившмй $sideа одного на дуге. Видит Борода, тот не лучший шутер на свете. Поэтому вы кладете самый мягкий, самый удобный пас в своей жизни прямо в руки этому говнюку... 
 
 (if: $ourscore &gt;_TOscore)[Точное попадание! Это победа!!! ПОБЕДА!!!
-
+(set: $game to &quot;v&quot;)
 [[Принять заслуженные комплименты-&gt;Strike]]]
 (else:)
 [[ПРОМАХ! Последний свисток ознаменовал крушение всех ваших сил и надежд.
+(set: $game to &quot;l&quot;)
 [[Вытерпеть позор-&gt;Strike]]
 ]
 
 (else:)[(set: $ourscore to it+(either: 3,0,0,0))Двое игроков противника пытаются остановить вас, но вы из последних сил тараните их, не давая при этом отобрать мяч. Кольцо так близко. А перед ним спешно стянувшийся $enemy, оставившмй $sideа одного на дуге. Видит Борода, тот не лучший шутер на свете. Поэтому вы кладете самый мягкий, самый удобный пас в своей жизни прямо в руки этому говнюку... 
 
 (if: $ourscore &gt;_TOscore)[Точное попадание! Это победа!!! ПОБЕДА!!!
-
+(set: $game to &quot;v&quot;)
 [[Принять заслуженные комплименты-&gt;Strike]]]
 (else:)
 [[ПРОМАХ! Последний свисток ознаменовал крушение всех ваших сил и надежд.
+(set: $game to &quot;l&quot;)
 [[Вытерпеть позор-&gt;Strike]]
 ]
 
@@ -7667,34 +7961,37 @@ $enemy рвет к кольцу, получает мяч и огромными �
 (append: ?SideBar)[
 [[Параметры-&gt;Params]]
 [[Команда-&gt;Team]]
-]</tw-passagedata><tw-passagedata pid="222" name="clutch kobe" tags="" position="805.9999999999998,5422.5" size="100,100">{(set: _TOscore to $ourscore)}
+]</tw-passagedata><tw-passagedata pid="220" name="clutch kobe" tags="" position="805.9999999999998,5422.5" size="100,100">{(set: _TOscore to $ourscore)}
 (if: perk1 is &quot;Шальная треха&quot; and $agile &gt;=16 )[(set: $ourscore to it+(either: 3,3,0,0,3))(Шальная треха) Ваш план терпит крах, так как двое молодчиков теснят вас на дугу. Последние секунду. Чтож, они сами вас вынудили. Степбек, прыжок, бросок... 
 
 (if: $ourscore &gt;_TOscore)[Точное попадание! Это победа!!! ПОБЕДА!!!
-
+(set: $game to &quot;v&quot;)
 [[Принять заслуженные комплименты-&gt;Strike]]]
 (else:)
 [[ПРОМАХ! Последний свисток ознаменовал крушение всех ваших сил и надежд.
+(set: $game to &quot;l&quot;)
 [[Вытерпеть позор-&gt;Strike]]
 ]
 
 (else-if: $power &gt;=17 and $agile &gt;=15 )[(set: $ourscore to it+(either: 2,0,2,0))Двое игроков противника пытаются остановить вас. Вы из последних сил проскакиваете их, не давая при этом отобрать мяч. Кольцо так близко, но еще ближе $enemy. Он отлично защищается. Время уходит. Вы показываете мяч его лицу, разворачиваетесь на одной ноге, отталкиваетесь и совершаете сумасшедший бросок в отклонении...  
 
 (if: $ourscore &gt;_TOscore)[Точное попадание! Это победа!!! ПОБЕДА!!!
-
+(set: $game to &quot;v&quot;)
 [[Принять заслуженные комплименты-&gt;Strike]]]
 (else:)
 [[ПРОМАХ! Последний свисток ознаменовал крушение всех ваших сил и надежд.
+(set: $game to &quot;l&quot;)
 [[Вытерпеть позор-&gt;Strike]]
 ]
 
 (else:)[(set: $ourscore to it+(either: 2,0,0,0))Двое игроков противника пытаются остановить вас. Вы из последних сил проскакиваете их, не давая при этом отобрать мяч. Кольцо так близко, но еще ближе $enemy. Он отлично защищается. Время уходит. Вы показываете мяч его лицу, разворачиваетесь на одной ноге, отталкиваетесь и совершаете сумасшедший бросок в отклонении...
 
 (if: $ourscore &gt;_TOscore)[Точное попадание! Это победа!!! ПОБЕДА!!!
-
+(set: $game to &quot;v&quot;)
 [[Принять заслуженные комплименты-&gt;Strike]]]
 (else:)
 [[ПРОМАХ! Последний свисток ознаменовал крушение всех ваших сил и надежд.
+(set: $game to &quot;l&quot;)
 [[Вытерпеть позор-&gt;Strike]]
 ]
 
@@ -7704,6 +8001,680 @@ $enemy рвет к кольцу, получает мяч и огромными �
  &lt;style&gt;
   tw-story {
     background-image: url(&quot;https://lh3.googleusercontent.com/VRQ7eAD5IEmdxkUX8kMtSYpW1H4oqO96RIqiJvwGCMeCc-CNsyPyfvDMEzfuQqou2hfJragY0YnzZXEa4eU2PXqX1JuMTRt8fc_Uteek0wCHNibeX1pKTnERF6JAWsxZQ_CMbXEiDqhV9YoHdW3P8MBozWsqeXGBT9Y6fIZNJ-1JVJCOpbVQy5HvGla1uYnBUf3PMqS9CpzNt6hMFujEDfPn7KllfAe58lNw3DVbuStDcevk7YTl4GBIi1aKz6SpH3LbcJy0m8MDXCx7TS0c6aqoPrp4DVhlWEbp9wwzK3huTSKTCfJx-X9jI_oRZHFzxcjn_dNVitpadFPApqBkMIMix9SteOs8s_3XfXgqxQfaruFoQ_yEColx5l7BgdqvHa2ZijX3rpvF7vlctAuOfM_t3VjRqYAsy9OyATH7oqFvgNI39at31J4pu9qOwG8Fmrv6CQRFTu10MClm9psyi9xlNtM9RwhARRycbnKdNs8055dtcG-zJUBejLr86lwvx0nNuPjPMZI-x1V26X1eZMXbXs25lUu9Hm368IoY89icku3nmIJmrcGjzCl4RQGw64oFAlh1MaEwnYkm2vvglfBylpHHvQiUIVPuNITZGT8UEGyyl6rvBQCzj18Fn6ZsD8pSq05tsFnRF5mkk32KPebBxaHpzWvu7jPYLDX3XlmVQkY9y2k4ajybAaNBpQk=w1299-h674-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="221" name="support ekb" tags="" position="879.6666666666667,3125.166666666667" size="100,100">Вы сталкиваетесь у разгромленной судейской кабинки, посреди разбросанных протоколов и комментариев.
+Твои воины немногочислены, но хорошо подготовлены. Легионеры Сошникова неистово орут и ругаются, зато их ЗНАЧИТЕЛЬНО БОЛЬШЕ.
+
+Вдруг раздается грозный клич Ебуржецев. Воины маркграфа Смольникова в своих смоляных доспехах и со шприцами наперевес атакуют Легион со стороны зрителей.
+
+[[Совместными силами атаковать войска Пятицарствия-&gt;Разгром легиона]]
+[[Оставить ребят держать удар и броситься в погоню за Сошниковым-&gt;Сошников битва]]
+[[Отступить-&gt;good defeat]]
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="222" name="support kaz" tags="" position="864.6666666666667,3236.8333333333335" size="100,100">Вы сталкиваетесь у разгромленной судейской кабинки, посреди разбросанных протоколов и комментариев.
+Твои воины немногочислены, но хорошо подготовлены. Легионеры Сошникова неистово орут и ругаются, зато их ЗНАЧИТЕЛЬНО БОЛЬШЕ.
+
+Вдруг раздается грозный клич Орды. Воины хана Дидара, оседлав коней, топчут Легион. &quot;За Нур-Леброн!&quot;
+
+[[Совместными силами атаковать войска Пятицарствия-&gt;Разгром легиона]]
+[[Оставить ребят держать удар и броситься в погоню за Сошниковым-&gt;Сошников битва]]
+[[Отступить-&gt;good defeat]]
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="223" name="Разгром легиона" tags="" position="1013.0000000000001,3206.8333333333335" size="100,100">Происходит настоящая резня посреди комментариев. Грязь и кровь, ваш ор и крики врагов. 
+Вы сталкиваетесь с предводителем союзников. Он протягивают вам руку.
+- Братья по оружию, отныне и навсегда.
+
+Команда Здоровье потрепана, но все живы. Это больше, чем вы смели надеяться десять минут назад.
+
+[[Броситься в погоню за Сошниковым-&gt;Сошников битва]] 
+(set: $battle to &quot;fv&quot;)
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="224" name="bad defeat" tags="" position="611.3333333333334,3395.166666666667" size="100,100">Ты слышишь за спиной вопли своих парней. Но на сопротивление больше нет сил.
+
+Вариантов осталось немного. Попробовать скрыться - или приветствовать новых правителей Артемии
+
+[[Что ж, Панч, приятно было познакомиться, но пора сваливать! (попробовать скрыться)-&gt; Zefirend]]
+
+[[Cдаться на милость победителя-&gt;bulat king]]
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="225" name="Сошников битва бросил ребят" tags="" position="394.66666666666663,3503.5" size="100,100">Ты знаешь, что не все из них доживут до конца битвы - но выбора нет. Это война.
+
+Спина Сошникова совсем близко.
+
+[[Напасть на чемпиона Пятицарствия-&gt;Сошников битва]] 
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="226" name="Сош дуэль" tags="" position="393,3821.8333333333335" size="100,100">Твой выпад не находит цели. Сошников снова и снова ускользает. Его ответные атаки быстры и многочислены. Герцог успевает поерничать.
+- Куда ты против лучшего нападения Запада, чернота!
+Треск искр из ваших скрещенных мечей.
+- Я разобрал твои приемы и теперь знаю заранее, что ты сделаешь!
+Ты пробуешь проверить его хвастовство: и еле избегаешь тычка в пах Лезвие проезжается по твоему бедру. По ноге стекает кровь.
+- Если никто не пожаловался, значит ничего не было!
+Нога стесняет твое движение, а внутри приходится давить прступ паники. Что, если ты не справишься? 
+(if: $agile is &gt;=19)[
+[[(Реакция 19) Контратаковать Соша в момент очередного хвастовства-&gt;Сошников agile]]]
+(if: $power is &gt;=19)[
+[[(Сила 19) Жестко встретить клинок Игоря своим, чтобы перехватить его оружие-&gt;Сошников power]]]
+(if: $intel is &gt;=19)[
+[[(Интеллект 19) Сбить настрой Сошникова умозаключениями-&gt;Сошников intel]]]
+(if: $toxity is &gt;=19)[
+[[(Токсичность 19) Харкнуть в морду Сошникову самой желчной слюной-&gt;Сошников tox]]]
+[[Нанести удар отчаяния-&gt;Сошников fail]]
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="227" name="Сошников agile" tags="" position="168,3971.8333333333335" size="100,100">Нога совсем подводит тебя и клонит к земле. Фактически ты почти встаешь на одно колено.
+- Склонись перед величием короля Булата и устремленной вверх Пятерни!
+Игорь замахивается своим сияющим клинком. В этот момент ты позволяешь ногам упасть на землю и кувыркнуть тебя вперед. Сталь свистит над головой. Ты обхватываешь туловище Сошникова и опрокидываешь его.
+
+Прежде чем герцог успевает очухаться, ты начинаешь месить его лицо своими кулаками. Голова дрыгается, все глубже утопая в грязи.
+
+[[Взять благородного герцога в плен-&gt;Сошников defeat]]
+
+[[Вбить аналитику ему в голову-&gt;Сошников death]]
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="228" name="Сошников power" tags="" position="318,3971.8333333333335" size="100,100">Нога совсем подводит тебя и клонит к земле. Фактически ты почти встаешь на одно колено.
+- Склонись перед величием короля Булата и устремленной вверх Пятерни!
+Игорь замахивается своим сияющим клинком. Cталь звенит об сталь. Ты с натугой откидываешь его руку с оружием - и тут же бьешь головой в благородное чело герцога. И еще раз. Сошников опрокидывается.
+
+Прежде чем герцог успевает очухаться, ты начинаешь месить его лицо своими кулаками. Голова дрыгается, все глубже утопая в грязи.
+
+[[Взять благородного герцога в плен-&gt;Сошников defeat]]
+
+[[Вбить аналитику ему в голову-&gt;Сошников death]]
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="229" name="Сошников intel" tags="" position="468,3971.8333333333335" size="100,100">Ты истошно взрываешься хохотом и делаешь пару шагов назад, выставив перед собой палец.
+- Вот и твое поражение, героцог!
+
+Игорь останавливается.
+- Ты же не думаешь, что я обернусь на этой простой уловке?
+- Расчет был на то, что ты дашь мне прицелиться.
+
+Ты со всей силы пинаешь мяч. Сошников успевает начать движение своим оружием, но снаряд значительно быстрее. Шар прилетает прямо в пах. Игорь со стоном скрючивается.
+
+Прежде чем герцог успевает очухаться, ты начинаешь месить его лицо своими кулаками. Голова дрыгается, все глубже утопая в грязи.
+
+[[Взять благородного герцога в плен-&gt;Сошников defeat]]
+
+[[Вбить аналитику ему в голову-&gt;Сошников death]]
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="230" name="Сошников tox" tags="" position="618,3971.8333333333335" size="100,100">Слюна растекается по шлему, но Игорь даже не моргнул.
+- Любой, кто провел хотя бы один сеанс магии с Марком, перестает бояться таких брызг!
+Сошников решительно наскакивает на тебя. Что ж, рассуждаешь ты, рыцарская дуэль не складывается.
+
+Внезапный удар твоего меча по рукам одного из телохранителей заставляет его выронить пику.
+ Ты выхватываешь древко и с размаху лупишь по подбегающему герцогу. Игорь падает.
+ 
+ Прежде чем герцог успевает очухаться, ты начинаешь месить его лицо своими кулаками. Голова дрыгается, все глубже утопая в грязи.
+
+[[Взять благородного герцога в плен-&gt;Сошников defeat]]
+
+[[Вбить аналитику ему в голову-&gt;Сошников death]]
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="231" name="Сошников fail" tags="" position="771.3333333333334,3976.8333333333335" size="100,100">Ты весь вкладываешься в удар, но Игорь парирует и его и рубит тебя по руке. Ты подхватываешь клинок у самой земли. Твои силы закончились.
+
+[[Подставиться под удар и забрать Сошникова с собой в Ад-&gt;Chronic end]]
+[[Сдаться на милось победителя-&gt;bulat king]] 
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="232" name="Сошников defeat" tags="" position="354.6666666666667,4128.500000000001" size="100,100">Ты устало поднимаешься над поверженным противником. Он слабо стонет. Телохранители пятятся под твоим взглядом. 
+- Ты в порядке?
+$side, покрытый с ног до головы кровью, приближается к тебе с солидным отрядом бойцов Артемии.
+
+Раздается сигнал отступления. Штандарт булата поворачивается задом. Легион драпает!
+
+[[Гнать в шею остатки-&gt;AP destiny]]
+(set: $sosh to &quot;defeat&quot;)
+
+
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="233" name="Сошников death" tags="" position="523,4130.166666666667" size="100,100">Ты устало поднимаешься над поверженным противником. Он уже не дышит. Телохранители пятятся под твоим взглядом. 
+- Ты в порядке?
+$side, покрытый с ног до головы кровью, приближается к тебе с солидным отрядом бойцов Артемии.
+
+Раздается сигнал отступления. Штандарт булата поворачивается задом. Легион драпает!
+
+[[Гнать в шею остатки-&gt;AP destiny]]
+(set: $sosh to &quot;death&quot;)
+
+
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/i3SqO-yN9AruHyW6drm7XDA-s4h3IW3vqRUy6IetZxAn9ujDiRWuq91zSYomobVCgCyWyu0j1nsn012HvFVQt8Fmr_MRBfUoF-gy5155AAiuw0roEGtMJD5NxIZnMuZ91nKGfOFjTRJPOTE4sFZIqt9amGk02zObIGHgDRWdr4ysTMwrq8hbjKI8NRudX0YswivgV7gjizBcdBi7loqnx_tf35QWoGW4AmqZqkyH3B8HhUzXmAojR66oa92FkNR3WYB6oW2X9hVhUir4_g1X9MLLI9M8ietm6efDrdBN719xit6clV1Hat9shP_Q4zFJ8g8S9j7DGvgCO50Up9nUyguwa11Okoa3_-EiuxL1zRM0aK59jiNf4L6Dm0-5uvUt_RVtrE9zry9Ern8NtebJPlr4Csy49Mp19eavO1_nfVI9LqTPChc6iNcAzTjCQNhj_BCITNosh9rUqg2Dv1Fhq870vKKBOkxtcQCwTaFA1fAwede5In_NycPrvORlFRHS76DQ8rvqUqkqGT5CUxkpnqm-CNpTjgTJ1xsUlcf4m437vC6nlZQA1525iH7gzZ20brG4QH391FNxWN9E4XNLNrwDDSuYCaQPof1OTnKQkrr4kVba5W2nLkeVVb0Kn2-lyaHtZm2y9TQPr2WC5MKKo7OEZO3AypG8JQNHem-WUtI5F2bZ2bzIWGfeFlkjkLQ=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="234" name="Chronic end" tags="" position="836.3333333333334,4130.166666666667" size="100,100">&lt;style&gt;
+tw-passage{text-align: center;
+}
+&lt;/style&gt;
+&lt;img src= &quot;https://i.pinimg.com/originals/c7/6f/05/c76f05b96867013d3ce131ff29b64744.jpg&quot;&gt;
+(colour: orange) [Ты - Хронометр&lt;h1&gt;]
+Рыцарь травы и битбокса, повелитель скейтов и гитары. Тонкий и ранимый грубиян. Ты забрал с собой воплощенное зло, потому что не мог иначе, ибо можно простить в этом мире все, кроме отсутствия стремления к совершенству. Пусть твою могилу не найдут. Ты останешься сладким запахом из каждой самокрутки.
+
+[[Конец игры -&gt;Results]]</tw-passagedata><tw-passagedata pid="235" name="AP destiny" tags="" position="431.3333333333333,4276.833333333335" size="100,100">Ты раздаешь указания. В основном про &quot;резать глотки&quot; и &quot;поменьше пленных&quot;. Как вчера ты начал всеми командовать, так и не можешь до сих пор остановиться. Самое удивительное, что люди продолжают тебя слушаться.
+
+Пред тобой предстает владыка Артемии Панч. Он выглядит потрепанным, но живым. Борода пощипана, броня разбита, корона сброшена. Бросив взгляд на землю, ты замечаешь регалию возле трупа одного из легионеров. Золотая поделка, похожая на корзину, оказывается у тебя в руке.
+
+Панч хрипит сорванной глоткой.
+
+-Вот это битва, тысяча кардашьян!  Мне не было так стремно со времен позавчерашнего похмелья. Погранец, нет слов для королевской благодарности. Разумеется, все разногласия, что между нами были, омыты высшей ценой - кровью. А теперь верни корону своему повелителю, не заставляй Всевеличайшего нервничать еще раз.
+
+[[Вернуть корону владельцу-&gt;AP king]]
+[[Отдать корону cвоему кузену-&gt;side king]]
+[[Водрузить корону себе на голову-&gt;self king]]
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/ToSBWhHoDI9VgiJUt5p_ro_lhFQSX-ConnnNh1sq6458WEiJpzlhypQZUnZCvWbiAIPSJtuYYjzkZ8p8EkzTalYHZDhDxAFAbPI-z-tfvm9lrN4ZYgGY_HMGI4teGg5ST3BNE3ZAbej52YVb-YujVoN6caynpVmZKaN-51ZJovJ781LOBa03TbYf8FvWAg_uygFVP4mgbuKbfPM8GzV-W03p-4FYT3dIqiE9JU7k9iWckC_cAjYQvy_U9TTbA9RdEHr49GC31XyZMmwzpJh-J248W_mIgGCaTdJkBZipIVRM3pXtSkrsgyhck6ItgwuVewuCSt3yigbDDLXFnE2ZbOHXsExWqUXFm9zHOc4zvF3H65oAov-1ApgRhYUu4J7nj7NCeA6Nh6Ke33f5T3jTO7mHxEsge5CcYyTmXqHdT7Ptp8HNvK1u5TCyDcw9w9_fDdHUYESa_fINOU_VkNJceRiMgMFocp6w7Q1QryQ7ozRdIiC8fzDH6nq_QB7m5eI1NE3rW5mOmmvWYQtDFvBA0bDEvwr886RLkvbQYBgi5X2TVuo4WJcLcIcxcwG6GaSrsBUjhYrbKBjxEA9QG3pMtcwueyCUUFBroaDkvJ7qvzGG9himrD69G8wTv98kyWvYned1E8ZMDHLriSdOWVh_dqBJFwh_jJqqz-_UNfbmURckizxxtbO8YjBJCu8ITMs=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="236" name="AP king" tags="" position="281.3333333333333,4426.833333333335" size="100,100">Какие бы шальные мысли не посетили тебя на мгновение, ты спешишь передать корону Панчу, пока он в сумасбродстве чего не заподозрил.
+
+Повелитель плотно усаживает свой регалию на плеши.
+
+-Разумеется, все вы, кто принес победу мне и Артемии, будете щедро вознаграждены.
+(set: $king to &quot;Панч&quot;)
+[[Вкусить благ Панча-&gt;Pip destiny]]
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/ToSBWhHoDI9VgiJUt5p_ro_lhFQSX-ConnnNh1sq6458WEiJpzlhypQZUnZCvWbiAIPSJtuYYjzkZ8p8EkzTalYHZDhDxAFAbPI-z-tfvm9lrN4ZYgGY_HMGI4teGg5ST3BNE3ZAbej52YVb-YujVoN6caynpVmZKaN-51ZJovJ781LOBa03TbYf8FvWAg_uygFVP4mgbuKbfPM8GzV-W03p-4FYT3dIqiE9JU7k9iWckC_cAjYQvy_U9TTbA9RdEHr49GC31XyZMmwzpJh-J248W_mIgGCaTdJkBZipIVRM3pXtSkrsgyhck6ItgwuVewuCSt3yigbDDLXFnE2ZbOHXsExWqUXFm9zHOc4zvF3H65oAov-1ApgRhYUu4J7nj7NCeA6Nh6Ke33f5T3jTO7mHxEsge5CcYyTmXqHdT7Ptp8HNvK1u5TCyDcw9w9_fDdHUYESa_fINOU_VkNJceRiMgMFocp6w7Q1QryQ7ozRdIiC8fzDH6nq_QB7m5eI1NE3rW5mOmmvWYQtDFvBA0bDEvwr886RLkvbQYBgi5X2TVuo4WJcLcIcxcwG6GaSrsBUjhYrbKBjxEA9QG3pMtcwueyCUUFBroaDkvJ7qvzGG9himrD69G8wTv98kyWvYned1E8ZMDHLriSdOWVh_dqBJFwh_jJqqz-_UNfbmURckizxxtbO8YjBJCu8ITMs=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="237" name="side king" tags="" position="431.3333333333333,4426.833333333335" size="100,100">(if: $side is &quot;Свег&quot;) [(Френдли Файер) Ты протягиваешь корону Свегу. Он некоторое время разглядывает ее. Панч напряженно сопит. Он понимает, что сейчас перевес на вашей стороне. Его личная охрана не справится с силами кузена и твоих союзников.
+
+Наконец, Свег поднимает глаза на тебя. 
+
+- Это великая честь, кузен. Ох, мне есть за что ненавидить Панча. Но я не могу отринуть клятву данную перед Великой Бородой. Артемия превыше личных обид. Прости.
+
+Он приказывает арестовать тебя. Ты пытаешься сопротивляться, но никто не решается на поддержку при таком раскладе.
+
+[[Участь изменника печальна-&gt;Никита end]]]
+
+(else:)[(Повелитель мопсов)
+Ты протягиваешь корону Хельгу. Он некоторое время разглядывает ее. Панч напряженно сопит. Он понимает, что сейчас перевес на вашей стороне. Его личная охрана не справится с силами кузена и твоих союзников.
+
+Наконец, Хельг поднимает глаза на тебя. 
+
+- А что, это не дурная идея. В конце концов, хуже королем, чем Панч, быть просто невозможно!
+
+Он приказывает арестовать Панча.Завязывается кровопролитная, но безнадежная для стражи схватка. Свергнутый король бьется отчаянно - но только лишь ради того, чтобы пасть в неравной битве.
+(set: $king to &quot;Хельг&quot;)
+[[Теперь ты первый после короля. Неплохое повышение для захудалого барона-&gt;Pip destiny]]
+]
+
+
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/ToSBWhHoDI9VgiJUt5p_ro_lhFQSX-ConnnNh1sq6458WEiJpzlhypQZUnZCvWbiAIPSJtuYYjzkZ8p8EkzTalYHZDhDxAFAbPI-z-tfvm9lrN4ZYgGY_HMGI4teGg5ST3BNE3ZAbej52YVb-YujVoN6caynpVmZKaN-51ZJovJ781LOBa03TbYf8FvWAg_uygFVP4mgbuKbfPM8GzV-W03p-4FYT3dIqiE9JU7k9iWckC_cAjYQvy_U9TTbA9RdEHr49GC31XyZMmwzpJh-J248W_mIgGCaTdJkBZipIVRM3pXtSkrsgyhck6ItgwuVewuCSt3yigbDDLXFnE2ZbOHXsExWqUXFm9zHOc4zvF3H65oAov-1ApgRhYUu4J7nj7NCeA6Nh6Ke33f5T3jTO7mHxEsge5CcYyTmXqHdT7Ptp8HNvK1u5TCyDcw9w9_fDdHUYESa_fINOU_VkNJceRiMgMFocp6w7Q1QryQ7ozRdIiC8fzDH6nq_QB7m5eI1NE3rW5mOmmvWYQtDFvBA0bDEvwr886RLkvbQYBgi5X2TVuo4WJcLcIcxcwG6GaSrsBUjhYrbKBjxEA9QG3pMtcwueyCUUFBroaDkvJ7qvzGG9himrD69G8wTv98kyWvYned1E8ZMDHLriSdOWVh_dqBJFwh_jJqqz-_UNfbmURckizxxtbO8YjBJCu8ITMs=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="238" name="self king" tags="" position="581.3333333333333,4426.833333333335" size="100,100">(if: $battle is &quot;fv&quot;) [Ты надеваешь корону себе на голову. На несколько мгновений на площади повисает тишина. А потом ее сметает волна криков - войска, которые ты привел к победе, торжественно кричат клич твоего рода; Панч истошно орет и тянет руки; кузен орет команды, приказывая арестовать бывшего правителя. Панч отчаянно сопротивляется. Разгоряченные схваткой воины умышленно или случайно заставляют замолчать его навсегда.
+
+$side поворачивается к тебе и первым склоняется в поклоне.
+
+- Мой король.
+
+Вслед за ним опускают головы и другие. 
+(set: $king to &quot;me&quot;)
+[[Да здравствую я, первый король своего имени-&gt;Pip destiny]]]
+
+(else:)[Ты надеваешь корону себе на голову. На несколько мгновений на площади повисает тишина. А потом ее сметает волна смеха.
+Панч ржет и хлопает в ладоши.
+- Браво, браво. Блестяще. Лучшее завершение этого матча.
+Ты смотришь по сторонам, надеясь встретить поддержку в глазах боевых товарищей. Но все они отводят взор.
+Стража хвататет тебя и забирает корону.
+
+[[Участь изменника печальна-&gt;Никита end]]
+]
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/ToSBWhHoDI9VgiJUt5p_ro_lhFQSX-ConnnNh1sq6458WEiJpzlhypQZUnZCvWbiAIPSJtuYYjzkZ8p8EkzTalYHZDhDxAFAbPI-z-tfvm9lrN4ZYgGY_HMGI4teGg5ST3BNE3ZAbej52YVb-YujVoN6caynpVmZKaN-51ZJovJ781LOBa03TbYf8FvWAg_uygFVP4mgbuKbfPM8GzV-W03p-4FYT3dIqiE9JU7k9iWckC_cAjYQvy_U9TTbA9RdEHr49GC31XyZMmwzpJh-J248W_mIgGCaTdJkBZipIVRM3pXtSkrsgyhck6ItgwuVewuCSt3yigbDDLXFnE2ZbOHXsExWqUXFm9zHOc4zvF3H65oAov-1ApgRhYUu4J7nj7NCeA6Nh6Ke33f5T3jTO7mHxEsge5CcYyTmXqHdT7Ptp8HNvK1u5TCyDcw9w9_fDdHUYESa_fINOU_VkNJceRiMgMFocp6w7Q1QryQ7ozRdIiC8fzDH6nq_QB7m5eI1NE3rW5mOmmvWYQtDFvBA0bDEvwr886RLkvbQYBgi5X2TVuo4WJcLcIcxcwG6GaSrsBUjhYrbKBjxEA9QG3pMtcwueyCUUFBroaDkvJ7qvzGG9himrD69G8wTv98kyWvYned1E8ZMDHLriSdOWVh_dqBJFwh_jJqqz-_UNfbmURckizxxtbO8YjBJCu8ITMs=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]
+
+</tw-passagedata><tw-passagedata pid="239" name="Никита end" tags="" position="824.6666666666667,4403.500000000002" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="240" name="Pip destiny" tags="" position="414.66666666666663,4608.500000000002" size="100,100">К вечеру, когда большая часть трупов лишилась ценного имущества и любого проявления достоинства, Панч организовал поспешное судилище. Скорому и суровому наказанию были подвергнуты схваченные воины Пятицарствия, стражники, проспавшие вторжение, и пойманные беглецы из рядов артемианских рыцарей, решившие, что битва проиграна.
+
+Не по своей воле ты назначен одним из королевских судей. К твоим уставшим и слипающимся очам притаскивают полуживого мажордома. По показаниям кухарок, именно Лил Пип провел отряд Булата внутрь замка через тайный ход, обеспечив ту самую внезапность.
+
+Участь мажордома незавидна. По законам Артемии, двухнедельная пытка перед четвертованием - самое мягкое возможное наказание.
+
+[[Отправить Пипа в руки палачей-&gt;Пип смерть]]
+[[Послушать его оправдания-&gt;Пип показания]]
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/ToSBWhHoDI9VgiJUt5p_ro_lhFQSX-ConnnNh1sq6458WEiJpzlhypQZUnZCvWbiAIPSJtuYYjzkZ8p8EkzTalYHZDhDxAFAbPI-z-tfvm9lrN4ZYgGY_HMGI4teGg5ST3BNE3ZAbej52YVb-YujVoN6caynpVmZKaN-51ZJovJ781LOBa03TbYf8FvWAg_uygFVP4mgbuKbfPM8GzV-W03p-4FYT3dIqiE9JU7k9iWckC_cAjYQvy_U9TTbA9RdEHr49GC31XyZMmwzpJh-J248W_mIgGCaTdJkBZipIVRM3pXtSkrsgyhck6ItgwuVewuCSt3yigbDDLXFnE2ZbOHXsExWqUXFm9zHOc4zvF3H65oAov-1ApgRhYUu4J7nj7NCeA6Nh6Ke33f5T3jTO7mHxEsge5CcYyTmXqHdT7Ptp8HNvK1u5TCyDcw9w9_fDdHUYESa_fINOU_VkNJceRiMgMFocp6w7Q1QryQ7ozRdIiC8fzDH6nq_QB7m5eI1NE3rW5mOmmvWYQtDFvBA0bDEvwr886RLkvbQYBgi5X2TVuo4WJcLcIcxcwG6GaSrsBUjhYrbKBjxEA9QG3pMtcwueyCUUFBroaDkvJ7qvzGG9himrD69G8wTv98kyWvYned1E8ZMDHLriSdOWVh_dqBJFwh_jJqqz-_UNfbmURckizxxtbO8YjBJCu8ITMs=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="241" name="Пип смерть" tags="" position="339.66666666666663,4758.500000000002" size="100,100">{(set: $pip to &quot;death&quot;)}
+Вопящего Лил Пипа утаскивают в подземные казематы.
+Ты уверяешь себя, что поступил так, как и следовало с этим изменником.
+
+[[Следующее дело-&gt;good night]]
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/ToSBWhHoDI9VgiJUt5p_ro_lhFQSX-ConnnNh1sq6458WEiJpzlhypQZUnZCvWbiAIPSJtuYYjzkZ8p8EkzTalYHZDhDxAFAbPI-z-tfvm9lrN4ZYgGY_HMGI4teGg5ST3BNE3ZAbej52YVb-YujVoN6caynpVmZKaN-51ZJovJ781LOBa03TbYf8FvWAg_uygFVP4mgbuKbfPM8GzV-W03p-4FYT3dIqiE9JU7k9iWckC_cAjYQvy_U9TTbA9RdEHr49GC31XyZMmwzpJh-J248W_mIgGCaTdJkBZipIVRM3pXtSkrsgyhck6ItgwuVewuCSt3yigbDDLXFnE2ZbOHXsExWqUXFm9zHOc4zvF3H65oAov-1ApgRhYUu4J7nj7NCeA6Nh6Ke33f5T3jTO7mHxEsge5CcYyTmXqHdT7Ptp8HNvK1u5TCyDcw9w9_fDdHUYESa_fINOU_VkNJceRiMgMFocp6w7Q1QryQ7ozRdIiC8fzDH6nq_QB7m5eI1NE3rW5mOmmvWYQtDFvBA0bDEvwr886RLkvbQYBgi5X2TVuo4WJcLcIcxcwG6GaSrsBUjhYrbKBjxEA9QG3pMtcwueyCUUFBroaDkvJ7qvzGG9himrD69G8wTv98kyWvYned1E8ZMDHLriSdOWVh_dqBJFwh_jJqqz-_UNfbmURckizxxtbO8YjBJCu8ITMs=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="242" name="Пип показания" tags="" position="489.66666666666663,4758.500000000002" size="100,100">Пип сбивчиво объясняет, что Булат простой парень. И Абаев простой парень. И что они обещали на пацана, что никого не тронут, а просто хотят посмотреть на турнир куда их не пускает хлобный Панч.
+
+То, что Панч способен на любые злодеяния, Пип знает по себе. 
+- Майка Роуза! Он обманул меня с майкой Роуза!
+
+[[Отправляйся в руки палача, дружок. Топор лучшее лекарство от твоих болезней-&gt;Пип смерть]] 
+[[Пип болен, а не виновен. И я должен не наказать его, а отправить в госпиталь-&gt; Пип госпиталь]]
+(if: $tshirt is true)[
+[[Майка Роуза? Вытащить спертую у короля тряпку-&gt;Пип свобода]]
+]
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/ToSBWhHoDI9VgiJUt5p_ro_lhFQSX-ConnnNh1sq6458WEiJpzlhypQZUnZCvWbiAIPSJtuYYjzkZ8p8EkzTalYHZDhDxAFAbPI-z-tfvm9lrN4ZYgGY_HMGI4teGg5ST3BNE3ZAbej52YVb-YujVoN6caynpVmZKaN-51ZJovJ781LOBa03TbYf8FvWAg_uygFVP4mgbuKbfPM8GzV-W03p-4FYT3dIqiE9JU7k9iWckC_cAjYQvy_U9TTbA9RdEHr49GC31XyZMmwzpJh-J248W_mIgGCaTdJkBZipIVRM3pXtSkrsgyhck6ItgwuVewuCSt3yigbDDLXFnE2ZbOHXsExWqUXFm9zHOc4zvF3H65oAov-1ApgRhYUu4J7nj7NCeA6Nh6Ke33f5T3jTO7mHxEsge5CcYyTmXqHdT7Ptp8HNvK1u5TCyDcw9w9_fDdHUYESa_fINOU_VkNJceRiMgMFocp6w7Q1QryQ7ozRdIiC8fzDH6nq_QB7m5eI1NE3rW5mOmmvWYQtDFvBA0bDEvwr886RLkvbQYBgi5X2TVuo4WJcLcIcxcwG6GaSrsBUjhYrbKBjxEA9QG3pMtcwueyCUUFBroaDkvJ7qvzGG9himrD69G8wTv98kyWvYned1E8ZMDHLriSdOWVh_dqBJFwh_jJqqz-_UNfbmURckizxxtbO8YjBJCu8ITMs=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="243" name="good night" tags="" position="454.66666666666663,4913.500000000002" size="100,100">Твоя работа закончена, и ноги ведут тебя к кровати. Несмотря на усталость ты долго не можешь заснуть. События дня мелькают перед глазами. Прием, гости, спор кузенов, матч, битва, суд...
+
+Вел ли ты себя достойно? Спас ли всех, кого мог? С тобой всегда теперь останутся эти вопросы. У тебя остается единственный ответ, и ты не уверен, что он к ним подходит. &quot;Делай, что должно - и будь что будет&quot;.
+
+[[Заснуть и покинуть этот мир страданий-&gt;Results]]
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/ToSBWhHoDI9VgiJUt5p_ro_lhFQSX-ConnnNh1sq6458WEiJpzlhypQZUnZCvWbiAIPSJtuYYjzkZ8p8EkzTalYHZDhDxAFAbPI-z-tfvm9lrN4ZYgGY_HMGI4teGg5ST3BNE3ZAbej52YVb-YujVoN6caynpVmZKaN-51ZJovJ781LOBa03TbYf8FvWAg_uygFVP4mgbuKbfPM8GzV-W03p-4FYT3dIqiE9JU7k9iWckC_cAjYQvy_U9TTbA9RdEHr49GC31XyZMmwzpJh-J248W_mIgGCaTdJkBZipIVRM3pXtSkrsgyhck6ItgwuVewuCSt3yigbDDLXFnE2ZbOHXsExWqUXFm9zHOc4zvF3H65oAov-1ApgRhYUu4J7nj7NCeA6Nh6Ke33f5T3jTO7mHxEsge5CcYyTmXqHdT7Ptp8HNvK1u5TCyDcw9w9_fDdHUYESa_fINOU_VkNJceRiMgMFocp6w7Q1QryQ7ozRdIiC8fzDH6nq_QB7m5eI1NE3rW5mOmmvWYQtDFvBA0bDEvwr886RLkvbQYBgi5X2TVuo4WJcLcIcxcwG6GaSrsBUjhYrbKBjxEA9QG3pMtcwueyCUUFBroaDkvJ7qvzGG9himrD69G8wTv98kyWvYned1E8ZMDHLriSdOWVh_dqBJFwh_jJqqz-_UNfbmURckizxxtbO8YjBJCu8ITMs=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="244" name=" Пип госпиталь" tags="" position="623,4745.166666666669" size="100,100">Ты приказываешь передать Пипа на попечение братьев из обители Свидетелей Гарленда. Эти монахи приучены к смирению и страданиям. Они принимают в свои ряды умалишенных и находят им безобидные занятия. Да, вряд ли Пип изменит свою жизнь, но она хотя бы у него будет.
+
+Перед Панчем будем выкручиваться потом.
+(set: $pip to &quot;hospital&quot;)
+[[Следующее дело-&gt;good night]] 
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/ToSBWhHoDI9VgiJUt5p_ro_lhFQSX-ConnnNh1sq6458WEiJpzlhypQZUnZCvWbiAIPSJtuYYjzkZ8p8EkzTalYHZDhDxAFAbPI-z-tfvm9lrN4ZYgGY_HMGI4teGg5ST3BNE3ZAbej52YVb-YujVoN6caynpVmZKaN-51ZJovJ781LOBa03TbYf8FvWAg_uygFVP4mgbuKbfPM8GzV-W03p-4FYT3dIqiE9JU7k9iWckC_cAjYQvy_U9TTbA9RdEHr49GC31XyZMmwzpJh-J248W_mIgGCaTdJkBZipIVRM3pXtSkrsgyhck6ItgwuVewuCSt3yigbDDLXFnE2ZbOHXsExWqUXFm9zHOc4zvF3H65oAov-1ApgRhYUu4J7nj7NCeA6Nh6Ke33f5T3jTO7mHxEsge5CcYyTmXqHdT7Ptp8HNvK1u5TCyDcw9w9_fDdHUYESa_fINOU_VkNJceRiMgMFocp6w7Q1QryQ7ozRdIiC8fzDH6nq_QB7m5eI1NE3rW5mOmmvWYQtDFvBA0bDEvwr886RLkvbQYBgi5X2TVuo4WJcLcIcxcwG6GaSrsBUjhYrbKBjxEA9QG3pMtcwueyCUUFBroaDkvJ7qvzGG9himrD69G8wTv98kyWvYned1E8ZMDHLriSdOWVh_dqBJFwh_jJqqz-_UNfbmURckizxxtbO8YjBJCu8ITMs=w1342-h684-ft&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	opacity:0.999;
+  }
+
+  tw-link {
+    color: orange;
+    text-decoration: none;
+  }
+&lt;/style&gt;
+
+(append: ?SideBar)[
+[[Параметры-&gt;Params]]
+[[Команда-&gt;Team]]
+]</tw-passagedata><tw-passagedata pid="245" name="Пип свобода" tags="" position="763,4768.500000000002" size="100,100">Ты уже позабыл про майку, которую бросил в комоде гостевой комнаты. Когда ее приносят и ты показываешь одежду Пипу, он издает высокий крик и падает без чувств. Мажордома приходится облить холодной водой.
+
+- Святая Нижегородская Дева из Барака! Панч обманул меня. Булат и Абаев оманули меня. Но вы, мессир, вы сдержали слово. Я просто не верб своим глазам. Можно, можно я ее надену?
+
+Пип надевают майку с номером Роуза и лицо его как будто разглаживается, становится детским и добрым.
+
+- Я готов к любому наказанию!
+
+То, как он это говорит, заставляет что-то внутри тебя поколебаться. Ты знаешь, что совершаешь глупость, но мысль, что судьба Пипа только что изменилась, не выходит из головы.
+
+- Я приговариваю тебя к пяти годам каторги. После нее ты свободный человек.
+
+Мажордом спокойно воспринимает приговор. Его наполняет внутренняя сила.
+(set: $pip to &quot;free&quot;) 
+[[Следующее дело-&gt;good night]]
+
+
+&lt;style&gt;
+  tw-story {
+    background-image: url(&quot;https://lh3.googleusercontent.com/ToSBWhHoDI9VgiJUt5p_ro_lhFQSX-ConnnNh1sq6458WEiJpzlhypQZUnZCvWbiAIPSJtuYYjzkZ8p8EkzTalYHZDhDxAFAbPI-z-tfvm9lrN4ZYgGY_HMGI4teGg5ST3BNE3ZAbej52YVb-YujVoN6caynpVmZKaN-51ZJovJ781LOBa03TbYf8FvWAg_uygFVP4mgbuKbfPM8GzV-W03p-4FYT3dIqiE9JU7k9iWckC_cAjYQvy_U9TTbA9RdEHr49GC31XyZMmwzpJh-J248W_mIgGCaTdJkBZipIVRM3pXtSkrsgyhck6ItgwuVewuCSt3yigbDDLXFnE2ZbOHXsExWqUXFm9zHOc4zvF3H65oAov-1ApgRhYUu4J7nj7NCeA6Nh6Ke33f5T3jTO7mHxEsge5CcYyTmXqHdT7Ptp8HNvK1u5TCyDcw9w9_fDdHUYESa_fINOU_VkNJceRiMgMFocp6w7Q1QryQ7ozRdIiC8fzDH6nq_QB7m5eI1NE3rW5mOmmvWYQtDFvBA0bDEvwr886RLkvbQYBgi5X2TVuo4WJcLcIcxcwG6GaSrsBUjhYrbKBjxEA9QG3pMtcwueyCUUFBroaDkvJ7qvzGG9himrD69G8wTv98kyWvYned1E8ZMDHLriSdOWVh_dqBJFwh_jJqqz-_UNfbmURckizxxtbO8YjBJCu8ITMs=w1342-h684-ft&quot;);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
